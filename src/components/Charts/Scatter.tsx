@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import {
   Chart,
   ScatterController,
@@ -7,13 +8,12 @@ import {
   Legend,
   ChartData,
   ChartConfiguration,
-  ScatterDataPoint,
 } from "chart.js";
-import { useEffect, useRef } from "react";
-import "../../styles/scatter.scss";
+import { TooltipScatter } from "../DataDisplay/TooltipScatter";
 
-// Asegúrate de registrar los componentes de Chart.js
-Chart.register(ScatterController, LinearScale, PointElement, Tooltip, Legend);
+interface ScatterProps {
+  datasets: ScatterData[];
+}
 
 interface ScatterData {
   data: {
@@ -25,63 +25,25 @@ interface ScatterData {
     };
     disabled: boolean;
   }[];
-  borderWidth: number;
-  pointRadius: number;
-  pointBorderWidth: number;
-  pointStyle: "rectRounded";
+  borderWidth?: number;
+  pointRadius?: number;
+  pointBorderWidth?: number;
+  pointStyle?: string;
 }
 
-export const Scatter = () => {
+Chart.register(ScatterController, LinearScale, PointElement, Tooltip, Legend);
+
+export const Scatter: React.FC<ScatterProps> = ({ datasets }) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const chartRef = useRef<Chart | null>(null); // Referencia para la instancia del gráfico
+  const chartRef = useRef<Chart | null>(null);
 
-  const getRandomColor = () => {
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-    return {
-      background: `rgba(${r}, ${g}, ${b}, 0.7)`,
-      border: `rgba(${r}, ${g}, ${b}, 1)`,
-    };
-  };
-
-  const getDisabledColor = () => {
-    return {
-      background: "rgba(128, 128, 128, 0.2)",
-      border: `rgba(128, 128, 128, 0.3)`,
-    };
-  };
-
-  const generateData = (): ScatterData[] => {
-    return Array(100)
-      .fill(undefined)
-      .map(() => {
-        const disabled = false;
-        const colors = getRandomColor();
-        const disabledColors = getDisabledColor();
-        return {
-          data: [
-            {
-              x: parseFloat((Math.random() * 100).toFixed(2)),
-              y: parseFloat((Math.random() * 100).toFixed(2)),
-              person: {
-                name: "Maria Acuña",
-                avatar: "./img/foto.png",
-              },
-              disabled,
-            },
-          ],
-          backgroundColor: !disabled
-            ? colors.background
-            : disabledColors.background,
-          borderColor: !disabled ? colors.border : disabledColors.border,
-          borderWidth: 2,
-          pointRadius: 10,
-          pointBorderWidth: 3,
-          pointStyle: "rectRounded",
-        };
-      });
-  };
+  const [tooltip, setTooltip] = useState({
+    visible: false,
+    x: 0,
+    y: 0,
+    name: "",
+    avatar: "",
+  });
 
   const handlePointClick = (payload: any) => {
     const points = chartRef.current!.getElementsAtEventForMode(
@@ -104,29 +66,29 @@ export const Scatter = () => {
     //
   };
 
-  useEffect(() => {
+  const handleTooltip = (context: any) => {
+    if (context.tooltip._active && context.tooltip._active.length) {
+      const tooltipItem = context.tooltip._active[0];
+      const tooltipData = tooltipItem.element.$context.dataset.data[0];
+      if (!tooltipData.disabled) {
+        setTooltip({
+          visible: true,
+          x: tooltipItem.element.x - 66,
+          y: tooltipItem.element.y - 130,
+          name: tooltipData.person.name,
+          avatar: tooltipData.person.avatar,
+        });
+      }
+    } else {
+      setTooltip((prev) => ({ ...prev, visible: false }));
+    }
+  };
+
+  const initChart = () => {
     const data: ChartData<"scatter"> = {
-      datasets: generateData(),
+      datasets,
     };
-    /* data.datasets.push({
-      data: [
-        {
-          x: parseFloat((Math.random() * 100).toFixed(2)),
-          y: parseFloat((Math.random() * 100).toFixed(2)),
-          person: {
-            name: "Maria Acuña",
-            avatar: "./img/foto.png",
-          },
-          disabled: false,
-        },
-      ],
-      backgroundColor: "rgba(21, 192, 200, 0.7)",
-      borderColor: "rgba(21, 192, 200, 1)",
-      borderWidth: 2,
-      pointRadius: 10,
-      pointBorderWidth: 3,
-      pointStyle: "rectRounded",
-    }); */
+
     if (canvasRef.current) {
       const ctx = canvasRef.current.getContext("2d");
       if (ctx) {
@@ -154,58 +116,43 @@ export const Scatter = () => {
               },
               tooltip: {
                 enabled: false,
-                external: (context: any) => {
-                  const tooltipEl = document.getElementById("tooltip");
-                  //console.log(" context.tooltip: ", context.tooltip);
-                  if (
-                    context.tooltip._active &&
-                    context.tooltip._active.length
-                  ) {
-                    const tooltipItem = context.tooltip._active[0];
-                    const tooltipData =
-                      tooltipItem.element.$context.dataset.data[0];
-                    if (!tooltipData.disabled) {
-                      tooltipEl!.style.display = "block";
-                      tooltipEl!.style.left = tooltipItem.element.x - 60 + "px";
-                      tooltipEl!.style.top = tooltipItem.element.y - 25 + "px";
-
-                      tooltipEl!.innerHTML = `
-                      <div class="container-tooltip">
-                        <div>${tooltipData.person.name}</div>
-                        <img src="${tooltipData.person.avatar}" alt="foto" />
-                      </div>
-                    `;
-                    }
-                  } else {
-                    tooltipEl!.style.display = "none";
-                  }
-                },
+                external: handleTooltip,
               },
             },
           },
         };
 
-        // Crea una nueva instancia de Chart y guárdala en la referencia
         chartRef.current = new Chart(ctx, config);
       }
     }
 
-    // Limpiar el gráfico al desmontar el componente
     return () => {
       if (chartRef.current) {
         chartRef.current.destroy();
       }
     };
+  };
+
+  useEffect(() => {
+    initChart();
   }, []);
 
   return (
     <>
-      <canvas height="100" ref={canvasRef} onClick={handlePointClick}></canvas>
-      <div
-        className="nes-container is-rounded custom-tooltip"
-        id="tooltip"
-        style={{ padding: 0 }}
-      ></div>
+      <div style={{ position: "relative" }}>
+        <canvas
+          height="100"
+          ref={canvasRef}
+          onClick={handlePointClick}
+        ></canvas>
+        <TooltipScatter
+          visible={tooltip.visible}
+          x={tooltip.x}
+          y={tooltip.y}
+          name={tooltip.name}
+          avatar={tooltip.avatar}
+        />
+      </div>
     </>
   );
 };
