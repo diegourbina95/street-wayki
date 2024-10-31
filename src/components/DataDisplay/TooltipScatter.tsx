@@ -18,7 +18,7 @@ export const TooltipScatter: React.FC<TooltipProps> = ({
   if (!visible) return null;
   return (
     <div
-      className="custom-tooltip"
+      className="nes-container is-rounded custom-tooltip"
       style={{
         display: visible ? "block" : "none",
         top: y,

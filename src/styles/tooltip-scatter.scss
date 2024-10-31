@@ -9,7 +9,8 @@
   display: none;
   width: 123px;
   height: 114px;
-  padding: 0;
+  padding: 0 !important;
+  font-size: 0.6rem;
 }
 .container-tooltip {
   display: flex;

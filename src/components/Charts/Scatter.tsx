@@ -140,11 +140,7 @@ export const Scatter: React.FC<ScatterProps> = ({ datasets }) => {
   return (
     <>
       <div style={{ position: "relative" }}>
-        <canvas
-          height="100"
-          ref={canvasRef}
-          onClick={handlePointClick}
-        ></canvas>
+        <canvas ref={canvasRef} onClick={handlePointClick}></canvas>
         <TooltipScatter
           visible={tooltip.visible}
           x={tooltip.x}
