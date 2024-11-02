@@ -1,0 +1,40 @@
+.cardvs {
+  &__container {
+    background-color: #feaa00;
+    display: inline-block;
+    /*  padding: 20px 30px 15px; */
+    border: solid #212121 3px;
+    border-radius: 10px;
+    width: 160px;
+  }
+  &__player {
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black;
+
+    text-align: center;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+  &__avatar {
+    display: flex;
+    justify-content: center;
+  }
+  &__name {
+    margin: 15px auto;
+    width: 90px;
+    font-size: 0.5rem;
+    text-align: center;
+  }
+  &__political-information {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 35px;
+      margin-right: 5px;
+    }
+    img:last-child {
+      margin-right: 0px;
+    }
+  }
+}
