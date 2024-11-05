@@ -60,7 +60,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
         </div>
         <div style={{ paddingBottom: "5px" }}>
           <div className="information-card__title">
-            PARTIDO POLÍTICO ACTUAL:
+            PARTIDO POLITICO ACTUAL:
           </div>
           <div className="information-card__text">
             {details ? details?.currentPoliticalParty : "..."}
@@ -68,7 +68,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
         </div>
         <div style={{ paddingBottom: "5px" }}>
           <div className="information-card__title">
-            PARTIDO POLÍTICO POSTULACIÓN
+            PARTIDO POLITICO POSTULACION
           </div>
           <div className="information-card__text">
             {details ? details?.politicalPartyNomination : "..."}

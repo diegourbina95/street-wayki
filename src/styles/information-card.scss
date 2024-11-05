@@ -12,20 +12,19 @@
 
   &__content {
     padding: 12px;
-    font-size: 0.5rem;
   }
 
   &__name {
     padding-bottom: 5px;
     border-bottom: 1.6px solid #212121;
     margin-bottom: 5px;
+    font-size: 0.5rem;
   }
 
   &__title {
-    font-family: Montserrat;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 0.7rem;
+
+    font-size: 0.45rem;
     color: #3c3c3c;
   }
 
