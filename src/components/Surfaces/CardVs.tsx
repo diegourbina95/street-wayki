@@ -1,42 +1,73 @@
+import { IconBoderTopCardVs } from "../DataDisplay/IconBoderTopCardVs";
+import { IconBoderBottomCardVs } from "../DataDisplay/IconBoderBottomCardVs";
+
 import "../../styles/card-vs.scss";
 
-export const CardVs = () => {
+interface CardVsProps {
+  color?: string;
+  player: number;
+  politicalInformation?:
+    | {
+        avatar?: string;
+        name?: string;
+        politicalLogos?: string[];
+      }
+    | null
+    | undefined;
+  size?: number;
+}
+
+export const CardVs: React.FC<CardVsProps> = ({
+  color,
+  player,
+  politicalInformation,
+  size = 160,
+}) => {
+  const EMPTY_COLOR = "#E4E4E4";
   return (
-    <div>
-      <div className="cardvs__container">
-        <img
-          src="./img/borde-top-card-p.svg"
-          alt="avatar"
-          style={{
-            width: "160px",
-            position: "relative",
-            top: "-7px",
-            left: "-3px",
-          }}
-        />
-        <div className="cardvs__player">1P</div>
-        <div className="cardvs__avatar">
-          <img src="./img/foto.png" alt="avatar" />
+    <div
+      className="cardvs__container"
+      style={{
+        backgroundColor: politicalInformation ? color : EMPTY_COLOR,
+        width: `${size}px`,
+      }}
+    >
+      <IconBoderTopCardVs
+        color={politicalInformation ? color : EMPTY_COLOR}
+        style={{
+          width: `${size}px`,
+          position: "absolute",
+          top: "-2px",
+          left: "-3px",
+        }}
+      />
+      <div className="cardvs__player">{player}P</div>
+      <div className="cardvs__avatar">
+        <div className="cardvs__avatar-content">
+          {politicalInformation && (
+            <img src={politicalInformation.avatar} alt="avatar" />
+          )}
         </div>
-        <div className="cardvs__name">José Luna Galvez</div>
-        <div className="cardvs__political-information">
-          <img src="./img/img1.png" alt="img1" />
-
-          <img src="./img/img2.png" alt="img2" />
-
-          <img src="./img/img3.png" alt="img3" />
-        </div>
-        <img
-          src="./img/borde-bottom-card-p.svg"
-          alt="avatar"
-          style={{
-            width: "160px",
-            position: "relative",
-            bottom: "-7px",
-            left: "-3px",
-          }}
-        />
       </div>
+      <div className="cardvs__name">
+        {politicalInformation && politicalInformation.name}
+      </div>
+      <div className="cardvs__political-information">
+        {politicalInformation &&
+          politicalInformation.politicalLogos &&
+          politicalInformation.politicalLogos.map((logo, index) => (
+            <img key={index} src={logo} alt={`political-logo-${index}`} />
+          ))}
+      </div>
+      <IconBoderBottomCardVs
+        color={politicalInformation ? color : EMPTY_COLOR}
+        style={{
+          width: `${size}px`,
+          position: "absolute",
+          bottom: "-2px",
+          left: "-3px",
+        }}
+      />
     </div>
   );
 };

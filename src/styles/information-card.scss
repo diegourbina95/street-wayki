@@ -1,0 +1,38 @@
+.information-card {
+  &__container {
+    display: inline-block;
+    border: solid #212121 3px;
+    border-top: solid #212121 7px;
+    border-bottom: solid #212121 7px;
+    border-radius: 16px;
+    min-height: 214px;
+    position: relative;
+    padding: 25px 5px 10px;
+  }
+
+  &__content {
+    padding: 12px;
+    font-size: 0.5rem;
+  }
+
+  &__name {
+    padding-bottom: 5px;
+    border-bottom: 1.6px solid #212121;
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #3c3c3c;
+  }
+
+  &__text {
+    font-family: Roboto;
+    color: #212121;
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+}
