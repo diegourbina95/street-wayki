@@ -3,6 +3,7 @@ import { ButtonNes } from "./components/Inputs/ButtonNes";
 import { SelectNes } from "./components/Inputs/SelectNes";
 import { CardVs } from "./components/Surfaces/CardVs";
 import { InformationCard } from "./components/Surfaces/InformationCard";
+import { ProgressNes } from "./components/Feedback/ProgressNes";
 
 import { generateData } from "./_mock/scatter-plot.data";
 import { cardVsData } from "./_mock/card-vs.data";
@@ -67,6 +68,13 @@ function App() {
           <InformationCard color="#FEAA00" details={informationCardData} />
           <InformationCard color="#61F908" details={informationCardData} />
           <InformationCard details={null} />
+        </div>
+        <br />
+        <div>
+          <h4>Progress Bars</h4>
+          <div style={{ width: "600px" }}>
+            <ProgressNes currency="$" quantity1={1500350} quantity2={500610} />
+          </div>
         </div>
       </div>
     </div>
