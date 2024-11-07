@@ -1,0 +1,25 @@
+.home-page {
+  &__hero {
+    margin: 40px 0 50px;
+  }
+
+  &__information {
+    font-family: "Roboto", sans-serif;
+    padding: 0 10px;
+  }
+
+  &__wayki-selector {
+    padding: 60px 0 40px;
+    text-align: center;
+  }
+}
+
+.content-450 {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.content-550 {
+  max-width: 550px;
+  margin: 0 auto;
+}

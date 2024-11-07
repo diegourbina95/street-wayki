@@ -1,15 +1,17 @@
 import { lazy } from "react";
 
+import { MainLayout } from "../layout/MainLayout.tsx";
 import Loadable from "../components/Feedback/Loadable.tsx";
 
-const HomePage = Loadable(lazy(() => import("../views/public/home.tsx")));
+const HomePage = Loadable(lazy(() => import("../views/public/Home.tsx")));
 const ComponentsPage = Loadable(
-  lazy(() => import("../views/public/components.tsx"))
+  lazy(() => import("../views/public/Components.tsx"))
 );
 
 // ==============================|| MAIN ROUTING ||============================== //
 
 const PublicRoutes = {
+  element: <MainLayout />,
   children: [
     {
       path: "/",
