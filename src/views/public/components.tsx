@@ -4,35 +4,52 @@ import { SelectNes } from "../../components/Inputs/SelectNes";
 import { CardVs } from "../../components/Surfaces/CardVs";
 import { InformationCard } from "../../components/Surfaces/InformationCard";
 import { ProgressNes } from "../../components/Feedback/ProgressNes";
+import { WaykiSelector } from "../../components/Charts/WaykiSelector";
 
 import { generateData } from "../../_mock/scatter-plot.data";
+import { politicalPartiesData } from "../../_mock/political-parties.data";
 import { cardVsData } from "../../_mock/card-vs.data";
 import { informationCardData } from "../../_mock/information-card.data";
 
 const ComponentsPage = () => {
   const datasets = generateData();
+  const options = [
+    { value: "chocolate", label: "Chocolate" },
+    { value: "strawberry", label: "Strawberry" },
+    {
+      value: "vanilla",
+      label: "Vanilla",
+    },
+  ];
 
   return (
     <div style={{ margin: 10 }}>
       <h3>Componentes</h3>
       <div>
-        <h4>Grafico de dispersión</h4>
+        <h4>Selector Wayki</h4>
         <div style={{ width: "600px" }}>
-          <Scatter datasets={datasets} />
+          <WaykiSelector
+            politicalPartiesData={politicalPartiesData}
+            patrimonyData={datasets}
+            selectWayki={(payload: any) =>
+              console.log("selectWayki: ", payload)
+            }
+          />
         </div>
       </div>
+      <br />
       <br />
       <div>
         <h4>Selects</h4>
         <div style={{ width: "600px" }}>
-          <SelectNes />
+          <SelectNes options={options} />
         </div>
       </div>
       <br />
       <div>
         <h4>Buttons</h4>
         <div style={{ width: "600px" }}>
-          <ButtonNes />
+          <ButtonNes text="Botón" />
         </div>
       </div>
       <br />

@@ -13,6 +13,7 @@ import { TooltipScatter } from "../DataDisplay/TooltipScatter";
 
 interface ScatterProps {
   datasets: ScatterData[];
+  selectPoint?: (payload: any) => void;
 }
 
 interface ScatterData {
@@ -29,11 +30,13 @@ interface ScatterData {
   pointRadius?: number;
   pointBorderWidth?: number;
   pointStyle?: string;
+  backgroundColor?: string;
+  borderColor?: string;
 }
 
 Chart.register(ScatterController, LinearScale, PointElement, Tooltip, Legend);
 
-export const Scatter: React.FC<ScatterProps> = ({ datasets }) => {
+export const Scatter: React.FC<ScatterProps> = ({ datasets, selectPoint }) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const chartRef = useRef<Chart | null>(null);
 
@@ -45,50 +48,29 @@ export const Scatter: React.FC<ScatterProps> = ({ datasets }) => {
     avatar: "",
   });
 
-  const handlePointClick = (payload: any) => {
-    const points = chartRef.current!.getElementsAtEventForMode(
-      payload,
-      "nearest",
-      { intersect: true },
-      true
-    );
+  useEffect(() => {
+    initChart(datasets);
+  }, [datasets]);
 
-    if (points.length) {
-      const firstPoint = points[0];
-      const datasetIndex = firstPoint.datasetIndex!;
-      const dataIndex = firstPoint.index!;
-
-      const clickedPointData = chartRef.current!.data.datasets[datasetIndex]
-        .data![dataIndex] as any;
-      if (!clickedPointData.disabled)
-        alert(`Hiciste clic en: ${clickedPointData.x}`);
-    }
-    //
-  };
-
-  const handleTooltip = (context: any) => {
-    if (context.tooltip._active && context.tooltip._active.length) {
-      const tooltipItem = context.tooltip._active[0];
-      const tooltipData = tooltipItem.element.$context.dataset.data[0];
-      if (!tooltipData.disabled) {
-        setTooltip({
-          visible: true,
-          x: tooltipItem.element.x - 66,
-          y: tooltipItem.element.y - 130,
-          name: tooltipData.person.name,
-          avatar: tooltipData.person.avatar,
-        });
-      }
-    } else {
-      setTooltip((prev) => ({ ...prev, visible: false }));
-    }
-  };
-
-  const initChart = () => {
+  const initChart = (payload: ScatterData[]) => {
     const data: ChartData<"scatter"> = {
-      datasets,
+      datasets: payload.map((value: ScatterData) => {
+        const disabledColors = getDisabledColor();
+        return {
+          ...value,
+          backgroundColor: !value.data[0].disabled
+            ? value.backgroundColor
+            : disabledColors.background,
+          borderColor: !value.data[0].disabled
+            ? value.borderColor
+            : disabledColors.border,
+          borderWidth: 2,
+          pointRadius: 10,
+          pointBorderWidth: 3,
+          pointStyle: "rectRounded",
+        };
+      }),
     };
-
     if (canvasRef.current) {
       const ctx = canvasRef.current.getContext("2d");
       if (ctx) {
@@ -133,9 +115,51 @@ export const Scatter: React.FC<ScatterProps> = ({ datasets }) => {
     };
   };
 
-  useEffect(() => {
-    initChart();
-  }, []);
+  const getDisabledColor = () => {
+    return {
+      background: "rgba(128, 128, 128, 0.2)",
+      border: `rgba(128, 128, 128, 0.3)`,
+    };
+  };
+
+  const handlePointClick = (payload: any) => {
+    const points = chartRef.current!.getElementsAtEventForMode(
+      payload,
+      "nearest",
+      { intersect: true },
+      true
+    );
+
+    if (points.length) {
+      const firstPoint = points[0];
+      const datasetIndex = firstPoint.datasetIndex!;
+      const dataIndex = firstPoint.index!;
+
+      const clickedPointData = chartRef.current!.data.datasets[datasetIndex]
+        .data![dataIndex] as any;
+      if (!clickedPointData.disabled)
+        selectPoint && selectPoint(clickedPointData);
+    }
+    //
+  };
+
+  const handleTooltip = (context: any) => {
+    if (context.tooltip._active && context.tooltip._active.length) {
+      const tooltipItem = context.tooltip._active[0];
+      const tooltipData = tooltipItem.element.$context.dataset.data[0];
+      if (!tooltipData.disabled) {
+        setTooltip({
+          visible: true,
+          x: tooltipItem.element.x - 66,
+          y: tooltipItem.element.y - 130,
+          name: tooltipData.person.name,
+          avatar: tooltipData.person.avatar,
+        });
+      }
+    } else {
+      setTooltip((prev) => ({ ...prev, visible: false }));
+    }
+  };
 
   return (
     <>

@@ -8,60 +8,26 @@ const getRandomColor = () => {
   };
 };
 
-const getDisabledColor = () => {
-  return {
-    background: "rgba(128, 128, 128, 0.2)",
-    border: `rgba(128, 128, 128, 0.3)`,
-  };
-};
-
 export const generateData = () => {
   return Array(100)
     .fill(undefined)
-    .map(() => {
-      const disabled = false;
+    .map((_, index) => {
       const colors = getRandomColor();
-      const disabledColors = getDisabledColor();
       return {
         data: [
           {
             x: parseFloat((Math.random() * 100).toFixed(2)),
             y: parseFloat((Math.random() * 100).toFixed(2)),
             person: {
+              code: index,
               name: "Maria Acuña",
               avatar: "./img/foto.png",
             },
-            disabled,
+            disabled: false,
           },
         ],
-        backgroundColor: !disabled
-          ? colors.background
-          : disabledColors.background,
-        borderColor: !disabled ? colors.border : disabledColors.border,
-        borderWidth: 2,
-        pointRadius: 10,
-        pointBorderWidth: 3,
-        pointStyle: "rectRounded",
+        backgroundColor: colors.background,
+        borderColor: colors.border,
       };
     });
 };
-
-/*   datasets.push({
-    data: [
-      {
-        x: parseFloat((Math.random() * 100).toFixed(2)),
-        y: parseFloat((Math.random() * 100).toFixed(2)),
-        person: {
-          name: "Maria Acuña",
-          avatar: "./img/foto.png",
-        },
-        disabled: false,
-      },
-    ],
-    backgroundColor: "rgba(21, 192, 200, 0.7)",
-    borderColor: "rgba(21, 192, 200, 1)",
-    borderWidth: 2,
-    pointRadius: 10,
-    pointBorderWidth: 3,
-    pointStyle: "rectRounded",
-  }); */

@@ -1,0 +1,30 @@
+.wayki-selector {
+  &__select-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  &__select:first-child {
+    margin-left: -7px;
+  }
+
+  &__select {
+    width: 240px;
+    span {
+      font-size: 0.7rem;
+      margin-left: 5px;
+      display: block;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__scatter-container {
+    margin-top: 50px;
+  }
+
+  &__scatter-title {
+    font-size: 0.7rem;
+  }
+}

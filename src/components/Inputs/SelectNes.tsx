@@ -1,16 +1,28 @@
 import Select from "react-select";
 import "../../styles/select-nes.scss";
+import { useEffect, useState } from "react";
 
-export const SelectNes = () => {
+interface SelectNesProps {
+  options: Record<string, any>[];
+  valueKey?: string;
+  labelKey?: string;
+  value?: any;
+  onChange?: (payload: any) => void;
+}
+
+export const SelectNes: React.FC<SelectNesProps> = ({
+  options,
+  valueKey = "value",
+  labelKey = "label",
+  onChange,
+}) => {
+  const [value, setValue] = useState<any>();
+
+  useEffect(() => {
+    setValue(null);
+  }, [options]);
+
   const CustomDropdownIndicator = () => null;
-  const options = [
-    { value: "chocolate", label: "Chocolate" },
-    { value: "strawberry", label: "Strawberry" },
-    {
-      value: "vanilla",
-      label: "Vanilla",
-    },
-  ];
   return (
     <div>
       <Select
@@ -19,6 +31,13 @@ export const SelectNes = () => {
         }}
         components={{ DropdownIndicator: CustomDropdownIndicator }}
         options={options}
+        getOptionLabel={(option) => option[labelKey]}
+        getOptionValue={(option) => option[valueKey]}
+        value={value}
+        onChange={(payload) => {
+          setValue(payload);
+          onChange && onChange(payload);
+        }}
       />
     </div>
   );
