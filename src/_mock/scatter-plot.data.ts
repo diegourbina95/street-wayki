@@ -20,8 +20,13 @@ export const generateData = () => {
             y: parseFloat((Math.random() * 100).toFixed(2)),
             person: {
               code: index,
-              name: "Maria Acuña",
+              name: `Maria Acuña ${index}`,
               avatar: "./img/foto.png",
+              politicalLogos: [
+                "./img/img1.png",
+                "./img/img2.png",
+                "./img/img3.png",
+              ],
             },
             disabled: false,
           },

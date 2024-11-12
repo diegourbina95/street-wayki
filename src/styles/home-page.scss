@@ -10,7 +10,12 @@
 
   &__wayki-selector {
     padding: 60px 0 40px;
-    text-align: center;
+
+    .wayki-selector__title {
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 35px;
+    }
   }
 }
 
@@ -21,5 +26,10 @@
 
 .content-550 {
   max-width: 550px;
+  margin: 0 auto;
+}
+
+.content-750 {
+  max-width: 750px;
   margin: 0 auto;
 }

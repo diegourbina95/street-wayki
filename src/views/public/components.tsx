@@ -1,10 +1,9 @@
-import { Scatter } from "../../components/Charts/Scatter";
 import { ButtonNes } from "../../components/Inputs/ButtonNes";
 import { SelectNes } from "../../components/Inputs/SelectNes";
 import { CardVs } from "../../components/Surfaces/CardVs";
 import { InformationCard } from "../../components/Surfaces/InformationCard";
 import { ProgressNes } from "../../components/Feedback/ProgressNes";
-import { WaykiSelector } from "../../components/Charts/WaykiSelector";
+import { WaykiSelector } from "../../components/Custom/WaykiSelector";
 
 import { generateData } from "../../_mock/scatter-plot.data";
 import { politicalPartiesData } from "../../_mock/political-parties.data";

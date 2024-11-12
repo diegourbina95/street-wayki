@@ -1,5 +1,5 @@
 import { SelectNes } from "../Inputs/SelectNes";
-import { Scatter } from "./Scatter";
+import { Scatter } from "../Charts/Scatter";
 
 import "../../styles/wayki-selector.scss";
 import { useEffect, useState } from "react";
@@ -37,12 +37,12 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
     setPoliticalParties(politicalPartiesData);
     setPatrimonialData(patrimonyData);
     setDefaultPatrimonialData(patrimonyData);
-  }, []);
+  }, [politicalPartiesData, patrimonyData]);
 
   const filterByPoliticalParty = (payload: PoliticalParties) => {
     setSelectedOfficial(null);
 
-    selectedOfficial && setPatrimonialData(defaultPatrimonialData);
+    if (selectedOfficial) setPatrimonialData(defaultPatrimonialData);
     setOfficials(payload.officials);
   };
 
@@ -52,7 +52,7 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
   };
 
   const handleWayki = (payload: any) => {
-    selectWayki && selectWayki(payload);
+    if (selectWayki) selectWayki(payload);
   };
 
   const filterOfficials = (officialCode: number) => {

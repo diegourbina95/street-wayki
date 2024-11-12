@@ -64,7 +64,7 @@ export const CardVs: React.FC<CardVsProps> = ({
         style={{
           width: `${size}px`,
           position: "absolute",
-          bottom: "-2px",
+          bottom: "-3px",
           left: "-3px",
         }}
       />

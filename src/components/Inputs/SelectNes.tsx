@@ -36,7 +36,7 @@ export const SelectNes: React.FC<SelectNesProps> = ({
         value={value}
         onChange={(payload) => {
           setValue(payload);
-          onChange && onChange(payload);
+          if (onChange) onChange(payload);
         }}
       />
     </div>

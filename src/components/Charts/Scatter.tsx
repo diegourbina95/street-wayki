@@ -50,6 +50,7 @@ export const Scatter: React.FC<ScatterProps> = ({ datasets, selectPoint }) => {
 
   useEffect(() => {
     initChart(datasets);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [datasets]);
 
   const initChart = (payload: ScatterData[]) => {
@@ -138,7 +139,7 @@ export const Scatter: React.FC<ScatterProps> = ({ datasets, selectPoint }) => {
       const clickedPointData = chartRef.current!.data.datasets[datasetIndex]
         .data![dataIndex] as any;
       if (!clickedPointData.disabled)
-        selectPoint && selectPoint(clickedPointData);
+        if (selectPoint) selectPoint(clickedPointData);
     }
     //
   };
