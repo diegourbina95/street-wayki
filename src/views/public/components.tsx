@@ -4,13 +4,17 @@ import { CardVs } from "../../components/Surfaces/CardVs";
 import { InformationCard } from "../../components/Surfaces/InformationCard";
 import { ProgressNes } from "../../components/Feedback/ProgressNes";
 import { WaykiSelector } from "../../components/Custom/WaykiSelector";
+import { Overlay } from "../../components/DataDisplay/Overlay";
 
 import { generateData } from "../../_mock/scatter-plot.data";
 import { politicalPartiesData } from "../../_mock/political-parties.data";
 import { cardVsData } from "../../_mock/card-vs.data";
 import { informationCardData } from "../../_mock/information-card.data";
+import { useState } from "react";
 
 const ComponentsPage = () => {
+  const [isOverlay, setIsOverlay] = useState(false);
+
   const datasets = generateData();
   const options = [
     { value: "chocolate", label: "Chocolate" },
@@ -90,6 +94,29 @@ const ComponentsPage = () => {
           <h4>Progress Bars</h4>
           <div style={{ width: "600px" }}>
             <ProgressNes currency="$" quantity1={1500350} quantity2={500610} />
+          </div>
+        </div>
+        <br />
+        <div>
+          <h4>Overlays</h4>
+          <div style={{ width: "600px" }}>
+            <button onClick={() => setIsOverlay(!isOverlay)}>
+              {isOverlay ? "Ocultar Overlay" : "Mostrar Overlay"}
+            </button>
+            <Overlay
+              show={isOverlay}
+              onClick={() => setIsOverlay(!isOverlay)}
+            />
+          </div>
+          <br />
+          <div style={{ width: "600px" }}>
+            <button onClick={() => setIsOverlay(!isOverlay)}>
+              {isOverlay ? "Ocultar Overlay" : "Mostrar Overlay"}
+            </button>
+            <Overlay
+              show={isOverlay}
+              onClick={() => setIsOverlay(!isOverlay)}
+            />
           </div>
         </div>
       </div>
