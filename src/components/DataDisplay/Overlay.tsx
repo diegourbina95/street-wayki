@@ -42,9 +42,7 @@ export const Overlay: React.FC<OverlayProps> = ({
   return (
     <div className="overlay-container">
       <div
-        className={`overlay ${
-          isOverlayVisible ? "overlay--visible" : "overlay--hidden"
-        }`}
+        className={`overlay ${isOverlayVisible ? "overlay--visible" : ""}`}
         onClick={!persistent && isOverlayVisible ? handleClick : undefined}
       >
         {children}

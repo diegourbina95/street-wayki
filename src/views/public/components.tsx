@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { ButtonNes } from "../../components/Inputs/ButtonNes";
 import { SelectNes } from "../../components/Inputs/SelectNes";
 import { CardVs } from "../../components/Surfaces/CardVs";
@@ -5,15 +7,16 @@ import { InformationCard } from "../../components/Surfaces/InformationCard";
 import { ProgressNes } from "../../components/Feedback/ProgressNes";
 import { WaykiSelector } from "../../components/Custom/WaykiSelector";
 import { Overlay } from "../../components/DataDisplay/Overlay";
+import { FightOverlay } from "../../components/Custom/FightOverlay";
 
 import { generateData } from "../../_mock/scatter-plot.data";
 import { politicalPartiesData } from "../../_mock/political-parties.data";
 import { cardVsData } from "../../_mock/card-vs.data";
 import { informationCardData } from "../../_mock/information-card.data";
-import { useState } from "react";
 
 const ComponentsPage = () => {
   const [isOverlay, setIsOverlay] = useState(false);
+  const [isFightOverlay, setIsFightOverlay] = useState(false);
 
   const datasets = generateData();
   const options = [
@@ -110,12 +113,14 @@ const ComponentsPage = () => {
           </div>
           <br />
           <div style={{ width: "600px" }}>
-            <button onClick={() => setIsOverlay(!isOverlay)}>
-              {isOverlay ? "Ocultar Overlay" : "Mostrar Overlay"}
+            <button onClick={() => setIsFightOverlay(!isFightOverlay)}>
+              {isFightOverlay
+                ? "Ocultar Fight Overlay"
+                : "Mostrar Fight Overlay"}
             </button>
-            <Overlay
-              show={isOverlay}
-              onClick={() => setIsOverlay(!isOverlay)}
+            <FightOverlay
+              show={isFightOverlay}
+              onClick={() => setIsFightOverlay(!isFightOverlay)}
             />
           </div>
         </div>
