@@ -78,9 +78,9 @@ export const IconFight: React.FC<IconFightProps> = ({ style, className }) => (
         width="353.764"
         height="201.938"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -114,10 +114,10 @@ export const IconFight: React.FC<IconFightProps> = ({ style, className }) => (
         y2="7"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.118031" stop-color="#61F908" />
-        <stop offset="0.303031" stop-color="#FEFE00" />
-        <stop offset="0.443031" stop-color="#FEAA00" />
-        <stop offset="0.688031" stop-color="#FC66C7" />
+        <stop offset="0.118031" stopColor="#61F908" />
+        <stop offset="0.303031" stopColor="#FEFE00" />
+        <stop offset="0.443031" stopColor="#FEAA00" />
+        <stop offset="0.688031" stopColor="#FC66C7" />
       </linearGradient>
     </defs>
   </svg>

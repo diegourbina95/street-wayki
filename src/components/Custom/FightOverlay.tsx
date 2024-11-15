@@ -1,11 +1,19 @@
 import { useCallback, useEffect, useState, memo } from "react";
+
+import useSound from "use-sound";
+
 import { Overlay } from "../DataDisplay/Overlay";
 import { IconFight } from "../DataDisplay/IconFight";
+
 import fireImage from "../../assets/images/fire.gif";
+import fightSound from "../../assets/sounds/fight.mp3";
+
 import "../../styles/fight-overlay.scss";
 
 interface FightOverlayProps {
   show: boolean;
+  time?: number;
+  sound?: boolean;
   onClick?: (payload: boolean) => void;
 }
 
@@ -45,29 +53,35 @@ const FireImage = memo(({ style }: { style?: React.CSSProperties }) => (
 
 export const FightOverlay: React.FC<FightOverlayProps> = ({
   show,
+  time = 1700,
+  sound = false,
   onClick,
 }) => {
   const [isFightOverlay, setIsFightOverlay] = useState<boolean>(false);
   const [isFireImage, setIsFireImage] = useState<boolean>(false);
+  const [playSound] = useSound(fightSound);
 
   const lifeTime = useCallback(() => {
-    const fireImageTimer = setTimeout(() => setIsFireImage(true), 500);
+    const fireImageTimer = setTimeout(() => setIsFireImage(true), time - 1200);
     const overlayTimer = setTimeout(() => {
       setIsFightOverlay(false);
       setIsFireImage(false);
       if (onClick) onClick(false);
-    }, 1700);
+    }, time);
 
     return () => {
       clearTimeout(fireImageTimer);
       clearTimeout(overlayTimer);
     };
-  }, [onClick]);
+  }, [time, onClick]);
 
   useEffect(() => {
     setIsFightOverlay(show);
-    if (show) lifeTime();
-  }, [show, lifeTime]);
+    if (show) {
+      if (sound) playSound();
+      lifeTime();
+    }
+  }, [show, sound, lifeTime, playSound]);
 
   return (
     <Overlay show={isFightOverlay} persistent>
