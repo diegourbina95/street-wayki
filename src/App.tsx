@@ -1,4 +1,4 @@
-import Routes from "./routes";
+/* import Routes from "./routes"; */
 import HomePage from "./views/public/Home";
 
 function App() {
