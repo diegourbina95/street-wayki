@@ -5,7 +5,7 @@ import Loadable from "../components/Feedback/Loadable.tsx";
 
 const HomePage = Loadable(lazy(() => import("../views/public/Home/index.tsx")));
 const ComponentsPage = Loadable(
-  lazy(() => import("../views/public/Components.tsx"))
+  lazy(() => import("../views/public/ComponentsPage.tsx"))
 );
 
 // ==============================|| MAIN ROUTING ||============================== //
