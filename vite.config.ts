@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/street-wayki/",
+  base: "https://diegourbina95.github.io/street-wayki/",
   plugins: [react()],
 });
