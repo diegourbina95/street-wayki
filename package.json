@@ -1,12 +1,12 @@
 {
-  "homepage": "/street-wayki/",
+  "homepage": "/street-wayki",
   "name": "street-wayki",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "start:local": "vite",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
