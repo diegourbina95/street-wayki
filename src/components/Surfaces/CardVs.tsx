@@ -1,5 +1,6 @@
 import { IconBoderTopCardVs } from "../DataDisplay/IconBoderTopCardVs";
 import { IconBoderBottomCardVs } from "../DataDisplay/IconBoderBottomCardVs";
+import { PlayerText } from "../Texts/PlayerText";
 
 import "../../styles/card-vs.scss";
 
@@ -41,7 +42,7 @@ export const CardVs: React.FC<CardVsProps> = ({
           left: "-3px",
         }}
       />
-      <div className="cardvs__player">{player}P</div>
+      <PlayerText player={player} />
       <div className="cardvs__avatar">
         <div className="cardvs__avatar-content">
           {politicalInformation && (
