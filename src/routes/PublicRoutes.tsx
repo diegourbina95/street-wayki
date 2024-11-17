@@ -14,11 +14,11 @@ const PublicRoutes = {
   element: <MainLayout />,
   children: [
     {
-      path: "/",
+      path: "/street-wayki/",
       element: <HomePage />,
     },
     {
-      path: "componentes",
+      path: "/street-wayki/componentes",
       element: <ComponentsPage />,
     },
   ],
