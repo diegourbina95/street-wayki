@@ -1,0 +1,83 @@
+.home-page {
+  &__hero {
+    margin: 40px 0 50px;
+  }
+
+  &__information {
+    font-family: "Roboto", sans-serif;
+    padding: 0 10px;
+  }
+
+  &__wayki-selector {
+    padding: 60px 0 40px;
+
+    .wayki-selector__title {
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__comparation-bars {
+    margin-top: 70px;
+    margin-bottom: 80px;
+
+    .comparation-bars__item {
+      span {
+        display: block;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+      }
+    }
+
+    .comparation-bars__item:first-child {
+      margin-bottom: 90px !important;
+    }
+  }
+
+  &__comparation-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  &__comparation-text {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 80px;
+  }
+
+  &__comparation-reset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+
+    span {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 0.6rem;
+    }
+  }
+}
+
+.content-450 {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.content-550 {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.content-650 {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.content-750 {
+  max-width: 750px;
+  margin: 0 auto;
+}

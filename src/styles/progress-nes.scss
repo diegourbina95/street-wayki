@@ -1,0 +1,42 @@
+.progress-nes {
+  position: relative;
+  &__content {
+    height: 37px;
+    display: flex;
+    align-items: center;
+    font-size: 0.5rem;
+  }
+
+  &__left {
+    background-color: #61f908;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    padding-left: 17px;
+    border-left: 4px solid #212121;
+  }
+
+  &__icon {
+    z-index: 10000;
+    position: relative;
+    img {
+      width: 78px;
+      position: absolute;
+      top: -44px;
+      left: -30px;
+    }
+  }
+
+  &__right {
+    background-color: #feaa00;
+    text-align: left;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    padding-right: 17px;
+    border-right: 4px solid #212121;
+  }
+}
