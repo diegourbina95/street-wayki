@@ -1,5 +1,4 @@
 {
-  "homepage": "https://diegourbina95.github.io/street-wayki/",
   "name": "street-wayki",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +7,7 @@
     "start:local": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "build": "tsc -b && vite build",
+    "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
