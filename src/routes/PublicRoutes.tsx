@@ -12,14 +12,13 @@ const ComponentsPage = Loadable(
 
 const PublicRoutes = {
   element: <MainLayout />,
-  path: "street-wayki",
   children: [
     {
-      path: "/",
+      path: "/street-wayki/",
       element: <HomePage />,
     },
     {
-      path: "componentes",
+      path: "/street-wayki/componentes",
       element: <ComponentsPage />,
     },
   ],
