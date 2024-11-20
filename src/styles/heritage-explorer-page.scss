@@ -1,0 +1,40 @@
+@use "main";
+
+.heritage-explorer-page {
+  &__title {
+    width: 400px;
+    margin: 60px auto;
+  }
+
+  &__wayki-selector {
+    .wayki-selector__title {
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__research {
+    background-color: #e4e4e4;
+    margin: 30px auto;
+    padding: 50px 60px;
+    display: flex;
+
+    .research-details {
+      margin-left: 50px;
+
+      &__title {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: -0.5px;
+      }
+
+      &__text {
+        font-family: "Roboto", sans-serif;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        line-height: 1.7;
+      }
+    }
+  }
+}

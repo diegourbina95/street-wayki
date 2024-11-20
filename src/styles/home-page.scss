@@ -1,3 +1,5 @@
+@use "main";
+
 .home-page {
   &__hero {
     margin: 40px 0 50px;
@@ -60,24 +62,4 @@
       font-size: 0.6rem;
     }
   }
-}
-
-.content-450 {
-  max-width: 450px;
-  margin: 0 auto;
-}
-
-.content-550 {
-  max-width: 550px;
-  margin: 0 auto;
-}
-
-.content-650 {
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-.content-750 {
-  max-width: 750px;
-  margin: 0 auto;
 }
