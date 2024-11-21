@@ -8,7 +8,7 @@ import { politicalPartiesData } from "../../../_mock/political-parties.data";
 
 import "../../../styles/heritage-explorer-page.scss";
 import { InformationCard } from "../../../components/Surfaces/InformationCard";
-import { informationCardData } from "../../../_mock/information-card.data";
+/* import { informationCardData } from "../../../_mock/information-card.data"; */
 
 const HeritageExplorerPage = () => {
   const [patrimonyData, setPatrimonyData] = useState<any>([]);
