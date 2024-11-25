@@ -10,39 +10,38 @@ import {
   Legend,
   LinearScale,
 } from "chart.js";
-import { darkenColor, lightenColor } from "../../utils/colors";
 
 Chart.register(BarController, LinearScale, Legend, CategoryScale, BarElement);
 
-export const Bar = () => {
+interface BarData {
+  labels: string[];
+  dataBar: number[];
+  backgroundColor: string[];
+  borderColor: string[];
+}
+
+export const Bar: React.FC<BarData> = ({
+  labels = [],
+  dataBar = [],
+  backgroundColor = [],
+  borderColor = [],
+}) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const chartRef = useRef<Chart | null>(null);
 
   useEffect(() => {
-    initChart();
+    initChart({ labels, dataBar, backgroundColor, borderColor });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [labels, dataBar, backgroundColor, borderColor]);
 
-  const initChart = () => {
+  const initChart = (payload: BarData) => {
     const data: ChartData<"bar"> = {
-      labels: ["G. Suarez", "E. Vargas", "H. Perez", "S. Paredes", "L. Torres"],
+      labels: payload.labels,
       datasets: [
         {
-          data: [2.53, 1.83, 1.45, 1.25, 0.98],
-          backgroundColor: [
-            lightenColor("#CF1C90", 0.1),
-            lightenColor("#FDBC18", 0.1),
-            lightenColor("#FEE500", 0.1),
-            lightenColor("#CF1C90", 0.1),
-            lightenColor("#61F908", 0.1),
-          ],
-          borderColor: [
-            darkenColor("#CF1C90"),
-            darkenColor("#FDBC18"),
-            darkenColor("#FEE500"),
-            darkenColor("#CF1C90"),
-            darkenColor("#61F908"),
-          ],
+          data: payload.dataBar,
+          backgroundColor: payload.backgroundColor,
+          borderColor: payload.borderColor,
           borderWidth: 3,
         },
       ],
