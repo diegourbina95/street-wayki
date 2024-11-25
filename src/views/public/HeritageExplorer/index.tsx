@@ -6,10 +6,19 @@ import { MoreOptions } from "../../../components/Layout/MoreOptions";
 import { WaykiSelectorSection } from "./components/WaykiSelectorSection";
 
 import "../../../styles/heritage-explorer-page.scss";
+import { useState } from "react";
+import { informationCardData } from "../../../_mock/information-card.data";
 
 const HeritageExplorerPage = () => {
+  const [waykiInformation, setWaykiInformation] = useState<any>();
+  const [backgroundAndResearch, setBackgroundAndResearch] = useState<any>();
+
   const handleSelect = (payload: any) => {
     console.log("payload: ", payload);
+    setWaykiInformation({ ...informationCardData, name: payload.person.name });
+    setBackgroundAndResearch(
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa incidunt culpa atque voluptas sapiente eum reprehenderit maiores officia commodi, laboriosam sit facilis. Blanditiis voluptatibus dolores ipsa commodi temporibus quod consequuntur. "
+    );
   };
 
   return (
@@ -23,7 +32,10 @@ const HeritageExplorerPage = () => {
         </div>
       </div>
       <div>
-        <ResearchSection />
+        <ResearchSection
+          waykiInformation={waykiInformation}
+          backgroundAndResearch={backgroundAndResearch}
+        />
       </div>
       <div className="content-550">
         <InformationSection />
