@@ -18,12 +18,14 @@ interface Official {
 interface WaykiSelectorProps {
   politicalPartiesData: PoliticalParties[];
   patrimonyData: any[];
+  nameCurrency: string;
   selectWayki?: (payload: any) => void;
 }
 
 export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
   politicalPartiesData = [],
   patrimonyData = [],
+  nameCurrency,
   selectWayki,
 }) => {
   const [politicalParties, setPoliticalParties] =
@@ -96,7 +98,7 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
       </div>
       <div className="wayki-selector__scatter-container">
         <div className="wayki-selector__scatter-title">
-          Patrimonio (dólares)
+          Patrimonio ({nameCurrency})
         </div>
 
         <div className="wayki-selector__scatter-chart">

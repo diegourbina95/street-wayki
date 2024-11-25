@@ -1,26 +1,14 @@
-import { useEffect, useState } from "react";
-
-import { WaykiSelector } from "../../../components/Custom/WaykiSelector";
 import { IconExploradorPatrimonial } from "../../../components/DataDisplay/IconExploradorPatrimonial";
 import { ResearchSection } from "./components/ResearchSection";
 import { InformationSection } from "./components/InformationSection";
 import { EquityIncreaseSection } from "./components/EquityIncreaseSection";
-
-import { generateData } from "../../../_mock/scatter-plot.data";
-import { politicalPartiesData } from "../../../_mock/political-parties.data";
+import { MoreOptions } from "../../../components/Layout/MoreOptions";
+import { WaykiSelectorSection } from "./components/WaykiSelectorSection";
 
 import "../../../styles/heritage-explorer-page.scss";
-import { MoreOptions } from "../../../components/Layout/MoreOptions";
 
 const HeritageExplorerPage = () => {
-  const [patrimonyData, setPatrimonyData] = useState<any>([]);
-
-  useEffect(() => {
-    const datasets = generateData();
-    setPatrimonyData(datasets);
-  }, []);
-
-  const selectWayki = (payload: any) => {
+  const handleSelect = (payload: any) => {
     console.log("payload: ", payload);
   };
 
@@ -30,13 +18,8 @@ const HeritageExplorerPage = () => {
         <IconExploradorPatrimonial style={{ height: "100%" }} />
       </div>
       <div className="heritage-explorer-page__wayki-selector">
-        <div className="wayki-selector__title">Seleccionar Wayki</div>
         <div className="content-750">
-          <WaykiSelector
-            politicalPartiesData={politicalPartiesData}
-            patrimonyData={patrimonyData}
-            selectWayki={selectWayki}
-          />
+          <WaykiSelectorSection select={handleSelect} />
         </div>
       </div>
       <div>

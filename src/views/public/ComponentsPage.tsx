@@ -14,6 +14,12 @@ import { generateData } from "../../_mock/scatter-plot.data";
 import { politicalPartiesData } from "../../_mock/political-parties.data";
 import { cardVsData } from "../../_mock/card-vs.data";
 import { informationCardData } from "../../_mock/information-card.data";
+import {
+  backgroundColor,
+  borderColor,
+  data,
+  labels,
+} from "../../_mock/equity-increase.data";
 
 const ComponentsPage = () => {
   const [isOverlay, setIsOverlay] = useState(false);
@@ -35,7 +41,12 @@ const ComponentsPage = () => {
       <div>
         <h4>Grafico de Barras</h4>
         <div style={{ width: "600px" }}>
-          <Bar />
+          <Bar
+            labels={labels}
+            dataBar={data}
+            backgroundColor={backgroundColor}
+            borderColor={borderColor}
+          />
         </div>
       </div>
       <br />
@@ -46,6 +57,7 @@ const ComponentsPage = () => {
           <WaykiSelector
             politicalPartiesData={politicalPartiesData}
             patrimonyData={datasets}
+            nameCurrency="dólares"
             selectWayki={(payload: any) =>
               console.log("selectWayki: ", payload)
             }

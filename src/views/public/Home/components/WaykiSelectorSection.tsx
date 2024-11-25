@@ -49,6 +49,7 @@ export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
         <WaykiSelector
           politicalPartiesData={politicalPartiesData}
           patrimonyData={patrimonyData}
+          nameCurrency="dólares"
           selectWayki={selectWayki}
         />
       </div>
