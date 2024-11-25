@@ -37,4 +37,32 @@
       }
     }
   }
+
+  &__information {
+    font-family: "Roboto", sans-serif;
+    margin-top: 80px;
+  }
+
+  &__equity-increase {
+    margin-top: 80px;
+
+    .equity-increase {
+      &__title {
+        text-transform: uppercase;
+        margin: 0 auto;
+        max-width: 450px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      &__subtitle {
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        font-size: 0.8rem;
+        margin-left: 70px;
+        margin-bottom: 10px;
+        display: block;
+      }
+    }
+  }
 }
