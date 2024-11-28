@@ -20,6 +20,7 @@ import {
   data,
   labels,
 } from "../../_mock/equity-increase.data";
+import { Line } from "../../components/Charts/Line";
 
 const ComponentsPage = () => {
   const [isOverlay, setIsOverlay] = useState(false);
@@ -38,6 +39,14 @@ const ComponentsPage = () => {
   return (
     <div style={{ margin: 10 }}>
       <h3>Componentes</h3>
+      <div>
+        <h4>Grafico de Líneas</h4>
+        <div style={{ width: "600px" }}>
+          <Line />
+        </div>
+      </div>
+      <br />
+      <br />
       <div>
         <h4>Grafico de Barras</h4>
         <div style={{ width: "600px" }}>
