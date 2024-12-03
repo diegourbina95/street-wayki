@@ -26,13 +26,13 @@ export const Line = () => {
       datasets: [
         {
           data: [65, 59, 80, 81, 56],
-          fill: false,
           tension: 0.1,
+          borderColor: "#61F908",
         },
         {
           data: [50, 49, 71, 79, 86],
-          fill: false,
           tension: 0.1,
+          borderColor: "#CF1C90",
         },
       ],
     };
@@ -47,6 +47,34 @@ export const Line = () => {
         const config: ChartConfiguration<"line"> = {
           type: "line",
           data,
+          options: {
+            responsive: true,
+            scales: {
+              x: {
+                grid: {
+                  drawOnChartArea: false,
+                  drawTicks: true,
+                },
+              },
+              y: {
+                ticks: {
+                  stepSize: 12,
+                  callback: function (value) {
+                    return `${value} M`;
+                  },
+                },
+              },
+            },
+            plugins: {
+              legend: {
+                display: false,
+              },
+
+              tooltip: {
+                enabled: false,
+              },
+            },
+          },
         };
 
         chartRef.current = new Chart(ctx, config);
