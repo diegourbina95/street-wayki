@@ -19,6 +19,8 @@ import {
   borderColor,
   data,
   labels,
+  labelsLine,
+  datasetsLine,
 } from "../../_mock/equity-increase.data";
 import { Line } from "../../components/Charts/Line";
 
@@ -42,7 +44,7 @@ const ComponentsPage = () => {
       <div>
         <h4>Grafico de Líneas</h4>
         <div style={{ width: "600px" }}>
-          <Line />
+          <Line labels={labelsLine} datasets={datasetsLine} />
         </div>
       </div>
       <br />

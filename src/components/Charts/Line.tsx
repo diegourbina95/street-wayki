@@ -3,38 +3,64 @@ import {
   Chart,
   ChartConfiguration,
   ChartData,
+  Color,
   Legend,
   LineController,
   LineElement,
+  Plugin,
 } from "chart.js";
 
 Chart.register(LineController, Legend, LineElement);
 
-export const Line = () => {
+interface LineData {
+  labels: number[];
+  datasets: Datasets[];
+}
+
+interface Datasets {
+  data: number[];
+  tension: number;
+  borderColor?: string;
+  label?: string;
+}
+
+export const Line: React.FC<LineData> = ({ labels = [], datasets = [] }) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const chartRef = useRef<Chart | null>(null);
 
-  useEffect(() => {
-    initChart();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const customTextPlugin: Plugin<"line"> = {
+    id: "customTextPlugin",
+    afterDatasetDraw(chart) {
+      const { ctx } = chart;
+      chart.data.datasets.forEach((dataset) => {
+        const lastIndex = dataset.data.length - 1;
+        const lastValue = dataset.data[lastIndex] as number;
+        const label = dataset.label || "";
 
-  const initChart = () => {
-    const labels = [2019, 2020, 2021, 2022, 2023];
+        if (!label) return;
+
+        const x = chart.scales.x.getPixelForValue(lastIndex);
+        const y = chart.scales.y.getPixelForValue(lastValue);
+
+        ctx.save();
+        ctx.font = "bold 12px Arial";
+        ctx.fillStyle = (dataset.borderColor as Color) || "black";
+        ctx.textAlign = "left";
+        ctx.fillText(label, x + 8, y);
+        ctx.restore();
+      });
+    },
+  };
+
+  useEffect(() => {
+    initChart({ labels, datasets });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [labels, datasets]);
+
+  const initChart = (payload: LineData) => {
     const data: ChartData<"line"> = {
-      labels: labels,
-      datasets: [
-        {
-          data: [65, 59, 80, 81, 56],
-          tension: 0.1,
-          borderColor: "#61F908",
-        },
-        {
-          data: [50, 49, 71, 79, 86],
-          tension: 0.1,
-          borderColor: "#CF1C90",
-        },
-      ],
+      labels: payload.labels,
+      datasets: payload.datasets,
     };
     if (canvasRef.current) {
       const ctx = canvasRef.current.getContext("2d");
@@ -49,6 +75,11 @@ export const Line = () => {
           data,
           options: {
             responsive: true,
+            layout: {
+              padding: {
+                right: 150,
+              },
+            },
             scales: {
               x: {
                 grid: {
@@ -75,6 +106,7 @@ export const Line = () => {
               },
             },
           },
+          plugins: [customTextPlugin],
         };
 
         chartRef.current = new Chart(ctx, config);

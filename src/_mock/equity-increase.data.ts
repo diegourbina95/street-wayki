@@ -25,3 +25,19 @@ export const borderColor = [
   darkenColor("#CF1C90"),
   darkenColor("#61F908"),
 ];
+
+export const labelsLine = [2019, 2020, 2021, 2022, 2023];
+export const datasetsLine = [
+  {
+    data: [65, 59, 80, 81, 56],
+    tension: 0.1,
+    borderColor: "#61F908",
+    label: "Sofía Sánchez",
+  },
+  {
+    data: [50, 49, 71, 79, 86],
+    tension: 0.1,
+    borderColor: "#CF1C90",
+    label: "Carlos Villanueva",
+  },
+];
