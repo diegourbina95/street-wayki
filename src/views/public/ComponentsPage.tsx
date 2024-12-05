@@ -9,6 +9,7 @@ import { WaykiSelector } from "../../components/Custom/WaykiSelector";
 import { Overlay } from "../../components/DataDisplay/Overlay";
 import { FightOverlay } from "../../components/Custom/FightOverlay";
 import { Bar } from "../../components/Charts/Bar";
+import { EquityIncreaseComparator } from "../../components/Custom/EquityIncreaseComparator";
 
 import { generateData } from "../../_mock/scatter-plot.data";
 import { politicalPartiesData } from "../../_mock/political-parties.data";
@@ -41,6 +42,14 @@ const ComponentsPage = () => {
   return (
     <div style={{ margin: 10 }}>
       <h3>Componentes</h3>
+      <div>
+        <h4>Comparador de Incrementos Patrimoniales</h4>
+        <div style={{ width: "600px" }}>
+          <EquityIncreaseComparator />
+        </div>
+      </div>
+      <br />
+      <br />
       <div>
         <h4>Grafico de Líneas</h4>
         <div style={{ width: "600px" }}>
