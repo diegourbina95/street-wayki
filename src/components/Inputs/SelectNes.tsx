@@ -3,6 +3,7 @@ import "../../styles/select-nes.scss";
 import { useEffect, useState } from "react";
 
 interface SelectNesProps {
+  label?: string;
   options: Record<string, any>[];
   valueKey?: string;
   labelKey?: string;
@@ -12,6 +13,7 @@ interface SelectNesProps {
 }
 
 export const SelectNes: React.FC<SelectNesProps> = ({
+  label,
   options,
   valueKey = "value",
   labelKey = "label",
@@ -26,7 +28,8 @@ export const SelectNes: React.FC<SelectNesProps> = ({
 
   const CustomDropdownIndicator = () => null;
   return (
-    <div>
+    <div className="select-nest">
+      {label && <span>{label}</span>}
       <Select
         classNames={{
           control: () => "border-nes",

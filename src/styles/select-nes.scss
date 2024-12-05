@@ -29,3 +29,12 @@
   pointer-events: none;
   content: "";
 }
+
+.select-nest {
+  span {
+    font-size: 0.7rem;
+    margin-left: 5px;
+    display: block;
+    margin-bottom: 12px;
+  }
+}

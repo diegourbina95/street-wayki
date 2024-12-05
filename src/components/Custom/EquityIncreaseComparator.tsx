@@ -1,4 +1,7 @@
 import { SelectNes } from "../Inputs/SelectNes";
+import { Line } from "../Charts/Line";
+
+import { labelsLine, datasetsLine } from "../../_mock/equity-increase.data";
 
 export const EquityIncreaseComparator = () => {
   const handleChange = (payload: any) => {
@@ -23,9 +26,24 @@ export const EquityIncreaseComparator = () => {
     },
   ];
   return (
-    <div>
-      <span>Filtra por partido:</span>
-      <SelectNes options={options} isMulti onChange={handleChange} />
+    <div className="equity-increase-comparator">
+      <div className="equity-increase-comparator__select-container">
+        <SelectNes
+          label="Selecciona hasta 10 funcionarios:"
+          options={options}
+          isMulti
+          onChange={handleChange}
+        />
+      </div>
+      <div className="equity-increase-comparator__select-container">
+        <div className="equity-increase-comparator__line-title">
+          Patrimonio (dólares)
+        </div>
+
+        <div className="equity-increase-comparator__line-chart">
+          <Line labels={labelsLine} datasets={datasetsLine} />
+        </div>
+      </div>
     </div>
   );
 };
