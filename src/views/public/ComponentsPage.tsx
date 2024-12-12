@@ -10,6 +10,7 @@ import { Overlay } from "../../components/DataDisplay/Overlay";
 import { FightOverlay } from "../../components/Custom/FightOverlay";
 import { Bar } from "../../components/Charts/Bar";
 import { EquityIncreaseComparator } from "../../components/Custom/EquityIncreaseComparator";
+import { Line } from "../../components/Charts/Line";
 
 import { generateData } from "../../_mock/scatter-plot.data";
 import { politicalPartiesData } from "../../_mock/political-parties.data";
@@ -23,7 +24,6 @@ import {
   labelsLine,
   datasetsLine,
 } from "../../_mock/equity-increase.data";
-import { Line } from "../../components/Charts/Line";
 
 const ComponentsPage = () => {
   const [isOverlay, setIsOverlay] = useState(false);
@@ -45,7 +45,10 @@ const ComponentsPage = () => {
       <div>
         <h4>Comparador de Incrementos Patrimoniales</h4>
         <div style={{ width: "600px" }}>
-          <EquityIncreaseComparator />
+          <EquityIncreaseComparator
+            years={labelsLine}
+            officials={datasetsLine}
+          />
         </div>
       </div>
       <br />

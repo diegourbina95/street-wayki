@@ -4,35 +4,46 @@ import { Line } from "../Charts/Line";
 import { labelsLine, datasetsLine } from "../../_mock/equity-increase.data";
 
 import "../../styles/equity-increase-comparator.scss";
+import { useEffect, useState } from "react";
 
-export const EquityIncreaseComparator = () => {
-  const handleChange = (payload: any) => {
-    console.log("payload: ", payload);
+interface EquityIncreaseComparatorProps {
+  officials: Datasets[];
+  years: number[];
+}
+
+interface Datasets {
+  data: number[];
+  tension: number;
+  borderColor: string;
+  personName: string;
+  personCode: number;
+  label: string;
+}
+
+export const EquityIncreaseComparator: React.FC<
+  EquityIncreaseComparatorProps
+> = (payload) => {
+  const [years, setYears] = useState<number[]>([]);
+  const [datasets, setDatasets] = useState<Datasets[]>([]);
+  const [officials, setOfficials] = useState<Datasets[]>([]);
+
+  useEffect(() => {
+    setYears(payload.years);
+    setOfficials(payload.officials);
+  }, [payload]);
+
+  const handleChange = (payload: Datasets[]) => {
+    setDatasets(payload);
   };
-  const options = [
-    {
-      value: 1,
-      label: "Sofía Sánchez",
-    },
-    {
-      value: 2,
-      label: "Carlos Villanueva",
-    },
-    {
-      value: 3,
-      label: "Daniela Flores",
-    },
-    {
-      value: 4,
-      label: "Pedro Álvarez",
-    },
-  ];
+
   return (
     <div className="equity-increase-comparator">
       <div className="equity-increase-comparator__select-container">
         <SelectNes
           label="Selecciona hasta 10 funcionarios:"
-          options={options}
+          options={officials}
+          labelKey="personName"
+          valueKey="personCode"
           isMulti
           onChange={handleChange}
         />
@@ -42,7 +53,7 @@ export const EquityIncreaseComparator = () => {
           Patrimonio (dólares)
         </div>
         <div className="equity-increase-comparator__line-chart">
-          <Line labels={labelsLine} datasets={datasetsLine} />
+          <Line labels={years} datasets={datasets} />
         </div>
       </div>
     </div>

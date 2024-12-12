@@ -89,7 +89,7 @@ export const Line: React.FC<LineData> = ({ labels = [], datasets = [] }) => {
               },
               y: {
                 ticks: {
-                  stepSize: 12,
+                  stepSize: datasets.length ? 50 : 1,
                   callback: function (value) {
                     return `${value} M`;
                   },
