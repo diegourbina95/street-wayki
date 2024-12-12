@@ -1,8 +1,9 @@
+import { useEffect, useState } from "react";
+
 import { SelectNes } from "../Inputs/SelectNes";
 import { Scatter } from "../Charts/Scatter";
 
 import "../../styles/wayki-selector.scss";
-import { useEffect, useState } from "react";
 
 interface PoliticalParties {
   politicalPartyCode: number;

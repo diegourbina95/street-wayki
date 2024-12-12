@@ -3,6 +3,8 @@ import { Line } from "../Charts/Line";
 
 import { labelsLine, datasetsLine } from "../../_mock/equity-increase.data";
 
+import "../../styles/equity-increase-comparator.scss";
+
 export const EquityIncreaseComparator = () => {
   const handleChange = (payload: any) => {
     console.log("payload: ", payload);
@@ -35,11 +37,10 @@ export const EquityIncreaseComparator = () => {
           onChange={handleChange}
         />
       </div>
-      <div className="equity-increase-comparator__select-container">
+      <div className="equity-increase-comparator__line-container">
         <div className="equity-increase-comparator__line-title">
           Patrimonio (dólares)
         </div>
-
         <div className="equity-increase-comparator__line-chart">
           <Line labels={labelsLine} datasets={datasetsLine} />
         </div>
