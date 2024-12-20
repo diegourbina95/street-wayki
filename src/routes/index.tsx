@@ -1,3 +1,4 @@
+/* REACT COMPONENTS */
 import { createBrowserRouter } from "react-router-dom";
 
 // routes

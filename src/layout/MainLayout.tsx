@@ -1,6 +1,6 @@
+/* REACT COMPONENTS */
 import { Outlet } from "react-router-dom";
-import { BlackHeader } from "../components/Layout/BlackHeader";
-import { DefaultFooter } from "../components/Layout/DefaultFooter";
+import { BlackHeader, DefaultFooter } from "@/components/Layout";
 
 export const MainLayout = () => {
   return (

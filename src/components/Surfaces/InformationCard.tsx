@@ -1,7 +1,13 @@
-import { IconBoderTopCardVs } from "../DataDisplay/IconBoderTopCardVs";
-import { IconBoderBottomCardVs } from "../DataDisplay/IconBoderBottomCardVs";
+/* REACT COMPONENTS */
+import {
+  IconBoderTopCardVs,
+  IconBoderBottomCardVs,
+} from "@/components/DataDisplay";
 
-import "../../styles/information-card.scss";
+/* LIBRARIES */
+
+/* STYLES */
+import "@/styles/information-card.scss";
 
 interface InformationCardProps {
   color?: string;

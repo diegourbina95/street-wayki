@@ -1,12 +1,15 @@
+/* REACT COMPONENTS */
 import { Suspense } from "react";
+
+/* LIBRARIES */
+
+/* STYLES */
 
 // ==============================|| LOADABLE - LAZY LOADING ||============================== //
 
-const Loadable = (Component: any) => (props: any) =>
+export const Loadable = (Component: any) => (props: any) =>
   (
     <Suspense>
       <Component {...props} />
     </Suspense>
   );
-
-export default Loadable;

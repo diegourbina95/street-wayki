@@ -1,13 +1,12 @@
+/* REACT COMPONENTS */
 import { useEffect, useState } from "react";
 
-import { Bar } from "../../../../components/Charts/Bar";
+import { Bar } from "@/components/Charts";
 
-import {
-  labels,
-  data,
-  backgroundColor,
-  borderColor,
-} from "../../../../_mock/equity-increase.data";
+/* DATA MOCK */
+import { labels, data, backgroundColor, borderColor } from "@/_mock";
+
+/* STYLES */
 
 interface EquityIncreaseSectionProps {
   initialYear: number;

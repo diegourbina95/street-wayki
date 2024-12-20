@@ -1,6 +1,11 @@
-import Select from "react-select";
-import "../../styles/select-nes.scss";
+/* REACT COMPONENTS */
 import { useEffect, useState } from "react";
+
+/* LIBRARIES */
+import Select from "react-select";
+
+/* STYLES */
+import "@/styles/select-nes.scss";
 
 interface SelectNesProps {
   label?: string;

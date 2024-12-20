@@ -1,9 +1,16 @@
+/* REACT COMPONENTS */
 import { useEffect, useState } from "react";
-import { IconProgressBarTop } from "../DataDisplay/IconProgressBarTop";
-import { IconProgressBarBottom } from "../DataDisplay/IconProgressBarBottom";
 
-import "../../styles/progress-nes.scss";
-import { formatAmount } from "../../utils/amounts";
+import {
+  IconProgressBarTop,
+  IconProgressBarBottom,
+} from "@/components/DataDisplay";
+import { formatAmount } from "@/utils/amounts";
+
+/* LIBRARIES */
+
+/* STYLES */
+import "@/styles/progress-nes.scss";
 
 interface ProgressNesProps {
   quantity1: number;

@@ -1,5 +1,11 @@
+/* REACT COMPONENTS */
 import React from "react";
-import { lightenColor } from "../../utils/colors";
+
+import { lightenColor } from "@/utils/colors";
+
+/* LIBRARIES */
+
+/* STYLES */
 
 interface IconProps {
   color?: string;

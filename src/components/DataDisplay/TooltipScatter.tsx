@@ -1,4 +1,9 @@
-import "../../styles/tooltip-scatter.scss";
+/* REACT COMPONENTS */
+
+/* LIBRARIES */
+
+/* STYLES */
+import "@/styles/tooltip-scatter.scss";
 
 interface TooltipProps {
   visible: boolean;

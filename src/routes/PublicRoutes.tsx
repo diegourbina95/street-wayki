@@ -1,15 +1,16 @@
+/* REACT COMPONENTS */
 import { lazy } from "react";
 
-import { MainLayout } from "../layout/MainLayout.tsx";
-import Loadable from "../components/Feedback/Loadable.tsx";
+import { MainLayout } from "@/layout/MainLayout.tsx";
+import { Loadable } from "@/components/Feedback";
 
-const HomePage = Loadable(lazy(() => import("../views/public/Home/index")));
+const HomePage = Loadable(lazy(() => import("@/views/public/Home/index")));
 
 const HeritageExplorerPage = Loadable(
-  lazy(() => import("../views/public/HeritageExplorer/index"))
+  lazy(() => import("@/views/public/HeritageExplorer/index"))
 );
 const ComponentsPage = Loadable(
-  lazy(() => import("../views/public/ComponentsPage"))
+  lazy(() => import("@/views/public/ComponentsPage"))
 );
 
 // ==============================|| MAIN ROUTING ||============================== //

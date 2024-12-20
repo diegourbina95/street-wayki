@@ -1,8 +1,10 @@
-import { CardVs } from "../Surfaces/CardVs";
-import { IconWaykiVs } from "../DataDisplay/IconVs";
-import { ButtonNes } from "../Inputs/ButtonNes";
+/* REACT COMPONENTS */
+import { CardVs } from "@/components/Surfaces";
+import { IconWaykiVs } from "@/components/DataDisplay";
+import { ButtonNes } from "@/components/Inputs";
 
-import "../../styles/wayki-vs.scss";
+/* STYLES */
+import "@/styles/wayki-vs.scss";
 
 interface WaykiVsProps {
   player1Data: any | null;

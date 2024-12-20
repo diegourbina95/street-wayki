@@ -1,9 +1,12 @@
+/* REACT COMPONENTS */
 import { useEffect, useState } from "react";
 
-import { WaykiSelector } from "../../../../components/Custom/WaykiSelector";
+import { WaykiSelector } from "@/components/Custom";
 
-import { politicalPartiesData } from "../../../../_mock/political-parties.data";
-import { generateData } from "../../../../_mock/scatter-plot.data";
+/* DATA MOCK */
+import { politicalPartiesData, generateData } from "@/_mock";
+
+/* STYLES */
 
 interface WaykiSelectorSectionProps {
   select: (payload: any) => void;

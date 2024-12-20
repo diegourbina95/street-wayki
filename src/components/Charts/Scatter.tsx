@@ -1,4 +1,9 @@
+/* REACT COMPONENTS */
 import { useEffect, useRef, useState } from "react";
+
+import { TooltipScatter } from "@/components/DataDisplay";
+
+/* LIBRARIES */
 import {
   Chart,
   ScatterController,
@@ -9,7 +14,8 @@ import {
   ChartData,
   ChartConfiguration,
 } from "chart.js";
-import { TooltipScatter } from "../DataDisplay/TooltipScatter";
+
+/* STYLES */
 
 interface ScatterProps {
   datasets: ScatterData[];

@@ -1,4 +1,7 @@
-import { InformationCard } from "../../../../components/Surfaces/InformationCard";
+/* REACT COMPONENTS */
+import { InformationCard } from "@/components/Surfaces";
+
+/* STYLES */
 
 interface WaykiInformation {
   name: string;

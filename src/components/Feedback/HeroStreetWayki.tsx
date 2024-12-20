@@ -1,6 +1,10 @@
-import { IconStreetWayki } from "../DataDisplay/IconStreetWayki";
+/* REACT COMPONENTS */
 
-import "../../styles/hero-street-wayki.scss";
+/* LIBRARIES */
+import { IconStreetWayki } from "@/components/DataDisplay";
+
+/* STYLES */
+import "@/styles/hero-street-wayki.scss";
 
 interface HeroStreetWaykiProps {
   subtitle: string;

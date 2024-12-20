@@ -1,8 +1,14 @@
-import { IconBoderTopCardVs } from "../DataDisplay/IconBoderTopCardVs";
-import { IconBoderBottomCardVs } from "../DataDisplay/IconBoderBottomCardVs";
-import { PlayerText } from "../Texts/PlayerText";
+/* REACT COMPONENTS */
+import {
+  IconBoderTopCardVs,
+  IconBoderBottomCardVs,
+} from "@/components/DataDisplay";
+import { PlayerText } from "@/components/Texts";
 
-import "../../styles/card-vs.scss";
+/* LIBRARIES */
+
+/* STYLES */
+import "@/styles/card-vs.scss";
 
 interface CardVsProps {
   color?: string;

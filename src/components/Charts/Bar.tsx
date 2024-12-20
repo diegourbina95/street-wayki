@@ -1,5 +1,7 @@
+/* REACT COMPONENTS */
 import { useEffect, useRef } from "react";
 
+/* LIBRARIES */
 import {
   BarController,
   BarElement,
@@ -10,6 +12,8 @@ import {
   Legend,
   LinearScale,
 } from "chart.js";
+
+/* STYLES */
 
 Chart.register(BarController, LinearScale, Legend, CategoryScale, BarElement);
 

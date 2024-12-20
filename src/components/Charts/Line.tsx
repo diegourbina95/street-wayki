@@ -1,4 +1,7 @@
+/* REACT COMPONENTS */
 import { useEffect, useRef } from "react";
+
+/* LIBRARIES */
 import {
   Chart,
   ChartConfiguration,
@@ -9,6 +12,8 @@ import {
   LineElement,
   Plugin,
 } from "chart.js";
+
+/* STYLES */
 
 Chart.register(LineController, Legend, LineElement);
 

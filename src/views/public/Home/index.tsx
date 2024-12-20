@@ -1,14 +1,18 @@
+/* REACT COMPONENTS */
 import { useState } from "react";
-import { HeroStreetWayki } from "../../../components/Feedback/HeroStreetWayki";
-import { MoreOptions } from "../../../components/Layout/MoreOptions";
-import { FightOverlay } from "../../../components/Custom/FightOverlay";
+
+import { HeroStreetWayki } from "@/components/Feedback";
+import { MoreOptions } from "@/components/Layout";
+import { FightOverlay } from "@/components/Custom";
+
 import { InformationSection } from "./components/InformationSection";
 import { WaykiSelectorSection } from "./components/WaykiSelectorSection";
 import { ComparationSection } from "./components/ComparationSection";
 
-import congresoImage from "../../../assets/images/congreso.png";
+import congresoImage from "@/assets/images/congreso.png";
 
-import "../../../styles/home-page.scss";
+/* STYLES */
+import "@/styles/home-page.scss";
 
 const HomePage = () => {
   const [isPlay, setIsPlay] = useState<boolean>(false);

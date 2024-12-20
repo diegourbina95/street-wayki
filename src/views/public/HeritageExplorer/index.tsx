@@ -1,13 +1,19 @@
-import { IconExploradorPatrimonial } from "../../../components/DataDisplay/IconExploradorPatrimonial";
+/* REACT COMPONENTS */
+import { useState } from "react";
+
+import { IconExploradorPatrimonial } from "@/components/DataDisplay";
+import { MoreOptions } from "@/components/Layout";
+
 import { ResearchSection } from "./components/ResearchSection";
 import { InformationSection } from "./components/InformationSection";
 import { EquityIncreaseSection } from "./components/EquityIncreaseSection";
-import { MoreOptions } from "../../../components/Layout/MoreOptions";
 import { WaykiSelectorSection } from "./components/WaykiSelectorSection";
 
-import "../../../styles/heritage-explorer-page.scss";
-import { useState } from "react";
-import { informationCardData } from "../../../_mock/information-card.data";
+/* DATA MOCK */
+import { informationCardData } from "@/_mock";
+
+/* STYLES */
+import "@/styles/heritage-explorer-page.scss";
 
 const HeritageExplorerPage = () => {
   const [waykiInformation, setWaykiInformation] = useState<any>();

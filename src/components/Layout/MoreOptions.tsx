@@ -1,7 +1,11 @@
-import { ButtonNes } from "../Inputs/ButtonNes";
-
-import "../../styles/more-options.scss";
+/* REACT COMPONENTS */
 import { Link } from "react-router-dom";
+import { ButtonNes } from "@/components/Inputs";
+
+/* LIBRARIES */
+
+/* STYLES */
+import "@/styles/more-options.scss";
 
 export const MoreOptions = () => {
   return (

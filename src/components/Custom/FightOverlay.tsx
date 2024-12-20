@@ -1,14 +1,16 @@
+/* REACT COMPONENTS */
 import { useCallback, useEffect, useState, memo } from "react";
 
+import { Overlay, IconFight } from "@/components/DataDisplay";
+
+import fireImage from "@/assets/images/fire.gif";
+import fightSound from "@/assets/sounds/fight.mp3";
+
+/* LIBRARIES */
 import useSound from "use-sound";
 
-import { Overlay } from "../DataDisplay/Overlay";
-import { IconFight } from "../DataDisplay/IconFight";
-
-import fireImage from "../../assets/images/fire.gif";
-import fightSound from "../../assets/sounds/fight.mp3";
-
-import "../../styles/fight-overlay.scss";
+/* STYLES */
+import "@/styles/fight-overlay.scss";
 
 interface FightOverlayProps {
   show: boolean;

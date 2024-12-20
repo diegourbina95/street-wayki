@@ -1,4 +1,9 @@
-import "../../styles/palyer-text.scss";
+/* REACT COMPONENTS */
+
+/* LIBRARIES */
+
+/* STYLES */
+import "@/styles/palyer-text.scss";
 
 interface PlayerTextProps {
   player: number;

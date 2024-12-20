@@ -1,9 +1,13 @@
-import { ProgressNes } from "../../../../components/Feedback/ProgressNes";
-import { InformationCard } from "../../../../components/Surfaces/InformationCard";
-import { PlayerText } from "../../../../components/Texts/PlayerText";
-import { ButtonNes } from "../../../../components/Inputs/ButtonNes";
+/* REACT COMPONENTS */
+import { ProgressNes } from "@/components/Feedback";
+import { InformationCard } from "@/components/Surfaces";
+import { PlayerText } from "@/components/Texts";
+import { ButtonNes } from "@/components/Inputs";
 
-import { informationCardData } from "../../../../_mock/information-card.data";
+/* DATA MOCK */
+import { informationCardData } from "@/_mock";
+
+/* STYLES */
 
 interface ComparationSectionProps {
   reset: () => void;

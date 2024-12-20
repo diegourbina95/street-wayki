@@ -1,6 +1,10 @@
+/* REACT COMPONENTS */
 import React, { useEffect, useState } from "react";
 
-import "../../styles/overlay.scss";
+/* LIBRARIES */
+
+/* STYLES */
+import "@/styles/overlay.scss";
 
 interface OverlayProps {
   show: boolean;

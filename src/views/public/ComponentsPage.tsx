@@ -1,29 +1,30 @@
+/* REACT COMPONENTS */
 import { useState } from "react";
 
-import { ButtonNes } from "../../components/Inputs/ButtonNes";
-import { SelectNes } from "../../components/Inputs/SelectNes";
-import { CardVs } from "../../components/Surfaces/CardVs";
-import { InformationCard } from "../../components/Surfaces/InformationCard";
-import { ProgressNes } from "../../components/Feedback/ProgressNes";
-import { WaykiSelector } from "../../components/Custom/WaykiSelector";
-import { Overlay } from "../../components/DataDisplay/Overlay";
-import { FightOverlay } from "../../components/Custom/FightOverlay";
-import { Bar } from "../../components/Charts/Bar";
-import { EquityIncreaseComparator } from "../../components/Custom/EquityIncreaseComparator";
-import { Line } from "../../components/Charts/Line";
-
-import { generateData } from "../../_mock/scatter-plot.data";
-import { politicalPartiesData } from "../../_mock/political-parties.data";
-import { cardVsData } from "../../_mock/card-vs.data";
-import { informationCardData } from "../../_mock/information-card.data";
+import { ButtonNes, SelectNes } from "@/components/Inputs";
+import { CardVs, InformationCard } from "@/components/Surfaces";
+import { ProgressNes } from "@/components/Feedback";
 import {
+  WaykiSelector,
+  FightOverlay,
+  EquityIncreaseComparator,
+} from "@/components/Custom";
+import { Overlay } from "@/components/DataDisplay";
+import { Bar, Line } from "@/components/Charts";
+
+/* DATA MOCK */
+import {
+  generateData,
+  politicalPartiesData,
+  cardVsData,
+  informationCardData,
   backgroundColor,
   borderColor,
   data,
   labels,
   labelsLine,
   datasetsLine,
-} from "../../_mock/equity-increase.data";
+} from "@/_mock";
 
 const ComponentsPage = () => {
   const [isOverlay, setIsOverlay] = useState(false);

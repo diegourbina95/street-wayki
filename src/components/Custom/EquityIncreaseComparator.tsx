@@ -1,8 +1,13 @@
-import { SelectNes } from "../Inputs/SelectNes";
-import { Line } from "../Charts/Line";
-
-import "../../styles/equity-increase-comparator.scss";
+/* REACT COMPONENTS */
 import { useEffect, useState } from "react";
+
+import { SelectNes } from "@/components/Inputs";
+import { Line } from "@/components/Charts";
+
+/* LIBRARIES */
+
+/* STYLES */
+import "@/styles/equity-increase-comparator.scss";
 
 interface EquityIncreaseComparatorProps {
   officials: Datasets[];

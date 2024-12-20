@@ -1,9 +1,13 @@
+/* REACT COMPONENTS */
 import { useEffect, useState } from "react";
 
-import { SelectNes } from "../Inputs/SelectNes";
-import { Scatter } from "../Charts/Scatter";
+import { SelectNes } from "@/components/Inputs";
+import { Scatter } from "@/components/Charts";
 
-import "../../styles/wayki-selector.scss";
+/* LIBRARIES */
+
+/* STYLES */
+import "@/styles/wayki-selector.scss";
 
 interface PoliticalParties {
   politicalPartyCode: number;
