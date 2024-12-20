@@ -1,8 +1,6 @@
 import { SelectNes } from "../Inputs/SelectNes";
 import { Line } from "../Charts/Line";
 
-import { labelsLine, datasetsLine } from "../../_mock/equity-increase.data";
-
 import "../../styles/equity-increase-comparator.scss";
 import { useEffect, useState } from "react";
 
