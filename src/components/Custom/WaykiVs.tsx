@@ -2,6 +2,7 @@
 import { CardVs } from "@/components/Surfaces";
 import { IconWaykiVs } from "@/components/DataDisplay";
 import { ButtonNes } from "@/components/Inputs";
+import { useMediaQuery } from "@/hooks";
 
 /* STYLES */
 import "@/styles/wayki-vs.scss";
@@ -17,6 +18,7 @@ export const WaykiVs: React.FC<WaykiVsProps> = ({
   player2Data,
   play,
 }) => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
   const handleClick = () => play([player1Data, player2Data]);
   return (
     <div className="wayki-vs">
@@ -26,6 +28,7 @@ export const WaykiVs: React.FC<WaykiVsProps> = ({
             color="#FEAA00"
             player={1}
             politicalInformation={player1Data}
+            row={isMobile}
           />
         </div>
         <div className="wayki-vs__icon">
@@ -36,6 +39,7 @@ export const WaykiVs: React.FC<WaykiVsProps> = ({
             color="#61F908"
             player={2}
             politicalInformation={player2Data}
+            row={isMobile}
           />
         </div>
       </div>
