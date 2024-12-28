@@ -7,8 +7,11 @@ import "@/styles/palyer-text.scss";
 
 interface PlayerTextProps {
   player: number;
+  fontSize?: string;
 }
 
-export const PlayerText: React.FC<PlayerTextProps> = ({ player }) => (
-  <div className="player-text">{player}P</div>
+export const PlayerText: React.FC<PlayerTextProps> = ({ player, fontSize }) => (
+  <div className="player-text" style={{ fontSize }}>
+    {player}P
+  </div>
 );

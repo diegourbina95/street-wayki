@@ -56,7 +56,7 @@ export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
         />
       </div>
 
-      <div style={{ margin: "40px 0" }}>
+      <div style={{ margin: "69px 0 84px" }}>
         <WaykiVs
           player1Data={players[0]}
           player2Data={players[1]}

@@ -90,6 +90,7 @@ export const Scatter: React.FC<ScatterProps> = ({ datasets, selectPoint }) => {
           type: "scatter",
           data,
           options: {
+            responsive: true,
             scales: {
               x: {
                 type: "linear",

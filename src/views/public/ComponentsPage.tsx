@@ -128,6 +128,28 @@ const ComponentsPage = () => {
         <br />
         <div
           style={{
+            width: "1200px",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <CardVs
+            color="#FEAA00"
+            player={1}
+            politicalInformation={cardVsData}
+            row
+          />
+          <CardVs
+            color="#61F908"
+            player={2}
+            politicalInformation={cardVsData}
+            row
+          />
+          <CardVs player={1} politicalInformation={null} row />
+        </div>
+        <br />
+        <div
+          style={{
             width: "800px",
             display: "flex",
             justifyContent: "space-between",

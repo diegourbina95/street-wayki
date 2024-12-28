@@ -1,13 +1,17 @@
 .wayki-selector {
   &__select-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*  justify-content: space-between;
     align-items: center;
     max-width: 550px;
-    margin: 0 auto;
+    margin: 0 auto; */
   }
+
   &__select:first-child {
-    margin-left: -7px;
+    margin-bottom: 26px;
   }
 
   &__select {
@@ -21,10 +25,29 @@
   }
 
   &__scatter-container {
-    margin-top: 50px;
+    margin-top: 38px;
+    padding: 0 15px;
   }
 
   &__scatter-title {
     font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .wayki-selector {
+    &__select-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 550px;
+      margin: 0 auto;
+    }
+
+    &__select:first-child {
+      margin-bottom: 0px;
+      margin-left: -7px;
+    }
   }
 }

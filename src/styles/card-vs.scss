@@ -1,11 +1,9 @@
 .cardvs {
   &__container {
-    display: inline-block;
     border: solid #212121 3px;
     border-radius: 10px;
     min-height: 264px;
     position: relative;
-    padding: 25px 5px 10px;
   }
   &__avatar {
     display: flex;
@@ -21,8 +19,8 @@
     }
   }
   &__name {
-    margin: 15px auto;
-    width: 90px;
+    /*     margin: 15px auto;
+    width: 90px; */
     font-size: 0.5rem;
     text-align: center;
   }

@@ -29,7 +29,7 @@ export const WaykiVs: React.FC<WaykiVsProps> = ({
           />
         </div>
         <div className="wayki-vs__icon">
-          <IconWaykiVs style={{ width: "100px" }} />
+          <IconWaykiVs />
         </div>
         <div className="wayki-vs__player-2">
           <CardVs
