@@ -19,6 +19,7 @@ import {
 
 interface ScatterProps {
   datasets: ScatterData[];
+  orientation?: "x" | "y";
   selectPoint?: (payload: any) => void;
 }
 
@@ -42,7 +43,11 @@ interface ScatterData {
 
 Chart.register(ScatterController, LinearScale, PointElement, Tooltip, Legend);
 
-export const Scatter: React.FC<ScatterProps> = ({ datasets, selectPoint }) => {
+export const Scatter: React.FC<ScatterProps> = ({
+  datasets,
+  orientation = "x",
+  selectPoint,
+}) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const chartRef = useRef<Chart | null>(null);
 
@@ -91,14 +96,24 @@ export const Scatter: React.FC<ScatterProps> = ({ datasets, selectPoint }) => {
           data,
           options: {
             responsive: true,
+            maintainAspectRatio: false,
             scales: {
-              x: {
-                type: "linear",
-                position: "top",
-              },
-              y: {
-                display: false,
-              },
+              x:
+                orientation === "x"
+                  ? {
+                      type: "linear",
+                      position: "top",
+                    }
+                  : {
+                      display: false,
+                    },
+              y:
+                orientation === "y"
+                  ? {
+                      type: "linear",
+                      position: "left",
+                    }
+                  : { display: false },
             },
             plugins: {
               legend: {
@@ -171,8 +186,12 @@ export const Scatter: React.FC<ScatterProps> = ({ datasets, selectPoint }) => {
 
   return (
     <>
-      <div style={{ position: "relative" }}>
-        <canvas ref={canvasRef} onClick={handlePointClick}></canvas>
+      <div style={{ position: "relative", height: "100%", width: "100%" }}>
+        <canvas
+          ref={canvasRef}
+          onClick={handlePointClick}
+          style={{ maxWidth: "100%", maxHeight: "100%" }}
+        ></canvas>
         <TooltipScatter
           visible={tooltip.visible}
           x={tooltip.x}

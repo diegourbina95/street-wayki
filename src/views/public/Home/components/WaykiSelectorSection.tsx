@@ -5,6 +5,7 @@ import { WaykiSelector, WaykiVs } from "@/components/Custom";
 
 /* DATA MOCK */
 import { generateData, politicalPartiesData } from "@/_mock";
+import { useMediaQuery } from "@/hooks";
 
 /* STYLES */
 
@@ -15,6 +16,8 @@ interface WaykiSelectorSectionProps {
 export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
   play,
 }) => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   const [patrimonyData, setPatrimonyData] = useState<any>([]);
   const [players, setPlayers] = useState<any>([]);
   const [countPlayer, setCountPlayer] = useState<number>(0);
@@ -46,12 +49,13 @@ export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
   };
   return (
     <div className="home-page__wayki-selector">
-      <div className="wayki-selector__title">Seleccionar Wayki</div>
       <div>
         <WaykiSelector
           politicalPartiesData={politicalPartiesData}
           patrimonyData={patrimonyData}
           nameCurrency="dólares"
+          stickyFilter={isMobile}
+          orientation={isMobile ? "y" : "x"}
           selectWayki={selectWayki}
         />
       </div>

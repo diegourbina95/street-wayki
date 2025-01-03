@@ -4,10 +4,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*  justify-content: space-between;
-    align-items: center;
-    max-width: 550px;
-    margin: 0 auto; */
+  }
+
+  &__filters {
+    padding: 22px 0 28px;
+    background-color: white;
+    transition: position 0.3s ease, top 0.3s ease;
+  }
+
+  &__filters--sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 27px;
   }
 
   &__select:first-child {
@@ -15,7 +31,7 @@
   }
 
   &__select {
-    width: 240px;
+    width: 300px;
     span {
       font-size: 0.7rem;
       margin-left: 5px;
@@ -25,12 +41,16 @@
   }
 
   &__scatter-container {
-    margin-top: 38px;
+    margin-top: 10px;
     padding: 0 15px;
   }
 
   &__scatter-title {
     font-size: 0.7rem;
+  }
+
+  &__scatter-chart {
+    height: 390px;
   }
 }
 
