@@ -24,7 +24,7 @@ interface WaykiSelectorProps {
   politicalPartiesData: PoliticalParties[];
   patrimonyData: any[];
   nameCurrency: string;
-  orientation: "x" | "y";
+  orientation?: "x" | "y";
   stickyFilter?: boolean;
   selectWayki?: (payload: any) => void;
 }
