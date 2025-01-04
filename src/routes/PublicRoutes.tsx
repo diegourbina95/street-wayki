@@ -19,12 +19,9 @@ const ComponentsPage = Loadable(
 export const PublicRoutes = () => (
   <Routes>
     <Route element={<MainLayout />}>
-      <Route path="/street-wayki/" element={<HomePage />} />
-      <Route
-        path="/street-wayki/explorador-patrimonial"
-        element={<HeritageExplorerPage />}
-      />
-      <Route path="/street-wayki/componentes" element={<ComponentsPage />} />
+      <Route path="/" element={<HomePage />} />
+      <Route path="explorador-patrimonial" element={<HeritageExplorerPage />} />
+      <Route path="componentes" element={<ComponentsPage />} />
     </Route>
   </Routes>
 );
