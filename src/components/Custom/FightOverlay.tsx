@@ -1,9 +1,10 @@
 /* REACT COMPONENTS */
-import { useCallback, useEffect, useState, memo } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { useMediaQuery } from "@/hooks";
+import { Overlay } from "@/components/DataDisplay";
 
-import { Overlay, IconFight } from "@/components/DataDisplay";
-
-import fireImage from "@/assets/images/fire.gif";
+import fightMobile from "@/assets/images/fight-mobile.png";
+import fightDesktop from "@/assets/images/fight-desktop.png";
 import fightSound from "@/assets/sounds/fight.mp3";
 
 /* LIBRARIES */
@@ -19,60 +20,24 @@ interface FightOverlayProps {
   onClick?: (payload: boolean) => void;
 }
 
-// Componente de imagen de fuego, memoizado para evitar renders innecesarios
-const FireImage = memo(({ style }: { style?: React.CSSProperties }) => (
-  <div style={style}>
-    <img
-      src={fireImage}
-      style={{
-        position: "relative",
-        right: "-130px",
-        bottom: "-30px",
-        transform: "rotate(-15deg)",
-      }}
-      width="200"
-      alt="fire"
-    />
-    <img
-      src={fireImage}
-      style={{ position: "relative", bottom: "-30px" }}
-      width="200"
-      alt="fire"
-    />
-    <img
-      src={fireImage}
-      style={{
-        position: "relative",
-        left: "-130px",
-        bottom: "-30px",
-        transform: "rotate(15deg)",
-      }}
-      width="200"
-      alt="fire"
-    />
-  </div>
-));
-
 export const FightOverlay: React.FC<FightOverlayProps> = ({
   show,
   time = 1700,
   sound = false,
   onClick,
 }) => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   const [isFightOverlay, setIsFightOverlay] = useState<boolean>(false);
-  const [isFireImage, setIsFireImage] = useState<boolean>(false);
   const [playSound] = useSound(fightSound);
 
   const lifeTime = useCallback(() => {
-    const fireImageTimer = setTimeout(() => setIsFireImage(true), time - 1200);
     const overlayTimer = setTimeout(() => {
       setIsFightOverlay(false);
-      setIsFireImage(false);
       if (onClick) onClick(false);
     }, time);
 
     return () => {
-      clearTimeout(fireImageTimer);
       clearTimeout(overlayTimer);
     };
   }, [time, onClick]);
@@ -88,12 +53,19 @@ export const FightOverlay: React.FC<FightOverlayProps> = ({
   return (
     <Overlay show={isFightOverlay} persistent>
       <div className="fight-overlay">
-        <FireImage style={{ display: "flex" }} />
-        <IconFight
-          className={`icon-fight ${isFireImage ? "icon-fight--visible" : ""}`}
-          style={{ width: "210px", position: "absolute", zIndex: 10 }}
-        />
-        <FireImage style={{ display: "flex", transform: "rotate(-180deg)" }} />
+        {isMobile ? (
+          <img
+            src={fightMobile}
+            alt="fight"
+            style={{ width: "320px", margin: "0 auto" }}
+          />
+        ) : (
+          <img
+            src={fightDesktop}
+            alt="fight"
+            style={{ width: "600px", margin: "0 auto" }}
+          />
+        )}
       </div>
     </Overlay>
   );
