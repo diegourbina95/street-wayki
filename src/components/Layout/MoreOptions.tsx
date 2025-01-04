@@ -1,5 +1,5 @@
 /* REACT COMPONENTS */
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { ButtonNes } from "@/components/Inputs";
 
 /* LIBRARIES */

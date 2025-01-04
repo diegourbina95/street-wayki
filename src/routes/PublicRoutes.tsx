@@ -3,6 +3,7 @@ import { lazy } from "react";
 
 import { MainLayout } from "@/layout/MainLayout.tsx";
 import { Loadable } from "@/components/Feedback";
+import { Routes, Route } from "react-router";
 
 const HomePage = Loadable(lazy(() => import("@/views/public/Home/index")));
 
@@ -15,22 +16,15 @@ const ComponentsPage = Loadable(
 
 // ==============================|| MAIN ROUTING ||============================== //
 
-const PublicRoutes = {
-  element: <MainLayout />,
-  children: [
-    {
-      path: "/street-wayki/",
-      element: <HomePage />,
-    },
-    {
-      path: "/street-wayki/explorador-patrimonial",
-      element: <HeritageExplorerPage />,
-    },
-    {
-      path: "/street-wayki/componentes",
-      element: <ComponentsPage />,
-    },
-  ],
-};
-
-export default PublicRoutes;
+export const PublicRoutes = () => (
+  <Routes>
+    <Route element={<MainLayout />}>
+      <Route path="/street-wayki/" element={<HomePage />} />
+      <Route
+        path="/street-wayki/explorador-patrimonial"
+        element={<HeritageExplorerPage />}
+      />
+      <Route path="/street-wayki/componentes" element={<ComponentsPage />} />
+    </Route>
+  </Routes>
+);
