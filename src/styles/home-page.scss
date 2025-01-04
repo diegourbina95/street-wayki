@@ -18,6 +18,7 @@
   &__comparation-bars {
     margin-top: 70px;
     margin-bottom: 80px;
+    padding: 0 35px;
 
     .comparation-bars__item {
       span {
@@ -28,7 +29,7 @@
     }
 
     .comparation-bars__item:first-child {
-      margin-bottom: 90px !important;
+      margin-bottom: 42px !important;
     }
   }
 
@@ -55,6 +56,18 @@
       display: block;
       margin-bottom: 20px;
       font-size: 0.6rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .home-page {
+    &__comparation-bars {
+      padding: 0;
+
+      .comparation-bars__item:first-child {
+        margin-bottom: 90px !important;
+      }
     }
   }
 }

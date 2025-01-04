@@ -33,8 +33,9 @@ export const ProgressNes: React.FC<ProgressNesProps> = ({
       <IconProgressBarTop
         style={{
           position: "absolute",
-          top: "-5px",
+          top: "-4px",
           zIndex: 1,
+          margin: "0 2.5px",
         }}
       />
       <div className="progress-nes__content">
@@ -59,6 +60,7 @@ export const ProgressNes: React.FC<ProgressNesProps> = ({
           position: "absolute",
           bottom: "-4px",
           zIndex: 1,
+          margin: "0 2.5px",
         }}
       />
     </div>

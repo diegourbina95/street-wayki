@@ -20,7 +20,7 @@ export const ComparationSection: React.FC<ComparationSectionProps> = ({
       <div className="home-page__comparation-bars">
         <div className="comparation-bars__item">
           <span>Patrimonio</span>
-          <ProgressNes currency="$" quantity1={1500350} quantity2={500610} />
+          <ProgressNes currency="$" quantity1={1500350} quantity2={1200610} />
         </div>
         <div className="comparation-bars__item">
           <span>Antecedentes</span>
