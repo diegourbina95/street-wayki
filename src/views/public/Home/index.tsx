@@ -15,7 +15,7 @@ import congresoImage from "@/assets/images/congreso.png";
 import "@/styles/home-page.scss";
 
 const HomePage = () => {
-  const [isPlay, setIsPlay] = useState<boolean>(true);
+  const [isPlay, setIsPlay] = useState<boolean>(false);
 
   const handlePlay = () => {
     setIsPlay(true);
