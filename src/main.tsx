@@ -4,7 +4,7 @@ import { PublicRoutes } from "./routes/index.tsx";
 import { BrowserRouter } from "react-router";
 
 createRoot(document.getElementById("root")!).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/street-wayki">
     <PublicRoutes />
   </BrowserRouter>
 );
