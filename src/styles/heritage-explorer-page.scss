@@ -2,29 +2,27 @@
 
 .heritage-explorer-page {
   &__title {
-    width: 400px;
-    margin: 60px auto;
+    width: 280px;
+    margin: 30px auto;
   }
 
   &__wayki-selector {
-    .wayki-selector__title {
-      text-transform: uppercase;
-      text-align: center;
-      margin-bottom: 35px;
-    }
+    padding-top: 12px;
   }
 
   &__research {
     background-color: #e4e4e4;
     margin: 30px auto;
-    padding: 50px 60px;
+    padding: 50px 15px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .research-details {
-      margin-left: 50px;
+      margin-top: 46px;
 
       &__title {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         text-transform: uppercase;
         letter-spacing: -0.5px;
       }
@@ -40,11 +38,15 @@
 
   &__information {
     font-family: "Roboto", sans-serif;
-    margin-top: 80px;
+    margin-top: 34px;
+    padding: 0 40px;
+    font-size: 0.9rem;
+    line-height: 30px;
   }
 
   &__equity-increase {
-    margin-top: 80px;
+    margin-top: 57px;
+    padding: 0 23px;
 
     .equity-increase {
       &__title {
@@ -63,6 +65,40 @@
         margin-bottom: 10px;
         display: block;
       }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .heritage-explorer-page {
+    &__title {
+      width: 400px;
+      margin: 60px auto;
+    }
+
+    &__research {
+      flex-direction: row;
+
+      .research-details {
+        margin-left: 50px;
+
+        &__title {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          letter-spacing: -0.5px;
+        }
+      }
+    }
+
+    &__information {
+      margin-top: 80px;
+      padding: 0;
+      font-size: 1rem;
+      line-height: 30px;
+    }
+
+    &__equity-increase {
+      margin-top: 80px;
     }
   }
 }

@@ -22,12 +22,14 @@ interface InformationCardProps {
     | null
     | undefined;
   size?: number;
+  isMobile?: boolean;
 }
 
 export const InformationCard: React.FC<InformationCardProps> = ({
   color,
   details,
   size = 250,
+  isMobile,
 }) => {
   const EMPTY_COLOR = "#E4E4E4";
   return (
@@ -48,35 +50,105 @@ export const InformationCard: React.FC<InformationCardProps> = ({
         }}
       />
       <div className="information-card__content">
-        <div className="information-card__name">
+        <div
+          className="information-card__name"
+          style={{
+            fontSize: isMobile ? ".75rem" : ".5rem",
+            padding: isMobile ? "10px 0" : "inherit",
+          }}
+        >
           {details ? details?.name : "Selecciona un wayki"}
         </div>
-        <div style={{ paddingBottom: "5px" }}>
-          <div className="information-card__title">PREGRADO:</div>
-          <div className="information-card__text">
+        <div
+          style={{
+            marginTop: isMobile ? "17px" : "inherit",
+            marginBottom: isMobile ? "20px" : "5px",
+          }}
+        >
+          <div
+            className="information-card__title"
+            style={{
+              fontSize: isMobile ? " 0.5rem" : " 0.45rem",
+              marginBottom: isMobile ? "10px" : "inherit",
+            }}
+          >
+            PREGRADO:
+          </div>
+          <div
+            className="information-card__text"
+            style={{
+              fontSize: isMobile ? " .95rem" : " 0.8rem",
+            }}
+          >
             {details ? details?.undergraduate : "..."}
           </div>
         </div>
-        <div style={{ paddingBottom: "5px" }}>
-          <div className="information-card__title">CARRERA:</div>
-          <div className="information-card__text">
-            {" "}
+        <div
+          style={{
+            marginBottom: isMobile ? "20px" : "5px",
+          }}
+        >
+          <div
+            className="information-card__title"
+            style={{
+              fontSize: isMobile ? " 0.5rem" : " 0.45rem",
+              marginBottom: isMobile ? "10px" : "inherit",
+            }}
+          >
+            CARRERA:
+          </div>
+          <div
+            className="information-card__text"
+            style={{
+              fontSize: isMobile ? " .95rem" : " 0.8rem",
+            }}
+          >
             {details ? details?.career : "..."}
           </div>
         </div>
-        <div style={{ paddingBottom: "5px" }}>
-          <div className="information-card__title">
+        <div
+          style={{
+            marginBottom: isMobile ? "20px" : "5px",
+          }}
+        >
+          <div
+            className="information-card__title"
+            style={{
+              fontSize: isMobile ? " 0.5rem" : " 0.45rem",
+              marginBottom: isMobile ? "10px" : "inherit",
+            }}
+          >
             PARTIDO POLITICO ACTUAL:
           </div>
-          <div className="information-card__text">
+          <div
+            className="information-card__text"
+            style={{
+              fontSize: isMobile ? " .95rem" : " 0.8rem",
+            }}
+          >
             {details ? details?.currentPoliticalParty : "..."}
           </div>
         </div>
-        <div style={{ paddingBottom: "5px" }}>
-          <div className="information-card__title">
+        <div
+          style={{
+            marginBottom: isMobile ? "30px" : "5px",
+          }}
+        >
+          <div
+            className="information-card__title"
+            style={{
+              fontSize: isMobile ? " 0.5rem" : " 0.45rem",
+              marginBottom: isMobile ? "10px" : "inherit",
+            }}
+          >
             PARTIDO POLITICO POSTULACION
           </div>
-          <div className="information-card__text">
+          <div
+            className="information-card__text"
+            style={{
+              fontSize: isMobile ? " .95rem" : " 0.8rem",
+            }}
+          >
             {details ? details?.politicalPartyNomination : "..."}
           </div>
         </div>
