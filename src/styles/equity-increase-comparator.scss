@@ -8,9 +8,12 @@
     margin-top: 35px;
   }
   &__line-title {
-    font-size: 0.55rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 0.8rem;
     text-align: center;
     color: #808080;
+    margin-bottom: 10px;
   }
   &__line-chart {
     height: 500px;
@@ -23,7 +26,7 @@
       margin-top: 50px;
     }
     &__line-title {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       text-align: start;
       color: #212529;
     }

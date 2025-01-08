@@ -63,6 +63,7 @@ export const Bar: React.FC<BarData> = ({
           data,
           options: {
             responsive: true,
+            maintainAspectRatio: false,
             indexAxis: "y",
             scales: {
               x: {
@@ -107,8 +108,11 @@ export const Bar: React.FC<BarData> = ({
   };
 
   return (
-    <div>
-      <canvas ref={canvasRef}></canvas>
+    <div style={{ position: "relative", height: "100%", width: "100%" }}>
+      <canvas
+        ref={canvasRef}
+        style={{ maxWidth: "100%", maxHeight: "100%" }}
+      ></canvas>
     </div>
   );
 };
