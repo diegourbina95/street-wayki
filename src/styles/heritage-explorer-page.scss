@@ -38,7 +38,7 @@
 
   &__information {
     font-family: "Roboto", sans-serif;
-    margin-top: 34px;
+    margin-top: 50px;
     padding: 0 40px;
     font-size: 0.9rem;
     line-height: 30px;
@@ -64,6 +64,19 @@
         margin-left: 70px;
         margin-bottom: 10px;
         display: block;
+      }
+    }
+  }
+
+  &__asset-increase-comparator {
+    margin-top: 70px;
+    padding: 0 24px;
+    .asset-increase-comparator {
+      &__title {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+        text-align: center;
+        text-transform: uppercase;
       }
     }
   }

@@ -8,6 +8,7 @@ import { ResearchSection } from "./components/ResearchSection";
 import { InformationSection } from "./components/InformationSection";
 import { EquityIncreaseSection } from "./components/EquityIncreaseSection";
 import { WaykiSelectorSection } from "./components/WaykiSelectorSection";
+import { AssetIncreaseComparatorSection } from "./components/AssetIncreaseComparatorSection";
 
 /* DATA MOCK */
 import { informationCardData } from "@/_mock";
@@ -52,6 +53,9 @@ const HeritageExplorerPage = () => {
           finalYear={2023}
           nameCurrency="dólares"
         />
+      </div>
+      <div className="content-650">
+        <AssetIncreaseComparatorSection />
       </div>
       <div className="content-550">
         <InformationSection />

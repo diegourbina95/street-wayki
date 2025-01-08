@@ -42,8 +42,10 @@ export const EquityIncreaseComparator: React.FC<
   return (
     <div className="equity-increase-comparator">
       <div className="equity-increase-comparator__select-container">
+        <div className="equity-increase-comparator__label">
+          Selecciona hasta 10 funcionarios
+        </div>
         <SelectNes
-          label="Selecciona hasta 10 funcionarios:"
           options={officials}
           labelKey="personName"
           valueKey="personCode"

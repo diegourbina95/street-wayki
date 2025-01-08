@@ -20,6 +20,7 @@ Chart.register(LineController, Legend, LineElement);
 interface LineData {
   labels: number[];
   datasets: Datasets[];
+  isMobile?: boolean;
 }
 
 interface Datasets {
@@ -29,7 +30,11 @@ interface Datasets {
   label?: string;
 }
 
-export const Line: React.FC<LineData> = ({ labels = [], datasets = [] }) => {
+export const Line: React.FC<LineData> = ({
+  labels = [],
+  datasets = [],
+  isMobile = true,
+}) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const chartRef = useRef<Chart | null>(null);
 
@@ -80,9 +85,10 @@ export const Line: React.FC<LineData> = ({ labels = [], datasets = [] }) => {
           data,
           options: {
             responsive: true,
+            maintainAspectRatio: false,
             layout: {
               padding: {
-                right: 150,
+                right: !isMobile ? 150 : 0,
               },
             },
             scales: {
@@ -107,11 +113,11 @@ export const Line: React.FC<LineData> = ({ labels = [], datasets = [] }) => {
               },
 
               tooltip: {
-                enabled: false,
+                enabled: isMobile,
               },
             },
           },
-          plugins: [customTextPlugin],
+          plugins: [!isMobile ? customTextPlugin : { id: "" }],
         };
 
         chartRef.current = new Chart(ctx, config);
@@ -126,8 +132,11 @@ export const Line: React.FC<LineData> = ({ labels = [], datasets = [] }) => {
   };
 
   return (
-    <div>
-      <canvas ref={canvasRef}></canvas>
+    <div style={{ position: "relative", height: "100%", width: "100%" }}>
+      <canvas
+        ref={canvasRef}
+        style={{ maxWidth: "100%", maxHeight: "100%" }}
+      ></canvas>
     </div>
   );
 };
