@@ -6,13 +6,16 @@ import { ButtonNes } from "@/components/Inputs";
 
 /* DATA MOCK */
 import { informationCardData } from "@/_mock";
+import { SalaryComparison } from "@/components/Custom";
 
 /* STYLES */
 
 interface ComparationSectionProps {
+  players: any;
   reset: () => void;
 }
 export const ComparationSection: React.FC<ComparationSectionProps> = ({
+  players,
   reset,
 }) => {
   return (
@@ -38,11 +41,11 @@ export const ComparationSection: React.FC<ComparationSectionProps> = ({
           <InformationCard color="#FEAA00" details={informationCardData} />
         </div>
       </div>
-      <div className="home-page__comparation-text">
-        María Acuña Peralta tiene un patrimonio que equivale a 50 veces el
-        sueldo promedio en Perú, mientras que el de José Luna Galvez es 30 veces
-        el promedio.
-      </div>
+      <SalaryComparison
+        player1={{ name: players[0].name, salary: 15000 }}
+        player2={{ name: players[1].name, salary: 25000 }}
+        averageSalary={2054.9}
+      />
       <div className="home-page__comparation-reset">
         <span>Compara otros waykis</span>
         <ButtonNes text="REINICIAR" onClick={reset} />

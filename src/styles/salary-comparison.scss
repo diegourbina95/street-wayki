@@ -1,0 +1,17 @@
+.salary-comparison {
+  &__content {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 60px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .salary-comparison {
+    &__comparation-text {
+      margin-bottom: 80px;
+    }
+  }
+}

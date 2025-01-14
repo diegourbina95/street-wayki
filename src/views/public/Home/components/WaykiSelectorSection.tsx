@@ -10,7 +10,7 @@ import { useMediaQuery } from "@/hooks";
 /* STYLES */
 
 interface WaykiSelectorSectionProps {
-  play: () => void;
+  play: (payload: any) => void;
 }
 
 export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
@@ -44,8 +44,7 @@ export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
   };
 
   const handlePlay = (payload: any) => {
-    console.log("payload: ", payload);
-    play();
+    play(payload);
   };
   return (
     <div className="home-page__wayki-selector">
