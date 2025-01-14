@@ -16,9 +16,11 @@ import "@/styles/home-page.scss";
 
 const HomePage = () => {
   const [isPlay, setIsPlay] = useState<boolean>(false);
+  const [players, setPlayers] = useState<any[]>([]);
 
-  const handlePlay = () => {
+  const handlePlay = (payload: any) => {
     setIsPlay(true);
+    setPlayers(payload);
     const section = document.getElementById("wayki-section");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -27,6 +29,7 @@ const HomePage = () => {
 
   const handleReset = () => {
     setIsPlay(false);
+    setPlayers([]);
     const section = document.getElementById("wayki-section");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -51,7 +54,7 @@ const HomePage = () => {
           </div>
         ) : (
           <div id="comparation-section" className="content-650">
-            <ComparationSection reset={handleReset} />
+            <ComparationSection players={players} reset={handleReset} />
           </div>
         )}
       </div>

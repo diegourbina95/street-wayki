@@ -45,14 +45,6 @@
     margin-top: 30px;
   }
 
-  &__comparation-text {
-    text-align: center;
-    font-size: 0.9rem;
-    line-height: 1.8;
-    margin-bottom: 60px;
-    padding: 0 20px;
-  }
-
   &__comparation-reset {
     display: flex;
     flex-direction: column;
@@ -86,10 +78,6 @@
 
     &__comparation-cards > div:last-child {
       margin-top: 0;
-    }
-
-    &__comparation-text {
-      margin-bottom: 80px;
     }
 
     &__comparation-reset {
