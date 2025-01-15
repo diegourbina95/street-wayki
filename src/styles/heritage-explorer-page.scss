@@ -33,6 +33,19 @@
         font-size: 0.9rem;
         line-height: 1.7;
       }
+
+      &__jail img {
+        width: 230px;
+        position: relative;
+        bottom: -20px;
+      }
+
+      &__jail-base img {
+        width: 100%;
+        position: relative;
+        left: -45px;
+        bottom: 10px;
+      }
     }
   }
 
@@ -95,9 +108,11 @@
 
     &__research {
       flex-direction: row;
+      padding: 10px 50px;
 
       .research-details {
         margin-left: 50px;
+        margin-bottom: 36px;
 
         &__title {
           font-size: 0.8rem;

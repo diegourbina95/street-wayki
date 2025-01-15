@@ -53,8 +53,8 @@ export const InformationCard: React.FC<InformationCardProps> = ({
         <div
           className="information-card__name"
           style={{
-            fontSize: isMobile ? ".75rem" : ".5rem",
-            padding: isMobile ? "10px 0" : "inherit",
+            fontSize: isMobile ? ".75rem" : ".53rem",
+            padding: isMobile ? "10px 0" : "0 0 7px",
           }}
         >
           {details ? details?.name : "Selecciona un wayki"}
@@ -68,7 +68,6 @@ export const InformationCard: React.FC<InformationCardProps> = ({
           <div
             className="information-card__title"
             style={{
-              fontSize: isMobile ? " 0.5rem" : " 0.45rem",
               marginBottom: isMobile ? "10px" : "inherit",
             }}
           >
@@ -77,7 +76,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
           <div
             className="information-card__text"
             style={{
-              fontSize: isMobile ? " .95rem" : " 0.8rem",
+              fontSize: isMobile ? " .95rem" : " .8rem",
             }}
           >
             {details ? details?.undergraduate : "..."}
@@ -91,7 +90,6 @@ export const InformationCard: React.FC<InformationCardProps> = ({
           <div
             className="information-card__title"
             style={{
-              fontSize: isMobile ? " 0.5rem" : " 0.45rem",
               marginBottom: isMobile ? "10px" : "inherit",
             }}
           >
@@ -114,7 +112,6 @@ export const InformationCard: React.FC<InformationCardProps> = ({
           <div
             className="information-card__title"
             style={{
-              fontSize: isMobile ? " 0.5rem" : " 0.45rem",
               marginBottom: isMobile ? "10px" : "inherit",
             }}
           >
@@ -137,7 +134,6 @@ export const InformationCard: React.FC<InformationCardProps> = ({
           <div
             className="information-card__title"
             style={{
-              fontSize: isMobile ? " 0.5rem" : " 0.45rem",
               marginBottom: isMobile ? "10px" : "inherit",
             }}
           >
