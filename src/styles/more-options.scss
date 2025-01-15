@@ -29,13 +29,13 @@
   }
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 600px) {
   .more-options {
-    padding: 130px 0;
+    padding: 100px 0;
     margin: 0 auto;
 
     &__content {
-      max-width: 650px;
+      max-width: 780px;
       margin: 0 auto;
       flex-direction: row;
       justify-content: space-between;
@@ -43,7 +43,9 @@
 
     &__item {
       border-right: 1px solid #d9d9d9;
+      border-bottom: none;
       margin: 0 auto;
+      padding: 0 80px;
     }
 
     &__item:last-child {
