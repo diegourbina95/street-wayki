@@ -44,7 +44,7 @@ const HomePage = () => {
           principalImage={congresoImage}
         />
       </div>
-      <div className="content-550">
+      <div className="content-650">
         <InformationSection />
       </div>
       <div id="wayki-section">
