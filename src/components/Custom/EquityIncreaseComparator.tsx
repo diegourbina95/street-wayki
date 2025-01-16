@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import { SelectNes } from "@/components/Inputs";
 import { Line } from "@/components/Charts";
+import { useMediaQuery } from "@/hooks";
 
 /* LIBRARIES */
 
@@ -26,6 +27,8 @@ interface Datasets {
 export const EquityIncreaseComparator: React.FC<
   EquityIncreaseComparatorProps
 > = (payload) => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   const [years, setYears] = useState<number[]>([]);
   const [datasets, setDatasets] = useState<Datasets[]>([]);
   const [officials, setOfficials] = useState<Datasets[]>([]);
@@ -58,7 +61,7 @@ export const EquityIncreaseComparator: React.FC<
           Patrimonio (dólares)
         </div>
         <div className="equity-increase-comparator__line-chart">
-          <Line labels={years} datasets={datasets} />
+          <Line labels={years} datasets={datasets} isMobile={isMobile} />
         </div>
       </div>
     </div>

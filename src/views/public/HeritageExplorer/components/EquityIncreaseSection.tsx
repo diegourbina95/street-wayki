@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 
 import { Bar } from "@/components/Charts";
+import { useMediaQuery } from "@/hooks";
 
 /* DATA MOCK */
 import { labels, data, backgroundColor, borderColor } from "@/_mock";
@@ -23,6 +24,8 @@ export const EquityIncreaseSection: React.FC<EquityIncreaseSectionProps> = ({
   const [barData, setBarData] = useState<number[]>([]);
   const [barBackgroundColor, setBackgroundColor] = useState<string[]>([]);
   const [barBorderColor, setBorderColor] = useState<string[]>([]);
+
+  const isMobile = useMediaQuery("(max-width: 768px)");
 
   useEffect(() => {
     setBarLabels(labels);
@@ -46,6 +49,8 @@ export const EquityIncreaseSection: React.FC<EquityIncreaseSectionProps> = ({
           dataBar={barData}
           backgroundColor={barBackgroundColor}
           borderColor={barBorderColor}
+          isMobile={isMobile}
+          scaleSymbol="M"
         />
       </div>
     </div>
