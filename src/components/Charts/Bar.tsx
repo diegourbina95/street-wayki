@@ -11,6 +11,7 @@ import {
   ChartData,
   Legend,
   LinearScale,
+  Plugin,
 } from "chart.js";
 
 /* STYLES */
@@ -22,6 +23,8 @@ interface BarData {
   dataBar: number[];
   backgroundColor: string[];
   borderColor: string[];
+  isMobile?: boolean;
+  scaleSymbol: string;
 }
 
 export const Bar: React.FC<BarData> = ({
@@ -29,16 +32,41 @@ export const Bar: React.FC<BarData> = ({
   dataBar = [],
   backgroundColor = [],
   borderColor = [],
+  isMobile = false,
+  scaleSymbol = "",
 }) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const chartRef = useRef<Chart | null>(null);
+
+  const customTextPlugin: Plugin<"bar"> = {
+    id: "customTextPlugin",
+    afterDatasetDraw(chart) {
+      const { ctx } = chart;
+      chart.data.datasets[0].data.forEach((value, idx) => {
+        const lastValue = idx as number;
+        const label = value || 0;
+
+        if (!label) return;
+
+        const x = chart.scales.x.getPixelForValue(value as number);
+        const y = chart.scales.y.getPixelForValue(lastValue);
+
+        ctx.save();
+        ctx.font = "bold 12px Arial";
+        ctx.fillStyle = "#333333";
+        ctx.textAlign = "left";
+        ctx.fillText(`${label} ${scaleSymbol}`, x + 8, y);
+        ctx.restore();
+      });
+    },
+  };
 
   useEffect(() => {
     initChart({ labels, dataBar, backgroundColor, borderColor });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [labels, dataBar, backgroundColor, borderColor]);
 
-  const initChart = (payload: BarData) => {
+  const initChart = (payload: any) => {
     const data: ChartData<"bar"> = {
       labels: payload.labels,
       datasets: [
@@ -69,6 +97,12 @@ export const Bar: React.FC<BarData> = ({
               x: {
                 type: "linear",
                 position: "top",
+                ticks: {
+                  stepSize: data.datasets.length ? 3 : 1,
+                  callback: function (value) {
+                    return `${value} ${scaleSymbol}`;
+                  },
+                },
               },
               y: {
                 beginAtZero: true, // Comienza el eje Y desde 0
@@ -90,10 +124,11 @@ export const Bar: React.FC<BarData> = ({
               },
 
               tooltip: {
-                enabled: false,
+                enabled: isMobile,
               },
             },
           },
+          plugins: [!isMobile ? customTextPlugin : { id: "" }],
         };
 
         chartRef.current = new Chart(ctx, config);
