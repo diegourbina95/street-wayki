@@ -2,6 +2,9 @@
 import { InformationCard } from "@/components/Surfaces";
 import { useMediaQuery } from "@/hooks";
 
+import jail from "@/assets/images/jail.png";
+import jailBase from "@/assets/images/jail-base.png";
+
 /* STYLES */
 
 interface WaykiInformation {
@@ -25,7 +28,7 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({
     <div className="heritage-explorer-page__research">
       <div className="research-card">
         <InformationCard
-          size={isMobile ? 300 : 250}
+          size={isMobile ? 300 : 270}
           color="#FEAA00"
           details={waykiInformation}
           isMobile={isMobile}
@@ -37,10 +40,20 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({
         </div>
         <div
           className="research-details__text"
-          style={{ minHeight: isMobile ? "150px" : "inherit" }}
+          style={{ minHeight: isMobile ? "150px" : "60px" }}
         >
           {backgroundAndResearch || "..."}
         </div>
+        {!isMobile && (
+          <>
+            <div className="research-details__jail">
+              <img src={jail} alt="jail" />
+            </div>
+            <div className="research-details__jail-base">
+              <img src={jailBase} alt="jail-base" />
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
