@@ -51,8 +51,9 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
       if (sectionRef.current) {
         const sectionTop = sectionRef.current.getBoundingClientRect().top;
         const sectionBottom = sectionRef.current.getBoundingClientRect().bottom;
-
+        console.log("sectionTop: ", sectionTop);
         if (sectionTop <= 0 && sectionBottom >= 0) {
+          console.log("Agregar sticky");
           setIsSticky(true);
         } else {
           setIsSticky(false);
@@ -135,7 +136,11 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
         </div>
       </div>
 
-      <div className="wayki-selector__scatter-container">
+      <div
+        className={`wayki-selector__scatter-container ${
+          isSticky ? "is-sticky" : ""
+        }`}
+      >
         <div className="wayki-selector__scatter-title">
           Patrimonio ({nameCurrency})
         </div>
