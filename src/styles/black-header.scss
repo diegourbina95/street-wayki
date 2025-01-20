@@ -1,17 +1,107 @@
 .black-header {
-  height: 60px;
+  min-height: 60px;
   width: 100%;
-  background-color: #000000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #212529;
+
   color: white;
-  padding: 0 25px;
+  padding: 8px 12px;
   box-shadow: 0px 4px 4px 0px #00000040;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1001;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__logo {
     img {
-      height: 35px;
+      height: 32px;
+    }
+  }
+
+  &__nav-button-hover {
+    width: 66px;
+    height: 50px;
+    background-color: #212529;
+    border-radius: 0.7rem;
+    padding: 4px;
+  }
+
+  &__nav-button-hover:hover {
+    background-color: white;
+  }
+
+  &__nav-button {
+    height: 100%;
+    border: 0.125rem solid #ffffff1a;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #212529;
+  }
+
+  &__nav-toggler-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  &__hamburger-content {
+    overflow: hidden;
+    max-height: 0; /* Inicia cerrado */
+    transition: max-height 0.4s ease-in-out; /* Animación suave */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 8px 0;
+    }
+
+    li {
+      padding: 8px 10px;
+      font-size: 1rem;
+      font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+      a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__hamburger-content.is-active {
+    max-height: 200px;
+  }
+
+  &__ally-button {
+    a {
+      cursor: pointer;
+      color: #ffda00 !important;
+      border: 0.125rem solid #ffda00;
+      padding: 6px 12px;
+      border-radius: 0.5rem;
+      text-transform: uppercase;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white !important;
+      background-color: #ffda00;
     }
   }
 }
