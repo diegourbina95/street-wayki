@@ -70,6 +70,7 @@ const ComponentsPage = () => {
             dataBar={data}
             backgroundColor={backgroundColor}
             borderColor={borderColor}
+            scaleSymbol="M"
           />
         </div>
       </div>
