@@ -68,6 +68,7 @@
         max-width: 450px;
         text-align: center;
         margin-bottom: 30px;
+        font-size: 1rem;
       }
 
       &__subtitle {
@@ -90,7 +91,6 @@
     padding: 0 24px;
     .asset-increase-comparator {
       &__title {
-        font-size: 0.8rem;
         margin-bottom: 20px;
         text-align: center;
         text-transform: uppercase;
@@ -132,5 +132,9 @@
     &__equity-increase {
       margin-top: 80px;
     }
-  }
+
+    &__asset-increase-comparator {
+      margin-top: 90px;
+    }
+  } 
 }
