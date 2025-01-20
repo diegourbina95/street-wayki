@@ -54,6 +54,9 @@ const HeritageExplorerPage = () => {
           nameCurrency="dólares"
         />
       </div>
+      <div className="content-550">
+        <InformationSection />
+      </div>
       <div className="content-650">
         <AssetIncreaseComparatorSection />
       </div>
