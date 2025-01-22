@@ -21,6 +21,7 @@ interface ScatterProps {
   datasets: ScatterData[];
   orientation?: "x" | "y";
   selectPoint?: (payload: any) => void;
+  tooltipBgColor?: string;
 }
 
 interface ScatterData {
@@ -46,6 +47,7 @@ Chart.register(ScatterController, LinearScale, PointElement, Tooltip, Legend);
 export const Scatter: React.FC<ScatterProps> = ({
   datasets,
   orientation = "x",
+  tooltipBgColor = "#feaa00",
   selectPoint,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -198,6 +200,7 @@ export const Scatter: React.FC<ScatterProps> = ({
           y={tooltip.y}
           name={tooltip.name}
           avatar={tooltip.avatar}
+          bgColor={tooltipBgColor}
         />
       </div>
     </>
