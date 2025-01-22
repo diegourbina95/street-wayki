@@ -11,6 +11,7 @@ interface TooltipProps {
   y: number;
   name: string;
   avatar: string;
+  bgColor: string;
 }
 
 export const TooltipScatter: React.FC<TooltipProps> = ({
@@ -19,6 +20,7 @@ export const TooltipScatter: React.FC<TooltipProps> = ({
   y,
   name,
   avatar,
+  bgColor,
 }) => {
   if (!visible) return null;
   return (
@@ -28,6 +30,7 @@ export const TooltipScatter: React.FC<TooltipProps> = ({
         display: visible ? "block" : "none",
         top: y,
         left: x,
+        backgroundColor: bgColor,
       }}
     >
       <div className="container-tooltip">

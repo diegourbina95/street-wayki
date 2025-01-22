@@ -55,6 +55,7 @@ export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
           nameCurrency="dólares"
           stickyFilter={isMobile}
           orientation={isMobile ? "y" : "x"}
+          tooltipBgColor={countPlayer === 0 ? "#feaa00" : "#61f908"}
           selectWayki={selectWayki}
         />
       </div>

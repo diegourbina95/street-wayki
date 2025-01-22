@@ -26,6 +26,7 @@ interface WaykiSelectorProps {
   nameCurrency: string;
   orientation?: "x" | "y";
   stickyFilter?: boolean;
+  tooltipBgColor?: string;
   selectWayki?: (payload: any) => void;
 }
 
@@ -35,6 +36,7 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
   nameCurrency,
   orientation,
   stickyFilter,
+  tooltipBgColor,
   selectWayki,
 }) => {
   const [politicalParties, setPoliticalParties] =
@@ -51,9 +53,7 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
       if (sectionRef.current) {
         const sectionTop = sectionRef.current.getBoundingClientRect().top;
         const sectionBottom = sectionRef.current.getBoundingClientRect().bottom;
-        console.log("sectionTop: ", sectionTop);
         if (sectionTop <= 0 && sectionBottom >= 0) {
-          console.log("Agregar sticky");
           setIsSticky(true);
         } else {
           setIsSticky(false);
@@ -150,6 +150,7 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
             datasets={patrimonialData}
             orientation={orientation}
             selectPoint={handleWayki}
+            tooltipBgColor={tooltipBgColor}
           />
         </div>
       </div>
