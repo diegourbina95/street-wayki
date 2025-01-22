@@ -23,12 +23,30 @@ export const BlackHeader = () => {
           />
         </div>
         <div className="black-header__nav">
-          <div>
+          <div className="black-header__nav-mobile">
             <div className="black-header__nav-button-hover">
               <div className="black-header__nav-button" onClick={toggleActive}>
                 <span className="black-header__nav-toggler-icon"></span>
               </div>
             </div>
+          </div>
+          <div className="black-header__nav-desktop">
+            <ul>
+              <li>
+                <a href="#">
+                  <span
+                    className="fa fa-bookmark-o"
+                    style={{ marginRight: "5px" }}
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a href={ojoPublicoLinks.LOGIN}>Iniciar Sesión</a>
+              </li>
+              <li className="black-header__ally-button">
+                <a href={ojoPublicoLinks.PARTNERS}>Hazte Aliado/a</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
