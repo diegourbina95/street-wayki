@@ -39,13 +39,17 @@ export const DefaultFooter = () => {
             <div className="section__title">Sobre nosotros</div>
             <ul>
               <li className="section__text">
-                <a href="#">Conoce a nuestro equipo</a>
+                <a href="https://ojo-publico.com/institucional/#equipo">
+                  Conoce a nuestro equipo
+                </a>
               </li>
               <li className="section__text">
-                <a href="#">Contáctanos</a>
+                <a href="https://ojo-publico.com/contacto">Contáctanos</a>
               </li>
               <li className="section__text">
-                <a href="#">Misión visión y valores</a>
+                <a href="https://ojo-publico.com/institucional/mision-vision-valores">
+                  Misión visión y valores
+                </a>
               </li>
             </ul>
           </div>
@@ -53,19 +57,28 @@ export const DefaultFooter = () => {
             <div className="section__title">Politicas</div>
             <ul>
               <li className="section__text">
-                <a href="#"></a>Independencia editorial ante nuestros aliados.
+                <a href="https://ojo-publico.com/institucional/politica_de_independencia_editorial_ante_aliados"></a>
+                Independencia editorial ante nuestros aliados.
               </li>
               <li className="section__text">
-                <a href="#">Sobre el secreto profesional y periodístico.</a>
+                <a href="https://ojo-publico.com/institucional/politica_de_cumplimiento_de_la_ley">
+                  Sobre el secreto profesional y periodístico.
+                </a>
               </li>
               <li className="section__text">
-                <a href="#">Protección de datos personales.</a>
+                <a href="https://ojo-publico.com/institucional/politica-de-proteccion-de-datos-personales">
+                  Protección de datos personales.
+                </a>
               </li>
               <li className="section__text">
-                <a href="#">El derecho a la rectificación.</a>
+                <a href="https://ojo-publico.com/institucional/politica_de_rectificacion">
+                  El derecho a la rectificación.
+                </a>
               </li>
               <li className="section__text">
-                <a href="#">OjoBiónico: políticas y criterios de corrección</a>
+                <a href="https://ojo-publico.com/institucional/ojo_bionico_politicas_verificacion">
+                  OjoBiónico: políticas y criterios de corrección
+                </a>
               </li>
             </ul>
           </div>
@@ -75,7 +88,9 @@ export const DefaultFooter = () => {
             <div className="section__title">La tienda</div>
             <ul>
               <li className="section__text">
-                <a href="#">Visite nuestra tienda</a>
+                <a href="https://tienda.ojo-publico.com/">
+                  Visite nuestra tienda
+                </a>
               </li>
             </ul>
           </div>
@@ -104,28 +119,31 @@ export const DefaultFooter = () => {
           <div>Síganos en</div>
           <ul>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/ojopublico/" target="_blank">
                 <i className="fa fa-instagram"></i>
               </a>
             </li>
 
             <li>
-              <a href="#">
+              <a href="https://twitter.com/Ojo_Publico" target="_blank">
                 <i className="fa fa-instagram"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://es-la.facebook.com/OjoPublico/" target="_blank">
                 <i className="fa fa-instagram"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="https://www.youtube.com/c/OjoP%C3%BAblicoPE"
+                target="_blank"
+              >
                 <i className="fa fa-instagram"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.tiktok.com/@ojopublico" target="_blank">
                 <i className="fa fa-instagram"></i>
               </a>
             </li>
