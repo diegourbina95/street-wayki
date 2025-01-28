@@ -2,6 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="OjoPúblico es un medio digital reconocido por sus investigaciones periodísticas en Perú y Latinoamérica."
+    />
+    <meta
+      name="abstract"
+      content="OjoPúblico es un medio digital reconocido por sus investigaciones periodísticas en Perú y Latinoamérica."
+    />
+    <link rel="shortlink" href="https://ojo-publico.com/" />
+    <link rel="canonical" href="https://ojo-publico.com/" />
+    <meta property="og:site_name" content="Ojo-Público" />
+    <meta
+      property="og:title"
+      content="OjoPúblico | Periodismo de investigación"
+    />
+    <meta
+      property="og:description"
+      content="Las historias que otros no te quieren contar."
+    />
+    <meta
+      property="og:image"
+      content="https://ojo-publico.com/sites/default/files/2022-06/METADATOS%20LOGO%20OP_0.jpg"
+    />
+    <meta
+      property="og:image:url"
+      content="https://ojo-publico.com/sites/default/files/2022-06/METADATOS%20LOGO%20OP_0.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://ojo-publico.com/sites/default/files/2022-06/METADATOS%20LOGO%20OP_0.jpg"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OjoPúblico" />
+    <meta
+      name="twitter:description"
+      content="Las historias que otros no te quieren contar."
+    />
+    <meta name="twitter:site" content="@ojo_publico" />
+    <meta
+      name="twitter:image"
+      content="https://ojo-publico.com/sites/default/files/2022-06/METADATOS%20LOGO%20OP_0.jpg"
+    />
     <link
       rel="icon"
       type="image/svg+xml"
@@ -52,6 +95,64 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OjoPúblico | Periodismo de investigación</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-D0QW04YM0Z"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-D0QW04YM0Z");
+    </script>
+
+    <!-- schema para la lectura de los contenidos  -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "NewsArticle",
+            "headline": "TÍTULO DEL CONTENIDO",
+            "name": "TÍTULO DEL CONTENIDO",
+            "image": {
+              "@type": "ImageObject",
+              "representativeOfPage": "True",
+              "url": "URL ABSOLUTA DE LA IMÁGEN PRINCIPAL DEL CONTENIDO"
+            },
+            "datePublished": "FECHA DE PUBLICACIÓN Ej. 2023-05-07T08:00:00-0500",
+            "author": {
+              "@type": "NewsMediaOrganization",
+              "name": "OjoPublico",
+              "logo": {
+                "@type": "ImageObject",
+                "representativeOfPage": "True",
+                "url": "https://ojo-publico.com/themes/custom/ojo_publico_theme/images/logo-schema.png",
+                "width": "350",
+                "height": "100"
+              }
+            },
+            "publisher": {
+              "@type": "NewsMediaOrganization",
+              "name": "OjoPublico",
+              "url": "https://ojo-publico.com/",
+              "logo": {
+                "@type": "ImageObject",
+                "representativeOfPage": "True",
+                "url": "https://ojo-publico.com/themes/custom/ojo_publico_theme/images/logo-schema.png",
+                "width": "350",
+                "height": "100"
+              }
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
