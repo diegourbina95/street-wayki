@@ -1,4 +1,5 @@
 .default-footer {
+  background-color: #e1e1e1;
   ul {
     padding: 0;
     margin: 0;
@@ -13,7 +14,6 @@
 
   &__information {
     padding: 30px 15px 62px;
-    background-color: #e1e1e1;
   }
 
   &__logos {
@@ -73,6 +73,10 @@
       margin-bottom: 25px;
     }
 
+    &__title:hover {
+      color: #212529;
+    }
+
     &__text {
       color: #000;
       font-weight: 500;
@@ -126,17 +130,20 @@
 
   &__rights-reserved {
     background-color: #666;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 19px 0;
-    text-align: center;
-    color: white;
-    font-family: "Nunito Sans", sans-serif !important;
   }
 
   .rights-reserved {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 19px 0;
+      text-align: center;
+      color: white;
+      font-family: "Nunito Sans", sans-serif !important;
+    }
+
     &__social {
       font-size: 0.8rem;
       line-height: 14px;
@@ -167,5 +174,66 @@
       font-size: 13px;
       margin-top: 10px;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .default-footer {
+    &__logos {
+      align-items: start;
+    }
+    &__information {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1124px;
+      margin: 0 auto;
+    }
+
+    .section {
+      &__content {
+        width: 300px;
+      }
+      &__title {
+        text-align: left;
+      }
+
+      &__text {
+        text-align: left;
+      }
+    }
+
+    .section__content:last-child {
+      margin-bottom: 0px !important;
+    }
+
+    .rights-reserved {
+      &__content {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 1124px;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+      }
+
+      &__social {
+        display: flex;
+        align-items: center;
+
+        ul {
+          margin: 0;
+          padding-left: 30px;
+        }
+
+        li {
+          margin-right: 18px;
+        }
+      }
+    }
+  }
+
+  .divider {
+    display: none;
   }
 }

@@ -16,22 +16,28 @@ export const DefaultFooter = () => {
             />
           </div>
           <div className="logo-item__gijn">
-            <img
-              src="https://ojo-publico.com/sites/default/files/2023-10/GIJN-Logo-dark.png"
-              alt="logo-gijn"
-            />
+            <a href="https://gijn.org/" target="_blank">
+              <img
+                src="https://ojo-publico.com/sites/default/files/2023-10/GIJN-Logo-dark.png"
+                alt="logo-gijn"
+              />
+            </a>
           </div>
           <div className="logo-item__occrp">
-            <img
-              src="https://ojo-publico.com/sites/default/files/2024-05/logo-occrp.png"
-              alt="logo-occrp"
-            />
+            <a href="https://www.occrp.org/en" target="_blank">
+              <img
+                src="https://ojo-publico.com/sites/default/files/2024-05/logo-occrp.png"
+                alt="logo-occrp"
+              />
+            </a>
           </div>
           <div className="logo-item__capir">
-            <img
-              src="https://ojo-publico.com/sites/default/files/2024-07/logo-capir.png"
-              alt="logo-capir"
-            />
+            <a href="https://www.capir.net/" target="_blank">
+              <img
+                src="https://ojo-publico.com/sites/default/files/2024-07/logo-capir.png"
+                alt="logo-capir"
+              />
+            </a>
           </div>
         </div>
         <div className="default-footer__section-1">
@@ -103,54 +109,53 @@ export const DefaultFooter = () => {
             <input type="text" placeholder="Correo electrónico" />
             <div></div>
             <button className="section__button">suscribirse</button>
-            <div className="section__terms">
-              This site is protected by reCAPTCHA and the Google{" "}
-              <a href="https://policies.google.com/privacy">Privacy Policy</a>{" "}
-              and{" "}
-              <a href="https://policies.google.com/terms">Terms of Service</a>{" "}
-              apply.
-            </div>
           </div>
           <div className="divider"></div>
         </div>
       </div>
       <div className="default-footer__rights-reserved">
-        <div className="rights-reserved__social">
-          <div>Síganos en</div>
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/ojopublico/" target="_blank">
-                <i className="fa fa-instagram"></i>
-              </a>
-            </li>
+        <div className="rights-reserved__content">
+          <div className="rights-reserved__social">
+            <div>Síganos en</div>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/ojopublico/" target="_blank">
+                  <i className="fa fa-instagram"></i>
+                </a>
+              </li>
 
-            <li>
-              <a href="https://twitter.com/Ojo_Publico" target="_blank">
-                <i className="fa fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://es-la.facebook.com/OjoPublico/" target="_blank">
-                <i className="fa fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/c/OjoP%C3%BAblicoPE"
-                target="_blank"
-              >
-                <i className="fa fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.tiktok.com/@ojopublico" target="_blank">
-                <i className="fa fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="rights-reserved__text">
-          Todos los derechos reservados © {new Date().getFullYear()} OjoPublico.
+              <li>
+                <a href="https://twitter.com/Ojo_Publico" target="_blank">
+                  <i className="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://es-la.facebook.com/OjoPublico/"
+                  target="_blank"
+                >
+                  <i className="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/c/OjoP%C3%BAblicoPE"
+                  target="_blank"
+                >
+                  <i className="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@ojopublico" target="_blank">
+                  <i className="fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="rights-reserved__text">
+            Todos los derechos reservados © {new Date().getFullYear()}{" "}
+            OjoPublico.
+          </div>
         </div>
       </div>
     </div>
