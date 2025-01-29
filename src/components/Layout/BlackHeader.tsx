@@ -37,7 +37,9 @@ export const BlackHeader = () => {
                   <span
                     className="fa fa-bookmark-o"
                     style={{ marginRight: "5px" }}
-                  ></span>
+                  >
+                    <div id="bookmark"></div>
+                  </span>
                 </a>
               </li>
               <li>
@@ -63,7 +65,12 @@ export const BlackHeader = () => {
               className="fa fa-bookmark-o"
               style={{ marginRight: "5px" }}
             ></span>
-            <a href="#">Bookmark</a>
+            <a href="#">
+              {" "}
+              <div id="bookmark" style={{ display: "inline" }}>
+                Bookmark
+              </div>
+            </a>
           </li>
           <li>
             <a href={ojoPublicoLinks.LOGIN}>Iniciar Sesión</a>
