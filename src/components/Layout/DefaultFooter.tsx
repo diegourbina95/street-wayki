@@ -120,13 +120,19 @@ export const DefaultFooter = () => {
             <ul>
               <li>
                 <a href="https://www.instagram.com/ojopublico/" target="_blank">
-                  <i className="fa fa-instagram"></i>
+                  <i
+                    className="fa-brands fa-instagram"
+                    style={{ color: "white" }}
+                  ></i>
                 </a>
               </li>
 
               <li>
                 <a href="https://twitter.com/Ojo_Publico" target="_blank">
-                  <i className="fa fa-instagram"></i>
+                  <i
+                    className="fa-brands fa-twitter"
+                    style={{ color: "white" }}
+                  ></i>
                 </a>
               </li>
               <li>
@@ -134,7 +140,10 @@ export const DefaultFooter = () => {
                   href="https://es-la.facebook.com/OjoPublico/"
                   target="_blank"
                 >
-                  <i className="fa fa-instagram"></i>
+                  <i
+                    className="fa-brands fa-facebook-f"
+                    style={{ color: "white" }}
+                  ></i>
                 </a>
               </li>
               <li>
@@ -142,12 +151,18 @@ export const DefaultFooter = () => {
                   href="https://www.youtube.com/c/OjoP%C3%BAblicoPE"
                   target="_blank"
                 >
-                  <i className="fa fa-instagram"></i>
+                  <i
+                    className="fa-brands fa-youtube"
+                    style={{ color: "white" }}
+                  ></i>
                 </a>
               </li>
               <li>
                 <a href="https://www.tiktok.com/@ojopublico" target="_blank">
-                  <i className="fa fa-instagram"></i>
+                  <i
+                    className="fa-brands fa-tiktok"
+                    style={{ color: "white" }}
+                  ></i>
                 </a>
               </li>
             </ul>
