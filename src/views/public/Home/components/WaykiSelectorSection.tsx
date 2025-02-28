@@ -3,8 +3,11 @@ import React, { useEffect, useState } from "react";
 
 import { WaykiSelector, WaykiVs } from "@/components/Custom";
 
+/* DATA */
+import { generateData } from "@/data/wayki-selector.data";
+import { politicalPartiesData } from "@/data/wayki-selector.data";
+
 /* DATA MOCK */
-import { generateData, politicalPartiesData } from "@/_mock";
 import { useMediaQuery } from "@/hooks";
 
 /* STYLES */
@@ -19,12 +22,13 @@ export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   const [patrimonyData, setPatrimonyData] = useState<any>([]);
+  const [politicalParties, setPoliticalParties] = useState<any>([]);
   const [players, setPlayers] = useState<any>([]);
   const [countPlayer, setCountPlayer] = useState<number>(0);
 
   useEffect(() => {
-    const datasets = generateData();
-    setPatrimonyData(datasets);
+    setPatrimonyData(generateData());
+    setPoliticalParties(politicalPartiesData());
   }, []);
 
   const selectWayki = (payload: any) => {
@@ -50,7 +54,7 @@ export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
     <div className="home-page__wayki-selector">
       <div>
         <WaykiSelector
-          politicalPartiesData={politicalPartiesData}
+          politicalPartiesData={politicalParties}
           patrimonyData={patrimonyData}
           nameCurrency="dólares"
           stickyFilter={isMobile}

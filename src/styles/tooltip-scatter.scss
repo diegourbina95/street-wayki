@@ -15,8 +15,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .container-tooltip img {
   margin-top: 10px;
-  width: 60px;
+  height: 60px;
+  border: 1px solid #212121;
+  border-radius: 10px;
 }
