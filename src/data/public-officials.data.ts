@@ -2,6 +2,7 @@ export interface PublicOfficialsInterface {
   dni: string;
   fullNames: string;
   shortName: string;
+  abbreviatedName: string;
   photos: string;
   position: string;
   status: string;
@@ -20,7 +21,7 @@ export interface PublicOfficialsInterface {
   color: string;
 }
 
-interface HeritageForYear {
+export interface HeritageForYear {
   year: number;
   amount: number;
 }
@@ -35,6 +36,7 @@ export const publicOfficialsData = [
     dni: "80143959",
     fullNames: "Lady Mercedes Camones Soriano",
     shortName: "Lady Camones",
+    abbreviatedName: "L. Camones",
     photos: "dni_80143959.jpg",
     position: "Congresista",
     status: "Ejerciendo",
@@ -68,6 +70,7 @@ export const publicOfficialsData = [
     dni: "76030152",
     fullNames: "Rosangella Andrea Barbaran Reyes",
     shortName: "Rosangella Barbaran",
+    abbreviatedName: "R. Barbaran",
     photos: "dni_76030152.jpg",
     position: "Congresista",
     status: "Ejerciendo",
@@ -102,6 +105,7 @@ export const publicOfficialsData = [
     dni: "72200895",
     fullNames: "Sigrid Tesoro Bazan Narro",
     shortName: "Sigrid Bazan",
+    abbreviatedName: "S. Bazan",
     photos: "dni_72200895.jpg",
     position: "Congresista",
     status: "Ejerciendo",

@@ -6,13 +6,10 @@ import { ProgressNes } from "@/components/Feedback";
 import { InformationCard } from "@/components/Surfaces";
 import { PlayerText } from "@/components/Texts";
 import { ButtonNes } from "@/components/Inputs";
+import { SalaryComparison } from "@/components/Custom";
 
 /* DATA */
 import { findOfficial } from "@/data/compare-officials.data";
-
-/* DATA MOCK */
-import { informationCardData } from "@/_mock";
-import { SalaryComparison } from "@/components/Custom";
 
 /* STYLES */
 import "@/styles/compare-officials-page.scss";
