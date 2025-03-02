@@ -1,5 +1,6 @@
 /* REACT COMPONENTS */
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 import { HeroStreetWayki } from "@/components/Feedback";
 import { MoreOptions } from "@/components/Layout";
@@ -15,16 +16,15 @@ import congresoImage from "@/assets/images/congreso.png";
 import "@/styles/home-page.scss";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
   const [isPlay, setIsPlay] = useState<boolean>(false);
   const [players, setPlayers] = useState<any[]>([]);
 
   const handlePlay = (payload: any) => {
     setIsPlay(true);
-    setPlayers(payload);
-    const section = document.getElementById("wayki-section");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
+    navigate(`/comparar?player1=${payload[0].code}&player2=${payload[1].code}`);
+    /* setPlayers(payload); */
   };
 
   const handleReset = () => {

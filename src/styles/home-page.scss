@@ -15,49 +15,6 @@
   &__wayki-selector {
     padding: 58px 0 0;
   }
-
-  &__comparation-bars {
-    margin-top: 70px;
-    margin-bottom: 80px;
-    padding: 0 35px;
-
-    .comparation-bars__item {
-      span {
-        display: block;
-        font-size: 0.9rem;
-        margin-bottom: 20px;
-      }
-    }
-
-    .comparation-bars__item:first-child {
-      margin-bottom: 42px !important;
-    }
-  }
-
-  &__comparation-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 120px;
-  }
-
-  &__comparation-cards > div:last-child {
-    margin-top: 30px;
-  }
-
-  &__comparation-reset {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 128px;
-
-    span {
-      display: block;
-      margin-bottom: 20px;
-      font-size: 0.6rem;
-    }
-  }
 }
 
 @media (min-width: 768px) {
@@ -69,29 +26,6 @@
     &__information {
       font-size: 1rem;
       margin-bottom: 50px;
-    }
-
-    &__comparation-bars {
-      padding: 0;
-
-      .comparation-bars__item:first-child {
-        margin-bottom: 90px !important;
-      }
-    }
-
-    &__comparation-cards {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: start;
-      margin-bottom: 80px;
-    }
-
-    &__comparation-cards > div:last-child {
-      margin-top: 0;
-    }
-
-    &__comparation-reset {
-      margin-bottom: 70px;
     }
   }
 }

@@ -1,3 +1,35 @@
+export interface PublicOfficialsInterface {
+  dni: string;
+  fullNames: string;
+  shortName: string;
+  photos: string;
+  position: string;
+  status: string;
+  currentBench: string;
+  currentBenchCode: number;
+  partyLogo: string;
+  record: string;
+  heritageForYear: HeritageForYear[];
+  djiStatus: DjiStatu[];
+  criminalRecordNumber: number;
+  criminalRecordDetails: string;
+  quantityContractsRucNaturalPerson: number;
+  detailContractsRucNaturalPerson: string;
+  quantityCompanyLinks: number;
+  detailCompanyLinks: string;
+  color: string;
+}
+
+interface HeritageForYear {
+  year: number;
+  amount: number;
+}
+
+interface DjiStatu {
+  year: number;
+  status: string;
+}
+
 export const publicOfficialsData = [
   {
     dni: "80143959",
