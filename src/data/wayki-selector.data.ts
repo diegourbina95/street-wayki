@@ -14,11 +14,7 @@ export const generateData = () => {
             code: official.dni,
             name: official.shortName,
             avatar: `./img/officials/${official.photos}`,
-            politicalLogos: [
-              `./img/political-parties/${official.partyLogo}`,
-              /* "./img/img2.png",
-              "./img/img3.png", */
-            ],
+            politicalLogos: [`./img/political-parties/${official.partyLogo}`],
           },
           disabled: false,
         },

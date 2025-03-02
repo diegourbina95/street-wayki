@@ -26,7 +26,7 @@ export const borderColor = [
   darkenColor("#61F908"), */
 ];
 
-export const labelsLine = [2019, 2020, 2021, 2022, 2023];
+export const labelsLine = [2021, 2022, 2023, 2024];
 export const datasetsLine = [
   {
     data: [65, 59, 80, 81, 96],

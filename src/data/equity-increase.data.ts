@@ -18,3 +18,16 @@ const calculateIncrease = (heritage: HeritageForYear[]) => {
   }
   return totalIncrease;
 };
+
+export const generateData = () => {
+  return publicOfficialsData.map((official) => ({
+    data: official.heritageForYear.map((value) =>
+      Number((value.amount / 1000000).toFixed(2))
+    ),
+    tension: 0.1,
+    borderColor: official.color,
+    personName: official.shortName,
+    personCode: official.dni,
+    label: official.shortName,
+  }));
+};

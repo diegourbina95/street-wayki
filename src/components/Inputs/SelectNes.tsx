@@ -13,7 +13,9 @@ interface SelectNesProps {
   valueKey?: string;
   labelKey?: string;
   isMulti?: boolean;
+  maxOptions?: number;
   value?: any;
+  closeMenuOnSelect?: boolean;
   onChange?: (payload: any) => void;
 }
 
@@ -23,6 +25,8 @@ export const SelectNes: React.FC<SelectNesProps> = ({
   valueKey = "value",
   labelKey = "label",
   isMulti,
+  maxOptions = 1,
+  closeMenuOnSelect = false,
   onChange,
 }) => {
   const [value, setValue] = useState<any>();
@@ -45,9 +49,13 @@ export const SelectNes: React.FC<SelectNesProps> = ({
         getOptionValue={(option) => option[valueKey]}
         value={value}
         isMulti={isMulti}
+        closeMenuOnSelect={!closeMenuOnSelect}
+        isClearable={false}
         onChange={(payload) => {
-          setValue(payload);
-          if (onChange) onChange(payload);
+          if (!isMulti || payload.length <= maxOptions) {
+            setValue(payload);
+            if (onChange) onChange(payload);
+          }
         }}
       />
     </div>
