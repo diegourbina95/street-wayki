@@ -14,7 +14,7 @@ export interface PublicOfficialsInterface {
   separationRange: number;
   djiStatus: DjiStatu[];
   criminalRecordNumber: number;
-  criminalRecordDetails: string;
+  criminalRecordDetails: string[];
   quantityContractsRucNaturalPerson: number;
   detailContractsRucNaturalPerson: string;
   quantityCompanyLinks: number;
