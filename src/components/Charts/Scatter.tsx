@@ -14,6 +14,7 @@ import {
   ChartData,
   ChartConfiguration,
 } from "chart.js";
+import zoomPlugin from "chartjs-plugin-zoom";
 
 /* STYLES */
 
@@ -42,7 +43,14 @@ interface ScatterData {
   borderColor?: string;
 }
 
-Chart.register(ScatterController, LinearScale, PointElement, Tooltip, Legend);
+Chart.register(
+  ScatterController,
+  LinearScale,
+  PointElement,
+  Tooltip,
+  Legend,
+  zoomPlugin
+);
 
 export const Scatter: React.FC<ScatterProps> = ({
   datasets,
@@ -105,6 +113,12 @@ export const Scatter: React.FC<ScatterProps> = ({
                   ? {
                       type: "linear",
                       position: "top",
+                      ticks: {
+                        stepSize: 12,
+                        callback: function (value) {
+                          return `${Number(value).toFixed(1)} M`;
+                        },
+                      },
                     }
                   : {
                       display: false,
@@ -114,6 +128,12 @@ export const Scatter: React.FC<ScatterProps> = ({
                   ? {
                       type: "linear",
                       position: "left",
+                      ticks: {
+                        stepSize: 12,
+                        callback: function (value) {
+                          return `${Number(value).toFixed(1)} M`;
+                        },
+                      },
                     }
                   : { display: false },
             },
@@ -124,6 +144,21 @@ export const Scatter: React.FC<ScatterProps> = ({
               tooltip: {
                 enabled: false,
                 external: handleTooltip,
+              },
+              zoom: {
+                pan: {
+                  enabled: true, // 🔹 Habilita desplazamiento
+                  mode: "x", // 🔹 Modo horizontal (cambiar a "y" o "xy" si es necesario)
+                },
+                zoom: {
+                  wheel: {
+                    enabled: true, // 🔹 Habilita zoom con la rueda del mouse
+                  },
+                  pinch: {
+                    enabled: true, // 🔹 Habilita zoom con gesto de pellizco en dispositivos táctiles
+                  },
+                  mode: "x", // 🔹 Modo de zoom (cambiar a "y" o "xy" si es necesario)
+                },
               },
             },
           },

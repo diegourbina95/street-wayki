@@ -13,19 +13,22 @@
   },
   "dependencies": {
     "chart.js": "^4.4.6",
+    "chartjs-plugin-zoom": "^2.2.0",
     "path": "^0.12.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router": "^7.1.1",
     "react-select": "^5.8.2",
     "sass": "^1.80.5",
-    "use-sound": "^4.0.3"
+    "use-sound": "^4.0.3",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
     "@types/node": "^22.10.2",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
+    "@types/xlsx": "^0.0.36",
     "@vitejs/plugin-react": "^4.3.3",
     "eslint": "^9.13.0",
     "eslint-plugin-react-hooks": "^5.0.0",

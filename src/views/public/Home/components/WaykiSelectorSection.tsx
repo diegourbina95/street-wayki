@@ -56,7 +56,7 @@ export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
         <WaykiSelector
           politicalPartiesData={politicalParties}
           patrimonyData={patrimonyData}
-          nameCurrency="dólares"
+          nameCurrency="soles"
           stickyFilter={isMobile}
           orientation={isMobile ? "y" : "x"}
           tooltipBgColor={countPlayer === 0 ? "#feaa00" : "#61f908"}
