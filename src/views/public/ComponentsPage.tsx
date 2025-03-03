@@ -47,6 +47,7 @@ const ComponentsPage = () => {
         <h4>Comparador de Incrementos Patrimoniales</h4>
         <div style={{ width: "600px" }}>
           <EquityIncreaseComparator
+            maxNumberOfficials={10}
             years={labelsLine}
             officials={datasetsLine}
           />
