@@ -14,10 +14,8 @@ interface InformationCardProps {
   details?:
     | {
         name?: string;
-        undergraduate?: string;
-        career?: string;
         currentPoliticalParty?: string;
-        politicalPartyNomination?: string;
+        position?: string;
       }
     | null
     | undefined;
@@ -61,8 +59,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
         </div>
         <div
           style={{
-            marginTop: isMobile ? "17px" : "inherit",
-            marginBottom: isMobile ? "20px" : "5px",
+            marginBottom: isMobile ? "30px" : "5px",
           }}
         >
           <div
@@ -71,29 +68,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
               marginBottom: isMobile ? "10px" : "inherit",
             }}
           >
-            PREGRADO:
-          </div>
-          <div
-            className="information-card__text"
-            style={{
-              fontSize: isMobile ? " .95rem" : " .8rem",
-            }}
-          >
-            {details ? details?.undergraduate : "..."}
-          </div>
-        </div>
-        <div
-          style={{
-            marginBottom: isMobile ? "20px" : "5px",
-          }}
-        >
-          <div
-            className="information-card__title"
-            style={{
-              marginBottom: isMobile ? "10px" : "inherit",
-            }}
-          >
-            CARRERA:
+            CARGO
           </div>
           <div
             className="information-card__text"
@@ -101,7 +76,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
               fontSize: isMobile ? " .95rem" : " 0.8rem",
             }}
           >
-            {details ? details?.career : "..."}
+            {details ? details?.position : "..."}
           </div>
         </div>
         <div
@@ -124,28 +99,6 @@ export const InformationCard: React.FC<InformationCardProps> = ({
             }}
           >
             {details ? details?.currentPoliticalParty : "..."}
-          </div>
-        </div>
-        <div
-          style={{
-            marginBottom: isMobile ? "30px" : "5px",
-          }}
-        >
-          <div
-            className="information-card__title"
-            style={{
-              marginBottom: isMobile ? "10px" : "inherit",
-            }}
-          >
-            PARTIDO POLITICO POSTULACION
-          </div>
-          <div
-            className="information-card__text"
-            style={{
-              fontSize: isMobile ? " .95rem" : " 0.8rem",
-            }}
-          >
-            {details ? details?.politicalPartyNomination : "..."}
           </div>
         </div>
       </div>

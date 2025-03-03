@@ -49,9 +49,9 @@ const HeritageExplorerPage = () => {
       </div>
       <div className="content-650">
         <EquityIncreaseSection
-          initialYear={2019}
-          finalYear={2023}
-          nameCurrency="dólares"
+          initialYear={2021}
+          finalYear={2024}
+          nameCurrency="soles"
         />
       </div>
       <div className="content-550">

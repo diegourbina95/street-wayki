@@ -3,9 +3,10 @@ import { useEffect, useState } from "react";
 
 import { Bar } from "@/components/Charts";
 import { useMediaQuery } from "@/hooks";
+import { darkenColor, lightenColor } from "@/utils/colors";
 
-/* DATA MOCK */
-import { labels, data, backgroundColor, borderColor } from "@/_mock";
+/* DATA */
+import { getTopAssetIncreases } from "@/data/equity-increase.data";
 
 /* STYLES */
 
@@ -28,16 +29,23 @@ export const EquityIncreaseSection: React.FC<EquityIncreaseSectionProps> = ({
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   useEffect(() => {
-    setBarLabels(labels);
-    setBarData(data);
-    setBackgroundColor(backgroundColor);
-    setBorderColor(borderColor);
+    const listAssetIncreases = getTopAssetIncreases(5);
+    setBarLabels(listAssetIncreases.map((value) => value.abbreviatedName));
+    setBarData(
+      listAssetIncreases.map((value) =>
+        Number((value.totalIncrease / 1000000).toFixed(2))
+      )
+    );
+    setBackgroundColor(
+      listAssetIncreases.map((value) => lightenColor(value.color, 0.1))
+    );
+    setBorderColor(listAssetIncreases.map((value) => darkenColor(value.color)));
   }, []);
 
   return (
     <div className="heritage-explorer-page__equity-increase">
       <div className="equity-increase__title">
-        Top {labels.length || 0} Incremento Patrimonial {initialYear} -{" "}
+        Top {barLabels.length || 0} Incremento Patrimonial {initialYear} -{" "}
         {finalYear}
       </div>
       <span className="equity-increase__subtitle">

@@ -16,6 +16,7 @@
     height: 100%;
     padding-left: 17px;
     border-left: 7px solid #212121;
+    min-width: 80px;
   }
 
   &__icon {
@@ -38,6 +39,7 @@
     height: 100%;
     padding-right: 17px;
     border-right: 7px solid #212121;
+    min-width: 80px;
   }
 }
 

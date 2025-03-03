@@ -13,8 +13,8 @@ import { formatAmount } from "@/utils/amounts";
 import "@/styles/progress-nes.scss";
 
 interface ProgressNesProps {
-  quantity1: number;
-  quantity2: number;
+  quantity1: number | null | undefined;
+  quantity2: number | null | undefined;
   currency?: string;
 }
 
@@ -26,7 +26,13 @@ export const ProgressNes: React.FC<ProgressNesProps> = ({
   const [barPercentage, setBarPercentage] = useState(0);
 
   useEffect(() => {
-    setBarPercentage((quantity1 / (quantity1 + quantity2)) * 100);
+    if (
+      quantity1 !== null &&
+      quantity1 !== undefined &&
+      quantity2 !== null &&
+      quantity2 !== undefined
+    )
+      setBarPercentage((quantity1 / (quantity1 + quantity2)) * 100);
   }, [quantity1, quantity2]);
   return (
     <div className="progress-nes">
@@ -43,7 +49,11 @@ export const ProgressNes: React.FC<ProgressNesProps> = ({
           className="progress-nes__left"
           style={{ width: `${barPercentage}%` }}
         >
-          {`${currency || ""} ${formatAmount(quantity1)}`}
+          {`${currency || ""} ${
+            quantity1 !== null && quantity1 !== undefined
+              ? formatAmount(quantity1)
+              : "N/A"
+          }`}
         </div>
         <div className="progress-nes__icon">
           <img src="./img/fire.png" alt="fire" />
@@ -52,7 +62,11 @@ export const ProgressNes: React.FC<ProgressNesProps> = ({
           className="progress-nes__right"
           style={{ width: `${100 - barPercentage}%` }}
         >
-          {`${currency || ""} ${formatAmount(quantity2)}`}
+          {`${currency || ""} ${
+            quantity2 !== null && quantity2 !== undefined
+              ? formatAmount(quantity2)
+              : "N/A"
+          }`}
         </div>
       </div>
       <IconProgressBarBottom

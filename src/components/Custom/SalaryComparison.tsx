@@ -8,12 +8,12 @@ import { useEffect, useState } from "react";
 
 interface SalaryComparisonProps {
   player1: {
-    name: string;
-    salary: number;
+    name?: string;
+    salary?: number;
   };
   player2: {
-    name: string;
-    salary: number;
+    name?: string;
+    salary?: number;
   };
   averageSalary: number;
 }
@@ -27,8 +27,15 @@ export const SalaryComparison: React.FC<SalaryComparisonProps> = ({
   const [equivalence2, setEquivalence2] = useState<number>(0);
 
   useEffect(() => {
-    setEquivalence1(calculateEquivalence(player1.salary, averageSalary));
-    setEquivalence2(calculateEquivalence(player2.salary, averageSalary));
+    if (
+      player1.salary !== null &&
+      player1.salary !== undefined &&
+      player2.salary !== null &&
+      player2.salary !== undefined
+    ) {
+      setEquivalence1(calculateEquivalence(player1.salary, averageSalary));
+      setEquivalence2(calculateEquivalence(player2.salary, averageSalary));
+    }
   }, [player1, player2, averageSalary]);
 
   const calculateEquivalence = (salary: number, averageSalary: number) =>
@@ -36,9 +43,16 @@ export const SalaryComparison: React.FC<SalaryComparisonProps> = ({
 
   return (
     <div className="salary-comparison__content">
-      {player1.name} tiene un patrimonio que equivale a{" "}
-      {Math.round(equivalence1)} veces el sueldo promedio en Perú, mientras que
-      el de {player2.name} es {Math.round(equivalence2)} veces el promedio.
+      {player1.name || "N/A"} tiene un patrimonio que equivale a{" "}
+      {player1.salary !== null && player1.salary !== undefined
+        ? Math.round(equivalence1)
+        : "N/A"}{" "}
+      veces el sueldo promedio en Perú, mientras que el de{" "}
+      {player2.name || "N/A"} es{" "}
+      {player2.salary !== null && player2.salary !== undefined
+        ? Math.round(equivalence2)
+        : "N/A"}{" "}
+      veces el promedio.
     </div>
   );
 };

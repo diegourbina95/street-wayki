@@ -98,9 +98,9 @@ export const Bar: React.FC<BarData> = ({
                 type: "linear",
                 position: "top",
                 ticks: {
-                  stepSize: data.datasets.length ? 3 : 1,
+                  stepSize: data.datasets.length ? 4 : 1,
                   callback: function (value) {
-                    return `${value} ${scaleSymbol}`;
+                    return `${Number(value).toFixed(1)} ${scaleSymbol}`;
                   },
                 },
               },
