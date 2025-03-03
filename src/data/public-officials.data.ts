@@ -93,7 +93,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#f3f16d",
   },
   {
     dni: "7711761",
@@ -156,7 +156,7 @@ export const publicOfficialsData = [
       "Tiene 1 contrato por un total de S/ 9059 con la entidad Municipalidad de Lima; Tiene 2 contratos por un total de S/ 14306 con la entidad Gobierno Regional de Lima; Tiene 2 contratos por un total de S/ 5477 con la entidad Ministerio de Educación; Tiene 0 contrato por un total de S/ 1 con la entidad Ministerio de Salud",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#e22950",
   },
   {
     dni: "21569935",
@@ -219,7 +219,7 @@ export const publicOfficialsData = [
       "Tiene 3 contratos por un total de S/ 17528 con la entidad Municipalidad de Lima; Tiene 1 contrato por un total de S/ 1609 con la entidad Poder Judicial; Tiene 1 contrato por un total de S/ 9834 con la entidad Gobierno Regional de Lima; Tiene -1 contrato por un total de S/ -999 con la entidad Ministerio de Salud",
     quantityCompanyLinks: 5,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#7994bd",
   },
   {
     dni: "6354697",
@@ -281,7 +281,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 4,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#886c61",
   },
   {
     dni: "17896798",
@@ -343,7 +343,7 @@ export const publicOfficialsData = [
       "Tiene 2 contratos por un total de S/ 17708 con la entidad Poder Judicial; Tiene 2 contratos por un total de S/ 5244 con la entidad Municipalidad de Lima",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#6efbac",
   },
   {
     dni: "22423252",
@@ -405,7 +405,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#86c069",
   },
   {
     dni: "6825885",
@@ -468,7 +468,7 @@ export const publicOfficialsData = [
       "Tiene 4 contratos por un total de S/ 25948 con la entidad Poder Judicial",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#ffb3af",
   },
   {
     dni: "8236035",
@@ -530,7 +530,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#554703",
   },
   {
     dni: "28300174",
@@ -592,7 +592,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 2,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#68e483",
   },
   {
     dni: "23901989",
@@ -654,7 +654,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#f75778",
   },
   {
     dni: "40160380",
@@ -716,7 +716,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#022c79",
   },
   {
     dni: "19994639",
@@ -778,7 +778,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#c3393b",
   },
   {
     dni: "25567150",
@@ -840,7 +840,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 5,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#26b9d7",
   },
   {
     dni: "6522159",
@@ -902,7 +902,7 @@ export const publicOfficialsData = [
       "Tiene 6 contratos por un total de S/ 53045 con la entidad RENIEC; Tiene 1 contrato por un total de S/ 1581 con la entidad Hospital Nacional Arzobispo Loayza; Tiene 0 contrato por un total de S/ 0 con la entidad Municipalidad Provincial de Cañete",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#473441",
   },
   {
     dni: "8271323",
@@ -965,7 +965,7 @@ export const publicOfficialsData = [
       "Tiene 4 contratos por un total de S/ 6090 con la entidad RENIEC",
     quantityCompanyLinks: 5,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#d55768",
   },
   {
     dni: "70094373",
@@ -1027,7 +1027,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#306b87",
   },
   {
     dni: "18099367",
@@ -1089,7 +1089,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 5,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#7b40d5",
   },
   {
     dni: "8232920",
@@ -1151,7 +1151,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#0c9c2c",
   },
   {
     dni: "7704730",
@@ -1213,7 +1213,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 5,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#3211e1",
   },
   {
     dni: "2726999",
@@ -1275,7 +1275,7 @@ export const publicOfficialsData = [
       "Tiene 4 contratos por un total de S/ 36727 con la entidad Hospital Nacional Arzobispo Loayza; Tiene 1 contrato por un total de S/ 9983 con la entidad Poder Judicial; Tiene 1 contrato por un total de S/ 9542 con la entidad Gobierno Regional de Lima; Tiene 0 contrato por un total de S/ 0 con la entidad Ministerio de Salud",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#afea15",
   },
   {
     dni: "21422808",
@@ -1337,7 +1337,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 2,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#e55ef4",
   },
   {
     dni: "10491661",
@@ -1399,7 +1399,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#a32a91",
   },
   {
     dni: "2743658",
@@ -1460,7 +1460,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 4,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#94f48e",
   },
   {
     dni: "16751831",
@@ -1522,7 +1522,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#283ae2",
   },
   {
     dni: "1327194",
@@ -1585,7 +1585,7 @@ export const publicOfficialsData = [
       "Tiene 6 contratos por un total de S/ 56122 con la entidad Ministerio de Educación",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#e01730",
   },
   {
     dni: "43287528",
@@ -1648,7 +1648,7 @@ export const publicOfficialsData = [
       "Tiene 1 contrato por un total de S/ 9857 con la entidad Municipalidad Provincial de Cañete",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#2f743d",
   },
   {
     dni: "16429203",
@@ -1710,7 +1710,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#aa5365",
   },
   {
     dni: "16448130",
@@ -1771,7 +1771,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#7cd898",
   },
   {
     dni: "23977149",
@@ -1833,7 +1833,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#43d3d5",
   },
   {
     dni: "19877916",
@@ -1894,7 +1894,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#0672f9",
   },
   {
     dni: "7852432",
@@ -1957,7 +1957,7 @@ export const publicOfficialsData = [
       "Tiene 4 contratos por un total de S/ 39102 con la entidad Municipalidad Distrital de San Juan de Lurigancho; Tiene 1 contrato por un total de S/ 4564 con la entidad Municipalidad Provincial de Cañete; Tiene 1 contrato por un total de S/ 5232 con la entidad RENIEC; Tiene -1 contrato por un total de S/ -999 con la entidad Poder Judicial",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#fcd944",
   },
   {
     dni: "46847115",
@@ -2019,7 +2019,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 4,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#60de40",
   },
   {
     dni: "3243625",
@@ -2080,7 +2080,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 5,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#217ce3",
   },
   {
     dni: "7737110",
@@ -2141,7 +2141,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#6313a5",
   },
   {
     dni: "48507818",
@@ -2204,7 +2204,7 @@ export const publicOfficialsData = [
       "Tiene 2 contratos por un total de S/ 18892 con la entidad Gobierno Regional de Lima; Tiene 3 contratos por un total de S/ 20644 con la entidad Poder Judicial",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#8ece5f",
   },
   {
     dni: "44144875",
@@ -2266,7 +2266,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#c7a07a",
   },
   {
     dni: "42335591",
@@ -2328,7 +2328,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#9214ea",
   },
   {
     dni: "7874562",
@@ -2390,7 +2390,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#84038b",
   },
   {
     dni: "16642438",
@@ -2452,7 +2452,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#dd61c7",
   },
   {
     dni: "2417724",
@@ -2515,7 +2515,7 @@ export const publicOfficialsData = [
       "Tiene 2 contratos por un total de S/ 12373 con la entidad Hospital Nacional Arzobispo Loayza",
     quantityCompanyLinks: 2,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#ae003f",
   },
   {
     dni: "7831436",
@@ -2577,7 +2577,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#47c295",
   },
   {
     dni: "44103082",
@@ -2639,7 +2639,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#7ea222",
   },
   {
     dni: "40728264",
@@ -2700,7 +2700,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#c1ac1f",
   },
   {
     dni: "6256217",
@@ -2761,7 +2761,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 4,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#bf74b8",
   },
   {
     dni: "20051359",
@@ -2822,7 +2822,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 5,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#0b4185",
   },
   {
     dni: "9303898",
@@ -2883,7 +2883,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#8d22fb",
   },
   {
     dni: "32971154",
@@ -2945,7 +2945,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#ad0b80",
   },
   {
     dni: "1888173",
@@ -3007,7 +3007,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 4,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#32d857",
   },
   {
     dni: "45591954",
@@ -3069,7 +3069,7 @@ export const publicOfficialsData = [
       "Tiene 5 contratos por un total de S/ 24838 con la entidad Ministerio de Educación; Tiene 0 contrato por un total de S/ 1 con la entidad Poder Judicial; Tiene 0 contrato por un total de S/ 0 con la entidad Municipalidad Provincial de Cañete; Tiene 0 contrato por un total de S/ 1 con la entidad Gobierno Regional de Lima",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#ac23b1",
   },
   {
     dni: "44756974",
@@ -3131,7 +3131,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#e47d75",
   },
   {
     dni: "188009",
@@ -3194,7 +3194,7 @@ export const publicOfficialsData = [
       "Tiene 2 contratos por un total de S/ 5818 con la entidad Ministerio de Educación",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#723a15",
   },
   {
     dni: "23266777",
@@ -3255,7 +3255,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#5294f0",
   },
   {
     dni: "44886100",
@@ -3317,7 +3317,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#2a9932",
   },
   {
     dni: "5374449",
@@ -3380,7 +3380,7 @@ export const publicOfficialsData = [
       "Tiene 3 contratos por un total de S/ 26774 con la entidad Gobierno Regional de Lima; Tiene 0 contrato por un total de S/ 1 con la entidad RENIEC",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#3a62c5",
   },
   {
     dni: "29423212",
@@ -3442,7 +3442,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#b1d252",
   },
   {
     dni: "10804834",
@@ -3504,7 +3504,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#c72ff6",
   },
   {
     dni: "10213424",
@@ -3567,7 +3567,7 @@ export const publicOfficialsData = [
       "Tiene 1 contrato por un total de S/ 4135 con la entidad Municipalidad Distrital de San Juan de Lurigancho; Tiene 3 contratos por un total de S/ 24730 con la entidad Municipalidad Provincial de Cañete",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#ace899",
   },
   {
     dni: "6783615",
@@ -3630,7 +3630,7 @@ export const publicOfficialsData = [
       "Tiene 2 contratos por un total de S/ 19184 con la entidad Municipalidad de Lima; Tiene 2 contratos por un total de S/ 12437 con la entidad Poder Judicial",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#3b6c63",
   },
   {
     dni: "29384343",
@@ -3692,7 +3692,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 4,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#de94b9",
   },
   {
     dni: "10806296",
@@ -3753,7 +3753,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#65eec9",
   },
   {
     dni: "9575873",
@@ -3815,7 +3815,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#251cd4",
   },
   {
     dni: "42611628",
@@ -3876,7 +3876,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#81dce8",
   },
   {
     dni: "44338336",
@@ -3938,7 +3938,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 4,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#0d7f19",
   },
   {
     dni: "40332943",
@@ -4000,7 +4000,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#c99904",
   },
   {
     dni: "361856",
@@ -4062,7 +4062,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#462a4e",
   },
   {
     dni: "43313696",
@@ -4124,7 +4124,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#eb94c3",
   },
   {
     dni: "6049853",
@@ -4186,7 +4186,7 @@ export const publicOfficialsData = [
       "Tiene 3 contratos por un total de S/ 20616 con la entidad Municipalidad de Lima; Tiene 0 contrato por un total de S/ 1 con la entidad Ministerio de Salud; Tiene 0 contrato por un total de S/ 1 con la entidad Hospital Nacional Arzobispo Loayza",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#1fb831",
   },
   {
     dni: "16667146",
@@ -4247,7 +4247,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 2,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#e10f58",
   },
   {
     dni: "9303945",
@@ -4310,7 +4310,7 @@ export const publicOfficialsData = [
       "Tiene 5 contratos por un total de S/ 11766 con la entidad RENIEC; Tiene 3 contratos por un total de S/ 24167 con la entidad Municipalidad de Lima",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#a2e154",
   },
   {
     dni: "24711696",
@@ -4372,7 +4372,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#d0d612",
   },
   {
     dni: "32923902",
@@ -4434,7 +4434,7 @@ export const publicOfficialsData = [
       "Tiene 4 contratos por un total de S/ 17901 con la entidad Ministerio de Salud",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#af2bcb",
   },
   {
     dni: "10485497",
@@ -4496,7 +4496,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#e0e4f1",
   },
   {
     dni: "1157063",
@@ -4558,7 +4558,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#b853d3",
   },
   {
     dni: "47785498",
@@ -4620,7 +4620,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#b87daf",
   },
   {
     dni: "31031443",
@@ -4682,7 +4682,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#1f39ba",
   },
   {
     dni: "4647085",
@@ -4743,7 +4743,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#184c24",
   },
   {
     dni: "42750152",
@@ -4806,7 +4806,7 @@ export const publicOfficialsData = [
       "Tiene 2 contratos por un total de S/ 10561 con la entidad Municipalidad Distrital de San Juan de Lurigancho; Tiene 5 contratos por un total de S/ 40357 con la entidad Municipalidad de Lima",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#9d86d5",
   },
   {
     dni: "1088231",
@@ -4869,7 +4869,7 @@ export const publicOfficialsData = [
       "Tiene 2 contratos por un total de S/ 14357 con la entidad Municipalidad de Lima",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#8dfc4d",
   },
   {
     dni: "8185259",
@@ -4931,7 +4931,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#d0a521",
   },
   {
     dni: "5070188",
@@ -4993,7 +4993,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#830542",
   },
   {
     dni: "40204874",
@@ -5054,7 +5054,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#5c60a6",
   },
   {
     dni: "27361499",
@@ -5116,7 +5116,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#60c2e9",
   },
   {
     dni: "1311614",
@@ -5178,7 +5178,7 @@ export const publicOfficialsData = [
       "Tiene 3 contratos por un total de S/ 24972 con la entidad Hospital Nacional Arzobispo Loayza; Tiene 2 contratos por un total de S/ 18753 con la entidad Municipalidad de Lima",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#5815f6",
   },
   {
     dni: "29632775",
@@ -5241,7 +5241,7 @@ export const publicOfficialsData = [
       "Tiene 1 contrato por un total de S/ 5141 con la entidad Gobierno Regional de Lima",
     quantityCompanyLinks: 4,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#5a6089",
   },
   {
     dni: "20036514",
@@ -5303,7 +5303,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 5,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#34359f",
   },
   {
     dni: "25542661",
@@ -5366,7 +5366,7 @@ export const publicOfficialsData = [
       "Tiene 7 contratos por un total de S/ 60324 con la entidad Poder Judicial; Tiene 1 contrato por un total de S/ 9001 con la entidad Gobierno Regional de Lima; Tiene -1 contrato por un total de S/ -1000 con la entidad Municipalidad de Lima",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#4303a3",
   },
   {
     dni: "16655831",
@@ -5429,7 +5429,7 @@ export const publicOfficialsData = [
       "Tiene 5 contratos por un total de S/ 11423 con la entidad Hospital Nacional Arzobispo Loayza",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#3d0b5b",
   },
   {
     dni: "31027035",
@@ -5491,7 +5491,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 2,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#2c70f3",
   },
   {
     dni: "7026029",
@@ -5552,7 +5552,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#b89e98",
   },
   {
     dni: "22290935",
@@ -5615,7 +5615,7 @@ export const publicOfficialsData = [
       "Tiene 6 contratos por un total de S/ 38225 con la entidad Municipalidad de Lima; Tiene 0 contrato por un total de S/ 0 con la entidad Poder Judicial; Tiene 0 contrato por un total de S/ 0 con la entidad Hospital Nacional Arzobispo Loayza",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#52ee38",
   },
   {
     dni: "17549232",
@@ -5677,7 +5677,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#caa6f9",
   },
   {
     dni: "4413969",
@@ -5739,7 +5739,7 @@ export const publicOfficialsData = [
       "Tiene 5 contratos por un total de S/ 38116 con la entidad Municipalidad Distrital de San Juan de Lurigancho",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#197fe1",
   },
   {
     dni: "15300817",
@@ -5802,7 +5802,7 @@ export const publicOfficialsData = [
       "Tiene 5 contratos por un total de S/ 15408 con la entidad RENIEC; Tiene 1 contrato por un total de S/ 7442 con la entidad Ministerio de Educación; Tiene 0 contrato por un total de S/ 0 con la entidad Hospital Nacional Arzobispo Loayza; Tiene 0 contrato por un total de S/ 1 con la entidad Municipalidad de Lima",
     quantityCompanyLinks: 4,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#53e5ba",
   },
   {
     dni: "16719182",
@@ -5864,7 +5864,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#d8d842",
   },
   {
     dni: "42589181",
@@ -5926,7 +5926,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 5,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#19463e",
   },
   {
     dni: "40858548",
@@ -5988,7 +5988,7 @@ export const publicOfficialsData = [
       "Tiene 5 contratos por un total de S/ 35897 con la entidad Municipalidad Provincial de Cañete; Tiene 0 contrato por un total de S/ 1 con la entidad Hospital Nacional Arzobispo Loayza; Tiene 1 contrato por un total de S/ 8063 con la entidad Municipalidad de Lima; Tiene -1 contrato por un total de S/ -999 con la entidad RENIEC",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#e9ed9d",
   },
   {
     dni: "18080185",
@@ -6051,7 +6051,7 @@ export const publicOfficialsData = [
       "Tiene 4 contratos por un total de S/ 6100 con la entidad Ministerio de Salud; Tiene 1 contrato por un total de S/ 4434 con la entidad Hospital Nacional Arzobispo Loayza; Tiene 3 contratos por un total de S/ 29935 con la entidad Gobierno Regional de Lima",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#cb5a0e",
   },
   {
     dni: "40242430",
@@ -6113,7 +6113,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#f2a0d5",
   },
   {
     dni: "42572649",
@@ -6175,7 +6175,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#f2024c",
   },
   {
     dni: "45382589",
@@ -6236,7 +6236,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 5,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#faf557",
   },
   {
     dni: "41187802",
@@ -6299,7 +6299,7 @@ export const publicOfficialsData = [
       "Tiene 6 contratos por un total de S/ 46595 con la entidad Gobierno Regional de Lima; Tiene 1 contrato por un total de S/ 7201 con la entidad Ministerio de Educación",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#179254",
   },
   {
     dni: "7638265",
@@ -6362,7 +6362,7 @@ export const publicOfficialsData = [
       "Tiene 1 contrato por un total de S/ 4173 con la entidad Municipalidad Distrital de San Juan de Lurigancho; Tiene 1 contrato por un total de S/ 4807 con la entidad Hospital Nacional Arzobispo Loayza; Tiene 2 contratos por un total de S/ 13771 con la entidad Gobierno Regional de Lima; Tiene 0 contrato por un total de S/ 1 con la entidad Ministerio de Educación",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#cfe868",
   },
   {
     dni: "10129700",
@@ -6423,7 +6423,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#7710ca",
   },
   {
     dni: "72200895",
@@ -6485,7 +6485,7 @@ export const publicOfficialsData = [
       "Tiene 3 contratos por un total de S/ 11411 con la entidad RENIEC; Tiene 2 contratos por un total de S/ 4193 con la entidad Ministerio de Salud; Tiene 0 contrato por un total de S/ 1 con la entidad Municipalidad de Lima",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#97891a",
   },
   {
     dni: "21456255",
@@ -6546,7 +6546,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#23601d",
   },
   {
     dni: "29410132",
@@ -6608,7 +6608,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 4,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#c00b38",
   },
   {
     dni: "10280036",
@@ -6670,7 +6670,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#3025a7",
   },
   {
     dni: "41005490",
@@ -6731,7 +6731,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#76544a",
   },
   {
     dni: "5618705",
@@ -6793,7 +6793,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#5c44f6",
   },
   {
     dni: "41623184",
@@ -6856,7 +6856,7 @@ export const publicOfficialsData = [
       "Tiene 4 contratos por un total de S/ 37019 con la entidad RENIEC",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#14f50f",
   },
   {
     dni: "10691398",
@@ -6918,7 +6918,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 4,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#693d37",
   },
   {
     dni: "16002918",
@@ -6980,7 +6980,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#b34f8f",
   },
   {
     dni: "44993239",
@@ -7041,7 +7041,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#1ead64",
   },
   {
     dni: "46517805",
@@ -7103,7 +7103,7 @@ export const publicOfficialsData = [
       "Tiene 2 contratos por un total de S/ 12403 con la entidad RENIEC; Tiene 1 contrato por un total de S/ 1520 con la entidad Ministerio de Educación",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#d950bc",
   },
   {
     dni: "40577351",
@@ -7164,7 +7164,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#805c50",
   },
   {
     dni: "44649199",
@@ -7227,7 +7227,7 @@ export const publicOfficialsData = [
       "Tiene 1 contrato por un total de S/ 2134 con la entidad Municipalidad de Lima",
     quantityCompanyLinks: 4,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#23f2bf",
   },
   {
     dni: "29299579",
@@ -7290,7 +7290,7 @@ export const publicOfficialsData = [
       "Tiene 5 contratos por un total de S/ 24468 con la entidad RENIEC; Tiene 0 contrato por un total de S/ 0 con la entidad Municipalidad de Lima; Tiene 0 contrato por un total de S/ 1 con la entidad Ministerio de Educación",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#edd4dc",
   },
   {
     dni: "42628319",
@@ -7352,7 +7352,7 @@ export const publicOfficialsData = [
       "Tiene 1 contrato por un total de S/ 4206 con la entidad Ministerio de Salud",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#20c99e",
   },
   {
     dni: "80143959",
@@ -7414,7 +7414,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#0bdf1c",
   },
   {
     dni: "8911520",
@@ -7477,7 +7477,7 @@ export const publicOfficialsData = [
       "Tiene 8 contratos por un total de S/ 37328 con la entidad Municipalidad Provincial de Cañete",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#179ea8",
   },
   {
     dni: "44306903",
@@ -7539,7 +7539,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#98b8db",
   },
   {
     dni: "42699423",
@@ -7601,7 +7601,7 @@ export const publicOfficialsData = [
       "Tiene 5 contratos por un total de S/ 40836 con la entidad Gobierno Regional de Lima; Tiene 2 contratos por un total de S/ 19744 con la entidad Hospital Nacional Arzobispo Loayza; Tiene 0 contrato por un total de S/ 1 con la entidad Ministerio de Salud; Tiene 0 contrato por un total de S/ 1 con la entidad Municipalidad Distrital de San Juan de Lurigancho",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#5e340b",
   },
   {
     dni: "9980339",
@@ -7662,7 +7662,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#41731b",
   },
   {
     dni: "22510256",
@@ -7724,7 +7724,7 @@ export const publicOfficialsData = [
       "Tiene 1 contrato por un total de S/ 3243 con la entidad Hospital Nacional Arzobispo Loayza",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#25c0c9",
   },
   {
     dni: "18099931",
@@ -7786,7 +7786,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#acde6a",
   },
   {
     dni: "42134579",
@@ -7848,7 +7848,7 @@ export const publicOfficialsData = [
       "Tiene 2 contratos por un total de S/ 2519 con la entidad Municipalidad Provincial de Cañete",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#e0598a",
   },
   {
     dni: "43328757",
@@ -7910,7 +7910,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#f798af",
   },
   {
     dni: "42834886",
@@ -7972,7 +7972,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#0eefc0",
   },
   {
     dni: "44275599",
@@ -8035,7 +8035,7 @@ export const publicOfficialsData = [
       "Tiene 2 contratos por un total de S/ 6862 con la entidad Municipalidad Distrital de San Juan de Lurigancho; Tiene 2 contratos por un total de S/ 2304 con la entidad Ministerio de Salud; Tiene 0 contrato por un total de S/ 0 con la entidad Municipalidad Provincial de Cañete",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#f16c2a",
   },
   {
     dni: "434972",
@@ -8097,7 +8097,7 @@ export const publicOfficialsData = [
       "Tiene 7 contratos por un total de S/ 8184 con la entidad Municipalidad Distrital de San Juan de Lurigancho; Tiene 1 contrato por un total de S/ 8892 con la entidad Ministerio de Salud; Tiene 0 contrato por un total de S/ 0 con la entidad Poder Judicial; Tiene 0 contrato por un total de S/ 1 con la entidad Municipalidad Provincial de Cañete",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#330c84",
   },
   {
     dni: "70546213",
@@ -8158,7 +8158,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 3,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#a23bd9",
   },
   {
     dni: "42843414",
@@ -8220,7 +8220,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#c80d33",
   },
   {
     dni: "46130369",
@@ -8283,7 +8283,7 @@ export const publicOfficialsData = [
       "Tiene 2 contratos por un total de S/ 4077 con la entidad Hospital Nacional Arzobispo Loayza; Tiene 5 contratos por un total de S/ 24595 con la entidad Ministerio de Salud; Tiene 0 contrato por un total de S/ 0 con la entidad Municipalidad Provincial de Cañete; Tiene 0 contrato por un total de S/ 1 con la entidad Ministerio de Educación",
     quantityCompanyLinks: 5,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#6b8983",
   },
   {
     dni: "76030152",
@@ -8346,7 +8346,7 @@ export const publicOfficialsData = [
       "Tiene 3 contratos por un total de S/ 29815 con la entidad Gobierno Regional de Lima; Tiene 1 contrato por un total de S/ 6189 con la entidad Municipalidad Distrital de San Juan de Lurigancho; Tiene 0 contrato por un total de S/ 1 con la entidad RENIEC",
     quantityCompanyLinks: 2,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#fe5b4c",
   },
   {
     dni: "45209282",
@@ -8408,7 +8408,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#bb838a",
   },
   {
     dni: "18032382",
@@ -8471,7 +8471,7 @@ export const publicOfficialsData = [
       "Tiene 7 contratos por un total de S/ 62918 con la entidad Municipalidad Distrital de San Juan de Lurigancho; Tiene 0 contrato por un total de S/ 0 con la entidad Hospital Nacional Arzobispo Loayza",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#380943",
   },
   {
     dni: "1234692",
@@ -8534,7 +8534,7 @@ export const publicOfficialsData = [
       "Tiene 7 contratos por un total de S/ 30580 con la entidad Ministerio de Salud; Tiene 1 contrato por un total de S/ 9237 con la entidad Poder Judicial",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#395356",
   },
   {
     dni: "41103058",
@@ -8596,7 +8596,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#4d2397",
   },
   {
     dni: "428265",
@@ -8659,7 +8659,7 @@ export const publicOfficialsData = [
       "Tiene 5 contratos por un total de S/ 49593 con la entidad Hospital Nacional Arzobispo Loayza; Tiene 1 contrato por un total de S/ 9103 con la entidad Municipalidad de Lima; Tiene -1 contrato por un total de S/ -1000 con la entidad Ministerio de Salud",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#5d4fc0",
   },
   {
     dni: "27080597",
@@ -8720,7 +8720,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#3e87b0",
   },
   {
     dni: "48164963",
@@ -8781,7 +8781,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#c5fb7a",
   },
   {
     dni: "42878423",
@@ -8843,7 +8843,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#6ae957",
   },
   {
     dni: "44807108",
@@ -8906,7 +8906,7 @@ export const publicOfficialsData = [
       "Tiene 1 contrato por un total de S/ 3286 con la entidad Gobierno Regional de Lima",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#65146b",
   },
   {
     dni: "25700579",
@@ -8968,7 +8968,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#5522cf",
   },
   {
     dni: "46646988",
@@ -9030,7 +9030,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#b4d9cb",
   },
   {
     dni: "40383269",
@@ -9092,7 +9092,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 2,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#127d5d",
   },
   {
     dni: "41799959",
@@ -9153,7 +9153,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#c53c33",
   },
   {
     dni: "1077388",
@@ -9216,7 +9216,7 @@ export const publicOfficialsData = [
       "Tiene 8 contratos por un total de S/ 49066 con la entidad Ministerio de Salud; Tiene 0 contrato por un total de S/ 1 con la entidad RENIEC",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#0ce3fb",
   },
   {
     dni: "20055251",
@@ -9278,7 +9278,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 2,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#93a001",
   },
   {
     dni: "42846124",
@@ -9340,7 +9340,7 @@ export const publicOfficialsData = [
       "Tiene 1 contrato por un total de S/ 3154 con la entidad Gobierno Regional de Lima; Tiene 1 contrato por un total de S/ 8617 con la entidad Municipalidad Provincial de Cañete; Tiene 2 contratos por un total de S/ 15026 con la entidad Municipalidad de Lima",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#76bc77",
   },
   {
     dni: "42377791",
@@ -9402,7 +9402,7 @@ export const publicOfficialsData = [
       "Tiene 1 contrato por un total de S/ 5279 con la entidad Municipalidad de Lima",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#89730f",
   },
   {
     dni: "41258762",
@@ -9465,7 +9465,7 @@ export const publicOfficialsData = [
       "Tiene 2 contratos por un total de S/ 19338 con la entidad Hospital Nacional Arzobispo Loayza; Tiene 3 contratos por un total de S/ 9876 con la entidad Municipalidad Provincial de Cañete; Tiene 0 contrato por un total de S/ 1 con la entidad Municipalidad de Lima; Tiene 0 contrato por un total de S/ 1 con la entidad Ministerio de Educación",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#92597e",
   },
   {
     dni: "23017616",
@@ -9528,7 +9528,7 @@ export const publicOfficialsData = [
       "Tiene 5 contratos por un total de S/ 9794 con la entidad Ministerio de Salud; Tiene 1 contrato por un total de S/ 1156 con la entidad Municipalidad Distrital de San Juan de Lurigancho; Tiene -1 contrato por un total de S/ -999 con la entidad Ministerio de Educación",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#e627d7",
   },
   {
     dni: "21564196",
@@ -9589,7 +9589,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#77b4b2",
   },
   {
     dni: "7246887",
@@ -9651,7 +9651,7 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 0,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#4ceeae",
   },
   {
     dni: "8119443",
@@ -9713,6 +9713,6 @@ export const publicOfficialsData = [
     detailContractsRucNaturalPerson: "No tiene contratos registrados",
     quantityCompanyLinks: 1,
     detailCompanyLinks: "",
-    color: "#817bfa",
+    color: "#9f5b65",
   },
 ];

@@ -13,9 +13,9 @@ const HeritageExplorerPage = Loadable(
 const CompareOfficialsPage = Loadable(
   lazy(() => import("@/views/public/CompareOfficials/index"))
 );
-const ComponentsPage = Loadable(
+/* const ComponentsPage = Loadable(
   lazy(() => import("@/views/public/ComponentsPage"))
-);
+); */
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -25,7 +25,7 @@ export const PublicRoutes = () => (
       <Route path="/" element={<HomePage />} />
       <Route path="explorador-patrimonial" element={<HeritageExplorerPage />} />
       <Route path="comparar" element={<CompareOfficialsPage />} />
-      <Route path="componentes" element={<ComponentsPage />} />
+      {/* <Route path="componentes" element={<ComponentsPage />} /> */}
     </Route>
   </Routes>
 );
