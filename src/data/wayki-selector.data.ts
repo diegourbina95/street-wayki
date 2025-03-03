@@ -6,10 +6,19 @@ export const generateData = () => {
     return {
       data: [
         {
-          x: official.heritageForYear[official.heritageForYear.length - 1]
-            .amount,
-          y: official.heritageForYear[official.heritageForYear.length - 1]
-            .amount,
+          x: Number(
+            (
+              official.heritageForYear[official.heritageForYear.length - 1]
+                .amount / 1000000
+            ).toFixed(2)
+          ),
+          /* y: Number(
+            (
+              official.heritageForYear[official.heritageForYear.length - 1]
+                .amount / 1000000
+            ).toFixed(2)
+          ), */
+          y: official.separationRange,
           person: {
             code: official.dni,
             name: official.shortName,
@@ -23,6 +32,12 @@ export const generateData = () => {
       borderColor: `rgba(${convertHexaToRgb(official.color)}, 1)`,
     };
   });
+  /* .filter(
+      (value) =>
+        !["17903382", "7711761", "21569935", "6354697"].includes(
+          value.data[0].person.code
+        )
+    ); */
 };
 
 export const politicalPartiesData = () => {

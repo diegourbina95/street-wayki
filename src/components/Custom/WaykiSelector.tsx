@@ -68,6 +68,7 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
 
   useEffect(() => {
     setPoliticalParties(politicalPartiesData);
+    console.log("patrimonyData: ", patrimonyData);
     setPatrimonialData(patrimonyData);
     setDefaultPatrimonialData(patrimonyData);
   }, [politicalPartiesData, patrimonyData]);
