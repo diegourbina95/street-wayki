@@ -15,6 +15,47 @@
   &__wayki-selector {
     padding: 58px 0 0;
   }
+
+  &__equity-increase {
+    margin-top: 57px;
+    padding: 0 23px;
+
+    .equity-increase {
+      &__title {
+        text-transform: uppercase;
+        margin: 0 auto;
+        max-width: 450px;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 1rem;
+      }
+
+      &__subtitle {
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        font-size: 0.8rem;
+        margin-left: 70px;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      &__bar {
+        height: 400px;
+      }
+    }
+  }
+
+  &__asset-increase-comparator {
+    margin-top: 70px;
+    padding: 0 24px;
+    .asset-increase-comparator {
+      &__title {
+        margin-bottom: 20px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -25,7 +66,14 @@
 
     &__information {
       font-size: 1rem;
-      margin-bottom: 50px;
+    }
+
+    &__equity-increase {
+      margin-top: 80px;
+    }
+
+    &__asset-increase-comparator {
+      margin-top: 90px;
     }
   }
 }

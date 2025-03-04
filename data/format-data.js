@@ -19,6 +19,19 @@ const formatArray = (tagToSearch, data, label1, label2) => {
     }));
 };
 
+const getRandomHex = () => {
+  const randomHex = () =>
+    Math.floor(Math.random() * 256)
+      .toString(16)
+      .padStart(2, "0");
+
+  const r = randomHex();
+  const g = randomHex();
+  const b = randomHex();
+
+  return `#${r}${g}${b}`;
+};
+
 /* Generar arreglos */
 
 const formatWithArrays = jsonData.map((data) => ({
@@ -42,7 +55,7 @@ const formatWithArrays = jsonData.map((data) => ({
   detailContractsRucNaturalPerson: data.detailContractsRucNaturalPerson,
   quantityCompanyLinks: data.quantityCompanyLinks,
   detailCompanyLinks: data.detailCompanyLinks || "",
-  color: data.color,
+  color: getRandomHex(),
 }));
 fs.writeFileSync(
   "datos_patrimonio_final_v1.json",
