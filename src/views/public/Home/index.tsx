@@ -8,7 +8,6 @@ import { FightOverlay } from "@/components/Custom";
 
 import { InformationSection } from "./components/InformationSection";
 import { WaykiSelectorSection } from "./components/WaykiSelectorSection";
-import { ComparationSection } from "./components/ComparationSection";
 import { EquityIncreaseSection } from "./components/EquityIncreaseSection";
 
 import congresoImage from "@/assets/images/congreso.png";
@@ -21,21 +20,10 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   const [isPlay, setIsPlay] = useState<boolean>(false);
-  const [players, setPlayers] = useState<any[]>([]);
 
   const handlePlay = (payload: any) => {
     setIsPlay(true);
     navigate(`/comparar?player1=${payload[0].code}&player2=${payload[1].code}`);
-    /* setPlayers(payload); */
-  };
-
-  const handleReset = () => {
-    setIsPlay(false);
-    setPlayers([]);
-    const section = document.getElementById("wayki-section");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
   };
 
   return (
