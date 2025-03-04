@@ -49,6 +49,7 @@ const CompareOfficials = () => {
               name: playerDetails1?.shortName,
               position: playerDetails1?.position,
               currentPoliticalParty: playerDetails1?.currentBench,
+              avatar: playerDetails1?.photos,
             }}
           />
         </div>
@@ -61,6 +62,7 @@ const CompareOfficials = () => {
               name: playerDetails2?.shortName,
               position: playerDetails2?.position,
               currentPoliticalParty: playerDetails2?.currentBench,
+              avatar: playerDetails2?.photos,
             }}
           />
         </div>

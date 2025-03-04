@@ -14,6 +14,7 @@ interface InformationCardProps {
   details?:
     | {
         name?: string;
+        avatar?: string;
         currentPoliticalParty?: string;
         position?: string;
       }
@@ -57,6 +58,23 @@ export const InformationCard: React.FC<InformationCardProps> = ({
         >
           {details ? details?.name : "Selecciona un wayki"}
         </div>
+        {details?.avatar && (
+          <div
+            className="information-card__avatar"
+            style={{
+              fontSize: isMobile ? ".75rem" : ".53rem",
+              padding: isMobile ? "10px 0" : "0 0 7px",
+            }}
+          >
+            <div className="information-card__avatar-content">
+              <img
+                src={`./img/officials/${details?.avatar}`}
+                alt={`avatar_${details?.avatar}`}
+              />
+            </div>
+          </div>
+        )}
+
         <div
           style={{
             marginBottom: isMobile ? "30px" : "5px",
