@@ -16,9 +16,25 @@
 
   &__name {
     padding-bottom: 5px;
-    border-bottom: 1.6px solid #212121;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 0.5rem;
+    text-align: center;
+  }
+
+  &__avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    &-content {
+      min-width: 62px;
+      height: 90px;
+      border: 2px solid #2b2b2b;
+      border-radius: 5px;
+      img {
+        height: 100%;
+        height: 100%;
+      }
+    }
   }
 
   &__title {
