@@ -14,14 +14,22 @@ interface InformationCardProps {
   details?:
     | {
         name?: string;
+        divisionName?: boolean;
         avatar?: string;
         currentPoliticalParty?: string;
         position?: string;
+        textList?: TextList;
+        otherRecords?: string;
       }
     | null
     | undefined;
   size?: number;
   isMobile?: boolean;
+}
+
+interface TextList {
+  label: string;
+  list?: string[];
 }
 
 export const InformationCard: React.FC<InformationCardProps> = ({
@@ -54,6 +62,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
           style={{
             fontSize: isMobile ? ".75rem" : ".53rem",
             padding: isMobile ? "10px 0" : "0 0 7px",
+            borderBottom: details?.divisionName ? "1px solid #212121" : "none",
           }}
         >
           {details ? details?.name : "Selecciona un wayki"}
@@ -74,51 +83,109 @@ export const InformationCard: React.FC<InformationCardProps> = ({
             </div>
           </div>
         )}
+        {details?.position && (
+          <div
+            style={{
+              marginBottom: isMobile ? "30px" : "5px",
+            }}
+          >
+            <div
+              className="information-card__title"
+              style={{
+                marginBottom: isMobile ? "10px" : "inherit",
+              }}
+            >
+              CARGO
+            </div>
+            <div
+              className="information-card__text"
+              style={{
+                fontSize: isMobile ? " .95rem" : " 0.8rem",
+              }}
+            >
+              {details ? details?.position : "..."}
+            </div>
+          </div>
+        )}
 
-        <div
-          style={{
-            marginBottom: isMobile ? "30px" : "5px",
-          }}
-        >
+        {details?.currentPoliticalParty && (
           <div
-            className="information-card__title"
             style={{
-              marginBottom: isMobile ? "10px" : "inherit",
+              marginBottom: isMobile ? "20px" : "5px",
             }}
           >
-            CARGO
+            <div
+              className="information-card__title"
+              style={{
+                marginBottom: isMobile ? "10px" : "inherit",
+              }}
+            >
+              PARTIDO POLITICO ACTUAL:
+            </div>
+            <div
+              className="information-card__text"
+              style={{
+                fontSize: isMobile ? " .95rem" : " 0.8rem",
+              }}
+            >
+              {details ? details?.currentPoliticalParty : "..."}
+            </div>
           </div>
+        )}
+
+        {details?.textList && (
           <div
-            className="information-card__text"
             style={{
-              fontSize: isMobile ? " .95rem" : " 0.8rem",
+              marginBottom: isMobile ? "20px" : "5px",
             }}
           >
-            {details ? details?.position : "..."}
+            <div
+              className="information-card__title"
+              style={{
+                marginBottom: isMobile ? "10px" : "inherit",
+              }}
+            >
+              {details.textList.label}
+            </div>
+            <div
+              className="information-card__text"
+              style={{
+                fontSize: isMobile ? " .95rem" : " 0.8rem",
+              }}
+            >
+              <ul style={{ paddingLeft: "25px" }}>
+                {details.textList.list
+                  ? details.textList.list.map((value) => <li>{value}</li>)
+                  : "..."}
+              </ul>
+            </div>
           </div>
-        </div>
-        <div
-          style={{
-            marginBottom: isMobile ? "20px" : "5px",
-          }}
-        >
+        )}
+
+        {details?.otherRecords && (
           <div
-            className="information-card__title"
             style={{
-              marginBottom: isMobile ? "10px" : "inherit",
+              marginBottom: isMobile ? "20px" : "5px",
             }}
           >
-            PARTIDO POLITICO ACTUAL:
+            <div
+              className="information-card__title"
+              style={{
+                marginBottom: isMobile ? "10px" : "inherit",
+              }}
+            >
+              OTROS ANTECEDENTES:
+            </div>
+            <div
+              className="information-card__text"
+              style={{
+                fontSize: isMobile ? " .95rem" : " 0.8rem",
+              }}
+            >
+              {details ? details?.otherRecords : "..."}
+            </div>
           </div>
-          <div
-            className="information-card__text"
-            style={{
-              fontSize: isMobile ? " .95rem" : " 0.8rem",
-            }}
-          >
-            {details ? details?.currentPoliticalParty : "..."}
-          </div>
-        </div>
+        )}
       </div>
       <IconBoderBottomCardVs
         color={details ? color : EMPTY_COLOR}

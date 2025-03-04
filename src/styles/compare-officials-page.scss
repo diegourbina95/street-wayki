@@ -31,6 +31,18 @@
     margin-top: 30px;
   }
 
+  &__criminal-record-cards {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  &__criminal-record-cards > div:last-child {
+    margin-top: 50px;
+  }
+
   &__comparation-reset {
     display: flex;
     flex-direction: column;
@@ -51,7 +63,7 @@
       padding: 0;
 
       .comparation-bars__item:first-child {
-        margin-bottom: 90px !important;
+        margin-bottom: 50px !important;
       }
     }
 
@@ -62,6 +74,18 @@
     }
 
     &__comparation-cards > div:last-child {
+      margin-top: 0;
+    }
+
+    &__criminal-record-cards {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__criminal-record-cards > div:last-child {
       margin-top: 0;
     }
 
