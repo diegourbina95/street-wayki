@@ -1,10 +1,8 @@
 /* REACT COMPONENTS */
-import { useState } from "react";
 import { useNavigate } from "react-router";
 
 import { HeroStreetWayki } from "@/components/Feedback";
 import { MoreOptions } from "@/components/Layout";
-import { FightOverlay } from "@/components/Custom";
 
 import { InformationSection } from "./components/InformationSection";
 import { WaykiSelectorSection } from "./components/WaykiSelectorSection";
@@ -19,10 +17,7 @@ import { AssetIncreaseComparatorSection } from "./components/AssetIncreaseCompar
 const HomePage = () => {
   const navigate = useNavigate();
 
-  const [isPlay, setIsPlay] = useState<boolean>(false);
-
   const handlePlay = (payload: any) => {
-    setIsPlay(true);
     navigate(`/comparar?player1=${payload[0].code}&player2=${payload[1].code}`);
   };
 
@@ -71,7 +66,6 @@ const HomePage = () => {
       <div className="home-page__more-options">
         <MoreOptions />
       </div>
-      <FightOverlay show={isPlay} />
     </div>
   );
 };

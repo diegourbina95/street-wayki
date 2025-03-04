@@ -7,15 +7,15 @@ import { ProgressNes } from "@/components/Feedback";
 import { InformationCard } from "@/components/Surfaces";
 import { PlayerText } from "@/components/Texts";
 import { ButtonNes } from "@/components/Inputs";
-import { SalaryComparison } from "@/components/Custom";
+import { FightOverlay, SalaryComparison } from "@/components/Custom";
 import { Line } from "@/components/Charts";
 
 /* DATA */
 import { findOfficial } from "@/data/compare-officials.data";
+import { PublicOfficialsInterface } from "@/data/public-officials.data";
 
 /* STYLES */
 import "@/styles/compare-officials-page.scss";
-import { PublicOfficialsInterface } from "@/data/public-officials.data";
 
 const CompareOfficials = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
@@ -29,10 +29,13 @@ const CompareOfficials = () => {
   const [playerDetails2, setPlayerDetails2] =
     useState<PublicOfficialsInterface>();
 
+  const [isPlay, setIsPlay] = useState<boolean>(false);
+
   const playerCode1 = searchParams.get("player1");
   const playerCode2 = searchParams.get("player2");
 
   useEffect(() => {
+    setIsPlay(true);
     if (playerCode1 && playerCode2) {
       setPlayerDetails1(findOfficial(playerCode1));
       setPlayerDetails2(findOfficial(playerCode2));
@@ -169,6 +172,7 @@ const CompareOfficials = () => {
         <span>Compara otros waykis</span>
         <ButtonNes text="REINICIAR" onClick={handleReset} />
       </div>
+      <FightOverlay show={isPlay} sound />
     </div>
   );
 };
