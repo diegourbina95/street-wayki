@@ -1,10 +1,15 @@
 /* REACT COMPONENTS */
+import "@/styles/default-footer.scss";
 
 /* LIBRARIES */
 
 /* STYLES */
-import "@/styles/default-footer.scss";
+
+import { useState } from "react";
 export const DefaultFooter = () => {
+  const [toggle, setToggle] = useState<boolean>(false);
+
+  const handleToggle = () => setToggle(!toggle);
   return (
     <div className="footer">
       <div className="footer__data-sources">
@@ -25,7 +30,9 @@ export const DefaultFooter = () => {
           información, extracción de datos de portales públicos vía scrapping, y
           el acceso a expedientes fiscales y judiciales.
         </p>
-        <div className="footer__data-sources--hidden">
+        <div
+          className={`footer__data-sources__accordion${toggle ? "--show" : ""}`}
+        >
           <p>
             Las fuentes de información que se usaron son Infogob, Jurado
             Nacional de Elecciones, Oficina de contrataciones del Estado (OSCE),
@@ -75,11 +82,13 @@ export const DefaultFooter = () => {
             </li>
           </ul>
         </div>
-        <button>Leer más +</button>
+        <button onClick={handleToggle}>
+          {toggle ? "Cerrar x" : "Leer más +"}
+        </button>
       </div>
       <div className="divider"></div>
       <div className="footer__more-information">
-        <div className="footer__more-information-team">
+        <div className="footer__more-information__team">
           <div
             className="footer__more-information--text"
             style={{ marginBottom: "8px" }}

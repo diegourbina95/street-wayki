@@ -5,14 +5,23 @@
   padding: 0 30px;
 
   &__data-sources {
+    padding-bottom: 15px;
     h3 {
       font-size: 1.5rem;
     }
 
-    &--hidden {
-      display: none;
+    &__accordion {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+      opacity: 0;
+
+      &--show {
+        max-height: 3000px;
+        opacity: 1;
+        transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in-out;
+      }
     }
-    padding-bottom: 15px;
   }
 
   button {
@@ -24,6 +33,11 @@
     color: #fff;
     font-size: 0.875rem;
     cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #545b62;
+    border-color: #4e555b;
   }
 
   .divider {
@@ -74,6 +88,23 @@
 
     .allies-item:last-child {
       margin-bottom: 0px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &__more-information {
+      display: flex;
+      justify-content: space-between;
+
+      &__team {
+        text-align: left;
+      }
+
+      &__allies {
+        text-align: right;
+      }
     }
   }
 }
