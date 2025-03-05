@@ -116,7 +116,9 @@ export const Scatter: React.FC<ScatterProps> = ({
                       ticks: {
                         stepSize: 12,
                         callback: function (value) {
-                          return `${Number(value).toFixed(1)} M`;
+                          return `S/ ${Number(value).toFixed(0)} ${
+                            Number(value) === 1 ? "millón" : "millones"
+                          }`;
                         },
                       },
                     }
@@ -131,7 +133,9 @@ export const Scatter: React.FC<ScatterProps> = ({
                       ticks: {
                         stepSize: 12,
                         callback: function (value) {
-                          return `${Number(value).toFixed(1)} M`;
+                          return `S/ ${Number(value).toFixed(0)} ${
+                            Number(value) === 1 ? "millón" : "millones"
+                          }`;
                         },
                       },
                     }
