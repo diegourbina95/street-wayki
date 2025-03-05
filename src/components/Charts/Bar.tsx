@@ -100,7 +100,9 @@ export const Bar: React.FC<BarData> = ({
                 ticks: {
                   stepSize: data.datasets.length ? 45 : 1,
                   callback: function (value) {
-                    return `${Number(value).toFixed(1)} ${scaleSymbol}`;
+                    return `S/ ${Number(value).toFixed(0)} ${
+                      Number(value) === 1 ? "millón" : "millones"
+                    }`;
                   },
                 },
               },

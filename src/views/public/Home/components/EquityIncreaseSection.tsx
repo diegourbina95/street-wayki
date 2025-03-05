@@ -52,7 +52,7 @@ export const EquityIncreaseSection: React.FC<EquityIncreaseSectionProps> = ({
         </span>
       </div>
       <span className="equity-increase__subtitle">
-        Patrimonio ({nameCurrency})
+        Patrimonio en millones ({nameCurrency})
       </span>
       <div className="equity-increase__bar">
         <Bar
