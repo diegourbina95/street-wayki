@@ -13,8 +13,16 @@ export const MoreOptions = () => {
       <div className="more-options__content">
         <div className="more-options__item">
           <div className="more-options__text">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Augue fringilla
-            gravida at vestibulum sociosqu et.
+            Los congresistas Digna Calle (Podemos Perú), Héctor Valer (Somos
+            Perú), María del Carmen Alva (no agrupada), y Jorge Montoya
+            (Renovación Popular) han declarado una reducción de su patrimonio
+            equivalente a entre S/1 millón y más de S/20 millones. Este año,
+            Alva Prieto y Montoya Manrique fueron denunciados
+            constitucionalmente por la Fiscalía de la Nación por peculado y
+            aprovechamiento indebido del cargo, respectivamente. A Calle
+            Lobatón, el Ministerio Público le abrió una investigación preliminar
+            por lavado de activos, mientras que Valer Pinto ha afrontado
+            investigaciones fiscales por corrupción y otros delitos.
           </div>
           <Link to="componentes">
             <ButtonNes text="LEER REPORTAJE COMPLETO" />
