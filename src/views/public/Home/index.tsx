@@ -31,7 +31,10 @@ const HomePage = () => {
       </div>
       <div className="content-650">
         <div>
-          <InformationSection text="La presidenta de la República, Dina Boluarte, y varios congresistas y gobernadores regionales tienen en común haber incrementado su fortuna personal desde que asumieron estos cargos. Sus declaraciones juradas entre 2021 y 2024, así como el análisis de registros públicos, muestran el incremento de sus fortunas que, en muchos casos, no se justifica con los ingresos que reciben como funcionarios." />
+          <InformationSection
+            initialCapitalLetter="L"
+            text="a presidenta de la República, Dina Boluarte, y varios congresistas y gobernadores regionales tienen en común haber incrementado su fortuna personal desde que asumieron estos cargos. Sus declaraciones juradas entre 2021 y 2024, así como el análisis de registros públicos, muestran el incremento de sus fortunas que, en muchos casos, no se justifica con los ingresos que reciben como funcionarios."
+          />
         </div>
 
         <div>

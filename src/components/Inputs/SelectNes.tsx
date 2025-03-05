@@ -16,6 +16,7 @@ interface SelectNesProps {
   maxOptions?: number;
   value?: any;
   closeMenuOnSelect?: boolean;
+  placeholder?: string;
   onChange?: (payload: any) => void;
 }
 
@@ -27,6 +28,7 @@ export const SelectNes: React.FC<SelectNesProps> = ({
   isMulti,
   maxOptions = 1,
   closeMenuOnSelect = false,
+  placeholder,
   onChange,
 }) => {
   const [value, setValue] = useState<any>();
@@ -40,6 +42,7 @@ export const SelectNes: React.FC<SelectNesProps> = ({
     <div className="select-nest">
       {label && <span>{label}</span>}
       <Select
+        placeholder={placeholder}
         classNames={{
           control: () => "border-nes",
         }}

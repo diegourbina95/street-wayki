@@ -102,7 +102,9 @@ export const Line: React.FC<LineData> = ({
                 ticks: {
                   stepSize: datasets.length ? 0.1 : 1,
                   callback: function (value) {
-                    return `${value} M`;
+                    return `S/ ${Number(value).toFixed(0)} ${
+                      Number(value) === 1 ? "millón" : "millones"
+                    }`;
                   },
                 },
               },
@@ -113,11 +115,11 @@ export const Line: React.FC<LineData> = ({
               },
 
               tooltip: {
-                enabled: isMobile,
+                enabled: true,
               },
             },
           },
-          plugins: [!isMobile ? customTextPlugin : { id: "" }],
+          plugins: [customTextPlugin],
         };
 
         chartRef.current = new Chart(ctx, config);
