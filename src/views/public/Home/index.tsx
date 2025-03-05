@@ -8,8 +8,6 @@ import { InformationSection } from "./components/InformationSection";
 import { WaykiSelectorSection } from "./components/WaykiSelectorSection";
 import { EquityIncreaseSection } from "./components/EquityIncreaseSection";
 
-import congresoImage from "@/assets/images/congreso.png";
-
 /* STYLES */
 import "@/styles/home-page.scss";
 import { AssetIncreaseComparatorSection } from "./components/AssetIncreaseComparatorSection";
@@ -24,12 +22,9 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <div className="home-page__hero">
-        <HeroStreetWayki
-          subtitle="El incremento patrimonial"
-          principalImage={congresoImage}
-        />
+        <HeroStreetWayki />
       </div>
-      <div className="content-650">
+      <div className="content-650" id="reading-start-section">
         <div>
           <InformationSection
             initialCapitalLetter="L"
