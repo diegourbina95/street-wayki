@@ -55,3 +55,12 @@ export const politicalPartiesData = () => {
       .map((official) => ({ code: official.dni, name: official.shortName })),
   }));
 };
+
+export const listOfOfficials = () => {
+  return publicOfficialsData.map((official) => ({
+    code: official.dni,
+    name: official.shortName,
+    avatar: `./img/officials/${official.photos}`,
+    politicalLogos: [`./img/political-parties/${official.partyLogo}`],
+  }));
+};

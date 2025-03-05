@@ -16,12 +16,11 @@ interface PoliticalParties {
 }
 
 interface Official {
-  code: string;
+  code: number;
   name: string;
 }
 
 interface WaykiSelectorProps {
-  officialList: Official[];
   politicalPartiesData: PoliticalParties[];
   patrimonyData: any[];
   nameCurrency: string;
@@ -32,7 +31,6 @@ interface WaykiSelectorProps {
 }
 
 export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
-  officialList = [],
   politicalPartiesData = [],
   patrimonyData = [],
   nameCurrency,
@@ -51,14 +49,28 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
   const [isSticky, setIsSticky] = useState<boolean>(false);
 
   useEffect(() => {
+    const handleScroll = () => {
+      if (sectionRef.current) {
+        const sectionTop = sectionRef.current.getBoundingClientRect().top;
+        const sectionBottom = sectionRef.current.getBoundingClientRect().bottom;
+        if (sectionTop <= 0 && sectionBottom >= 0) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
+      }
+    };
+    if (stickyFilter) window.addEventListener("scroll", handleScroll);
+    return () => {
+      if (stickyFilter) window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
     setPoliticalParties(politicalPartiesData);
     setPatrimonialData(patrimonyData);
     setDefaultPatrimonialData(patrimonyData);
   }, [politicalPartiesData, patrimonyData]);
-
-  useEffect(() => {
-    setOfficials(officialList);
-  }, [officialList]);
 
   const filterByPoliticalParty = (payload: PoliticalParties) => {
     setSelectedOfficial(null);
@@ -76,7 +88,7 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
     if (selectWayki) selectWayki(payload);
   };
 
-  const filterOfficials = (officialCode: string) => {
+  const filterOfficials = (officialCode: number) => {
     if (!officialCode) {
       setPatrimonialData(defaultPatrimonialData);
     } else {
@@ -106,15 +118,44 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
         </div>
         <div className="wayki-selector__select-container">
           <div className="wayki-selector__select">
-            <span>Buscar funcionario:</span>
+            <span>Filtra por partido:</span>
+            <SelectNes
+              placeholder="Escribe el nombre…"
+              options={politicalParties || []}
+              valueKey="politicalPartyCode"
+              labelKey="politicalPartyName"
+              onChange={filterByPoliticalParty}
+            />
+          </div>
+          <div className="wayki-selector__select">
+            <span>Buscar político:</span>
             <SelectNes
               placeholder="Escribe el nombre…"
               options={officials || []}
               valueKey="code"
               labelKey="name"
-              onChange={handleWayki}
+              onChange={searchOfficial}
             />
           </div>
+        </div>
+      </div>
+
+      <div
+        className={`wayki-selector__scatter-container ${
+          isSticky ? "is-sticky" : ""
+        }`}
+      >
+        <div className="wayki-selector__scatter-title">
+          Patrimonio ({nameCurrency})
+        </div>
+
+        <div className="wayki-selector__scatter-chart">
+          <Scatter
+            datasets={patrimonialData}
+            orientation={orientation}
+            selectPoint={handleWayki}
+            tooltipBgColor={tooltipBgColor}
+          />
         </div>
       </div>
     </div>

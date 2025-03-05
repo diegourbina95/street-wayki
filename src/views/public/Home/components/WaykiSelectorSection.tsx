@@ -5,7 +5,10 @@ import { WaykiSelector, WaykiVs } from "@/components/Custom";
 
 /* DATA */
 import { generateData } from "@/data/wayki-selector.data";
-import { politicalPartiesData } from "@/data/wayki-selector.data";
+import {
+  politicalPartiesData,
+  listOfOfficials,
+} from "@/data/wayki-selector.data";
 
 /* DATA MOCK */
 import { useMediaQuery } from "@/hooks";
@@ -32,14 +35,15 @@ export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
   }, []);
 
   const selectWayki = (payload: any) => {
+    console.log("selectWayki", payload);
     setPlayers((prevElements: any) => {
       if (prevElements.length < 2) {
-        return [...prevElements, payload.person];
+        return [...prevElements, payload];
       } else {
         if (countPlayer === 0) {
-          return [payload.person, prevElements[1]];
+          return [payload, prevElements[1]];
         } else {
-          return [prevElements[0], payload.person];
+          return [prevElements[0], payload];
         }
       }
     });
@@ -54,6 +58,7 @@ export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
     <div className="home-page__wayki-selector">
       <div>
         <WaykiSelector
+          officialList={listOfOfficials()}
           politicalPartiesData={politicalParties}
           patrimonyData={patrimonyData}
           nameCurrency="soles"
@@ -64,7 +69,7 @@ export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
         />
       </div>
 
-      <div style={{ margin: "69px 0 84px" }}>
+      <div style={{ marginBottom: "84px" }}>
         <WaykiVs
           player1Data={players[0]}
           player2Data={players[1]}
