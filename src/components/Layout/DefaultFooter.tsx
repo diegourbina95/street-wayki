@@ -15,15 +15,12 @@ export const DefaultFooter = () => {
       <div className="footer__data-sources">
         <h3>Metodología y fuentes de datos:</h3>
         <p>
-          Bingo electoral es una aplicación de noticias que sistematiza el
-          historial político, civil y penal de los 258 postulantes a la
-          presidencia de las 25 regiones y los 1.500 a las alcaldías
-          provinciales del Perú. Un equipo de periodistas, analistas de datos y
-          desarrolladores de OjoPúblico construyó siete bases de datos de
-          diferentes fuentes y los organizó para un debido análisis e
-          investigación que permitiera al usuario conocer el perfil de las
-          diferentes opciones electorales en las elecciones regionales y
-          municipales del próximo 2 de octubre.
+          “Street waykis” es una aplicación que permite conocer y comparar los
+          ingresos de los políticos con más poder en el Perú. Esta herramienta
+          fue creada por un equipo multidisciplinario, conformado por
+          periodistas, desarrolladores y analistas de datos, que elaboraron una
+          base de datos con la información de la presidenta de la República,
+          Dina Boluarte, los 130 congresistas y los 25 gobernadores.
         </p>
         <p>
           Las bases de datos se construyeron a través de pedidos de acceso a la
@@ -34,52 +31,26 @@ export const DefaultFooter = () => {
           className={`footer__data-sources__accordion${toggle ? "--show" : ""}`}
         >
           <p>
-            Las fuentes de información que se usaron son Infogob, Jurado
-            Nacional de Elecciones, Oficina de contrataciones del Estado (OSCE),
-            Sunat, hojas de declaraciones juradas, Autoridad Nacional del
-            Servicio Civil (Servir), Contraloría General de la República. La
-            herramienta utilizó hojas de cálculo y el lenguaje de programación R
-            para el análisis de los datos.
+            Para elaborar la base de datos, se revisaron las declaraciones
+            juradas de bienes y rentas de 156 funcionarios públicos elegidos por
+            el voto popular, presentadas a la Contraloría General de la
+            República, entre los años 2021 y 2024. También se recopilaron los
+            antecedentes de cada uno de estos políticos, relacionados con
+            investigaciones fiscales, procesos judiciales, denuncias y
+            cuestionamientos formulados en diversas instancias.
           </p>
-          <p>
-            Para un mejor análisis y comprensión de los usuarios, en esta
-            aplicación se han construido seis categorías:
-          </p>
+          <p>Fuentes de datos:</p>
           <ul>
+            <li>Contraloría General de la República</li>
+            <li>Superintendencia Nacional de Registros Públicos </li>
+            <li>Superintendencia Nacional de Migraciones</li>
+            <li>Procuraduría General del Estado</li>
+            <li>Congreso de la República</li>
             <li>
-              Candidatos que han postulado en elecciones anteriores: recopila el
-              historial de veces que la persona ha postulado antes.
+              Superintendencia Nacional de Aduanas y de Administración
+              Tributaria
             </li>
-            <li>
-              Candidatos que han ocupado antes cargos públicos en el Estado:
-              analiza si esta persona ha ejercido antes la función pública,
-              hayan sido electos o nombrados.
-            </li>
-            <li>
-              Candidatos con vínculos con empresas: se contemplan a los
-              postulantes que son representantes legales o accionistas en
-              empresas, de acuerdo a la información que se consigna en la Sunat
-              o en el OSCE.
-            </li>
-            <li>
-              Candidatos con potencial conflicto de interés: en esta categoría
-              se encuentran las personas que tienen contratos con el Estado como
-              personas naturales, según OSCE; o son representantes legales o
-              accionistas de empresas que son proveedoras del Estado, de acuerdo
-              a la información de OSCE y Sunat).
-            </li>
-            <li>
-              Candidatos con antecedentes de riesgo: En esta categoría se
-              encuentran los candidatos que tienen investigaciones fiscales en
-              marcha (para el caso de gobernadores y vicegobernadores
-              regionales), o que han sido hallados responsables en algún informe
-              de control de la Contraloría, o que han sido sancionados por la
-              Autoridad de Servicio Civil (Servir).
-            </li>
-            <li>
-              Candidatos con sentencias penales y civiles: en esta categoría se
-              encuentran los postulantes que han declarado tener una.
-            </li>
+            <li>Organismo Supervisor de las Contrataciones del Estado</li>
           </ul>
         </div>
         <button onClick={handleToggle}>
@@ -97,7 +68,7 @@ export const DefaultFooter = () => {
           </div>
           <div className="footer__more-information__group">
             <span className="footer__more-information--title">
-              Coordinación y edición general:
+              Dirección periodística:
             </span>
             <span>Nelly Luna Amancio</span>
           </div>
@@ -111,18 +82,26 @@ export const DefaultFooter = () => {
           </div>
           <div className="footer__more-information__group">
             <span className="footer__more-information--title">
-              Investigación periodística:
+              Investigación periodística
             </span>
             <span className="footer__more-information--text">
-              Gianfranco Huamán y Alexander Lavilla
+              Elena Miranda, Gianfranco Huamán
             </span>
           </div>
           <div className="footer__more-information__group">
             <span className="footer__more-information--title">
-              Desarrollo y diseño web:
+              Concepto visual y diseño:
             </span>
             <span className="footer__more-information--text">
-              Leonardo Cucho
+              Alejandra Arevalo
+            </span>
+          </div>
+          <div className="footer__more-information__group">
+            <span className="footer__more-information--title">
+              Desarrollo web:
+            </span>
+            <span className="footer__more-information--text">
+              Diego Paredes
             </span>
           </div>
           <div className="footer__more-information__group">
@@ -130,9 +109,10 @@ export const DefaultFooter = () => {
               Ilustración:
             </span>
             <span className="footer__more-information--text">
-              Rocío Urtecho
+              Jhafet Pianchachi
             </span>
           </div>
+          <p>*En el inicio de esta de investigación participó Delsy Loyola</p>
         </div>
         <div className="footer__more-information__allies">
           <div className="allies-item">
@@ -153,12 +133,6 @@ export const DefaultFooter = () => {
                 alt="Idea Internacional"
                 src="https://ojo-publico.com/especiales/bingo-electoral-elecciones-regionales-municipales-2022/img/Logo-aliados.4ea70a5e.png"
               />
-              <img
-                className="allies-item__logo"
-                width="85px"
-                alt="Idea Internacional"
-                src="https://ojo-publico.com/especiales/bingo-electoral-elecciones-regionales-municipales-2022/img/idealogo.cf0753f5.png"
-              ></img>
             </div>
           </div>
         </div>
