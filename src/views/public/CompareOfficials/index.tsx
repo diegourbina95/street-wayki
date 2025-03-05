@@ -9,7 +9,6 @@ import { PlayerText } from "@/components/Texts";
 import { ButtonNes } from "@/components/Inputs";
 import { FightOverlay, SalaryComparison } from "@/components/Custom";
 import { Line } from "@/components/Charts";
-import { BlackHeader } from "@/components/Layout";
 
 /* DATA */
 import { findOfficial } from "@/data/compare-officials.data";
@@ -48,138 +47,133 @@ const CompareOfficials = () => {
   const handleReset = () => navigate("/");
 
   return (
-    <>
-      <div style={{ paddingTop: "60px" }}>
-        <BlackHeader />
-      </div>
-      <div className="compare-officials-page content-650">
-        <div className="compare-officials-page__comparation-cards">
-          <div>
-            <PlayerText player={1} />
-            <InformationCard
-              color="#61F908"
-              details={{
-                name: playerDetails1?.shortName,
-                position: playerDetails1?.position,
-                currentPoliticalParty: playerDetails1?.currentBench,
-                avatar: playerDetails1?.photos,
-              }}
-            />
-          </div>
-
-          <div>
-            <PlayerText player={2} />
-            <InformationCard
-              color="#FEAA00"
-              details={{
-                name: playerDetails2?.shortName,
-                position: playerDetails2?.position,
-                currentPoliticalParty: playerDetails2?.currentBench,
-                avatar: playerDetails2?.photos,
-              }}
-            />
-          </div>
-        </div>
-        <div className="compare-officials-page__comparation-bars">
-          <div className="comparation-bars__item">
-            <span>Patrimonio</span>
-            <ProgressNes
-              currency="S/"
-              quantity1={playerDetails1?.heritageForYear.at(-1)?.amount}
-              quantity2={playerDetails2?.heritageForYear.at(-1)?.amount}
-            />
-          </div>
-          <div style={{ height: "250px", marginBottom: "40px" }}>
-            <Line
-              labels={YEARS}
-              datasets={[
-                {
-                  data: playerDetails1
-                    ? playerDetails1.heritageForYear.map(
-                        (value) => value.amount / 1000000
-                      )
-                    : [0],
-                  tension: 0.1,
-                  borderColor: "#61F908",
-                  label: playerDetails1?.abbreviatedName,
-                },
-                {
-                  data: playerDetails2
-                    ? playerDetails2.heritageForYear.map(
-                        (value) => value.amount / 1000000
-                      )
-                    : [0],
-                  tension: 0.1,
-                  borderColor: "#FEAA00",
-                  label: playerDetails2?.abbreviatedName,
-                },
-              ]}
-              isMobile={isMobile}
-            />
-          </div>
-          <div className="comparation-bars__item">
-            <span>Antecedentes</span>
-            <ProgressNes
-              quantity1={playerDetails1?.criminalRecordNumber}
-              quantity2={playerDetails2?.criminalRecordNumber}
-            />
-          </div>
-        </div>
-        <div className="compare-officials-page__criminal-record-cards">
-          <div>
-            <InformationCard
-              color="#61F908"
-              details={{
-                name: playerDetails1?.shortName,
-                divisionName: true,
-                textList: {
-                  label: "Antecedentes",
-                  list: playerDetails1?.criminalRecordDetails,
-                },
-                otherRecords:
-                  playerDetails1?.record !== "NA"
-                    ? playerDetails1?.record
-                    : "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
-              }}
-            />
-          </div>
-          <div>
-            <InformationCard
-              color="#FEAA00"
-              details={{
-                name: playerDetails2?.shortName,
-                divisionName: true,
-                textList: {
-                  label: "Antecedentes",
-                  list: playerDetails2?.criminalRecordDetails,
-                },
-                otherRecords:
-                  playerDetails2?.record !== "NA"
-                    ? playerDetails2?.record
-                    : "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
-              }}
-            />
-          </div>
+    <div className="compare-officials-page content-650">
+      <div className="compare-officials-page__comparation-cards">
+        <div>
+          <PlayerText player={1} />
+          <InformationCard
+            color="#61F908"
+            details={{
+              name: playerDetails1?.shortName,
+              position: playerDetails1?.position,
+              currentPoliticalParty: playerDetails1?.currentBench,
+              avatar: playerDetails1?.photos,
+            }}
+          />
         </div>
 
-        <SalaryComparison
-          player1={{
-            name: playerDetails1?.shortName,
-            salary: playerDetails1?.heritageForYear.at(-1)?.amount,
-          }}
-          player2={{
-            name: playerDetails2?.shortName,
-            salary: playerDetails2?.heritageForYear.at(-1)?.amount,
-          }}
-          averageSalary={1130}
-        />
-        <div className="compare-officials-page__comparation-reset">
-          <span>Compara otros waykis</span>
-          <ButtonNes text="REINICIAR" onClick={handleReset} />
+        <div>
+          <PlayerText player={2} />
+          <InformationCard
+            color="#FEAA00"
+            details={{
+              name: playerDetails2?.shortName,
+              position: playerDetails2?.position,
+              currentPoliticalParty: playerDetails2?.currentBench,
+              avatar: playerDetails2?.photos,
+            }}
+          />
         </div>
-        <FightOverlay show={isPlay} />
       </div>
-    </>
+      <div className="compare-officials-page__comparation-bars">
+        <div className="comparation-bars__item">
+          <span>Patrimonio</span>
+          <ProgressNes
+            currency="S/"
+            quantity1={playerDetails1?.heritageForYear.at(-1)?.amount}
+            quantity2={playerDetails2?.heritageForYear.at(-1)?.amount}
+          />
+        </div>
+        <div style={{ height: "250px", marginBottom: "40px" }}>
+          <Line
+            labels={YEARS}
+            datasets={[
+              {
+                data: playerDetails1
+                  ? playerDetails1.heritageForYear.map(
+                      (value) => value.amount / 1000000
+                    )
+                  : [0],
+                tension: 0.1,
+                borderColor: "#61F908",
+                label: playerDetails1?.abbreviatedName,
+              },
+              {
+                data: playerDetails2
+                  ? playerDetails2.heritageForYear.map(
+                      (value) => value.amount / 1000000
+                    )
+                  : [0],
+                tension: 0.1,
+                borderColor: "#FEAA00",
+                label: playerDetails2?.abbreviatedName,
+              },
+            ]}
+            isMobile={isMobile}
+          />
+        </div>
+        <div className="comparation-bars__item">
+          <span>Antecedentes</span>
+          <ProgressNes
+            quantity1={playerDetails1?.criminalRecordNumber}
+            quantity2={playerDetails2?.criminalRecordNumber}
+          />
+        </div>
+      </div>
+      <div className="compare-officials-page__criminal-record-cards">
+        <div>
+          <InformationCard
+            color="#61F908"
+            details={{
+              name: playerDetails1?.shortName,
+              divisionName: true,
+              textList: {
+                label: "Antecedentes",
+                list: playerDetails1?.criminalRecordDetails,
+              },
+              otherRecords:
+                playerDetails1?.record !== "NA"
+                  ? playerDetails1?.record
+                  : "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+            }}
+          />
+        </div>
+        <div>
+          <InformationCard
+            color="#FEAA00"
+            details={{
+              name: playerDetails2?.shortName,
+              divisionName: true,
+              textList: {
+                label: "Antecedentes",
+                list: playerDetails2?.criminalRecordDetails,
+              },
+              otherRecords:
+                playerDetails2?.record !== "NA"
+                  ? playerDetails2?.record
+                  : "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+            }}
+          />
+        </div>
+      </div>
+
+      <SalaryComparison
+        player1={{
+          name: playerDetails1?.shortName,
+          salary: playerDetails1?.heritageForYear.at(-1)?.amount,
+        }}
+        player2={{
+          name: playerDetails2?.shortName,
+          salary: playerDetails2?.heritageForYear.at(-1)?.amount,
+        }}
+        averageSalary={1130}
+      />
+      <div className="compare-officials-page__comparation-reset">
+        <span>Compara otros waykis</span>
+        <ButtonNes text="REINICIAR" onClick={handleReset} />
+      </div>
+      <FightOverlay show={isPlay} />
+    </div>
   );
 };
 
