@@ -8,7 +8,7 @@ const xlsxToJson = (filePath) => {
   return XLSX.utils.sheet_to_json(sheet); // Convertir a JSON
 };
 
-const jsonData = xlsxToJson("datos_patrimonio_final_v1.xlsx");
+const jsonData = xlsxToJson("datos_patrimonio_final.xlsx");
 
 const formatArray = (tagToSearch, data, label1, label2) => {
   return Object.keys(data)
@@ -58,7 +58,7 @@ const formatWithArrays = jsonData.map((data) => ({
   color: getRandomHex(),
 }));
 fs.writeFileSync(
-  "datos_patrimonio_final_v1.json",
+  "datos_patrimonio_final.json",
   JSON.stringify(formatWithArrays, null, 2)
 );
 console.log("✅ XLSX convertido a JSON");
