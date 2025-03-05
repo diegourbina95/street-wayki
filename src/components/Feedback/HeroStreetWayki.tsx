@@ -77,11 +77,11 @@ export const HeroStreetWayki = () => {
           </p>
           <div className="hero__actions">
             <ButtonNes
-              text="Leer más"
+              text="LEER MÁS"
               onClick={() => goToSection("reading-start-section")}
             />
             <ButtonNes
-              text="Jugar"
+              text="JUGAR"
               onClick={() => goToSection("wayki-section")}
             />
           </div>

@@ -91,10 +91,12 @@
   &__actions {
     display: flex;
     justify-content: center;
+    font-family: "Press Start 2P";
 
     button {
+      font-size: 0.7rem;
       margin-right: 20px;
-      width: 90px;
+      width: 120px;
     }
 
     button:last-child {
@@ -138,8 +140,8 @@
     &__actions {
       button {
         margin-right: 40px;
-        width: 120px;
-        font-size: 1.4rem;
+        width: 160px;
+        font-size: 1rem;
       }
 
       button:last-child {
