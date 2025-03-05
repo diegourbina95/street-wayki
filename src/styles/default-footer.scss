@@ -1,239 +1,110 @@
-.default-footer {
-  background-color: #e1e1e1;
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.footer {
+  font-family: Roboto, sans-serif;
+  max-width: 975px;
+  margin: 63px auto;
+  padding: 0 30px;
+
+  &__data-sources {
+    padding-bottom: 15px;
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    &__accordion {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+      opacity: 0;
+
+      &--show {
+        max-height: 3000px;
+        opacity: 1;
+        transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in-out;
+      }
+    }
   }
 
-  a {
-    text-decoration: none;
-    color: #000;
+  button {
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    line-height: 1.5;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+    font-size: 0.875rem;
     cursor: pointer;
   }
 
-  &__information {
-    padding: 30px 15px 62px;
-  }
-
-  &__logos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    img {
-      margin-bottom: 1rem;
-    }
-    .logo-item__light img {
-      max-width: 200px;
-    }
-    .logo-item__gijn img {
-      max-width: 174px;
-    }
-    .logo-item__occrp img {
-      max-width: 160px;
-    }
-    .logo-item__capir img {
-      max-width: 160px;
-    }
-  }
-
-  &__section-1 {
-    margin: 4px 0 20px;
-  }
-
-  .section {
-    &__content {
-      margin-bottom: 25px;
-
-      input {
-        width: 100% !important;
-        border: 1px solid #508190;
-        font-size: 16px !important;
-        background-color: white;
-        padding: 13px 8px 13px 15px;
-        font-weight: 300;
-        font-family: "Nunito Sans", sans-serif;
-        color: #666;
-        margin-bottom: 5px;
-        margin-top: -20px;
-      }
-
-      input::placeholder {
-        font-size: 16px !important;
-      }
-    }
-
-    &__title {
-      color: #b3b3b3;
-      font-size: 14px;
-      font-weight: 500;
-      font-family: "Nunito Sans", sans-serif;
-      text-transform: uppercase;
-      text-align: center;
-      margin-bottom: 25px;
-    }
-
-    &__title:hover {
-      color: #212529;
-    }
-
-    &__text {
-      color: #000;
-      font-weight: 500;
-      line-height: 17px;
-      font-family: "Nunito Sans", sans-serif !important;
-      font-size: 13px;
-      text-align: center;
-    }
-
-    &__button {
-      background-color: #508190;
-      border-color: #508190;
-      padding: 6px 11px;
-      margin: 0;
-      font-size: 12px;
-      color: white;
-      letter-spacing: 1.96px;
-      font-weight: 500;
-      max-width: 132px;
-      font-family: "Nunito Sans", sans-serif !important;
-      text-transform: uppercase;
-      border: 1px solid #508190;
-      cursor: pointer;
-    }
-
-    &__terms {
-      font-size: 0.75rem;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
-      font-weight: 400;
-      line-height: 1.5em;
-      color: #212529;
-      text-align: left;
-
-      a {
-        color: #212529;
-        text-decoration: none;
-      }
-    }
-  }
-
-  .text-grey {
-    color: #4d4d4d !important;
+  button:hover {
+    background-color: #545b62;
+    border-color: #4e555b;
   }
 
   .divider {
-    border-bottom: 1px dotted #ccc;
+    border-bottom: 1px solid #dee2e6 !important;
   }
 
-  &__rights-reserved {
-    background-color: #666;
-  }
+  &__more-information {
+    margin: 48px 0;
+    padding-top: 16px;
+    text-align: center;
 
-  .rights-reserved {
-    &__content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 19px 0;
-      text-align: center;
-      color: white;
-      font-family: "Nunito Sans", sans-serif !important;
+    &__group {
+      margin: 3px 0;
     }
 
-    &__social {
-      font-size: 0.8rem;
-      line-height: 14px;
-      text-transform: uppercase;
-      font-weight: 500;
-      letter-spacing: 1.96px;
+    &--title {
+      font-size: 16px;
+      color: #dc130e;
+      display: block;
+    }
 
-      ul {
-        list-style: none;
-        display: flex;
-        margin-top: 5px;
+    &--text {
+      font-size: 16px;
+      color: #333;
+      display: block;
+    }
+
+    &__allies {
+      margin-top: 30px;
+    }
+
+    .allies-item {
+      margin-bottom: 48px;
+
+      &__title {
+        display: block;
+        margin-bottom: 8px;
       }
 
-      li {
-        margin-right: 50px;
-
-        i {
-          color: white;
-        }
+      &__logo {
+        margin-right: 48px;
       }
 
-      li:last-child {
-        margin-right: 0px;
+      &__logo:last-child {
+        margin-right: 0cqi;
       }
     }
 
-    &__text {
-      font-size: 13px;
-      margin-top: 10px;
+    .allies-item:last-child {
+      margin-bottom: 0px;
     }
   }
 }
 
 @media (min-width: 768px) {
-  .default-footer {
-    &__logos {
-      align-items: start;
-    }
-    &__information {
+  .footer {
+    &__more-information {
       display: flex;
       justify-content: space-between;
-      max-width: 1124px;
-      margin: 0 auto;
-    }
 
-    .section {
-      &__content {
-        width: 300px;
-      }
-      &__title {
+      &__team {
         text-align: left;
       }
 
-      &__text {
-        text-align: left;
+      &__allies {
+        text-align: right;
       }
     }
-
-    .section__content:last-child {
-      margin-bottom: 0px !important;
-    }
-
-    .rights-reserved {
-      &__content {
-        padding-left: 15px;
-        padding-right: 15px;
-        max-width: 1124px;
-        margin: 0 auto;
-        flex-direction: row;
-        flex-flow: row-reverse;
-        justify-content: space-between;
-      }
-
-      &__social {
-        display: flex;
-        align-items: center;
-
-        ul {
-          margin: 0;
-          padding-left: 30px;
-        }
-
-        li {
-          margin-right: 18px;
-        }
-      }
-    }
-  }
-
-  .divider {
-    display: none;
   }
 }
