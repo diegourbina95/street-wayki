@@ -6,173 +6,155 @@
 import "@/styles/default-footer.scss";
 export const DefaultFooter = () => {
   return (
-    <div className="default-footer">
-      <div className="default-footer__information">
-        <div className="default-footer__logos">
-          <div className="logo-item__light">
+    <div className="footer">
+      <div className="footer__data-sources">
+        <h3>Metodología y fuentes de datos:</h3>
+        <p>
+          Bingo electoral es una aplicación de noticias que sistematiza el
+          historial político, civil y penal de los 258 postulantes a la
+          presidencia de las 25 regiones y los 1.500 a las alcaldías
+          provinciales del Perú. Un equipo de periodistas, analistas de datos y
+          desarrolladores de OjoPúblico construyó siete bases de datos de
+          diferentes fuentes y los organizó para un debido análisis e
+          investigación que permitiera al usuario conocer el perfil de las
+          diferentes opciones electorales en las elecciones regionales y
+          municipales del próximo 2 de octubre.
+        </p>
+        <p>
+          Las bases de datos se construyeron a través de pedidos de acceso a la
+          información, extracción de datos de portales públicos vía scrapping, y
+          el acceso a expedientes fiscales y judiciales.
+        </p>
+        <div className="footer__data-sources--hidden">
+          <p>
+            Las fuentes de información que se usaron son Infogob, Jurado
+            Nacional de Elecciones, Oficina de contrataciones del Estado (OSCE),
+            Sunat, hojas de declaraciones juradas, Autoridad Nacional del
+            Servicio Civil (Servir), Contraloría General de la República. La
+            herramienta utilizó hojas de cálculo y el lenguaje de programación R
+            para el análisis de los datos.
+          </p>
+          <p>
+            Para un mejor análisis y comprensión de los usuarios, en esta
+            aplicación se han construido seis categorías:
+          </p>
+          <ul>
+            <li>
+              Candidatos que han postulado en elecciones anteriores: recopila el
+              historial de veces que la persona ha postulado antes.
+            </li>
+            <li>
+              Candidatos que han ocupado antes cargos públicos en el Estado:
+              analiza si esta persona ha ejercido antes la función pública,
+              hayan sido electos o nombrados.
+            </li>
+            <li>
+              Candidatos con vínculos con empresas: se contemplan a los
+              postulantes que son representantes legales o accionistas en
+              empresas, de acuerdo a la información que se consigna en la Sunat
+              o en el OSCE.
+            </li>
+            <li>
+              Candidatos con potencial conflicto de interés: en esta categoría
+              se encuentran las personas que tienen contratos con el Estado como
+              personas naturales, según OSCE; o son representantes legales o
+              accionistas de empresas que son proveedoras del Estado, de acuerdo
+              a la información de OSCE y Sunat).
+            </li>
+            <li>
+              Candidatos con antecedentes de riesgo: En esta categoría se
+              encuentran los candidatos que tienen investigaciones fiscales en
+              marcha (para el caso de gobernadores y vicegobernadores
+              regionales), o que han sido hallados responsables en algún informe
+              de control de la Contraloría, o que han sido sancionados por la
+              Autoridad de Servicio Civil (Servir).
+            </li>
+            <li>
+              Candidatos con sentencias penales y civiles: en esta categoría se
+              encuentran los postulantes que han declarado tener una.
+            </li>
+          </ul>
+        </div>
+        <button>Leer más +</button>
+      </div>
+      <div className="divider"></div>
+      <div className="footer__more-information">
+        <div className="footer__more-information-team">
+          <div
+            className="footer__more-information--text"
+            style={{ marginBottom: "8px" }}
+          >
+            Créditos:
+          </div>
+          <div className="footer__more-information__group">
+            <span className="footer__more-information--title">
+              Coordinación y edición general:
+            </span>
+            <span>Nelly Luna Amancio</span>
+          </div>
+          <div className="footer__more-information__group">
+            <span className="footer__more-information--title">
+              Análisis de datos:
+            </span>
+            <span className="footer__more-information--text">
+              Gianfranco Huamán
+            </span>
+          </div>
+          <div className="footer__more-information__group">
+            <span className="footer__more-information--title">
+              Investigación periodística:
+            </span>
+            <span className="footer__more-information--text">
+              Gianfranco Huamán y Alexander Lavilla
+            </span>
+          </div>
+          <div className="footer__more-information__group">
+            <span className="footer__more-information--title">
+              Desarrollo y diseño web:
+            </span>
+            <span className="footer__more-information--text">
+              Leonardo Cucho
+            </span>
+          </div>
+          <div className="footer__more-information__group">
+            <span className="footer__more-information--title">
+              Ilustración:
+            </span>
+            <span className="footer__more-information--text">
+              Rocío Urtecho
+            </span>
+          </div>
+        </div>
+        <div className="footer__more-information__allies">
+          <div className="allies-item">
+            <span className="allies-item__title">Un proyecto de:</span>
             <img
+              className="allies-item__logo"
+              width="200px"
+              alt="Ojo púbico"
               src="https://ojo-publico.com/themes/custom/ojo_publico_theme/images/logos/logo-light-default.svg"
-              alt="logo-light"
             />
           </div>
-          <div className="logo-item__gijn">
-            <a href="https://gijn.org/" target="_blank">
+          <div className="allies-item">
+            <span className="allies-item__title">Con el apoyo de:</span>
+            <div>
               <img
-                src="https://ojo-publico.com/sites/default/files/2023-10/GIJN-Logo-dark.png"
-                alt="logo-gijn"
+                className="allies-item__logo"
+                width="120px"
+                alt="Idea Internacional"
+                src="https://ojo-publico.com/especiales/bingo-electoral-elecciones-regionales-municipales-2022/img/Logo-aliados.4ea70a5e.png"
               />
-            </a>
-          </div>
-          <div className="logo-item__occrp">
-            <a href="https://www.occrp.org/en" target="_blank">
               <img
-                src="https://ojo-publico.com/sites/default/files/2024-05/logo-occrp.png"
-                alt="logo-occrp"
-              />
-            </a>
-          </div>
-          <div className="logo-item__capir">
-            <a href="https://www.capir.net/" target="_blank">
-              <img
-                src="https://ojo-publico.com/sites/default/files/2024-07/logo-capir.png"
-                alt="logo-capir"
-              />
-            </a>
-          </div>
-        </div>
-        <div className="default-footer__section-1">
-          <div className="section__content">
-            <div className="section__title">Sobre nosotros</div>
-            <ul>
-              <li className="section__text">
-                <a href="https://ojo-publico.com/institucional/#equipo">
-                  Conoce a nuestro equipo
-                </a>
-              </li>
-              <li className="section__text">
-                <a href="https://ojo-publico.com/contacto">Contáctanos</a>
-              </li>
-              <li className="section__text">
-                <a href="https://ojo-publico.com/institucional/mision-vision-valores">
-                  Misión visión y valores
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="section__content">
-            <div className="section__title">Politicas</div>
-            <ul>
-              <li className="section__text">
-                <a href="https://ojo-publico.com/institucional/politica_de_independencia_editorial_ante_aliados"></a>
-                Independencia editorial ante nuestros aliados.
-              </li>
-              <li className="section__text">
-                <a href="https://ojo-publico.com/institucional/politica_de_cumplimiento_de_la_ley">
-                  Sobre el secreto profesional y periodístico.
-                </a>
-              </li>
-              <li className="section__text">
-                <a href="https://ojo-publico.com/institucional/politica-de-proteccion-de-datos-personales">
-                  Protección de datos personales.
-                </a>
-              </li>
-              <li className="section__text">
-                <a href="https://ojo-publico.com/institucional/politica_de_rectificacion">
-                  El derecho a la rectificación.
-                </a>
-              </li>
-              <li className="section__text">
-                <a href="https://ojo-publico.com/institucional/ojo_bionico_politicas_verificacion">
-                  OjoBiónico: políticas y criterios de corrección
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="default-footer__section-2">
-          <div className="section__content">
-            <div className="section__title">La tienda</div>
-            <ul>
-              <li className="section__text">
-                <a href="https://tienda.ojo-publico.com/">
-                  Visite nuestra tienda
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="section__content">
-            <div className="section__title">Suscríbase</div>
-            <p className="section__text text-grey">
-              Suscríbase a nuestro newsletter para estar al día con las últimas
-              noticias.
-            </p>
-            <input type="text" placeholder="Correo electrónico" />
-            <div></div>
-            <button className="section__button">suscribirse</button>
-          </div>
-          <div className="divider"></div>
-        </div>
-      </div>
-      <div className="default-footer__rights-reserved">
-        <div className="rights-reserved__content">
-          <div className="rights-reserved__social">
-            <div>Síganos en</div>
-            <ul>
-              <li>
-                <a href="https://www.instagram.com/ojopublico/" target="_blank">
-                  <i
-                    className="fa-brands fa-instagram"
-                    style={{ color: "white" }}
-                  ></i>
-                </a>
-              </li>
-
-              <li>
-                <a href="https://twitter.com/Ojo_Publico" target="_blank">
-                  <i
-                    className="fa-brands fa-twitter"
-                    style={{ color: "white" }}
-                  ></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://es-la.facebook.com/OjoPublico/"
-                  target="_blank"
-                >
-                  <i
-                    className="fa-brands fa-facebook-f"
-                    style={{ color: "white" }}
-                  ></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/c/OjoP%C3%BAblicoPE"
-                  target="_blank"
-                >
-                  <i
-                    className="fa-brands fa-youtube"
-                    style={{ color: "white" }}
-                  ></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.tiktok.com/@ojopublico" target="_blank">
-                  <i
-                    className="fa-brands fa-tiktok"
-                    style={{ color: "white" }}
-                  ></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="rights-reserved__text">
-            Todos los derechos reservados © {new Date().getFullYear()}{" "}
-            OjoPublico.
+                className="allies-item__logo"
+                width="85px"
+                alt="Idea Internacional"
+                src="https://ojo-publico.com/especiales/bingo-electoral-elecciones-regionales-municipales-2022/img/idealogo.cf0753f5.png"
+              ></img>
+            </div>
           </div>
         </div>
       </div>
+      <div className="divider"></div>
     </div>
   );
 };
