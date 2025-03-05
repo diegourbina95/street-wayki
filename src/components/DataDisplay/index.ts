@@ -9,3 +9,4 @@ export * from "./IconStreetWayki";
 export * from "./IconVs";
 export * from "./Overlay";
 export * from "./TooltipScatter";
+export * from "./IconSocialNetwork";

@@ -15,9 +15,6 @@ export interface PublicOfficialsInterface {
   djiStatus: DjiStatu[];
   criminalRecordNumber: number;
   criminalRecordDetails: string[];
-  quantityContractsRucNaturalPerson: number;
-  detailContractsRucNaturalPerson: string;
-  quantityCompanyLinks: number;
   detailCompanyLinks: string;
   color: string;
 }

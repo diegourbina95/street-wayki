@@ -5,11 +5,17 @@ import { BlackHeader, DefaultFooter } from "@/components/Layout";
 export const MainLayout = () => {
   return (
     <>
-      <BlackHeader />
-      <div style={{paddingTop: "60px"}}>
-      <Outlet />
+      {/*  <BlackHeader /> */}
+      <div
+        style={
+          {
+            /* paddingTop: "60px" */
+          }
+        }
+      >
+        <Outlet />
       </div>
-      
+
       <DefaultFooter />
     </>
   );
