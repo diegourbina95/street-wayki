@@ -1,17 +1,10 @@
 /* REACT COMPONENTS */
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { WaykiSelector, WaykiVs } from "@/components/Custom";
 
 /* DATA */
-import { generateData } from "@/data/wayki-selector.data";
-import {
-  politicalPartiesData,
-  listOfOfficials,
-} from "@/data/wayki-selector.data";
-
-/* DATA MOCK */
-import { useMediaQuery } from "@/hooks";
+import { listOfOfficials } from "@/data/wayki-selector.data";
 
 /* STYLES */
 
@@ -22,20 +15,10 @@ interface WaykiSelectorSectionProps {
 export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
   play,
 }) => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
-
-  const [patrimonyData, setPatrimonyData] = useState<any>([]);
-  const [politicalParties, setPoliticalParties] = useState<any>([]);
   const [players, setPlayers] = useState<any>([]);
   const [countPlayer, setCountPlayer] = useState<number>(0);
 
-  useEffect(() => {
-    setPatrimonyData(generateData());
-    setPoliticalParties(politicalPartiesData());
-  }, []);
-
   const selectWayki = (payload: any) => {
-    console.log("selectWayki", payload);
     setPlayers((prevElements: any) => {
       if (prevElements.length < 2) {
         return [...prevElements, payload];
@@ -59,12 +42,6 @@ export const WaykiSelectorSection: React.FC<WaykiSelectorSectionProps> = ({
       <div>
         <WaykiSelector
           officialList={listOfOfficials()}
-          politicalPartiesData={politicalParties}
-          patrimonyData={patrimonyData}
-          nameCurrency="soles"
-          stickyFilter={isMobile}
-          orientation={isMobile ? "y" : "x"}
-          tooltipBgColor={countPlayer === 0 ? "#feaa00" : "#61f908"}
           selectWayki={selectWayki}
         />
       </div>

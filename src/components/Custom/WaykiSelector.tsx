@@ -1,19 +1,12 @@
 /* REACT COMPONENTS */
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { SelectNes } from "@/components/Inputs";
-import { Scatter } from "@/components/Charts";
 
 /* LIBRARIES */
 
 /* STYLES */
 import "@/styles/wayki-selector.scss";
-
-interface PoliticalParties {
-  politicalPartyCode: number;
-  politicalPartyName: string;
-  officials: Official[];
-}
 
 interface Official {
   code: string;
@@ -22,85 +15,26 @@ interface Official {
 
 interface WaykiSelectorProps {
   officialList: Official[];
-  politicalPartiesData: PoliticalParties[];
-  patrimonyData: any[];
-  nameCurrency: string;
-  orientation?: "x" | "y";
-  stickyFilter?: boolean;
-  tooltipBgColor?: string;
   selectWayki?: (payload: any) => void;
 }
 
 export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
   officialList = [],
-  politicalPartiesData = [],
-  patrimonyData = [],
-  nameCurrency,
-  orientation,
-  stickyFilter,
-  tooltipBgColor,
   selectWayki,
 }) => {
-  const [politicalParties, setPoliticalParties] =
-    useState<PoliticalParties[]>();
   const [officials, setOfficials] = useState<Official[]>();
-  const [selectedOfficial, setSelectedOfficial] = useState<Official | null>();
-  const [patrimonialData, setPatrimonialData] = useState<any>([]);
-  const [defaultPatrimonialData, setDefaultPatrimonialData] = useState<any>([]);
-  const sectionRef = useRef<HTMLDivElement | null>(null);
-  const [isSticky, setIsSticky] = useState<boolean>(false);
-
-  useEffect(() => {
-    setPoliticalParties(politicalPartiesData);
-    setPatrimonialData(patrimonyData);
-    setDefaultPatrimonialData(patrimonyData);
-  }, [politicalPartiesData, patrimonyData]);
 
   useEffect(() => {
     setOfficials(officialList);
   }, [officialList]);
 
-  const filterByPoliticalParty = (payload: PoliticalParties) => {
-    setSelectedOfficial(null);
-
-    if (selectedOfficial) setPatrimonialData(defaultPatrimonialData);
-    setOfficials(payload.officials);
-  };
-
-  const searchOfficial = (payload: Official) => {
-    filterOfficials(payload.code);
-    setSelectedOfficial(payload);
-  };
-
   const handleWayki = (payload: any) => {
     if (selectWayki) selectWayki(payload);
   };
 
-  const filterOfficials = (officialCode: string) => {
-    if (!officialCode) {
-      setPatrimonialData(defaultPatrimonialData);
-    } else {
-      const newPatrimonialData = patrimonialData.map((item: any) => {
-        return {
-          ...item,
-          data: item.data.map((point: any) => ({
-            ...point,
-            disabled: officialCode ? point.person.code !== officialCode : false,
-          })),
-        };
-      });
-      setPatrimonialData(newPatrimonialData);
-    }
-  };
-
   return (
     <div className="wayki-selector">
-      <div
-        ref={sectionRef}
-        className={`wayki-selector__filters ${
-          isSticky ? "wayki-selector__filters--sticky" : ""
-        }`}
-      >
+      <div className="wayki-selector__filters">
         <div className="wayki-selector__title">
           Compara la fortuna de los políticos
         </div>
