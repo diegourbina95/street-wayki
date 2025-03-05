@@ -1,11 +1,15 @@
 /* REACT COMPONENTS */
 import { Outlet } from "react-router";
-import { DefaultFooter } from "@/components/Layout";
+import { BlackHeader, DefaultFooter } from "@/components/Layout";
 
 export const MainLayout = () => {
   return (
     <>
-      <Outlet />
+      <BlackHeader />
+      <div style={{ paddingTop: "60px" }}>
+        <Outlet />
+      </div>
+
       <DefaultFooter />
     </>
   );
