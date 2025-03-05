@@ -113,9 +113,12 @@ export const Line: React.FC<LineData> = ({
               legend: {
                 display: false,
               },
-
               tooltip: {
-                enabled: true,
+                callbacks: {
+                  label: (tooltipItem: any) => {
+                    return `${tooltipItem.dataset.personName}: S/ ${tooltipItem.raw} millones`;
+                  },
+                },
               },
             },
           },

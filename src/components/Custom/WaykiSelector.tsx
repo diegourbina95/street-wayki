@@ -113,7 +113,9 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
           isSticky ? "wayki-selector__filters--sticky" : ""
         }`}
       >
-        <div className="wayki-selector__title">Seleccionar Wayki</div>
+        <div className="wayki-selector__title">
+          Compara la fortuna de los políticos
+        </div>
         <div className="wayki-selector__select-container">
           <div className="wayki-selector__select">
             <span>Filtra por partido:</span>
@@ -126,7 +128,7 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
             />
           </div>
           <div className="wayki-selector__select">
-            <span>Buscar funcionario:</span>
+            <span>Buscar político:</span>
             <SelectNes
               placeholder="Escribe el nombre…"
               options={officials || []}
