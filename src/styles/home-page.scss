@@ -10,6 +10,15 @@
     padding: 0 26px;
     line-height: 30px;
     font-size: 0.9rem;
+
+    &--capital {
+      font-weight: 600 !important;
+      font-size: 100px !important;
+      float: left;
+      margin-right: 20px !important;
+      color: #7b3c09 !important;
+      line-height: 0.7em;
+    }
   }
 
   &__wayki-selector {
