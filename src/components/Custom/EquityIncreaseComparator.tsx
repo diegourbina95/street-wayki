@@ -53,7 +53,7 @@ export const EquityIncreaseComparator: React.FC<
     <div className="equity-increase-comparator">
       <div className="equity-increase-comparator__select-container">
         <div className="equity-increase-comparator__label">
-          Selecciona hasta {numberOfficials} funcionarios
+          Selecciona hasta {numberOfficials} políticos
         </div>
         <SelectNes
           options={officials}
@@ -67,7 +67,7 @@ export const EquityIncreaseComparator: React.FC<
       </div>
       <div className="equity-increase-comparator__line-container">
         <div className="equity-increase-comparator__line-title">
-          Patrimonio (soles)
+          Patrimonio en millones (soles)
         </div>
         <div className="equity-increase-comparator__line-chart">
           <Line labels={years} datasets={datasets} isMobile={isMobile} />
