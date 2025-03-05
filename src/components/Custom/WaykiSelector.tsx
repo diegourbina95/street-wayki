@@ -68,7 +68,6 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
 
   useEffect(() => {
     setPoliticalParties(politicalPartiesData);
-    console.log("patrimonyData: ", patrimonyData);
     setPatrimonialData(patrimonyData);
     setDefaultPatrimonialData(patrimonyData);
   }, [politicalPartiesData, patrimonyData]);
@@ -119,6 +118,7 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
           <div className="wayki-selector__select">
             <span>Filtra por partido:</span>
             <SelectNes
+              placeholder="Escribe el nombre…"
               options={politicalParties || []}
               valueKey="politicalPartyCode"
               labelKey="politicalPartyName"
@@ -128,6 +128,7 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
           <div className="wayki-selector__select">
             <span>Buscar funcionario:</span>
             <SelectNes
+              placeholder="Escribe el nombre…"
               options={officials || []}
               valueKey="code"
               labelKey="name"

@@ -56,6 +56,7 @@ export const EquityIncreaseComparator: React.FC<
           Selecciona hasta {numberOfficials} políticos
         </div>
         <SelectNes
+          placeholder="Escribe el nombre…"
           options={officials}
           labelKey="personName"
           valueKey="personCode"
