@@ -65,6 +65,10 @@ const CompareOfficials = () => {
   };
 
   useEffect(() => {
+    const section = document.getElementById("root");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
     setIsPlay(true);
     if (playerCode1 && playerCode2) {
       setPlayerDetails1(findOfficial(playerCode1));
@@ -98,7 +102,10 @@ const CompareOfficials = () => {
   };
 
   return (
-    <div className="compare-officials-page content-650">
+    <div
+      className="compare-officials-page content-650"
+      id="compare-officials-section"
+    >
       <div className="compare-officials-page__comparation-cards">
         <div>
           <PlayerText player={1} />
