@@ -31,8 +31,15 @@ export const ProgressNes: React.FC<ProgressNesProps> = ({
       quantity1 !== undefined &&
       quantity2 !== null &&
       quantity2 !== undefined
-    )
-      setBarPercentage((quantity1 / (quantity1 + quantity2)) * 100);
+    ){
+      if(quantity1 === 0 &&
+        quantity2 === 0){
+          setBarPercentage(50);
+        }else{
+          setBarPercentage((quantity1 / (quantity1 + quantity2)) * 100);
+        }
+    }
+      
   }, [quantity1, quantity2]);
   return (
     <div className="progress-nes">

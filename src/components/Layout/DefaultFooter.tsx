@@ -103,7 +103,7 @@ export const DefaultFooter = () => {
               Desarrollo web:
             </span>
             <span className="footer__more-information--text">
-              Diego Paredes
+              Diego Paredes, Diego Urbina
             </span>
           </div>
           <div className="footer__more-information__group">
