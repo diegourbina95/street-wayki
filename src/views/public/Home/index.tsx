@@ -28,13 +28,19 @@ const HomePage = () => {
         <div>
           <InformationSection
             initialCapitalLetter="L"
-            text="a presidenta de la República, Dina Boluarte, y varios congresistas y gobernadores regionales tienen en común haber incrementado su fortuna personal desde que asumieron estos cargos. Sus declaraciones juradas entre 2021 y 2024, así como el análisis de registros públicos, muestran el incremento de sus fortunas que, en muchos casos, no se justifica con los ingresos que reciben como funcionarios."
+            text="a presidenta de la República, Dina Boluarte, y varios congresistas y gobernadores regionales incrementaron sus fortunas desde que asumieron estos cargos. Sus declaraciones juradas de bienes y rentas presentadas entre 2021 y 2025, así como el análisis de registros públicos, nos muestran un incremento de su patrimonio que, en muchos casos, no se justifica con los ingresos que reciben como funcionarios."
           />
         </div>
 
         <div>
-          <InformationSection text="¿Sabías que Dina Boluarte ha acumulado un patrimonio de más de un millón de soles desde que está en la presidencia y que su wayki (amigo en quechua) y gobernador regional de Ayacucho, Wilfredo Oscorima, posee una fortuna de más de 3 millones de soles? ¿Conocías que los congresistas Alejandro Cavero, Segundo Quiroz, Germán Tacuri, Margot Palacios y Carlos Anderson no tenían bienes cuando eran candidatos y ahora declaran posesiones por más de medio millón de soles?" />
+          <InformationSection text="Para conocer y comparar el patrimonio de la presidenta de la República, los 130 congresistas y 25 gobernadores regionales, OjoPúblico ha creado #StreetWaykis una aplicación que analiza la fortuna de los funcionarios con más poder en el Perú y detalla las denuncias, investigaciones y procesos judiciales que enfrentan." />
         </div>
+
+        <div>
+          <InformationSection text="Por ejemplo, ¿sabías que en el tiempo que lleva en el cargo Boluarte ha acumulado un patrimonio de más de un millón de soles y que su wayki (amigo en quechua) y gobernador regional de Ayacucho, Wilfredo Oscorima, declaró que posee una fortuna de más de 3 millones de soles? ¿Conocías que los congresistas Alejandro Cavero, Segundo Quiroz, Germán Tacuri, Margot Palacios y Carlos Anderson no tenían bienes cuando eran candidatos y ahora declaran posesiones por más de medio millón de soles cada uno?" />
+        </div>
+
+
         <div>
           <EquityIncreaseSection
             initialYear={2021}
@@ -43,16 +49,16 @@ const HomePage = () => {
           />
         </div>
         <div style={{ margin: "50px 0" }}>
-          <InformationSection text="¿Y sabías que el congresista más rico es José Elías, de Alianza para el Progreso, con más de 13 millones de soles en bienes y que el que declara ser el más pobre es Freddy Díaz, también de APP, que no tiene inmuebles y sólo reporta otras posesiones por 23 mil soles?" />
+          <InformationSection text="¿Y sabías que el congresista más rico, con más de 36 millones de soles en bienes, es José Luna (de Podemos Perú), quien está investigado por lavado de activos? ¿O que la parlamentaria que declara ser la más pobre, con un patrimonio de 36 mil soles, es Magally Santisteban (de Fuerza Popular), que reemplazó a la legisladora María Cordero Jon Tay, suspendida en 2024 por recortar el sueldo de sus trabajadores? ¿Conocías que la fortuna del político más rico del Perú, César Acuña, gobernador de La Libertad, es de más de 130 millones de soles?" />
         </div>
         <div style={{ margin: "50px 0" }}>
           <AssetIncreaseComparatorSection />
         </div>
         <div style={{ margin: "50px 0" }}>
-          <InformationSection text="Para conocer y comparar el patrimonio de la presidenta de la República, los 130 congresistas y 25 gobernadores regionales, OjoPúblico ha creado una base de datos con la información de sus declaraciones juradas de bienes y rentas. “Street Waykis” es una aplicación que permite acceder, de manera fácil y amigable, a los reportes de la fortuna personal de los funcionarios con más poder en el Perú." />
+          <InformationSection text="#StreetWaykis revela que las bancadas parlamentarias más afortunadas son Podemos Perú, con congresistas que suman más de 49 millones de soles de patrimonio; Fuerza Popular, con más de 30 millones de soles; Alianza para el Progreso, con más de 27 millones de soles; Renovación Popular, con más de 8 millones de soles; y  Acción Popular, con más de 6 millones de soles. La fortuna de los miembros de estas bancadas supera los 120 millones de soles. Además, esta herramienta te permite identificar a los cinco congresistas que le cobran doble al Estado, por su labor parlamentaria y como militares retirados, y que han sido denunciados por promover la modificación de una ley que les otorgó este beneficio." />
         </div>
         <div style={{ margin: "50px 0" }}>
-          <InformationSection text="Esta aplicación también brinda información sobre los congresistas y gobernadores que tienen investigaciones en el Ministerio Público, procesos en el Poder Judicial y acusaciones constitucionales en el Congreso por corrupción y otros delitos, como los parlamentarios del llamado grupo “Los Niños”, investigados por integrar una red criminal liderada por el entonces presidente Pedro Castillo, y los legisladores denunciados por la Fiscalía por beneficiarse con un doble pago del Estado: su remuneración en el Congreso y su pensión como militares retirados." />
+          <InformationSection text="#StreetWaykis también detalla el historial de los legisladores denunciados constitucionalmente ante el Congreso por la Fiscalía de la Nación por corrupción y otros delitos, entre los cuales destacan Jorge Flores y otros tres parlamentarios del caso Los Niños, acusados de integrar una red criminal liderada por el entonces presidente Pedro Castillo. También conoce a los siete congresistas “mocha sueldos”, denunciados por recortar la remuneración de sus trabajadores y a cuánto asciende su patrimonio." />
         </div>
       </div>
 

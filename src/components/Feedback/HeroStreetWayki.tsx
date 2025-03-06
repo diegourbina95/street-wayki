@@ -26,14 +26,16 @@ export const HeroStreetWayki = () => {
   return (
     <>
       <div className="hero">
-        <div className="hero__overlay"></div>
+      
         <div className="hero__header">
+        <div className="hero__overlay"></div>    
           <img
             src="https://ojo-publico.com/especiales/migrar-latinoamerica-hemisferio-en-movimiento/img/logo.png"
             alt="logo-ojo-publico"
           />
         </div>
         <div className="hero__content">
+        <div className="hero__overlay"></div>  
           <div className="hero__title">
             <img src={tituloStreetWayki} alt="titulo-street-wayki" />
           </div>
@@ -88,7 +90,7 @@ export const HeroStreetWayki = () => {
         </div>
         <div className="hero__illustration">
           <img src={ilustracionStreetWayki} alt="illustration-street-wayki" />
-        </div>
+        </div>        
       </div>
     </>
   );

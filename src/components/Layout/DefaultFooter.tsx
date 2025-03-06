@@ -1,5 +1,6 @@
 /* REACT COMPONENTS */
 import "@/styles/default-footer.scss";
+import { ButtonNes } from "@/components/Inputs";
 
 /* LIBRARIES */
 
@@ -53,9 +54,10 @@ export const DefaultFooter = () => {
             <li>Organismo Supervisor de las Contrataciones del Estado</li>
           </ul>
         </div>
-        <button onClick={handleToggle}>
-          {toggle ? "Cerrar x" : "Leer más +"}
-        </button>
+        <ButtonNes
+                  text={toggle ? "Cerrar x" : "Leer más +"}
+                  onClick={handleToggle}
+                />
       </div>
       <div className="divider"></div>
       <div className="footer__more-information">
