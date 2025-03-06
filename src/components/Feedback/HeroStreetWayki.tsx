@@ -27,20 +27,14 @@ export const HeroStreetWayki = () => {
     <>
       <div className="hero">
         <div className="hero__header">
-          <div className="hero__overlay"></div>
         </div>
         <div className="hero__content">
-          <div className="hero__overlay"></div>
           <div className="hero__title">
             <img src={tituloStreetWayki} alt="titulo-street-wayki" />
           </div>
           <h2 className="hero__subtitle">
             Compara la fortuna de los políticos con más poder en Perú
           </h2>
-          <p className="hero__introduction">
-            Compara el patrimonio de la presidenta Dina Boluarte, los 130
-            congresistas y los 25 gobernadores regionales.
-          </p>
           <div className="hero__social-network">
             <ul>
               <li>
