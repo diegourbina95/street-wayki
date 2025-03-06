@@ -1,12 +1,12 @@
 /* REACT COMPONENTS */
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Scatter } from "@/components/Charts";
 
 /* LIBRARIES */
 
 /* STYLES */
-import "@/styles/wayki-selector.scss";
+import "@/styles/wayki-scatter.scss";
 
 interface WaykiScatterProps {
   patrimonyData: any[];
@@ -28,13 +28,13 @@ export const WaykiScatter: React.FC<WaykiScatterProps> = ({
   }, [patrimonyData]);
 
   return (
-    <div className="wayki-selector">
-      <div className="wayki-selector__scatter-container">
-        <div className="wayki-selector__scatter-title">
+    <div className="wayki-scatter">
+      <div className="wayki-scatter__scatter-container">
+        <div className="wayki-scatter__scatter-title">
           Patrimonio ({nameCurrency})
         </div>
 
-        <div className="wayki-selector__scatter-chart">
+        <div className="wayki-scatter__scatter-chart">
           <Scatter
             datasets={patrimonialData}
             orientation={orientation}

@@ -12,15 +12,6 @@
     transition: position 0.3s ease, top 0.3s ease;
   }
 
-  &__filters--sticky {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding-top: 86px;
-  }
-
   &__title {
     text-transform: uppercase;
     text-align: center;
@@ -40,23 +31,6 @@
       display: block;
       margin-bottom: 12px;
     }
-  }
-
-  &__scatter-container {
-    margin: 10px 0 60px;
-    padding: 0 15px;
-  }
-
-  &__scatter-container.is-sticky {
-    margin-top: 100px;
-  }
-
-  &__scatter-title {
-    font-size: 0.7rem;
-  }
-
-  &__scatter-chart {
-    height: 390px;
   }
 }
 
