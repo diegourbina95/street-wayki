@@ -19,6 +19,8 @@ import { findOfficial } from "@/data/compare-officials.data";
 import { PublicOfficialsInterface } from "@/data/public-officials.data";
 import { generateData } from "@/data/wayki-selector.data";
 
+import tituloStreetWayki from "@/assets/images/titulo_street_wayki.png";
+
 /* STYLES */
 import "@/styles/compare-officials-page.scss";
 
@@ -102,10 +104,16 @@ const CompareOfficials = () => {
   };
 
   return (
+
+
+
     <div
       className="compare-officials-page content-650"
       id="compare-officials-section"
     >
+
+      <img width={"200px"} src={tituloStreetWayki} alt="titulo-street-wayki" />
+
       <div className="compare-officials-page__comparation-cards">
         <div>
           <PlayerText player={1} />

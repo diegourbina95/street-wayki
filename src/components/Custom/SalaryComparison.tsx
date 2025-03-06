@@ -41,18 +41,21 @@ export const SalaryComparison: React.FC<SalaryComparisonProps> = ({
   const calculateEquivalence = (salary: number, averageSalary: number) =>
     averageSalary > 0 ? salary / averageSalary : 0;
 
+
+  const formatNumber = (num:number) => num.toLocaleString("en-US");
+
   return (
     <div className="salary-comparison__content">
       {player1.name || "N/A"} tiene un patrimonio que equivale a{" "}
       {player1.salary !== null && player1.salary !== undefined
-        ? Math.round(equivalence1)
+        ? formatNumber(Math.round(equivalence1))
         : "N/A"}{" "}
-      veces el sueldo promedio en Perú, mientras que el de{" "}
+      veces el sueldo mínimo en Perú, mientras que el de{" "}
       {player2.name || "N/A"} es{" "}
       {player2.salary !== null && player2.salary !== undefined
-        ? Math.round(equivalence2)
+        ? formatNumber(Math.round(equivalence2))
         : "N/A"}{" "}
-      veces el promedio.
+      veces el mínimo.
     </div>
   );
 };
