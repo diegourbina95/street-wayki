@@ -116,7 +116,7 @@ export const Line: React.FC<LineData> = ({
               tooltip: {
                 callbacks: {
                   label: (tooltipItem: any) => {
-                    return `${tooltipItem.dataset.personName}: S/ ${tooltipItem.raw} millones`;
+                    return `${tooltipItem.dataset.label}: S/ ${Number(tooltipItem.raw).toFixed(2)} millones`;
                   },
                 },
               },
