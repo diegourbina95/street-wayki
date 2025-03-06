@@ -21,7 +21,6 @@ const HeritageExplorerPage = () => {
   const [backgroundAndResearch, setBackgroundAndResearch] = useState<any>();
 
   const handleSelect = (payload: any) => {
-    console.log("payload: ", payload);
     setWaykiInformation({ ...informationCardData, name: payload.person.name });
     setBackgroundAndResearch(
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa incidunt culpa atque voluptas sapiente eum reprehenderit maiores officia commodi, laboriosam sit facilis. Blanditiis voluptatibus dolores ipsa commodi temporibus quod consequuntur. "

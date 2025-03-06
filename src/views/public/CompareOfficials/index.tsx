@@ -94,7 +94,6 @@ const CompareOfficials = () => {
         })),
       };
     });
-    console.log(newPatrimonialData);
     setPatrimonialData(newPatrimonialData);
   };
 
