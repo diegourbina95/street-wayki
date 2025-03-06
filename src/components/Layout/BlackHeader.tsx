@@ -18,7 +18,7 @@ export const BlackHeader = () => {
       <div className="black-header__flex">
         <div className="black-header__logo">
           <img
-            src="https://ojo-publico.com/especiales/especial-interno-op-test/assets/img/logo-light-10-anos-ojopublico.svg"
+            src="https://ojo-publico.com/especiales/migrar-latinoamerica-hemisferio-en-movimiento/img/logo.png"
             alt="logo-ojo-plublico"
           />
         </div>
