@@ -26,21 +26,16 @@ export const HeroStreetWayki = () => {
   return (
     <>
       <div className="hero">
-      
         <div className="hero__header">
-        <div className="hero__overlay"></div>    
-          <img
-            src="https://ojo-publico.com/especiales/migrar-latinoamerica-hemisferio-en-movimiento/img/logo.png"
-            alt="logo-ojo-publico"
-          />
+          <div className="hero__overlay"></div>
         </div>
         <div className="hero__content">
-        <div className="hero__overlay"></div>  
+          <div className="hero__overlay"></div>
           <div className="hero__title">
             <img src={tituloStreetWayki} alt="titulo-street-wayki" />
           </div>
           <h2 className="hero__subtitle">
-            La fortuna de los políticos con más poder en el Perú
+            Compara la fortuna de los políticos con más poder en Perú
           </h2>
           <p className="hero__introduction">
             Compara el patrimonio de la presidenta Dina Boluarte, los 130
@@ -90,7 +85,7 @@ export const HeroStreetWayki = () => {
         </div>
         <div className="hero__illustration">
           <img src={ilustracionStreetWayki} alt="illustration-street-wayki" />
-        </div>        
+        </div>
       </div>
     </>
   );
