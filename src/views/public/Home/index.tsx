@@ -24,7 +24,10 @@ const HomePage = () => {
       <div className="home-page__hero">
         <HeroStreetWayki />
       </div>
-      <div className="content-650" id="reading-start-section">
+      <div
+        className="content-650 home-page__information-container"
+        id="reading-start-section"
+      >
         <div>
           <InformationSection
             initialCapitalLetter="L"

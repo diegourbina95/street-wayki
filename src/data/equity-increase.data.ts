@@ -12,11 +12,7 @@ export const getTopAssetIncreases = (topNumber: number) =>
     .slice(0, topNumber);
 
 const calculateIncrease = (heritage: HeritageForYear[]) => {
-  let totalIncrease = 0;
-  for (let i = 1; i < heritage.length; i++) {
-    totalIncrease += heritage[i].amount - heritage[i - 1].amount;
-  }
-  return totalIncrease;
+  return (heritage.at(-1)?.amount || 0) - heritage[0].amount;
 };
 
 export const generateData = () => {
