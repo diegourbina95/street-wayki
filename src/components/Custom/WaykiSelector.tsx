@@ -15,18 +15,20 @@ interface Official {
 
 interface WaykiSelectorProps {
   officialList: Official[];
+  isDisabled?: boolean;
   selectWayki?: (payload: any) => void;
 }
 
 export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
   officialList = [],
+  isDisabled,
   selectWayki,
 }) => {
   const [officials, setOfficials] = useState<Official[]>();
 
   useEffect(() => {
     setOfficials(officialList);
-  }, [officialList]);
+  }, []);
 
   const handleWayki = (payload: any) => {
     if (selectWayki) selectWayki(payload);
@@ -47,6 +49,7 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
               valueKey="code"
               labelKey="name"
               onChange={handleWayki}
+              isDisabled={isDisabled}
             />
           </div>
         </div>
