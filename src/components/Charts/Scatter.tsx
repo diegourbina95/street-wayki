@@ -55,7 +55,6 @@ Chart.register(
 export const Scatter: React.FC<ScatterProps> = ({
   datasets,
   orientation = "x",
-  tooltipBgColor = "#feaa00",
   selectPoint,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -67,6 +66,7 @@ export const Scatter: React.FC<ScatterProps> = ({
     y: 0,
     name: "",
     avatar: "",
+    color: "",
   });
 
   useEffect(() => {
@@ -218,6 +218,7 @@ export const Scatter: React.FC<ScatterProps> = ({
           y: tooltipItem.element.y - 130,
           name: tooltipData.person.name,
           avatar: tooltipData.person.avatar,
+          color: tooltipData.person.color,
         });
       }
     } else {
@@ -239,7 +240,7 @@ export const Scatter: React.FC<ScatterProps> = ({
           y={tooltip.y}
           name={tooltip.name}
           avatar={tooltip.avatar}
-          bgColor={tooltipBgColor}
+          bgColor={tooltip.color}
         />
       </div>
     </>

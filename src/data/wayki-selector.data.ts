@@ -12,18 +12,13 @@ export const generateData = () => {
                 .amount / 1000000
             ).toFixed(2)
           ),
-          /* y: Number(
-            (
-              official.heritageForYear[official.heritageForYear.length - 1]
-                .amount / 1000000
-            ).toFixed(2)
-          ), */
           y: official.separationRange,
           person: {
             code: official.dni,
             name: official.shortName,
             avatar: `./img/officials/${official.photos}`,
             politicalLogos: [`./img/political-parties/${official.partyLogo}`],
+            color: official.color,
           },
           disabled: false,
         },
@@ -32,12 +27,6 @@ export const generateData = () => {
       borderColor: `rgba(${convertHexaToRgb(official.color)}, 1)`,
     };
   });
-  /* .filter(
-      (value) =>
-        !["17903382", "7711761", "21569935", "6354697"].includes(
-          value.data[0].person.code
-        )
-    ); */
 };
 
 export const politicalPartiesData = () => {
@@ -53,5 +42,14 @@ export const politicalPartiesData = () => {
     officials: publicOfficialsData
       .filter((official) => official.currentBenchCode === item.currentBenchCode)
       .map((official) => ({ code: official.dni, name: official.shortName })),
+  }));
+};
+
+export const listOfOfficials = () => {
+  return publicOfficialsData.map((official) => ({
+    code: official.dni,
+    name: official.shortName,
+    avatar: `./img/officials/${official.photos}`,
+    politicalLogos: [`./img/political-parties/${official.partyLogo}`],
   }));
 };

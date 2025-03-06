@@ -7,12 +7,17 @@ import { ProgressNes } from "@/components/Feedback";
 import { InformationCard } from "@/components/Surfaces";
 import { PlayerText } from "@/components/Texts";
 import { ButtonNes } from "@/components/Inputs";
-import { FightOverlay, SalaryComparison } from "@/components/Custom";
+import {
+  FightOverlay,
+  SalaryComparison,
+  WaykiScatter,
+} from "@/components/Custom";
 import { Line } from "@/components/Charts";
 
 /* DATA */
 import { findOfficial } from "@/data/compare-officials.data";
 import { PublicOfficialsInterface } from "@/data/public-officials.data";
+import { generateData } from "@/data/wayki-selector.data";
 
 /* STYLES */
 import "@/styles/compare-officials-page.scss";
@@ -28,17 +33,47 @@ const CompareOfficials = () => {
     useState<PublicOfficialsInterface>();
   const [playerDetails2, setPlayerDetails2] =
     useState<PublicOfficialsInterface>();
-
   const [isPlay, setIsPlay] = useState<boolean>(false);
+  const [patrimonialData, setPatrimonialData] = useState<any>([]);
 
   const playerCode1 = searchParams.get("player1");
   const playerCode2 = searchParams.get("player2");
 
+  const getColor = (document: string) => {
+    switch (document) {
+      case playerCode1:
+        return {
+          hexa: "#61F908",
+          backgroundColor: "rgba(97, 249, 8, 0.7)",
+          borderColor: "rgba(97, 249, 8, 1)",
+        };
+
+      case playerCode2:
+        return {
+          hexa: "#FEAA00",
+          backgroundColor: "rgba(254, 170, 0, 0.7)",
+          borderColor: "rgba(254, 170, 0, 1)",
+        };
+
+      default:
+        return {
+          hexa: "#000",
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          borderColor: "rgba(0, 0, 0, 1)",
+        };
+    }
+  };
+
   useEffect(() => {
+    const section = document.getElementById("root");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
     setIsPlay(true);
     if (playerCode1 && playerCode2) {
       setPlayerDetails1(findOfficial(playerCode1));
       setPlayerDetails2(findOfficial(playerCode2));
+      filterOfficials([playerCode1, playerCode2]);
     } else {
       console.error("Faltan datos de un jugador");
     }
@@ -46,8 +81,31 @@ const CompareOfficials = () => {
 
   const handleReset = () => navigate("/");
 
+  const filterOfficials = (officialCodes: string[]) => {
+    const newPatrimonialData = generateData().map((item: any) => {
+      const color = getColor(item.data[0].person.code);
+      return {
+        ...item,
+        backgroundColor: color.backgroundColor,
+        borderColor: color.borderColor,
+        data: item.data.map((point: any) => ({
+          ...point,
+          person: {
+            ...point.person,
+            color: color.hexa,
+          },
+          disabled: !officialCodes.includes(point.person.code),
+        })),
+      };
+    });
+    setPatrimonialData(newPatrimonialData);
+  };
+
   return (
-    <div className="compare-officials-page content-650">
+    <div
+      className="compare-officials-page content-650"
+      id="compare-officials-section"
+    >
       <div className="compare-officials-page__comparation-cards">
         <div>
           <PlayerText player={1} />
@@ -156,7 +214,6 @@ const CompareOfficials = () => {
           />
         </div>
       </div>
-
       <SalaryComparison
         player1={{
           name: playerDetails1?.shortName,
@@ -168,6 +225,9 @@ const CompareOfficials = () => {
         }}
         averageSalary={1130}
       />
+
+      <WaykiScatter patrimonyData={patrimonialData} nameCurrency="soles" />
+
       <div className="compare-officials-page__comparation-reset">
         <span>Compara otros waykis</span>
         <ButtonNes text="REINICIAR" onClick={handleReset} />

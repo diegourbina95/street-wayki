@@ -14,8 +14,6 @@ import { Bar, Line } from "@/components/Charts";
 
 /* DATA MOCK */
 import {
-  generateData,
-  politicalPartiesData,
   cardVsData,
   informationCardData,
   backgroundColor,
@@ -30,7 +28,6 @@ const ComponentsPage = () => {
   const [isOverlay, setIsOverlay] = useState(false);
   const [isFightOverlay, setIsFightOverlay] = useState(false);
 
-  const datasets = generateData();
   const options = [
     { value: "chocolate", label: "Chocolate" },
     { value: "strawberry", label: "Strawberry" },
@@ -81,9 +78,7 @@ const ComponentsPage = () => {
         <h4>Selector Wayki</h4>
         <div style={{ width: "600px" }}>
           <WaykiSelector
-            politicalPartiesData={politicalPartiesData}
-            patrimonyData={datasets}
-            nameCurrency="dólares"
+            officialList={[]}
             selectWayki={(payload: any) =>
               console.log("selectWayki: ", payload)
             }
