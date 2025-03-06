@@ -1,5 +1,6 @@
 .footer {
-  font-family: Roboto, sans-serif;
+  font-family: "Jersey 15", sans-serif;
+  font-size: 1.2rem;
   max-width: 975px;
   margin: 63px auto;
   padding: 0 30px;
@@ -24,7 +25,7 @@
     }
   }
 
-  button {
+  /*button {
     padding: 4px 8px;
     border: 1px solid transparent;
     line-height: 1.5;
@@ -38,7 +39,7 @@
   button:hover {
     background-color: #545b62;
     border-color: #4e555b;
-  }
+  }*/
 
   .divider {
     border-bottom: 1px solid #dee2e6 !important;
@@ -55,7 +56,7 @@
 
     &--title {
       font-size: 16px;
-      color: #dc130e;
+      color: #53E101;
       display: block;
     }
 

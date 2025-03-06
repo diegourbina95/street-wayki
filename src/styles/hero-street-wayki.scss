@@ -19,20 +19,26 @@
 
   &__header {
     position: relative;
-    width: 290px;
-    margin: 0 auto;
-    padding: 40px 0 10px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si tiene altura definida */
+    
+
     img {
-      width: 100%;
+      position: relative;
+      width: 290px;
+      margin: 0 auto;
+      padding: 40px 0 10px;
     }
   }
 
   &__content {
     position: relative;
-    padding: 10px 10px 0px;
+    padding: 10px 10px 10px;
   }
 
   &__title {
+    position: relative;
     width: 300px;
     margin: 10px auto 30px;
 
@@ -42,6 +48,7 @@
   }
 
   &__subtitle {
+    position: relative;
     font-size: 1.9rem;
     color: #fff;
     text-align: center;
@@ -50,6 +57,7 @@
   }
 
   &__introduction {
+    position: relative;
     font-size: 1.3rem;
     color: #fff;
     text-align: center;
@@ -58,6 +66,7 @@
   }
 
   &__social-network {
+    position: relative;
     margin-bottom: 20px;
     ul {
       padding: 0;
@@ -80,6 +89,7 @@
   }
 
   &__date {
+    position: relative;
     font-size: 1.3rem;
     font-weight: bold;
     color: #fff;
@@ -89,6 +99,7 @@
   }
 
   &__actions {
+    position: relative;
     display: flex;
     justify-content: center;
     font-family: "Press Start 2P";

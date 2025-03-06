@@ -1,5 +1,4 @@
 /* REACT COMPONENTS */
-import { Link } from "react-router";
 import { ButtonNes } from "@/components/Inputs";
 
 /* LIBRARIES */
@@ -24,9 +23,9 @@ export const MoreOptions = () => {
             por lavado de activos, mientras que Valer Pinto ha afrontado
             investigaciones fiscales por corrupción y otros delitos.
           </div>
-          <Link to="componentes">
-            <ButtonNes text="LEER REPORTAJE COMPLETO" />
-          </Link>
+          
+            <ButtonNes text="LEER REPORTAJE COMPLETO" href="https://ojo-publico.com/5515/patrimonio-fuga-congresistas-se-desprenden-sus-bienes" />
+          
         </div>
       </div>
     </div>
