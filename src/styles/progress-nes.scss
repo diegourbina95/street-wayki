@@ -51,6 +51,7 @@
 
     &__left {
       border-left: 5px solid #212121;
+      min-width: 190px;
     }
 
     &__icon {
@@ -63,6 +64,7 @@
 
     &__right {
       border-right: 5px solid #212121;
+      min-width: 190px;
     }
   }
 }
