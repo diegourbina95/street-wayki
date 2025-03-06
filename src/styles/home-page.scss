@@ -1,8 +1,8 @@
 @use "main";
 
 .home-page {
-  &__hero {
-    margin-bottom: 50px;
+  &__information-container {
+    padding-top: 70px;
   }
 
   &__information {
@@ -25,7 +25,7 @@
   }
 
   &__wayki-selector {
-    padding: 58px 0 0;
+    padding: 65px 0 0;
   }
 
   &__equity-increase {
@@ -72,10 +72,6 @@
 
 @media (min-width: 768px) {
   .home-page {
-    &__hero {
-      margin-bottom: 70px;
-    }
-
     &__information {
       font-size: 1rem;
     }
