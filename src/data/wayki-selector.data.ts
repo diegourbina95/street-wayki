@@ -24,6 +24,7 @@ export const generateData = () => {
             name: official.shortName,
             avatar: `./img/officials/${official.photos}`,
             politicalLogos: [`./img/political-parties/${official.partyLogo}`],
+            color: official.color,
           },
           disabled: false,
         },

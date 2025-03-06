@@ -1,5 +1,5 @@
 /* REACT COMPONENTS */
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { WaykiSelector, WaykiVs } from "@/components/Custom";
 
