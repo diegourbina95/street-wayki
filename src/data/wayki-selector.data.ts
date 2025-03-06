@@ -24,6 +24,7 @@ export const generateData = () => {
             name: official.shortName,
             avatar: `./img/officials/${official.photos}`,
             politicalLogos: [`./img/political-parties/${official.partyLogo}`],
+            color: official.color,
           },
           disabled: false,
         },
@@ -53,5 +54,14 @@ export const politicalPartiesData = () => {
     officials: publicOfficialsData
       .filter((official) => official.currentBenchCode === item.currentBenchCode)
       .map((official) => ({ code: official.dni, name: official.shortName })),
+  }));
+};
+
+export const listOfOfficials = () => {
+  return publicOfficialsData.map((official) => ({
+    code: official.dni,
+    name: official.shortName,
+    avatar: `./img/officials/${official.photos}`,
+    politicalLogos: [`./img/political-parties/${official.partyLogo}`],
   }));
 };

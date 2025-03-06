@@ -12,15 +12,6 @@
     transition: position 0.3s ease, top 0.3s ease;
   }
 
-  &__filters--sticky {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding-top: 86px;
-  }
-
   &__title {
     text-transform: uppercase;
     text-align: center;
@@ -32,6 +23,7 @@
   }
 
   &__select {
+    z-index: 3;
     width: 300px;
     span {
       font-size: 0.7rem;
@@ -40,40 +32,24 @@
       margin-bottom: 12px;
     }
   }
-
-  &__scatter-container {
-    margin-top: 10px;
-    padding: 0 15px;
-  }
-
-  &__scatter-container.is-sticky {
-    margin-top: 100px;
-  }
-
-  &__scatter-title {
-    font-size: 0.7rem;
-  }
-
-  &__scatter-chart {
-    height: 390px;
-  }
 }
 
 @media (min-width: 768px) {
   .wayki-selector {
     &__select-container {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      max-width: 650px;
+      max-width: 400px;
       margin: 0 auto;
       margin-bottom: 20px;
     }
 
-    &__select:first-child {
+    &__select {
+      width: 100%;
       margin-bottom: 0px;
-      margin-left: -7px;
+      margin-left: 0px;
     }
   }
 }

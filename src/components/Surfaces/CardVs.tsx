@@ -26,6 +26,8 @@ interface CardVsProps {
     | undefined;
   size?: number;
   row?: boolean;
+  cleanable?: boolean;
+  close?: (payload: any) => void;
 }
 
 export const CardVs: React.FC<CardVsProps> = ({
@@ -34,6 +36,8 @@ export const CardVs: React.FC<CardVsProps> = ({
   politicalInformation,
   size,
   row,
+  cleanable,
+  close,
 }) => {
   const EMPTY_COLOR = "#E4E4E4";
   const [widthCard, setWidthCard] = useState<number>(0);
@@ -49,6 +53,10 @@ export const CardVs: React.FC<CardVsProps> = ({
     }
   }, [row, size]);
 
+  const handleClose = (payload: any) => {
+    if (close) close(payload);
+  };
+
   return (
     <div
       className="cardvs__container"
@@ -61,6 +69,11 @@ export const CardVs: React.FC<CardVsProps> = ({
         padding: isRow ? "31px 5px" : "25px 5px 10px",
       }}
     >
+      {politicalInformation && cleanable && (
+        <div className="cardvs__close" onClick={handleClose}>
+          <i className="fa fa-close"></i>
+        </div>
+      )}
       {!isRow ? (
         <IconBoderTopCardVs
           color={politicalInformation ? color : EMPTY_COLOR}

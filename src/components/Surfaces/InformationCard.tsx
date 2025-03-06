@@ -155,7 +155,9 @@ export const InformationCard: React.FC<InformationCardProps> = ({
             >
               <ul style={{ paddingLeft: "25px" }}>
                 {details.textList.list
-                  ? details.textList.list.map((value) => <li>{value}</li>)
+                  ? details.textList.list.map((value, idx) => (
+                      <li key={idx}>{value}</li>
+                    ))
                   : "..."}
               </ul>
             </div>
