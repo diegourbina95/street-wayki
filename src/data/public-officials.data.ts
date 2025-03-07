@@ -5456,7 +5456,7 @@ export const publicOfficialsData = [
       " Casos de denuncias fiscales: 0",
     ],
     detailCompanyLinks: "",
-    color: "#810322",
+    color: "#FEAA00",
   },
   {
     dni: "17896798",
@@ -7460,7 +7460,7 @@ export const publicOfficialsData = [
       " Casos de denuncias fiscales: 0",
     ],
     detailCompanyLinks: "",
-    color: "#3c825f",
+    color: "#CF1B90",
   },
   {
     dni: "7704730",

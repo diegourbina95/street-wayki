@@ -20,6 +20,9 @@ const HomePage = () => {
     navigate(`/comparar?player1=${payload[0].code}&player2=${payload[1].code}`);
   };
 
+  const url = "https://ojo-publico.com/especiales/street-wayki/";
+  const text = `#StreetWayki Compara la fortuna de los políticos con más poder en Perú ${url}via @Ojo_publico`;
+
   return (
     <div className="home-page">
       <div className="home-page__hero">
@@ -30,7 +33,9 @@ const HomePage = () => {
           <ul>
             <li>
               <a
-                href="https://www.facebook.com/share_channel/?type=empty&source_surface=external_share"
+                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                  url
+                )}`}
                 target="_blank"
               >
                 <IconSocialNetwork color="#fff" type="facebook" />
@@ -38,7 +43,9 @@ const HomePage = () => {
             </li>
             <li>
               <a
-                href="https://x.com/intent/post?text=%23MigrarLatam%20El%20hemisferio%20en%20movimiento%3A%20un%20an%C3%A1lisis%20de%20dos%20d%C3%A9cadas%20de%20migraci%C3%B3n%20https%3A%2F%2Fojo-publico.com%2Fespeciales%2Fmigrar-latinoamerica-hemisferio-en-movimiento%20v%C3%ADa%20%40Ojo_publico&url="
+                href={`https://x.com/intent/post?text=${encodeURIComponent(
+                  text
+                )}&url=`}
                 target="_blank"
               >
                 <IconSocialNetwork color="#fff" type="twitter" />
@@ -46,7 +53,9 @@ const HomePage = () => {
             </li>
             <li>
               <a
-                href="https://api.whatsapp.com/send?text=https%3A%2F%2Fojo-publico.com%2Fespeciales%2Fmigrar-latinoamerica-hemisferio-en-movimiento%0D%0A%0D%0A"
+                href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
+                  text
+                )}`}
                 target="_blank"
               >
                 <IconSocialNetwork color="#fff" type="whatsapp" />
