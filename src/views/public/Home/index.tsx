@@ -7,6 +7,7 @@ import { MoreOptions } from "@/components/Layout";
 import { InformationSection } from "./components/InformationSection";
 import { WaykiSelectorSection } from "./components/WaykiSelectorSection";
 import { EquityIncreaseSection } from "./components/EquityIncreaseSection";
+import { IconSocialNetwork } from "@/components/DataDisplay";
 
 /* STYLES */
 import "@/styles/home-page.scss";
@@ -24,10 +25,40 @@ const HomePage = () => {
       <div className="home-page__hero">
         <HeroStreetWayki />
       </div>
-      <div
-        className="content-650 home-page__information-container"
-        id="reading-start-section"
-      >
+      <div>
+        <div className="home-page__social-network">
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/share_channel/?type=empty&source_surface=external_share"
+                target="_blank"
+              >
+                <IconSocialNetwork color="#fff" type="facebook" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/intent/post?text=%23MigrarLatam%20El%20hemisferio%20en%20movimiento%3A%20un%20an%C3%A1lisis%20de%20dos%20d%C3%A9cadas%20de%20migraci%C3%B3n%20https%3A%2F%2Fojo-publico.com%2Fespeciales%2Fmigrar-latinoamerica-hemisferio-en-movimiento%20v%C3%ADa%20%40Ojo_publico&url="
+                target="_blank"
+              >
+                <IconSocialNetwork color="#fff" type="twitter" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?text=https%3A%2F%2Fojo-publico.com%2Fespeciales%2Fmigrar-latinoamerica-hemisferio-en-movimiento%0D%0A%0D%0A"
+                target="_blank"
+              >
+                <IconSocialNetwork color="#fff" type="whatsapp" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p className="home-page__date" id="reading-start-section">
+          <strong>Marzo de 2025</strong>
+        </p>
+      </div>
+      <div className="content-650 home-page__information-container">
         <div>
           <InformationSection
             initialCapitalLetter="L"
@@ -42,7 +73,6 @@ const HomePage = () => {
         <div>
           <InformationSection text="Por ejemplo, ¿sabías que en el tiempo que lleva en el cargo Boluarte ha acumulado un patrimonio de más de un millón de soles y que su wayki (amigo en quechua) y gobernador regional de Ayacucho, Wilfredo Oscorima, declaró que posee una fortuna de más de 3 millones de soles? ¿Conocías que los congresistas Alejandro Cavero, Segundo Quiroz, Germán Tacuri, Margot Palacios y Carlos Anderson no tenían bienes cuando eran candidatos y ahora declaran posesiones por más de medio millón de soles cada uno?" />
         </div>
-
 
         <div>
           <EquityIncreaseSection
