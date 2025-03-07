@@ -1,4 +1,9 @@
 .salary-comparison {
+  &--highlight {
+    background-color: yellow;
+    padding: 5px;
+  }
+
   &__content {
     text-align: center;
     font-size: 0.9rem;
