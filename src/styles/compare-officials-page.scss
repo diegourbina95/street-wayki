@@ -1,6 +1,14 @@
 @use "main";
 
 .compare-officials-page {
+  &__title {
+    width: 260px;
+    margin: 50px auto 0;
+    img {
+      width: 100%;
+    }
+  }
+
   &__comparation-bars {
     margin-top: 70px;
     margin-bottom: 80px;
@@ -59,6 +67,10 @@
 
 @media (min-width: 768px) {
   .compare-officials-page {
+    &__title {
+      width: 400px;
+    }
+
     &__comparation-bars {
       padding: 0;
 
