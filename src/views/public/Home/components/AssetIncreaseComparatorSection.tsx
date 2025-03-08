@@ -17,7 +17,7 @@ export const AssetIncreaseComparatorSection = () => {
   return (
     <div className="home-page__asset-increase-comparator">
       <div className="asset-increase-comparator__title">
-        Compara los Incrementos Patrimoniales
+      EVOLUCIÓN DEL INCREMENTO PATRIMONIAL
       </div>
       <div>
         <EquityIncreaseComparator

@@ -60,7 +60,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
         <div
           className="information-card__name"
           style={{
-            fontSize: isMobile ? ".75rem" : ".53rem",
+            fontSize: isMobile ? ".9rem" : ".75rem",
             padding: isMobile ? "10px 0" : "0 0 7px",
             borderBottom: details?.divisionName ? "1px solid #212121" : "none",
           }}
@@ -71,7 +71,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
           <div
             className="information-card__avatar"
             style={{
-              fontSize: isMobile ? ".75rem" : ".53rem",
+              fontSize: isMobile ? ".9rem" : ".75rem",
               padding: isMobile ? "10px 0" : "0 0 7px",
             }}
           >
@@ -100,7 +100,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
             <div
               className="information-card__text"
               style={{
-                fontSize: isMobile ? " .95rem" : " 0.8rem",
+                fontSize: isMobile ? " 1.2rem" : " 1.0rem",
               }}
             >
               {details ? details?.position : "..."}
@@ -125,7 +125,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
             <div
               className="information-card__text"
               style={{
-                fontSize: isMobile ? " .95rem" : " 0.8rem",
+                fontSize: isMobile ? " 1.2rem" : " 1.0rem",
               }}
             >
               {details ? details?.currentPoliticalParty : "..."}
@@ -150,7 +150,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
             <div
               className="information-card__text"
               style={{
-                fontSize: isMobile ? " .95rem" : " 0.8rem",
+                fontSize: isMobile ? " 1.2rem" : " 1.0rem",
               }}
             >
               <ul style={{ paddingLeft: "25px" }}>
@@ -181,7 +181,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
             <div
               className="information-card__text"
               style={{
-                fontSize: isMobile ? " .95rem" : " 0.8rem",
+                fontSize: isMobile ? " 1.2rem" : " 1.0rem",
               }}
             >
               {details ? details?.otherRecords : "..."}

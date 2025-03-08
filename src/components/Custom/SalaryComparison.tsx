@@ -59,7 +59,7 @@ export const SalaryComparison: React.FC<SalaryComparisonProps> = ({
           : "N/A"}{" "}
         veces
       </span>{" "}
-      el mínimo.
+      la remuneración básica.
     </div>
   );
 };

@@ -38,7 +38,7 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
     <div className="wayki-selector">
       <div className="wayki-selector__filters">
         <div className="wayki-selector__title">
-          Compara la fortuna de los políticos
+        Compara la fortuna y el historial de tu político favorito
         </div>
         <div className="wayki-selector__select-container">
           <div className="wayki-selector__select">
