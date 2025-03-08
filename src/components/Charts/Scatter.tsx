@@ -151,15 +151,15 @@ export const Scatter: React.FC<ScatterProps> = ({
               },
               zoom: {
                 pan: {
-                  enabled: true, // 🔹 Habilita desplazamiento
+                  enabled: false, // 🔹 Habilita desplazamiento
                   mode: "x", // 🔹 Modo horizontal (cambiar a "y" o "xy" si es necesario)
                 },
                 zoom: {
                   wheel: {
-                    enabled: true, // 🔹 Habilita zoom con la rueda del mouse
+                    enabled: false, // 🔹 Habilita zoom con la rueda del mouse
                   },
                   pinch: {
-                    enabled: true, // 🔹 Habilita zoom con gesto de pellizco en dispositivos táctiles
+                    enabled: false, // 🔹 Habilita zoom con gesto de pellizco en dispositivos táctiles
                   },
                   mode: "x", // 🔹 Modo de zoom (cambiar a "y" o "xy" si es necesario)
                 },
