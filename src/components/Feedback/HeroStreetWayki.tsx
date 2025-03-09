@@ -1,8 +1,9 @@
 /* REACT COMPONENTS */
+import { useEffect, useState } from "react";
+
 import { ButtonNes } from "@/components/Inputs";
 
 import tituloStreetWayki from "@/assets/images/titulo_street_wayki.png";
-import ilustracionStreetWayki from "@/assets/images/ilustracion_street_wayki.png";
 
 /* LIBRARIES */
 
@@ -10,6 +11,8 @@ import ilustracionStreetWayki from "@/assets/images/ilustracion_street_wayki.png
 import "@/styles/hero-street-wayki.scss";
 
 export const HeroStreetWayki = () => {
+  const [scrollY, setScrollY] = useState(0);
+
   const goToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
@@ -17,10 +20,22 @@ export const HeroStreetWayki = () => {
     }
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  console.log("scrollY: ", scrollY);
   return (
     <>
       <div className="hero">
         <div className="hero__header"></div>
+        <div className="hero__bg"></div>
+
         <div className="hero__content">
           <div className="hero__title">
             <img src={tituloStreetWayki} alt="titulo-street-wayki" />
@@ -39,9 +54,20 @@ export const HeroStreetWayki = () => {
             />
           </div>
         </div>
-        <div className="hero__illustration">
-          <img src={ilustracionStreetWayki} alt="illustration-street-wayki" />
-        </div>
+        <div
+          className="hero__illustration"
+          style={{
+            transform:
+              scrollY < 490
+                ? `translateY(${scrollY * -0.3}px)`
+                : `translateY(${490 * -0.3}px)`,
+          }}
+        ></div>
+        <div
+          className={`hero__overlay hero__overlay${
+            scrollY < 300 ? "--show" : "--hidden"
+          }`}
+        ></div>
       </div>
     </>
   );
