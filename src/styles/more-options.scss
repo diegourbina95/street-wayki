@@ -18,8 +18,12 @@
   &__img {
     display: flex;
     align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
   }
-
 
   &__item:last-child {
     margin-bottom: 0;
@@ -32,7 +36,6 @@
     margin-bottom: 35px;
     font-family: "Jersey 15", sans-serif;
     font-size: 1.2rem;
-
   }
 
   &__title {
@@ -40,14 +43,10 @@
     text-align: left;
     font-family: "Press Start 2P";
     padding-left: 15px;
-    padding-top: 20px;
-    margin-bottom: 10px;
+    padding: 20px 0;
     align-items: center;
   }
-
- 
 }
-
 
 @media screen and (min-width: 600px) {
   .more-options {
