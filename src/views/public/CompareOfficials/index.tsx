@@ -176,14 +176,22 @@ const CompareOfficials = () => {
             isMobile={isMobile}
           />
         </div>
-        <div className="comparation-bars__item">
-          <span>Antecedentes</span>
-          <ProgressNes
-            quantity1={playerDetails1?.criminalRecordNumber}
-            quantity2={playerDetails2?.criminalRecordNumber}
-          />
-        </div>
+        {playerDetails1?.criminalRecordNumber ||
+        playerDetails2?.criminalRecordNumber ? (
+          <div className="comparation-bars__item">
+            <span>Antecedentes</span>
+            <ProgressNes
+              quantity1={playerDetails1?.criminalRecordNumber}
+              quantity2={playerDetails2?.criminalRecordNumber}
+            />
+          </div>
+        ) : null}
       </div>
+      {!playerDetails1?.criminalRecordNumber &&
+      !playerDetails2?.criminalRecordNumber ? (
+        <span>Antecedentes</span>
+      ) : null}
+
       <div className="compare-officials-page__criminal-record-cards">
         <div>
           <InformationCard
@@ -238,7 +246,7 @@ const CompareOfficials = () => {
         <span>Compara otros waykis</span>
         <ButtonNes text="REINICIAR" onClick={handleReset} />
       </div>
-      <FightOverlay show={isPlay} />
+      <FightOverlay show={isPlay} sound />
     </div>
   );
 };

@@ -55,7 +55,7 @@ const formatWithArrays = jsonData.map((data) => ({
   detailContractsRucNaturalPerson: data.detailContractsRucNaturalPerson,
   quantityCompanyLinks: data.quantityCompanyLinks,
   detailCompanyLinks: data.detailCompanyLinks || "",
-  color: getRandomHex(),
+  color: data.color,
 }));
 fs.writeFileSync(
   "datos_patrimonio_final.json",

@@ -42,7 +42,7 @@ export const publicOfficialsData = [
     currentBenchCode: 1,
     partyLogo: "alianzaporelprogreso.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En 2022, cuando era presidenta del Congreso, se filtró un audio en el que César Acuña solicitó que influya en una comisión para aprobar la creación de un distrito en La Libertad, donde Acuña es gobernador.",
     heritageForYear: [
       {
         year: 2021,
@@ -101,7 +101,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "Ha sido vinculada con el grupo extremista La Resistencia, un colectivo de apoyo a Fuerza Popular caracterizado por actos violintistas. La congresista apareció en fotografías con algunos de sus integrantes.",
+      "Ha sido vinculada con el grupo extremista La Resistencia, un colectivo de apoyo a Fuerza Popular caracterizado por actos violentos.",
     heritageForYear: [
       {
         year: 2021,
@@ -160,7 +160,7 @@ export const publicOfficialsData = [
     currentBenchCode: 3,
     partyLogo: "Bloque_Democrático_Popular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      'En 2023, la Fiscalía de Lavado de Activos le inició una investigación por la presunta “incompatibilidad de “capacidad económica para la compra de dos inmuebles".',
     heritageForYear: [
       {
         year: 2021,
@@ -278,7 +278,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Un reportaje de Cuarto Poder denunció que la congresista habría plagiado su tesis de licenciatura y maestría.",
     heritageForYear: [
       {
         year: 2021,
@@ -337,7 +337,7 @@ export const publicOfficialsData = [
     currentBenchCode: 11,
     partyLogo: "avanzapais.jpeg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Ha sido vinculado a la minería informal y fue investigado por delitos ambientales. En enero de 2023, tras reunirse con el exprimer ministro Alberto Otárola, hizo uso de su arma para disipar a los manifestantes que llegaron a protestar a los exteriores de su vivienda.",
     heritageForYear: [
       {
         year: 2021,
@@ -455,7 +455,7 @@ export const publicOfficialsData = [
     currentBenchCode: 4,
     partyLogo: "avanzapais.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En la Subcomisión de Acusaciones Constitucionales del Congreso, fue el encargado de elaborar el informe que recomendó no iniciar proceso en el Ministerio Público contra Manuel Merino, Ántero Flores-Aráoz y Gastón Rodríguez por sus presuntas responsabilidades en las muertes de Inti Sotelo y Bryan Pintado, producidas en las protestas de 2020.",
     heritageForYear: [
       {
         year: 2021,
@@ -514,7 +514,7 @@ export const publicOfficialsData = [
     currentBenchCode: 5,
     partyLogo: "renovacionpop.png",
     record:
-      "Es presidente de la Comisión de Ética del Congreso desde agosto de 2023.",
+      "A inicios del 2025, la Fiscalía de la Nación lo incluyó en una denuncia constitucional por el presunto uso de recursos públicos de manera irregular.",
     heritageForYear: [
       {
         year: 2021,
@@ -573,7 +573,7 @@ export const publicOfficialsData = [
     currentBenchCode: 8,
     partyLogo: "somosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Tiene al menos tres investigaciones en curso por hechos cometidos en funciones: dos por negociación incompatible y una por delitos contra la administración pública.",
     heritageForYear: [
       {
         year: 2021,
@@ -632,7 +632,7 @@ export const publicOfficialsData = [
     currentBenchCode: 6,
     partyLogo: "bancada_socialista.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      'Es coautor de una iniciativa que plantea incorporar distintos delitos para aplicar la pena de muerte "sin trasgredir las obligaciones internacionales del Estado peruano".',
     heritageForYear: [
       {
         year: 2021,
@@ -691,7 +691,7 @@ export const publicOfficialsData = [
     currentBenchCode: 1,
     partyLogo: "alianzaporelprogreso.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Desde 2022, la Fiscalía investiga por lavado de activos a su empresa SJ Biomedic SAC, que fundó con su empareja Alejandro Sánchez, dueño de la casa de Sarratea donde se alojó el expresidente Pedro Castillo.",
     heritageForYear: [
       {
         year: 2021,
@@ -750,7 +750,7 @@ export const publicOfficialsData = [
     currentBenchCode: 4,
     partyLogo: "avanzapais.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En 2024, planteó en una iniciativa que las inspecciones a centros comerciales tuvieran vigencia indefinida. Sin embargo, luego del derrumbe en el Real Plaza de Trujillo en febrero pasado, retiró la propuesta.",
     heritageForYear: [
       {
         year: 2021,
@@ -809,7 +809,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "A meses de ocupar el cargo aseguró que no se había vacunado contra la Covid-19 y en diciembre del 2021 recién inició este proceso. Previo a su labor congresal se desempeñó como asesor del exlegislador fujimorista Luis Galarreta.",
     heritageForYear: [
       {
         year: 2021,
@@ -868,7 +868,7 @@ export const publicOfficialsData = [
     currentBenchCode: 5,
     partyLogo: "renovacionpop.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Ha sido vocero del colectivo Con mis hijos no te metas y, desde el Congreso, impulsa iniciativas conservadoras, en contra del enfoque de género y las mujeres.",
     heritageForYear: [
       {
         year: 2021,
@@ -927,7 +927,7 @@ export const publicOfficialsData = [
     currentBenchCode: 8,
     partyLogo: "somosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "El medio local La Rotativa indicó, en enero de este año, que durante su gestión se destinaron más de S/ 30 millones en viajes nacionales e internacionales.",
     heritageForYear: [
       {
         year: 2021,
@@ -986,7 +986,7 @@ export const publicOfficialsData = [
     currentBenchCode: 5,
     partyLogo: "renovacionpop.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Es investigada por la Fiscalía por presuntamente haber gestionado contratos en horario laboral a favor de su agrupación Sonido 2000.",
     heritageForYear: [
       {
         year: 2021,
@@ -1045,7 +1045,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Fue denunciado por su pareja por violencia psicológica en febrero de 2023, por lo que el Poder Judicial dictó medidas de protección a favor de ella.",
     heritageForYear: [
       {
         year: 2021,
@@ -1163,7 +1163,7 @@ export const publicOfficialsData = [
     currentBenchCode: 7,
     partyLogo: "podemosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Es investigado por la Fiscalía por presunto lavado de activos al interior de Perú Libre. También por apología al terrorismo y obstrucción a la justicia. Fue investigado en dos ocasiones por la Comisión de Ética, pero en ambos casos las denuncias fueron archivadas. La primera denuncia fue por haber agredido verbalmente a la congresista Patricia Chirinos y la segunda, por presuntamente haber intercedido a favor de un amigo para que acceda a un cargo en Mincetur.",
     heritageForYear: [
       {
         year: 2021,
@@ -1222,7 +1222,7 @@ export const publicOfficialsData = [
     currentBenchCode: 18,
     partyLogo: "frente_esperanza.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Tiene al menos tres denuncias desde que asumió el cargo, por negociación incompatible, tráfico de influencias y peculado. Según una investigación de OjoPúblico, cuenta con una visita no registrada a Palacio de Gobierno.",
     heritageForYear: [
       {
         year: 2021,
@@ -1342,7 +1342,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Es investigado por la Fiscalía en el caso La Fiscal y su Cúpula de Poder por sus presuntos vínculos y negociaciones con la organización criminal que habría liderado la exfiscal de la Nación, Patricia Benavides, al interior del Ministerio Público.",
     heritageForYear: [
       {
         year: 2021,
@@ -1692,11 +1692,10 @@ export const publicOfficialsData = [
     photos: "dni_42878423.jpg",
     position: "Gobernador Regional",
     status: "Ejerciendo",
-    currentBench: "NA",
-    currentBenchCode: 17,
-    partyLogo: "NA",
+    currentBench: "Movimiento Regional AGUA",
+    partyLogo: "mov_reg_agua_logo.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Tras haber ganado las elecciones, la Fiscalía inició investigación en su contra por el presunto delito de falsa declaración en proceso administrativo. También registra, al menos, cinco investigaciones preliminares por delitos contra la administración pública.",
     heritageForYear: [
       {
         year: 2021,
@@ -1755,7 +1754,7 @@ export const publicOfficialsData = [
     currentBenchCode: 5,
     partyLogo: "renovacionpop.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      'En setiembre del 2024 presentó un proyecto que plantea con cadena perpetua los delitos de "extorsión y terrorismo urbano". En 2021, la ONPE le abrió un proceso sancionador por no reportar sus aportes y gastos de campaña en los plazos establecidos.',
     heritageForYear: [
       {
         year: 2021,
@@ -1932,7 +1931,7 @@ export const publicOfficialsData = [
     currentBenchCode: 6,
     partyLogo: "bancada_socialista.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      'Fue ministra de Cultura del gobierno de Pedro Castillo. También fue denunciada por la Procuraduría General del Estado por presunto reembolso de combustible "en actividades que no cumplían representación oficial".',
     heritageForYear: [
       {
         year: 2021,
@@ -1990,7 +1989,8 @@ export const publicOfficialsData = [
     currentBench: "Perú Libre",
     currentBenchCode: 12,
     partyLogo: "perulibre.png",
-    record: "Fue ministra de Salud durante el gobierno de Pedro Castillo.",
+    record:
+      "Fue ministra de Salud durante el gobierno de Pedro Castillo. En julio del año pasado, la Fiscalía inició una investigación preliminar por el presunto encubrimiento de Vladimir Cerrón.",
     heritageForYear: [
       {
         year: 2021,
@@ -2048,7 +2048,8 @@ export const publicOfficialsData = [
     currentBench: "Somos Perú",
     currentBenchCode: 8,
     partyLogo: "somosperu.png",
-    record: "NA",
+    record:
+      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
     heritageForYear: [
       {
         year: 2021,
@@ -2107,7 +2108,7 @@ export const publicOfficialsData = [
     currentBenchCode: 13,
     partyLogo: "juntosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En 2021 presentó un proyecto de ley para regular el cultivo de la hoja de coca. Mientras que en 2023, de todas sus iniciativas presentadas, el 63.3% eran de corte declarativo, según informó OjoPúblico.",
     heritageForYear: [
       {
         year: 2021,
@@ -2166,7 +2167,7 @@ export const publicOfficialsData = [
     currentBenchCode: 12,
     partyLogo: "perulibre.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Fue presidenta de la Comisión de Justicia en el contexto de las denuncias contra la JNJ y cuando se realizó el informe express que recomendó la remoción de sus miembros.",
     heritageForYear: [
       {
         year: 2021,
@@ -2284,7 +2285,7 @@ export const publicOfficialsData = [
     currentBenchCode: 12,
     partyLogo: "perulibre.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En 2021 contrató como asesor a un socio de una compañía que no declaró y que incluso aportó en su campaña. Ese mismo año también presentó un proyecto declarativo para el control de medios de comunicación.",
     heritageForYear: [
       {
         year: 2021,
@@ -2402,7 +2403,7 @@ export const publicOfficialsData = [
     currentBenchCode: 14,
     partyLogo: "no_agrupado.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En 2021 presentó un proyecto de ley para regular el cultivo y producción de la hoja de coca. La iniciativa recibió críticas por su similitud y copia de párrafos de una ley boliviana, según Perú 21",
     heritageForYear: [
       {
         year: 2021,
@@ -2579,7 +2580,7 @@ export const publicOfficialsData = [
     currentBenchCode: 13,
     partyLogo: "juntosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "El Poder Judicial le ordenó pagar S/47.268 a la Beneficencia de Tacna por irregularidades en el alquiler de un inmueble de dicha entidad en 2015.",
     heritageForYear: [
       {
         year: 2021,
@@ -2697,7 +2698,7 @@ export const publicOfficialsData = [
     currentBenchCode: 8,
     partyLogo: "somosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Es el segundo gobernador que más investigaciones en curso mantiene, con 19 procesos, según información de la Procuraduría. En perjuicio del Gobierno Regional de Loreto registra, al menos, 10 denuncias.",
     heritageForYear: [
       {
         year: 2021,
@@ -2756,7 +2757,7 @@ export const publicOfficialsData = [
     currentBenchCode: 12,
     partyLogo: "perulibre.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Es investigada por la Fiscalía por el presunto delito de lavado de activos.",
     heritageForYear: [
       {
         year: 2021,
@@ -2814,7 +2815,8 @@ export const publicOfficialsData = [
     currentBench: "Podemos Perú",
     currentBenchCode: 7,
     partyLogo: "podemosperu.png",
-    record: "NA",
+    record:
+      "Es investigada por la Fiscalía por el caso Los Niños, que implica a un grupo de congresistas de Acción Popular que habrían negociado beneficios con el expresidente Pedro Castillo cuando estaba en el cargo. Una empresa vinculada a uno de sus familiares se encuentra sancionada para contratar con el Estado, según OjoPúblico.",
     heritageForYear: [
       {
         year: 2021,
@@ -2872,7 +2874,8 @@ export const publicOfficialsData = [
     currentBench: "Alianza para el Progreso",
     currentBenchCode: 1,
     partyLogo: "alianzaporelprogreso.svg",
-    record: "NA",
+    record:
+      "A inicios del 2025, la Fiscalía de la Nación lo incluyó en una denuncia constitucional por una presunto favorecimiento y permitir beneficios económicos a pensionistas de las Fuerzas Armadas y de la Policía Nacional. Sin embargo, en marzo último, la Subcomisión de Acusaciones Constitucionales declaró improcedente la denuncia.",
     heritageForYear: [
       {
         year: 2021,
@@ -2931,7 +2934,7 @@ export const publicOfficialsData = [
     currentBenchCode: 28,
     partyLogo: "reforma_y_honradez.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En setiembre del 2024, fue denunciado ante la fiscalía anticorrupción por la presunta sobrevaloración en la compra de 21 retroexcavadoras y 6 martillos hidráulicos.",
     heritageForYear: [
       {
         year: 2021,
@@ -2990,7 +2993,7 @@ export const publicOfficialsData = [
     currentBenchCode: 8,
     partyLogo: "somosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Fue congresista del periodo 2020-2021. También fue condecorado por el cuestionado expresidente ejecutivo de Essalud, Mario Carhuapoma. En 2022, fue denunciado por tráfico de influencias en perjuicio del Estado. Según una investigación de OjoPúblico, cuenta con una visita no registrada a Palacio de Gobierno.",
     heritageForYear: [
       {
         year: 2021,
@@ -3050,7 +3053,7 @@ export const publicOfficialsData = [
     currentBenchCode: 8,
     partyLogo: "somosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Tiene al menos seis investigaciones por delitos de corrupción de funcionarios cometidos como gobernador, como exalcalde provincial de Daniel Carrión y como alcalde distrital de Tapuc. Según una investigación de OjoPúblico, cuenta con una visita no registrada a Palacio de Gobierno.",
     heritageForYear: [
       {
         year: 2021,
@@ -3110,7 +3113,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En 2022 fue investigado por la Comisión de Ética por agresión física, pero finalmente la denuncia fue archivada.",
     heritageForYear: [
       {
         year: 2021,
@@ -3169,7 +3172,7 @@ export const publicOfficialsData = [
     currentBenchCode: 3,
     partyLogo: "Bloque_Democrático_Popular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En 2024 el Ministerio Público le abrió una investigación por presunto encubrimiento al expresidente Pedro Castillo. Sin embargo, a fines de ese año, se archivó el caso por falta de pruebas.",
     heritageForYear: [
       {
         year: 2021,
@@ -3287,7 +3290,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Fue presidenta de la Comisión Agraria del Congreso e impulsó las modificaciones a la Ley Forestal y de Fauna Silvestre, en perjuicio de la Amazonía.",
     heritageForYear: [
       {
         year: 2021,
@@ -3346,7 +3349,7 @@ export const publicOfficialsData = [
     currentBenchCode: 13,
     partyLogo: "juntosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En 2022 su sobrino participó en actividades del Congreso aunque no estaba contratado en el Legislativo, según informó Cuarto Poder.",
     heritageForYear: [
       {
         year: 2021,
@@ -3523,7 +3526,7 @@ export const publicOfficialsData = [
     currentBenchCode: 6,
     partyLogo: "bancada_socialista.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Fue investigado por la Comisión de Ética agresión sexual, pero finalmente la denuncia fue archivada.",
     heritageForYear: [
       {
         year: 2021,
@@ -3641,7 +3644,7 @@ export const publicOfficialsData = [
     currentBenchCode: 19,
     partyLogo: "yo_arequipa.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Desde que asumió el cargo, registra, al menos, tres denuncias en su contra por negociación incompatible, según información de la Procuraduría. Según una investigación de OjoPúblico, cuenta con una visita no registrada a Palacio de Gobierno.",
     heritageForYear: [
       {
         year: 2021,
@@ -3760,7 +3763,7 @@ export const publicOfficialsData = [
     currentBenchCode: 15,
     partyLogo: "bloquemagisterial.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Fue uno de los docentes que desaprobó cinco de las seis evaluaciones exigidas por el Ministerio de Educación entre 2014 y 2019. Aún así, promovió la contrarreforma universitaria y también propuso modificaciones a la Ley de Reforma Magisterial.",
     heritageForYear: [
       {
         year: 2021,
@@ -3819,7 +3822,7 @@ export const publicOfficialsData = [
     currentBenchCode: 7,
     partyLogo: "podemosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Fue sancionada con amonestación escrita pública por la Comisión de Ética haberse ausentado de sus funciones parlamentarias por más de un año.",
     heritageForYear: [
       {
         year: 2021,
@@ -3936,7 +3939,8 @@ export const publicOfficialsData = [
     currentBench: "Juntos por el Perú - Voces Del Pueblo",
     currentBenchCode: 13,
     partyLogo: "juntosperu.png",
-    record: "NA",
+    record:
+      "A inicios del 2025, la Fiscalía de la Nación lo incluyó en una denuncia constitucional por una presunto favorecimiento y permitir beneficios económicos a pensionistas de las Fuerzas Armadas y de la Policía Nacional. Sin embargo, en marzo último, la Subcomisión de Acusaciones Constitucionales declaró improcedente la denuncia.",
     heritageForYear: [
       {
         year: 2021,
@@ -4054,7 +4058,7 @@ export const publicOfficialsData = [
     currentBenchCode: 8,
     partyLogo: "somosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Es el congresista que registra más investigaciones en la Comisión de Ética. Fue sancionado en dos ocasiones por este grupo: la primera con amonestación escrita y 15 días multa haberse expresado mal de un congresista, y la segunda vez con recomendación pública por declaraciones de irrespeto contra varios legisladores.",
     heritageForYear: [
       {
         year: 2021,
@@ -4349,7 +4353,7 @@ export const publicOfficialsData = [
     currentBenchCode: 22,
     partyLogo: "ayni.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En enero último, la fiscalía especializada en delitos de corrupción de funcionarios allanó su domicilio y oficina como parte de las indagaciones contra la presunta organización criminal 'Los turbios del saneamiento'. La hipótesis fiscal indica que el gobernador encabezaría este grupo.",
     heritageForYear: [
       {
         year: 2021,
@@ -4466,7 +4470,8 @@ export const publicOfficialsData = [
     currentBench: "Bloque Magisterial de Concertación Nacional",
     currentBenchCode: 15,
     partyLogo: "bloquemagisterial.png",
-    record: "NA",
+    record:
+      "En septiembre del 2024 el Ministerio Público allanó su vivienda por el presunto cobro de coimas en obras municipales de la región Huánuco.",
     heritageForYear: [
       {
         year: 2021,
@@ -4525,7 +4530,7 @@ export const publicOfficialsData = [
     currentBenchCode: 23,
     partyLogo: "mi_buen_vecino.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Tiene al menos cuatro investigaciones en su curso por hechos cometidos cuando era alcalde de Amarilis, en Huánuco.",
     heritageForYear: [
       {
         year: 2021,
@@ -4644,7 +4649,7 @@ export const publicOfficialsData = [
     currentBenchCode: 1,
     partyLogo: "alianzaporelprogreso.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Es el segundo congresista que más licencias personales solicitó entre 2021 y 2023 para ausentarse de sus funciones parlamentarias.",
     heritageForYear: [
       {
         year: 2021,
@@ -4703,7 +4708,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "La primera fiscalía provincial penal corporativa de Huamanga (Ayacucho) abrió en 2023 una investigación por sospechas de negligencia y abandono hacia sus progenitores.",
     heritageForYear: [
       {
         year: 2021,
@@ -4761,7 +4766,8 @@ export const publicOfficialsData = [
     currentBench: "Alianza para el Progreso",
     currentBenchCode: 1,
     partyLogo: "alianzaporelprogreso.svg",
-    record: "NA",
+    record:
+      "Es coautor de un proyecto de ley que propone otorgar licencias “permanentes e indefinidas” a universidades del país. En febrero de este año, Correo informó que tiene como trabajadores de su despacho a dos investigados por presunta organización criminal.",
     heritageForYear: [
       {
         year: 2021,
@@ -4820,7 +4826,7 @@ export const publicOfficialsData = [
     currentBenchCode: 24,
     partyLogo: "uno_por_ica.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En agosto de 2023, la Fiscalía inició investigación en su contra por presuntamente liderar la organización criminal Los temibles del Sur, integrada también por consejeros regionales, funcionarios, entre otros, para asegurar su permanencia en el poder.",
     heritageForYear: [
       {
         year: 2021,
@@ -4879,7 +4885,7 @@ export const publicOfficialsData = [
     currentBenchCode: 25,
     partyLogo: "sierra_y_selva.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Es investigado por la Fiscalía por haber contratado con una empresa que no cumplía los requisitos para el proceso. A raíz de ello, las autoridades allanaron la sede del Gobierno Regional e inmuebles vinculados al gobernador. Es el segundo gobernador con más visitas no registradas a Palacio de Gobierno, según una investigación de OjoPúblico.",
     heritageForYear: [
       {
         year: 2021,
@@ -4998,7 +5004,7 @@ export const publicOfficialsData = [
     currentBenchCode: 12,
     partyLogo: "perulibre.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Es investigado por la Fiscalía por presunto lavado de activos al interior de Perú Libre, investigación que surgió a raíz del caso Los Dinámicos del Centro.",
     heritageForYear: [
       {
         year: 2021,
@@ -5116,7 +5122,7 @@ export const publicOfficialsData = [
     currentBenchCode: 3,
     partyLogo: "Bloque_Democrático_Popular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En una sesión del 2024, en la que participó de manera remota, dejó su micrófono encendido y admitió desconocer el tema sobre el que se debatía luego de emitir su voto.",
     heritageForYear: [
       {
         year: 2021,
@@ -5234,7 +5240,7 @@ export const publicOfficialsData = [
     currentBenchCode: 9,
     partyLogo: "honor_y_democracia.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Hermano del gobernador regional de La Libertad, César Acuña, investigado por tráfico de influencias.",
     heritageForYear: [
       {
         year: 2021,
@@ -5293,7 +5299,7 @@ export const publicOfficialsData = [
     currentBenchCode: 7,
     partyLogo: "podemosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Protagonizó una gresca con otro congresista en una sesión del Pleno del Congreso.",
     heritageForYear: [
       {
         year: 2021,
@@ -5352,7 +5358,7 @@ export const publicOfficialsData = [
     currentBenchCode: 1,
     partyLogo: "alianzaporelprogreso.svg",
     record:
-      "Es investigada por la Fiscalía por recorte de sueldo a sus trabajadores, colaboradores eficacez declararon en su contra. Fue sancionada por la Comisión de Ética con amonestación escrita pública y 30 días multa por haber solicitado aportes mensuales a sus trabajadores.",
+      "Es investigada por la Fiscalía por recorte de sueldo a sus trabajadores, colaboradores eficaces declararon en su contra. Fue sancionada por la Comisión de Ética con amonestación escrita pública y 30 días multa por haber solicitado aportes mensuales a sus trabajadores.",
     heritageForYear: [
       {
         year: 2021,
@@ -5411,7 +5417,7 @@ export const publicOfficialsData = [
     currentBenchCode: 1,
     partyLogo: "alianzaporelprogreso.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Es líder de Alianza por el Progreso y ha postulado dos veces a la presidencia de la República sin éxito. Tiene cuatro denuncias por cohecho, organización criminal y omisión, rehusamiento o demora de funciones, en los que la Procuraduría participa como actor civil. También registra una sentencia por violencia familiar. Además, ha sido implicado en el caso Los Cuellos Blancos. Es el tercer gobernador con más visitas no registradas a Palacio de Gobierno, según una investigación de OjoPúblico.",
     heritageForYear: [
       {
         year: 2021,
@@ -5470,7 +5476,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En 2023, Hildebrandt en sus Trece informó que había presentado un proyecto para declarar de interés nacional la creación de un parque minero carbonero en la región La Libertad, donde el legislador tiene concesiones de este mineral.",
     heritageForYear: [
       {
         year: 2021,
@@ -5588,7 +5594,7 @@ export const publicOfficialsData = [
     currentBenchCode: 1,
     partyLogo: "alianzaporelprogreso.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Fue investigada por la Comisión de Ética por presunto recorte de sueldos; sin embargo, finalmente la investigación fue archivada. Es hermana del gobernador regional de La Libertad, César Acuña, investigado por tráfico de influencias.",
     heritageForYear: [
       {
         year: 2021,
@@ -5705,7 +5711,8 @@ export const publicOfficialsData = [
     currentBench: "Acción Popular",
     currentBenchCode: 10,
     partyLogo: "accionpopular.png",
-    record: "NA",
+    record:
+      "En febrero de este año, el Ministerio Público presentó una denuncia constitucional en su contra por el presunto delito de negociación incompatible en agravio del Estado al aceptar la contratación de un familiar de la congresista Kelly Portalatino.",
     heritageForYear: [
       {
         year: 2021,
@@ -5764,7 +5771,7 @@ export const publicOfficialsData = [
     currentBenchCode: 12,
     partyLogo: "perulibre.png",
     record:
-      "Desde el Congreso, ha impulsado iniciativas para formalizar a los taxis colectivos. Actualmente preside la Comisión de Fiscalización.",
+      "En 2006, el Juzgado Penal de Utcubamba lo sentenció por el ejercicio arbitrario del derecho y en 2012, el Juzgado Civil de Utcubamba lo condenó por violencia familiar. Desde el Congreso, impulsó iniciativas para formalizar a los taxis colectivos.",
     heritageForYear: [
       {
         year: 2021,
@@ -5823,7 +5830,7 @@ export const publicOfficialsData = [
     currentBenchCode: 12,
     partyLogo: "perulibre.png",
     record:
-      "Es investigado por la Fiscalía en el caso La Fiscal y su Cúpula de Poder por sus presuntos vínculos y negociaciones con la organización criminal que habría liderado la exfiscal de la Nación, Patricia Benavides, al interior del Ministerio Público.",
+      "La Fiscalía de la Nación lo investiga por corrupción, debido a sus presuntos vínculos y negociaciones con la organización criminal que habría liderado la ex fiscal de la Nación, Patricia Benavides.",
     heritageForYear: [
       {
         year: 2021,
@@ -5882,7 +5889,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "La empresa de su cuñado Glicerio Herrera fue sancionada por contratar con el Estado, a pesar de estar impedido por ser familiar de la congresista.",
     heritageForYear: [
       {
         year: 2021,
@@ -5941,7 +5948,7 @@ export const publicOfficialsData = [
     currentBenchCode: 9,
     partyLogo: "honor_y_democracia.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Fue fiscal de la Nación entre el 2008 y 2011. En el Congreso, hizo suya la denuncia contra la fiscal Zoraida Ávalos en la Subcomisión de Acusaciones Constitucionales, que concluyó con su inhabilitación. Además, ha presentado un proyecto de ley para desaparecer a la Junta Nacional de Justicia.",
     heritageForYear: [
       {
         year: 2021,
@@ -6000,7 +6007,7 @@ export const publicOfficialsData = [
     currentBenchCode: 13,
     partyLogo: "juntosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "La Fiscalía de la Nación lo denunció constitucionalmente por el presunto delito de negociación incompatible, porque, como ex  ministro de Comercio Exterior y Turismo del presidente Pedro Castillo, contrató a un asesor recomendado por el premier Guido Bellido, quien obtuvo a cambio un departamento y pasajes aéreos.",
     heritageForYear: [
       {
         year: 2021,
@@ -6059,7 +6066,7 @@ export const publicOfficialsData = [
     currentBenchCode: 8,
     partyLogo: "somosperu.png",
     record:
-      "Es investigado por la Fiscalía en el caso La Fiscal y su Cúpula de Poder por sus presuntos vínculos y negociaciones con la organización criminal que habría liderado la exfiscal de la Nación, Patricia Benavides, al interior del Ministerio Público. Fue sancionado con suspensión de 120 días por la Comisión de Ética por agresión a su expareja.",
+      "Es investigado por la Fiscalía por sus presuntos vínculos y negociaciones con la organización criminal que habría liderado la exfiscal de la Nación, Patricia Benavides. Fue sancionado con suspensión de 120 días por la Comisión de Ética por agresión a su expareja.",
     heritageForYear: [
       {
         year: 2021,
@@ -6118,7 +6125,7 @@ export const publicOfficialsData = [
     currentBenchCode: 5,
     partyLogo: "renovacionpop.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Un informe de la Contraloría General de la República señaló que la congresista sería penalmente responsable por cambios de zonificación irregulares aprobados entre los años 2019 y 2021, cuando era regidora de la Municipalidad de Lima. Uno de estos cambios benefició al excongresista fujimorista Miki Torres.",
     heritageForYear: [
       {
         year: 2021,
@@ -6177,7 +6184,7 @@ export const publicOfficialsData = [
     currentBenchCode: 1,
     partyLogo: "alianzaporelprogreso.svg",
     record:
-      "Fue investigado por la Comisión de Ética por haber presuntamente contratado en su despacho a su pareja sentimental, pero la sanción de suspensión por 30 días no prosperó y la denuncia fue archivada.",
+      "La Fiscalía de la Nación lo denunció por cohecho impropio, patrocinio ilegal de intereses y tráfico de influencias, por promover proyectos de ley a favor de Asociación Peruana de Energías Renovables, socia de la empresa Huawei.",
     heritageForYear: [
       {
         year: 2021,
@@ -6236,7 +6243,7 @@ export const publicOfficialsData = [
     currentBenchCode: 9,
     partyLogo: "honor_y_democracia.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      'Fue denunciado por la Procuraduría General del Estado por presunto reembolso de combustible "en actividades que no cumplían representación oficial".',
     heritageForYear: [
       {
         year: 2021,
@@ -6295,7 +6302,7 @@ export const publicOfficialsData = [
     currentBenchCode: 1,
     partyLogo: "alianzaporelprogreso.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Fue investigada por la Comisión de Ética por irregularidades en la contratación de personal en su despacho, pero informe final recomendó archivar la denuncia.",
     heritageForYear: [
       {
         year: 2021,
@@ -6354,7 +6361,7 @@ export const publicOfficialsData = [
     currentBenchCode: 7,
     partyLogo: "podemosperu.png",
     record:
-      "Es investigada por la Comisión de Ética por haber emitido expresiones agraviantes contra un congresista.",
+      "Es investigada por la Fiscalía de la Nación por cohecho pasivo propio, debido a un presunto intercambio de favores con el congresista Darwin Espinoza para la contratación de personal.",
     heritageForYear: [
       {
         year: 2021,
@@ -6413,7 +6420,7 @@ export const publicOfficialsData = [
     currentBenchCode: 11,
     partyLogo: "avanzapais.jpeg",
     record:
-      "Es investigada como coautora del delito de organización criminal en el caso La Fiscal y su Cúpula de Poder, que involucraba a Patricia Benavides, por haber negociado votos desde el Congreso. Fue sancionada con recomendación pública por la Comisión de Ética por haber expresado frase irrespetuosa al presidente de la República.",
+      "Fiscalía de la Nación la denunció constitucionalmente por el delito de peculado pues cargó a cuenta del congreso la compra de pasajes aéreos para celebrar el cumpleaños de congresista Diego Bazán. Es investigada como coautora del delito de organización criminal en el caso La Fiscal y su Cúpula de Poder, que involucraba a Patricia Benavides, por haber negociado votos desde el Congreso.",
     heritageForYear: [
       {
         year: 2021,
@@ -6472,7 +6479,7 @@ export const publicOfficialsData = [
     currentBenchCode: 14,
     partyLogo: "no_agrupado.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "La Procuraduría General del Estado ha pedido que se la investigue por presuntamente haber usado recursos asignados para la semana de representación parlamentaria para realizar actividades partidarias.",
     heritageForYear: [
       {
         year: 2021,
@@ -6531,7 +6538,7 @@ export const publicOfficialsData = [
     currentBenchCode: 3,
     partyLogo: "Bloque_Democrático_Popular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "La Comisión de Ética del Congreso aprobó denunciarla por haber usado recursos del Congreso para impulsar su agrupación política.",
     heritageForYear: [
       {
         year: 2021,
@@ -6590,7 +6597,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En 2024 ha presentado un proyecto para declarar de interés una carretera que se ubica próxima a la Reserva Indígena Murunahua, territorio que protege a distintos pueblos indígenas, según informó el portal Servindi.",
     heritageForYear: [
       {
         year: 2021,
@@ -6649,7 +6656,7 @@ export const publicOfficialsData = [
     currentBenchCode: 7,
     partyLogo: "podemosperu.png",
     record:
-      "Es investigado por la Fiscalía en el caso La Fiscal y su Cúpula de Poder por sus presuntos vínculos y negociaciones con la organización criminal que habría liderado la exfiscal de la Nación, Patricia Benavides, al interior del Ministerio Público. Fue sancionado por la Comisión de Ética con amonestación escrita pública y multa de 60 días por haber solicitado a la Oficina Cultural y Económica de Taipei – Taiwan la suma de $ 8,000 para la compra de ollas y cucharones.",
+      "Es investigado por la Fiscalía en el caso La Fiscal y su Cúpula de Poder por sus presuntos vínculos y negociaciones con la organización criminal que habría liderado la exfiscal de la Nación, Patricia Benavides. La Fiscalía de la Nación lo denunció constitucionalmente por tráfico de influencias en la Municipalidad de San Juan de Lurigancho y por concusión, debido al recorte de sueldo a una trabajadora del Congreso.",
     heritageForYear: [
       {
         year: 2021,
@@ -6708,7 +6715,7 @@ export const publicOfficialsData = [
     currentBenchCode: 1,
     partyLogo: "alianzaporelprogreso.svg",
     record:
-      "Fue sancionado en dos ocasiones por la Comisión de Ética. La primera por sus expresiones despectivas sobre la bandera del Tahuantinsuyo, y la segunda por haber sus expresiones en agravio de la congresista Patricia Juárez. Una investigación de OjoPúblico, a agosto de 2023, reveló que es uno de los congresistas que más dinero del Estado gastó en viajes: S/303.000",
+      "La Fiscalía de la Nación lo denunció constitucionalmente por Negociación incompatible y aprovechamiento indebido del cargo en el caso del cobro doble de congresistas y militares retirados. Fue sancionado en dos ocasiones por la Comisión de Ética, por sus expresiones despectivas sobre la bandera del Tahuantinsuyo y por sus expresiones en agravio de la congresista Patricia Juárez.",
     heritageForYear: [
       {
         year: 2021,
@@ -6766,7 +6773,8 @@ export const publicOfficialsData = [
     currentBench: "Avanza País",
     currentBenchCode: 11,
     partyLogo: "avanzapais.jpeg",
-    record: "NA",
+    record:
+      "La Fiscalía lo investigó por el presunto delito de falsa declaración en procedimientos administrativos y falsedad ideológica, a raíz de una denuncia por difamación presentada por un ciudadano tras acciones de fiscalización en EsSalud.",
     heritageForYear: [
       {
         year: 2021,
@@ -6884,7 +6892,7 @@ export const publicOfficialsData = [
     currentBenchCode: 14,
     partyLogo: "no_agrupado.png",
     record:
-      "Fue sancionada con una recomendación pública por la Comisión de Ética por jalarle el brazo a la congresista Isabel Cortez durante una sesión del pleno.",
+      "La Fiscalía de la Nación la denunció constitucionalmente por el delito de peculado, al haber cargado a la cuenta del Congreso la compra de pasajes aéreos para celebrar el cumpleaños del congresista Diego Bazán.",
     heritageForYear: [
       {
         year: 2021,
@@ -6943,7 +6951,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Es investigado por las esterilizaciones forzadas de miles de mujeres durante su gestión como ministro de Salud del gobierno de Alberto Fujimori. En 2023, la Corte Suprema anuló el proceso judicial por un recurso presentado por Aguinaga y la Fiscalía debía presentar una nueva denuncia penal.",
     heritageForYear: [
       {
         year: 2021,
@@ -7002,7 +7010,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Su hijo Jorge Bustamante Chikhani fue condenado a 5 años de prisión por haber estafado a empresarios, una suboficial de la Policía y un exembajador que invirtieron en una mina de oro inexistente.",
     heritageForYear: [
       {
         year: 2021,
@@ -7061,7 +7069,7 @@ export const publicOfficialsData = [
     currentBenchCode: 3,
     partyLogo: "Bloque_Democrático_Popular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Fue sancionada por la Comisión de Ética por adejtivos vertidos en un medio de comunicación sobre los miembros de la Comisión Permanente.",
     heritageForYear: [
       {
         year: 2021,
@@ -7179,7 +7187,7 @@ export const publicOfficialsData = [
     currentBenchCode: 8,
     partyLogo: "somosperu.png",
     record:
-      "Desde el Congreso, buscó modificar la ley que protege a los pueblos indígenas u originarios en situación de aislamiento. La iniciativa fue archivada.",
+      "La Fiscalía lo investiga por cohecho pasivo impropio, en una carpeta fiscal abierta en el 2024.",
     heritageForYear: [
       {
         year: 2021,
@@ -7238,7 +7246,7 @@ export const publicOfficialsData = [
     currentBenchCode: 5,
     partyLogo: "renovacionpop.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      'En 2025, la congresista Susel Paredes presentó una denuncia constitucional contra Milagros Jáuregui por llamar "animales" a homosexuales. Ha sido vocera del colectivo Con mis hijos no te metas.',
     heritageForYear: [
       {
         year: 2021,
@@ -7297,7 +7305,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "Fue teniente alcaldesa del exalcalde de Lima, Luis Castañeda Lossio, quien fue investigado por el caso Lava Jato.",
+      "La Fiscalía de la Nación la denunció constitucionalmente por negociación incompatible y aprovechamiento indebido del cargo en el caso del cobro doble de congresistas y militares retirados.",
     heritageForYear: [
       {
         year: 2021,
@@ -7415,7 +7423,7 @@ export const publicOfficialsData = [
     currentBenchCode: 16,
     partyLogo: "sentimiento_amazonense.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Tiene al menos tres denuncias en curso por presunta negociación incompatible o aprovechamiento indebido del cargo desde que asumió funciones.",
     heritageForYear: [
       {
         year: 2021,
@@ -7474,7 +7482,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Fue ministro del Interior durante el gobierno del expresidente Alejandro Toledo.",
     heritageForYear: [
       {
         year: 2021,
@@ -7592,7 +7600,7 @@ export const publicOfficialsData = [
     currentBenchCode: 7,
     partyLogo: "podemosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Es investigado por la Fiscalía por presuntos aportes ilícitos a su partido Podemos Perú. También afronta pesquisas por aportes ilegales que habría recibido de Odebrecht y OAS para las campañas de Solidaridad Nacional.",
     heritageForYear: [
       {
         year: 2021,
@@ -7650,7 +7658,8 @@ export const publicOfficialsData = [
     currentBench: "Renovación Popular",
     currentBenchCode: 5,
     partyLogo: "renovacionpop.png",
-    record: "NA",
+    record:
+      "Es ingeniero y representante de los Peruanos en el Exterior. En el 2023, Zeballos permaneció más de 4 meses en Estados Unidos sin rendir cuentas sobre sus actividades, según Infobae.",
     heritageForYear: [
       {
         year: 2021,
@@ -7709,7 +7718,7 @@ export const publicOfficialsData = [
     currentBenchCode: 20,
     partyLogo: "wari_llaqta.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Es investigado por la Fiscalía en el caso Rolex, luego de que la presidenta Dina Boluarte declaró que recibió de su parte, como préstamo, los relojes de esa marca que usó en diferentes eventos. También es investigado por una adjudicación millonaria en su gestión a un consorcio representado por la presidenta de su organización política. Es el gobernador con más visitas no registradas a Palacio de Gobierno, según una investigación de OjoPúblico.",
     heritageForYear: [
       {
         year: 2021,
@@ -7886,7 +7895,7 @@ export const publicOfficialsData = [
     currentBenchCode: 12,
     partyLogo: "perulibre.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En noviembre de 2024, el Ministerio Público allanó inmuebles vinculados a la congresista debido una investigación por los delitos de concusión y enriquecimiento ilícito. Dicha investigación se debe a que la parlamentaria habría exigido grandes sumas de dinero a los trabajadores de su despacho. Meses antes, ante los medios, brindó polémicas declaraciones al señalar su disconformidad con el sueldo que recibía como congresista.",
     heritageForYear: [
       {
         year: 2021,
@@ -7945,7 +7954,7 @@ export const publicOfficialsData = [
     currentBenchCode: 12,
     partyLogo: "perulibre.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Enfrenta una investigación por los asesinatos de 49 personas registrados durante la violenta represión policial y militar a las protestas contra su gobierno en diciembre de 2022 y comienzos de 2023. Registra otros ocho procesos por los presuntos delitos de enriquecimiento ilícito, cohecho (habrían negociado acuerdos con la destituida fiscal de la nación, Patricia Benavides), abandono del cargo (porque se habría sometido a cirugías estéticas que implicaban descanso y que no habían sido comunicados) y el presunto encubrimiento en la fuga de Vladimir Cerrón (caso Cofre).",
     heritageForYear: [
       {
         year: 2021,
@@ -8004,7 +8013,7 @@ export const publicOfficialsData = [
     currentBenchCode: 5,
     partyLogo: "renovacionpop.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Una investigación de OjoPúblico reveló que la empresa Turismo Civa -que tiene como gerente general al hermano del congresista, Luis Ciccia- fue sancionada con cinco meses de inhabilitación temporal por contratar con el Estado pese al impedimento y por presentar información inexacta.",
     heritageForYear: [
       {
         year: 2021,
@@ -8181,7 +8190,7 @@ export const publicOfficialsData = [
     currentBenchCode: 1,
     partyLogo: "alianzaporelprogreso.svg",
     record:
-      "Es investigado por la Fiscalía por hechos que habría cometido cuando era gerente general del Gobierno Regional de Madre de Dios.",
+      "Es investigado por la Fiscalía por hechos que habría cometido cuando era gerente general del Gobierno Regional de Madre de Dios. En mayo de 2024, la procuraduría solicitó al Ministerio Público iniciar diligencias preliminares contra el congresista debido a una denuncia periodística. El reportaje dominical reveló sus vínculos con una empresa minera al tratar de favorecerla en la inscripción del REINFO.",
     heritageForYear: [
       {
         year: 2021,
@@ -8240,7 +8249,7 @@ export const publicOfficialsData = [
     currentBenchCode: 13,
     partyLogo: "juntosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      'El Equipo Especial de Fiscales contra la Corrupción en el Poder estableció que el congresista es parte del grupo "Niños 3", quienes  son investigados por la presunta comisión del delito de cohecho pasivo propio, presuntamente por haber recibido pagos ilícitos a cambio de votar en contra de la moción de interpelación al entonces ministro de Transporte y Comunicaciones, Juan Silva.',
     heritageForYear: [
       {
         year: 2021,
@@ -8299,7 +8308,7 @@ export const publicOfficialsData = [
     currentBenchCode: 13,
     partyLogo: "juntosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Una investigación de OjoPúblico reveló que el congresista contrató personal para su despacho que había sido aportante al partido político con el que postuló (Perú Libre). Se trata de Eddy Quispe Taco, ingeniero civil que aportó con S/2.675.",
     heritageForYear: [
       {
         year: 2021,
@@ -8416,7 +8425,8 @@ export const publicOfficialsData = [
     currentBench: "Somos Perú",
     currentBenchCode: 8,
     partyLogo: "somosperu.png",
-    record: "NA",
+    record:
+      "Desde 2011, registra un total de nueve carpetas fiscales, en su mayoría vinculadas a su gestión como alcalde de Sechura en Piura, según informó La República.",
     heritageForYear: [
       {
         year: 2021,
@@ -8475,7 +8485,7 @@ export const publicOfficialsData = [
     currentBenchCode: 2,
     partyLogo: "fuerzapopular.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Una investigación de OjoPúblico reveló que proyecto de la Nueva Ley Agraria, propuesta por la congresista junto a su bancada (Fuerza Popular), beneficiaría a las siete principales agroexportadoras debido a recortes tributarios.",
     heritageForYear: [
       {
         year: 2021,
@@ -8710,7 +8720,8 @@ export const publicOfficialsData = [
     currentBench: "Perú Libre",
     currentBenchCode: 12,
     partyLogo: "perulibre.png",
-    record: "NA",
+    record:
+      'En julio de 2024, ante una entrevista, sostuvo que "Todos protegemos políticamente a Vladimir Cerrón y respetamos su estrategia" en una entrevista con el medio Exitosa.',
     heritageForYear: [
       {
         year: 2021,
@@ -8769,7 +8780,7 @@ export const publicOfficialsData = [
     currentBenchCode: 21,
     partyLogo: "mas_callao.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Es investigado por la Fiscalía por presuntamente haber favorecido a su asistente administrativa duplicándole el sueldo. También tiene otra investigación por supuesto financiamiento a un medio digital con fondos del Gobierno Regional.",
     heritageForYear: [
       {
         year: 2021,
@@ -8946,7 +8957,7 @@ export const publicOfficialsData = [
     currentBenchCode: 8,
     partyLogo: "somosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Tiene al menos dos investigaciones en su contra por delitos cometidos en funciones como gobernador: presunta negociación incompatible, omisión de denuncia y cohecho.",
     heritageForYear: [
       {
         year: 2021,
@@ -9005,7 +9016,7 @@ export const publicOfficialsData = [
     currentBenchCode: 12,
     partyLogo: "perulibre.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      'Durante una actividad en Tacna, en octubre de 2024, el congresista señaló que respalda al prófugo Vladimir Cerrón: "Él no está fugado, él cuida su vida"',
     heritageForYear: [
       {
         year: 2021,
@@ -9064,7 +9075,7 @@ export const publicOfficialsData = [
     currentBenchCode: 29,
     partyLogo: "fuerza_tacna.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Realizó su campaña electoral bajo arresto domiciliario, impuesto por el Poder Judicial, por estar implicado en la presunta organización criminal Los limpios de Tacna, dedicados al tráfico de terrenos. Tiene al menos una investigación en curso como gobernador por colusión, peculado de uso, entre otros delitos.",
     heritageForYear: [
       {
         year: 2021,
@@ -9123,7 +9134,7 @@ export const publicOfficialsData = [
     currentBenchCode: 1,
     partyLogo: "alianzaporelprogreso.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Tiene al menos seis investigaciones por delitos de corrupción en perjuicio del Gobierno Regional de Tumbes.",
     heritageForYear: [
       {
         year: 2021,
@@ -9182,7 +9193,7 @@ export const publicOfficialsData = [
     currentBenchCode: 30,
     partyLogo: "Movimiento_Independiente_Regional_Cambio_Ucayalino.svg",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "Como gobernador regional, ha sido denunciado en dos ocasiones por cohecho pasivo propio y negociación incompatible.",
     heritageForYear: [
       {
         year: 2021,
