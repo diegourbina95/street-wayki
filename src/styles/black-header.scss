@@ -18,6 +18,9 @@
   }
 
   &__logo {
+    a {
+      cursor: pointer !important;
+    }
     img {
       height: 32px;
     }

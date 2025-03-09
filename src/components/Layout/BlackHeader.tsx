@@ -17,10 +17,12 @@ export const BlackHeader = () => {
     <nav className="black-header">
       <div className="black-header__flex">
         <div className="black-header__logo">
-          <img
-            src="https://ojo-publico.com/especiales/migrar-latinoamerica-hemisferio-en-movimiento/img/logo.png"
-            alt="logo-ojo-plublico"
-          />
+          <a href="https://ojo-publico.com/" target="_blank">
+            <img
+              src="https://ojo-publico.com/especiales/migrar-latinoamerica-hemisferio-en-movimiento/img/logo.png"
+              alt="logo-ojo-plublico"
+            />
+          </a>
         </div>
         <div className="black-header__nav">
           <div className="black-header__nav-mobile">
