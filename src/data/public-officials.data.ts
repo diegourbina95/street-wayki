@@ -1693,6 +1693,7 @@ export const publicOfficialsData = [
     position: "Gobernador Regional",
     status: "Ejerciendo",
     currentBench: "Movimiento Regional AGUA",
+    currentBenchCode: 17,
     partyLogo: "mov_reg_agua_logo.svg",
     record:
       "Tras haber ganado las elecciones, la Fiscalía inició investigación en su contra por el presunto delito de falsa declaración en proceso administrativo. También registra, al menos, cinco investigaciones preliminares por delitos contra la administración pública.",
