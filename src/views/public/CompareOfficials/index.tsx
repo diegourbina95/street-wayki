@@ -246,7 +246,7 @@ const CompareOfficials = () => {
         <span>Compara otros waykis</span>
         <ButtonNes text="REINICIAR" onClick={handleReset} />
       </div>
-      <FightOverlay show={isPlay} />
+      <FightOverlay show={isPlay} sound />
     </div>
   );
 };
