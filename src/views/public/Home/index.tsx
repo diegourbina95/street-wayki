@@ -21,7 +21,7 @@ const HomePage = () => {
   };
 
   const url = "https://ojo-publico.com/especiales/street-wayki/";
-  const text = `#StreetWayki Compara la fortuna de los políticos con más poder en Perú ${url}via @Ojo_publico`;
+  const text = `#StreetWayki Compara la fortuna de los políticos con más poder en Perú ${url} vía @Ojo_publico`;
 
   return (
     <div className="home-page">
