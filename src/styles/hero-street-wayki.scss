@@ -3,18 +3,19 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 150vh;
+  height: 107vh;
   overflow: hidden;
   font-family: "Jersey 15", sans-serif;
 
   &__illustration {
     position: relative;
-    top: 0px;
+    top: -70px;
     left: 0;
     width: 100%;
     height: 100vh;
     background-image: url("../assets/images/ilustracion_street_wayki.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     transform: translateY(0);
     transition: transform 0.1s linear;
@@ -110,7 +111,7 @@
 @media (min-width: 425px) {
   .hero {
     &__illustration {
-      top: 50px;
+      top: -50px;
     }
   }
 }
@@ -120,6 +121,7 @@
     height: 110vh;
 
     &__illustration {
+      background-size: cover;
       top: -90px;
     }
 
