@@ -32,7 +32,7 @@ export const HeroStreetWayki = () => {
   console.log("scrollY: ", scrollY);
   return (
     <>
-      <div className="hero  ">
+      <div className="hero">
         <div className="hero__header"></div>
         <div className="hero__bg"></div>
 
@@ -62,6 +62,11 @@ export const HeroStreetWayki = () => {
                 ? `translateY(${scrollY * -0.3}px)`
                 : `translateY(${490 * -0.3}px)`,
           }}
+        ></div>
+        <div
+          className={`hero__overlay hero__overlay${
+            scrollY < 300 ? "--show" : "--hidden"
+          }`}
         ></div>
       </div>
     </>

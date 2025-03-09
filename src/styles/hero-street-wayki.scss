@@ -3,14 +3,13 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 120vh;
+  height: 150vh;
   overflow: hidden;
-
   font-family: "Jersey 15", sans-serif;
 
   &__illustration {
     position: relative;
-    top: -40px;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -19,16 +18,6 @@
     background-position: center;
     transform: translateY(0);
     transition: transform 0.1s linear;
-  }
-
-  &__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 0;
   }
 
   &__header {
@@ -96,10 +85,44 @@
       margin-right: 0px;
     }
   }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    transition: opacity 1s ease, visibility 1s ease;
+
+    &--show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &--hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+
+@media (min-width: 425px) {
+  .hero {
+    &__illustration {
+      top: 50px;
+    }
+  }
 }
 
 @media (min-width: 768px) {
   .hero {
+    height: 110vh;
+
+    &__illustration {
+      top: -90px;
+    }
+
     &__title {
       width: 400px;
       margin: 10px auto 30px;
