@@ -86,7 +86,7 @@ const HomePage = () => {
           <div>
             <EquityIncreaseSection
               initialYear={2021}
-              finalYear={2024}
+              finalYear={2025}
               nameCurrency="soles"
             />
           </div>
