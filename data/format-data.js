@@ -46,7 +46,12 @@ const formatWithArrays = jsonData.map((data) => ({
   currentBenchCode: data.currentBenchCode,
   partyLogo: data.partyLogo,
   record: data.record,
-  heritageForYear: formatArray("heritageForYear_", data, "year", "amount"),
+  heritageForYear: formatArray(
+    "heritageForYear_",
+    data,
+    "year",
+    "amount"
+  ).filter((value) => value.amount !== "NA"),
   separationRange: data.separationRange,
   djiStatus: formatArray("djiStatus_", data, "year", "status"),
   criminalRecordNumber: data.criminalRecordNumber,
@@ -57,6 +62,7 @@ const formatWithArrays = jsonData.map((data) => ({
   detailCompanyLinks: data.detailCompanyLinks || "",
   color: data.color,
 }));
+
 fs.writeFileSync(
   "datos_patrimonio_final.json",
   JSON.stringify(formatWithArrays, null, 2)
