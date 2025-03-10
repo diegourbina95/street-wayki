@@ -21,7 +21,7 @@ export interface PublicOfficialsInterface {
 
 export interface HeritageForYear {
   year: number;
-  amount: number;
+  amount: number | null;
 }
 
 interface DjiStatu {
@@ -354,6 +354,10 @@ export const publicOfficialsData = [
       {
         year: 2024,
         amount: 1390089.7,
+      },
+      {
+        year: 2025,
+        amount: 1357483.10999999,
       },
     ],
     separationRange: 5,
@@ -945,6 +949,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 369250,
       },
+      {
+        year: 2025,
+        amount: 369250,
+      },
     ],
     separationRange: 3,
     djiStatus: [
@@ -1239,6 +1247,10 @@ export const publicOfficialsData = [
       {
         year: 2024,
         amount: 825000,
+      },
+      {
+        year: 2025,
+        amount: 945000,
       },
     ],
     separationRange: -4,
@@ -1713,6 +1725,10 @@ export const publicOfficialsData = [
       {
         year: 2024,
         amount: 52555.16,
+      },
+      {
+        year: 2025,
+        amount: 112106.42,
       },
     ],
     separationRange: 3,
@@ -2540,6 +2556,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 399343.79,
       },
+      {
+        year: 2025,
+        amount: 379398.63,
+      },
     ],
     separationRange: 6,
     djiStatus: [
@@ -2716,6 +2736,10 @@ export const publicOfficialsData = [
       {
         year: 2024,
         amount: 134800,
+      },
+      {
+        year: 2025,
+        amount: 167133.72,
       },
     ],
     separationRange: -6,
@@ -3012,6 +3036,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 40284.5,
       },
+      {
+        year: 2025,
+        amount: 35462.69,
+      },
     ],
     separationRange: -1,
     djiStatus: [
@@ -3071,6 +3099,10 @@ export const publicOfficialsData = [
       {
         year: 2024,
         amount: 811600,
+      },
+      {
+        year: 2025,
+        amount: 680600,
       },
     ],
     separationRange: -5,
@@ -3249,6 +3281,10 @@ export const publicOfficialsData = [
       {
         year: 2024,
         amount: 3286800,
+      },
+      {
+        year: 2025,
+        amount: 3375083.26,
       },
     ],
     separationRange: 2,
@@ -3662,6 +3698,10 @@ export const publicOfficialsData = [
       {
         year: 2024,
         amount: 424353.27,
+      },
+      {
+        year: 2025,
+        amount: 365106.27,
       },
     ],
     separationRange: -9,
@@ -4372,6 +4412,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1021058.24,
       },
+      {
+        year: 2025,
+        amount: 1151775.82,
+      },
     ],
     separationRange: 7,
     djiStatus: [
@@ -4845,6 +4889,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 2137718.9,
       },
+      {
+        year: 2025,
+        amount: 172049.61,
+      },
     ],
     separationRange: 2,
     djiStatus: [
@@ -4903,6 +4951,10 @@ export const publicOfficialsData = [
       {
         year: 2024,
         amount: 15000,
+      },
+      {
+        year: 2025,
+        amount: 690000,
       },
     ],
     separationRange: -4,
@@ -5435,6 +5487,10 @@ export const publicOfficialsData = [
       {
         year: 2024,
         amount: 88164515.64,
+      },
+      {
+        year: 2025,
+        amount: 133465277.42,
       },
     ],
     separationRange: 0,
@@ -7147,6 +7203,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 0,
       },
+      {
+        year: 2025,
+        amount: 2000,
+      },
     ],
     separationRange: -3,
     djiStatus: [
@@ -7442,6 +7502,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 35049647.05,
       },
+      {
+        year: 2025,
+        amount: 29639005.7299999,
+      },
     ],
     separationRange: 1,
     djiStatus: [
@@ -7736,6 +7800,10 @@ export const publicOfficialsData = [
       {
         year: 2024,
         amount: 3706562.74,
+      },
+      {
+        year: 2025,
+        amount: 2900512.98,
       },
     ],
     separationRange: 0,
@@ -8799,6 +8867,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 144571.89,
       },
+      {
+        year: 2025,
+        amount: 108846.36,
+      },
     ],
     separationRange: -5,
     djiStatus: [
@@ -8976,6 +9048,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 33943.66,
       },
+      {
+        year: 2025,
+        amount: 43767.27,
+      },
     ],
     separationRange: -3,
     djiStatus: [
@@ -9094,6 +9170,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 122988.01,
       },
+      {
+        year: 2025,
+        amount: 163965.87,
+      },
     ],
     separationRange: -7,
     djiStatus: [
@@ -9211,6 +9291,10 @@ export const publicOfficialsData = [
       {
         year: 2024,
         amount: 1041174.22,
+      },
+      {
+        year: 2025,
+        amount: 1917014.94,
       },
     ],
     separationRange: 8,

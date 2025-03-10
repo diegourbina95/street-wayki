@@ -29,7 +29,6 @@ export const HeroStreetWayki = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  console.log("scrollY: ", scrollY);
   return (
     <>
       <div className="hero">

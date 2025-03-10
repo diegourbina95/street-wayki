@@ -29,7 +29,7 @@ const CompareOfficials = () => {
 
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const YEARS = [2021, 2022, 2023, 2024];
+  const YEARS = [2021, 2022, 2023, 2024, 2025];
 
   const [playerDetails1, setPlayerDetails1] =
     useState<PublicOfficialsInterface>();
@@ -154,23 +154,25 @@ const CompareOfficials = () => {
             datasets={[
               {
                 data: playerDetails1
-                  ? playerDetails1.heritageForYear.map(
-                      (value) => value.amount / 1000000
+                  ? playerDetails1.heritageForYear.map((value) =>
+                      value.amount ? value.amount / 1000000 : null
                     )
                   : [0],
                 tension: 0.1,
                 borderColor: "#61F908",
                 label: playerDetails1?.abbreviatedName,
+                spanGaps: false,
               },
               {
                 data: playerDetails2
-                  ? playerDetails2.heritageForYear.map(
-                      (value) => value.amount / 1000000
+                  ? playerDetails2.heritageForYear.map((value) =>
+                      value.amount ? value.amount / 1000000 : null
                     )
                   : [0],
                 tension: 0.1,
                 borderColor: "#FEAA00",
                 label: playerDetails2?.abbreviatedName,
+                spanGaps: false,
               },
             ]}
             isMobile={isMobile}
@@ -231,11 +233,11 @@ const CompareOfficials = () => {
       <SalaryComparison
         player1={{
           name: playerDetails1?.shortName,
-          salary: playerDetails1?.heritageForYear.at(-1)?.amount,
+          salary: playerDetails1?.heritageForYear.at(-1)?.amount || 0,
         }}
         player2={{
           name: playerDetails2?.shortName,
-          salary: playerDetails2?.heritageForYear.at(-1)?.amount,
+          salary: playerDetails2?.heritageForYear.at(-1)?.amount || 0,
         }}
         averageSalary={1130}
       />
