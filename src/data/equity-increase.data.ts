@@ -12,18 +12,20 @@ export const getTopAssetIncreases = (topNumber: number) =>
     .slice(0, topNumber);
 
 const calculateIncrease = (heritage: HeritageForYear[]) => {
-  return (heritage.at(-1)?.amount || 0) - heritage[0].amount;
+  if (heritage.length === 0) return 0;
+  return (heritage.at(-1)?.amount ?? 0) - (heritage[0]?.amount ?? 0);
 };
 
 export const generateData = () => {
   return publicOfficialsData.map((official) => ({
     data: official.heritageForYear.map((value) =>
-      Number((value.amount / 1000000).toFixed(2))
+      value?.amount ? Number((value.amount / 1000000).toFixed(2)) : null
     ),
     tension: 0.1,
     borderColor: official.color,
     personName: official.shortName,
     personCode: official.dni,
     label: official.shortName,
+    spanGaps: false,
   }));
 };

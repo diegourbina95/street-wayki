@@ -24,10 +24,11 @@ interface LineData {
 }
 
 interface Datasets {
-  data: number[];
+  data: any;
   tension: number;
   borderColor?: string;
   label?: string;
+  spanGaps?: boolean;
 }
 
 export const Line: React.FC<LineData> = ({
@@ -48,7 +49,6 @@ export const Line: React.FC<LineData> = ({
         const label = dataset.label || "";
 
         if (!label) return;
-
         const x = chart.scales.x.getPixelForValue(lastIndex);
         const y = chart.scales.y.getPixelForValue(lastValue);
 

@@ -8,7 +8,7 @@ import { generateData } from "@/data/equity-increase.data";
 
 export const AssetIncreaseComparatorSection = () => {
   const [officials, setOfficials] = useState<any>([]);
-  const YEARS = [2021, 2022, 2023, 2024];
+  const YEARS = [2021, 2022, 2023, 2024, 2025];
   const MAX_NUMBER_OFFICIALS = 10;
 
   useEffect(() => {
