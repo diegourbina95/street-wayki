@@ -21,7 +21,7 @@ export interface PublicOfficialsInterface {
 
 export interface HeritageForYear {
   year: number;
-  amount: number | null;
+  amount: number;
 }
 
 interface DjiStatu {
@@ -60,6 +60,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 296470.6,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -3,
     djiStatus: [
@@ -79,12 +83,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#709bd7",
@@ -119,6 +127,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 216749.52,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -2,
     djiStatus: [
@@ -138,12 +150,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#6d4cf8",
@@ -178,6 +194,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 431013.99,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -7,
     djiStatus: [
@@ -197,12 +217,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#7f5fe7",
@@ -237,6 +261,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 234813.8,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 1,
     djiStatus: [
@@ -256,12 +284,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#b04dc6",
@@ -296,6 +328,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 2667131.11,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -3,
     djiStatus: [
@@ -315,12 +351,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#bfbf57",
@@ -378,12 +418,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#d0bab1",
@@ -418,6 +462,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 61900.2,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 4,
     djiStatus: [
@@ -437,12 +485,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#a4a24f",
@@ -477,6 +529,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 713647.45,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 4,
     djiStatus: [
@@ -496,12 +552,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#384fef",
@@ -536,6 +596,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1472365.71,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 8,
     djiStatus: [
@@ -555,12 +619,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#1af76b",
@@ -595,6 +663,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 41363.09,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 0,
     djiStatus: [
@@ -614,12 +686,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#fcce11",
@@ -654,6 +730,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 360439.3,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 2,
     djiStatus: [
@@ -673,12 +753,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#6486bf",
@@ -713,6 +797,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 220758.5,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -1,
     djiStatus: [
@@ -732,12 +820,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#d09fdd",
@@ -772,6 +864,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1070038.11,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -9,
     djiStatus: [
@@ -791,12 +887,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#a7f876",
@@ -831,6 +931,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 451123.61,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -3,
     djiStatus: [
@@ -850,12 +954,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#8c6618",
@@ -890,6 +998,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 214678.09,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -3,
     djiStatus: [
@@ -909,12 +1021,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#eeb025",
@@ -972,12 +1088,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#fd0530",
@@ -1012,6 +1132,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 958308.889999999,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 6,
     djiStatus: [
@@ -1031,12 +1155,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#89192c",
@@ -1071,6 +1199,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 50845.71,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 2,
     djiStatus: [
@@ -1090,12 +1222,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#169f10",
@@ -1130,6 +1266,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1054503.91,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 9,
     djiStatus: [
@@ -1149,12 +1289,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#0dba24",
@@ -1189,6 +1333,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 333922.15,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 0,
     djiStatus: [
@@ -1208,12 +1356,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#deb6ee",
@@ -1273,12 +1425,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#e2b235",
@@ -1313,6 +1469,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 278220.93,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -5,
     djiStatus: [
@@ -1332,12 +1492,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#e8ccf0",
@@ -1372,6 +1536,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 240477.97,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 3,
     djiStatus: [
@@ -1391,12 +1559,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#3b7769",
@@ -1431,6 +1603,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1356511.76,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 4,
     djiStatus: [
@@ -1450,12 +1626,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 1",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#58a01d",
@@ -1490,6 +1670,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1261402.47,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -2,
     djiStatus: [
@@ -1509,12 +1693,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#9e0fde",
@@ -1549,6 +1737,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 248780.5,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 5,
     djiStatus: [
@@ -1568,12 +1760,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#6aedd9",
@@ -1608,6 +1804,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 785186.41,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -7,
     djiStatus: [
@@ -1627,12 +1827,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#403bce",
@@ -1667,6 +1871,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1850021.9,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -3,
     djiStatus: [
@@ -1686,12 +1894,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 3,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 2",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#07f307",
@@ -1749,12 +1961,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#3855b4",
@@ -1789,6 +2005,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 0,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 3,
     djiStatus: [
@@ -1808,12 +2028,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "No presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#28c69e",
@@ -1848,6 +2072,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 226085.26,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 0,
     djiStatus: [
@@ -1867,12 +2095,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 3,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 2",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#fb78e5",
@@ -1907,6 +2139,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 243167.169999999,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 4,
     djiStatus: [
@@ -1926,12 +2162,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 2",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#ade491",
@@ -1966,6 +2206,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 703093.65,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 1,
     djiStatus: [
@@ -1985,12 +2229,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#48a5f6",
@@ -2025,6 +2273,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 273158.03,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -6,
     djiStatus: [
@@ -2044,12 +2296,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#70d07a",
@@ -2066,7 +2322,7 @@ export const publicOfficialsData = [
     currentBenchCode: 8,
     partyLogo: "somosperu.png",
     record:
-      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
+      "En las elecciones generales del 2021 declaró dos sentencias penales por falsificación de documentos y falsedad ideológica.",
     heritageForYear: [
       {
         year: 2021,
@@ -2083,6 +2339,10 @@ export const publicOfficialsData = [
       {
         year: 2024,
         amount: 314231.54,
+      },
+      {
+        year: 2025,
+        amount: 0,
       },
     ],
     separationRange: -2,
@@ -2103,12 +2363,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 2",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#627baa",
@@ -2143,6 +2407,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 850838.67,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -3,
     djiStatus: [
@@ -2162,12 +2430,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#468143",
@@ -2202,6 +2474,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 500434.579999999,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 2,
     djiStatus: [
@@ -2221,12 +2497,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#eee370",
@@ -2261,6 +2541,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 455620.76,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -2,
     djiStatus: [
@@ -2280,12 +2564,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 6,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 4",
-      " Casos de denuncias fiscales: 2",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 2",
     ],
     detailCompanyLinks: "",
     color: "#bc504a",
@@ -2320,6 +2608,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 0,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 2,
     djiStatus: [
@@ -2339,12 +2631,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "No presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#e3dcb9",
@@ -2379,6 +2675,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1342352.60999999,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 3,
     djiStatus: [
@@ -2398,12 +2698,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#d5b851",
@@ -2438,6 +2742,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 251845.72,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 6,
     djiStatus: [
@@ -2457,12 +2765,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#1626c9",
@@ -2497,6 +2809,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 36000,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -2,
     djiStatus: [
@@ -2516,12 +2832,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#02f2b0",
@@ -2579,12 +2899,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 1",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#11aac2",
@@ -2619,6 +2943,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 0,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 1,
     djiStatus: [
@@ -2638,12 +2966,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "No presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#20bd72",
@@ -2678,6 +3010,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 449902.33,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -4,
     djiStatus: [
@@ -2697,12 +3033,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 3,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 2",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#6cd1a8",
@@ -2760,12 +3100,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#654c9f",
@@ -2800,6 +3144,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 402634.79,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 8,
     djiStatus: [
@@ -2819,12 +3167,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#d60de5",
@@ -2859,6 +3211,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 496377.13,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 1,
     djiStatus: [
@@ -2878,12 +3234,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#f46115",
@@ -2918,6 +3278,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1189540.66,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -3,
     djiStatus: [
@@ -2937,12 +3301,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#63f006",
@@ -2977,6 +3345,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 345800,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 1,
     djiStatus: [
@@ -2996,12 +3368,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#a09734",
@@ -3060,12 +3436,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#40b3d9",
@@ -3124,12 +3504,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#92ff86",
@@ -3164,6 +3548,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 482905.81,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -1,
     djiStatus: [
@@ -3183,12 +3571,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#5edd15",
@@ -3223,6 +3615,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 677701.82,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -3,
     djiStatus: [
@@ -3242,12 +3638,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#054a6d",
@@ -3305,12 +3705,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 1",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#3ce8a3",
@@ -3345,6 +3749,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1113273.6,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -7,
     djiStatus: [
@@ -3364,12 +3772,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#3839b6",
@@ -3404,6 +3816,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 732802.06,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 7,
     djiStatus: [
@@ -3423,12 +3839,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#285393",
@@ -3463,6 +3883,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 707198.09,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 3,
     djiStatus: [
@@ -3482,12 +3906,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 2",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#e0f78a",
@@ -3522,6 +3950,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 574100,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 9,
     djiStatus: [
@@ -3541,12 +3973,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 1",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#49448f",
@@ -3581,6 +4017,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 629576.41,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -6,
     djiStatus: [
@@ -3600,12 +4040,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#28ffe9",
@@ -3640,6 +4084,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 936102.95,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 4,
     djiStatus: [
@@ -3659,12 +4107,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#d454d2",
@@ -3723,12 +4175,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#6f8bfa",
@@ -3763,6 +4219,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 897620.04,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 0,
     djiStatus: [
@@ -3782,12 +4242,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 5,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 2",
       " Casos de corrupción en Procuraduría: 2",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#e21446",
@@ -3822,6 +4286,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 322217.27,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -1,
     djiStatus: [
@@ -3841,12 +4309,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#f51699",
@@ -3881,6 +4353,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 3543826.94,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -2,
     djiStatus: [
@@ -3900,12 +4376,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#4698d2",
@@ -3940,6 +4420,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 672555.15,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -4,
     djiStatus: [
@@ -3959,12 +4443,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#f1b6b7",
@@ -3999,6 +4487,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 68558,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 5,
     djiStatus: [
@@ -4018,12 +4510,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#538056",
@@ -4058,6 +4554,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 50121.2,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 1,
     djiStatus: [
@@ -4077,12 +4577,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#058d37",
@@ -4117,6 +4621,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 2988432,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 0,
     djiStatus: [
@@ -4136,12 +4644,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#c651b0",
@@ -4176,6 +4688,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 582969.65,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -8,
     djiStatus: [
@@ -4195,12 +4711,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 3,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 2",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#fda4b3",
@@ -4235,6 +4755,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 734489.34,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 8,
     djiStatus: [
@@ -4254,12 +4778,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 3,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 2",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#f5df32",
@@ -4294,6 +4822,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1636078.78,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -6,
     djiStatus: [
@@ -4313,12 +4845,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 4,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 3",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#99c9d9",
@@ -4353,6 +4889,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 3304250.94,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 3,
     djiStatus: [
@@ -4372,12 +4912,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 4,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 2",
       " Casos de corrupción en Procuraduría: 2",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#7dc038",
@@ -4435,12 +4979,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#24feb4",
@@ -4475,6 +5023,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 0,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 0,
     djiStatus: [
@@ -4494,12 +5046,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "No presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 1",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#ed50fa",
@@ -4534,6 +5090,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 268447.85,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -8,
     djiStatus: [
@@ -4553,12 +5113,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#a470cb",
@@ -4593,6 +5157,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 4160384.39,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 1,
     djiStatus: [
@@ -4613,12 +5181,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#d308cd",
@@ -4653,6 +5225,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 562212,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 7,
     djiStatus: [
@@ -4672,12 +5248,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 4,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 2",
-      " Casos de denuncias fiscales: 2",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 2",
     ],
     detailCompanyLinks: "",
     color: "#695f10",
@@ -4712,6 +5292,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 13455352.35,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -1,
     djiStatus: [
@@ -4731,12 +5315,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#c6c745",
@@ -4771,6 +5359,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 0,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -1,
     djiStatus: [
@@ -4790,12 +5382,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "No presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#be86da",
@@ -4830,6 +5426,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 428512.9,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -8,
     djiStatus: [
@@ -4849,12 +5449,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 1",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#e8664a",
@@ -4912,12 +5516,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#f43c52",
@@ -4976,12 +5584,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#371a2a",
@@ -5016,6 +5628,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1142678.09,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -5,
     djiStatus: [
@@ -5035,12 +5651,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#382751",
@@ -5075,6 +5695,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 599316.96,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -7,
     djiStatus: [
@@ -5094,12 +5718,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#bdad7b",
@@ -5134,6 +5762,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 2993672.25,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 1,
     djiStatus: [
@@ -5153,12 +5785,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#5f990a",
@@ -5193,6 +5829,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1591766.23,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 10,
     djiStatus: [
@@ -5212,12 +5852,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#7556fa",
@@ -5252,6 +5896,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 262220.72,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 7,
     djiStatus: [
@@ -5271,12 +5919,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#3d21c9",
@@ -5311,6 +5963,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 2566299.52,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 6,
     djiStatus: [
@@ -5330,12 +5986,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#665aae",
@@ -5370,6 +6030,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 485932,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 0,
     djiStatus: [
@@ -5389,12 +6053,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#0457bd",
@@ -5429,6 +6097,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 199354.34,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -4,
     djiStatus: [
@@ -5448,12 +6120,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 4,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 2",
-      " Casos de denuncias fiscales: 2",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 2",
     ],
     detailCompanyLinks: "",
     color: "#ba31b2",
@@ -5511,12 +6187,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#FEAA00",
@@ -5551,6 +6231,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 4562951.11,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 2,
     djiStatus: [
@@ -5570,12 +6254,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#1b3fe5",
@@ -5610,6 +6298,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 555735.38,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 6,
     djiStatus: [
@@ -5629,12 +6321,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#edf92a",
@@ -5669,6 +6365,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1948475.05,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -1,
     djiStatus: [
@@ -5688,12 +6388,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#09e893",
@@ -5728,6 +6432,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 535023.72,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 3,
     djiStatus: [
@@ -5747,12 +6455,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#a9f1b7",
@@ -5787,6 +6499,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 780147.26,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -9,
     djiStatus: [
@@ -5806,12 +6522,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#103b77",
@@ -5846,6 +6566,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 578562.57,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 10,
     djiStatus: [
@@ -5865,12 +6589,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 2",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#508015",
@@ -5905,6 +6633,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1293302.63,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 1,
     djiStatus: [
@@ -5924,12 +6656,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 2",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#fa731f",
@@ -5964,6 +6700,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1647898.82999999,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -5,
     djiStatus: [
@@ -5983,12 +6723,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#462e1b",
@@ -6023,6 +6767,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1782818.72,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -4,
     djiStatus: [
@@ -6042,12 +6790,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#691908",
@@ -6082,6 +6834,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 377412.9,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 4,
     djiStatus: [
@@ -6101,12 +6857,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#a22546",
@@ -6141,6 +6901,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 535274.62,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 4,
     djiStatus: [
@@ -6160,12 +6924,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#163ca5",
@@ -6200,6 +6968,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 878400.389999999,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -1,
     djiStatus: [
@@ -6219,12 +6991,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#a6d45c",
@@ -6259,6 +7035,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 933018.57,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 3,
     djiStatus: [
@@ -6278,12 +7058,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#278b71",
@@ -6318,6 +7102,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 396611.209999999,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 5,
     djiStatus: [
@@ -6337,12 +7125,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#be7193",
@@ -6377,6 +7169,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 2108057.06,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 1,
     djiStatus: [
@@ -6396,12 +7192,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#edf95e",
@@ -6436,6 +7236,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 726829.39,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 6,
     djiStatus: [
@@ -6455,12 +7259,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#b6a4ac",
@@ -6495,6 +7303,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 413559.37,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -10,
     djiStatus: [
@@ -6514,12 +7326,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#2ea296",
@@ -6554,6 +7370,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 916809.76,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 2,
     djiStatus: [
@@ -6573,12 +7393,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#9f3984",
@@ -6613,6 +7437,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 436557.83,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -6,
     djiStatus: [
@@ -6632,12 +7460,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#fad91f",
@@ -6672,6 +7504,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 269935.03,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -7,
     djiStatus: [
@@ -6691,12 +7527,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#6c9c4a",
@@ -6731,6 +7571,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 867733.19,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -2,
     djiStatus: [
@@ -6750,12 +7594,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 5,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 3",
-      " Casos de denuncias fiscales: 2",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 2",
     ],
     detailCompanyLinks: "",
     color: "#352218",
@@ -6790,6 +7638,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 769394.7,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 9,
     djiStatus: [
@@ -6809,12 +7661,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#34bcda",
@@ -6849,6 +7705,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1137851.38,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -6,
     djiStatus: [
@@ -6868,12 +7728,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#1ba169",
@@ -6908,6 +7772,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 295711.42,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -4,
     djiStatus: [
@@ -6927,12 +7795,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#122029",
@@ -6967,6 +7839,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 2760768.51,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -2,
     djiStatus: [
@@ -6986,12 +7862,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#7216ed",
@@ -7026,6 +7906,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 3619904.51,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -1,
     djiStatus: [
@@ -7045,12 +7929,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#c30107",
@@ -7085,6 +7973,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 2392420,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 5,
     djiStatus: [
@@ -7104,12 +7996,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#8898ac",
@@ -7144,6 +8040,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 690448.42,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -1,
     djiStatus: [
@@ -7163,12 +8063,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#baad81",
@@ -7226,12 +8130,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "No presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 1",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#0b8dc6",
@@ -7266,6 +8174,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1334625.75,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 2,
     djiStatus: [
@@ -7285,12 +8197,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#0f1648",
@@ -7325,6 +8241,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1561950,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 9,
     djiStatus: [
@@ -7344,12 +8264,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#6ee604",
@@ -7384,6 +8308,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1267092.98,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -1,
     djiStatus: [
@@ -7403,12 +8331,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#48a58d",
@@ -7443,6 +8375,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1430876.59,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 6,
     djiStatus: [
@@ -7462,12 +8398,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#2ffcb2",
@@ -7525,12 +8465,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#CF1B90",
@@ -7565,6 +8509,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 2263252.31,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 4,
     djiStatus: [
@@ -7584,12 +8532,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#5ad127",
@@ -7624,6 +8576,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 449136.5,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -5,
     djiStatus: [
@@ -7643,12 +8599,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#d5298c",
@@ -7683,6 +8643,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 0,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -2,
     djiStatus: [
@@ -7702,12 +8666,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "No presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#d24fc2",
@@ -7742,6 +8710,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 573067.63,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 8,
     djiStatus: [
@@ -7761,12 +8733,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#534a8b",
@@ -7824,12 +8800,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#37c43a",
@@ -7864,6 +8844,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 913058.7,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 1,
     djiStatus: [
@@ -7883,12 +8867,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#bb93ba",
@@ -7923,6 +8911,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 2764010.73,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -1,
     djiStatus: [
@@ -7942,12 +8934,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#8c4ed8",
@@ -7982,6 +8978,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 6791312.64,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 0,
     djiStatus: [
@@ -8001,12 +9001,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#d42aeb",
@@ -8041,6 +9045,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1171198.63,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -4,
     djiStatus: [
@@ -8060,12 +9068,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#546c1f",
@@ -8100,6 +9112,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 780521.73,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -8,
     djiStatus: [
@@ -8119,12 +9135,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#c66fb1",
@@ -8159,6 +9179,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 400099.41,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 7,
     djiStatus: [
@@ -8178,12 +9202,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 1",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 1",
     ],
     detailCompanyLinks: "",
     color: "#7037ae",
@@ -8218,6 +9246,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 941263.11,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 5,
     djiStatus: [
@@ -8237,12 +9269,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#0f444a",
@@ -8277,6 +9313,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 683987.24,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -2,
     djiStatus: [
@@ -8296,12 +9336,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 1",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#ccfc9a",
@@ -8336,6 +9380,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 705642.76,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 2,
     djiStatus: [
@@ -8355,12 +9403,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#9b6ff7",
@@ -8395,6 +9447,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 543181.44,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 5,
     djiStatus: [
@@ -8414,12 +9470,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#a08f7c",
@@ -8454,6 +9514,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1452185.94,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 7,
     djiStatus: [
@@ -8473,12 +9537,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#f3b2c8",
@@ -8513,6 +9581,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 2100616.33,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 0,
     djiStatus: [
@@ -8532,12 +9604,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 1",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#788c94",
@@ -8572,6 +9648,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 2259518.93,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 3,
     djiStatus: [
@@ -8591,12 +9671,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#8d13be",
@@ -8631,6 +9715,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1277807.74,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 0,
     djiStatus: [
@@ -8650,12 +9738,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 2,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 1",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#8b3d6d",
@@ -8690,6 +9782,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1105010.13,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -8,
     djiStatus: [
@@ -8709,12 +9805,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 7,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 4",
-      " Casos de denuncias fiscales: 3",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 3",
     ],
     detailCompanyLinks: "",
     color: "#08d3c3",
@@ -8749,6 +9849,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 1883320.04,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -2,
     djiStatus: [
@@ -8768,12 +9872,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#5b716a",
@@ -8808,6 +9916,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 647838.919999999,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -5,
     djiStatus: [
@@ -8827,12 +9939,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 1",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#2ae7b8",
@@ -8890,12 +10006,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#6c88ab",
@@ -8930,6 +10050,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 716896.15,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 5,
     djiStatus: [
@@ -8949,12 +10073,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 1,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 1",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#3e6d66",
@@ -8989,6 +10117,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 692487.72,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 0,
     djiStatus: [
@@ -9008,12 +10140,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 4,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 2",
-      " Casos de denuncias fiscales: 2",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 2",
     ],
     detailCompanyLinks: "",
     color: "#fbe35d",
@@ -9071,12 +10207,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#09b638",
@@ -9111,6 +10251,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 237567.52,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: 2,
     djiStatus: [
@@ -9130,12 +10274,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No está obligado a presentar DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#e34b75",
@@ -9193,12 +10341,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#b9bb49",
@@ -9233,6 +10385,10 @@ export const publicOfficialsData = [
         year: 2024,
         amount: 787000,
       },
+      {
+        year: 2025,
+        amount: 0,
+      },
     ],
     separationRange: -6,
     djiStatus: [
@@ -9252,12 +10408,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "No presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#09293a",
@@ -9315,12 +10475,16 @@ export const publicOfficialsData = [
         year: 2024,
         status: "Presentó DJI",
       },
+      {
+        year: 2025,
+        status: "Presentó DJI",
+      },
     ],
     criminalRecordNumber: 0,
     criminalRecordDetails: [
       "Sentencias penales o civiles declaradas: 0",
       " Casos de corrupción en Procuraduría: 0",
-      " Casos de denuncias fiscales: 0",
+      " Número de denuncias constitucionales al Congreso iniciadas por la fiscalía: 0",
     ],
     detailCompanyLinks: "",
     color: "#f60e71",
