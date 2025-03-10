@@ -233,11 +233,17 @@ const CompareOfficials = () => {
       <SalaryComparison
         player1={{
           name: playerDetails1?.shortName,
-          salary: playerDetails1?.heritageForYear.at(-1)?.amount || 0,
+          salary: playerDetails1?.heritageForYear
+            .slice()
+            .reverse()
+            .find((n) => n.amount > 0)?.amount,
         }}
         player2={{
           name: playerDetails2?.shortName,
-          salary: playerDetails2?.heritageForYear.at(-1)?.amount || 0,
+          salary: playerDetails2?.heritageForYear
+            .slice()
+            .reverse()
+            .find((n) => n.amount > 0)?.amount,
         }}
         averageSalary={1130}
       />

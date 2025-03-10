@@ -29,7 +29,7 @@ export const FightOverlay: React.FC<FightOverlayProps> = ({
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   const [isFightOverlay, setIsFightOverlay] = useState<boolean>(false);
-  const [playSound] = useSound(fightSound);
+  const [playSound] = useSound(fightSound, { volume: 0.4 });
 
   const lifeTime = useCallback(() => {
     const overlayTimer = setTimeout(() => {

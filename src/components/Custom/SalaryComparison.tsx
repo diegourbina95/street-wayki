@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 interface SalaryComparisonProps {
   player1: {
     name?: string;
-    salary?: number;
+    salary?: number | undefined;
   };
   player2: {
     name?: string;
@@ -42,7 +42,6 @@ export const SalaryComparison: React.FC<SalaryComparisonProps> = ({
     averageSalary > 0 ? salary / averageSalary : 0;
 
   const formatNumber = (num: number) => num.toLocaleString("en-US");
-
   return (
     <div className="salary-comparison__content">
       {player1.name || "N/A"} tiene un patrimonio que equivale a{" "}
