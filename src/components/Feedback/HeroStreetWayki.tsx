@@ -1,6 +1,4 @@
 /* REACT COMPONENTS */
-import { useEffect, useState } from "react";
-
 import { ButtonNes } from "@/components/Inputs";
 
 import tituloStreetWayki from "@/assets/images/titulo_street_wayki.png";
@@ -11,23 +9,12 @@ import tituloStreetWayki from "@/assets/images/titulo_street_wayki.png";
 import "@/styles/hero-street-wayki.scss";
 
 export const HeroStreetWayki = () => {
-  const [scrollY, setScrollY] = useState(0);
-
   const goToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   return (
     <>
       <div className="hero">
@@ -52,11 +39,6 @@ export const HeroStreetWayki = () => {
             />
           </div>
         </div>
-        <div
-          className={`hero__overlay hero__overlay${
-            scrollY < 200 ? "--show" : "--hidden"
-          }`}
-        ></div>
       </div>
     </>
   );
