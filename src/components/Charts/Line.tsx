@@ -1,6 +1,8 @@
 /* REACT COMPONENTS */
 import { useEffect, useRef } from "react";
 
+import { formatNumber } from "@/utils/amounts";
+
 /* LIBRARIES */
 import {
   Chart,
@@ -113,7 +115,7 @@ export const Line: React.FC<LineData> = ({
                 ticks: {
                   stepSize: datasets.length ? 0.1 : 1,
                   callback: function (value) {
-                    return `S/ ${Number(value).toFixed(1)} ${
+                    return `S/ ${formatNumber(value, 1)} ${
                       Number(value) === 1 ? "millón" : "millones"
                     }`;
                   },
@@ -127,9 +129,10 @@ export const Line: React.FC<LineData> = ({
               tooltip: {
                 callbacks: {
                   label: (tooltipItem: any) => {
-                    return `${tooltipItem.dataset.label}: S/ ${Number(
-                      tooltipItem.raw
-                    ).toFixed(2)} millones`;
+                    return `${tooltipItem.dataset.label}: S/ ${formatNumber(
+                      tooltipItem.raw,
+                      2
+                    )} millones`;
                   },
                 },
               },

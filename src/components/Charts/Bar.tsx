@@ -1,5 +1,6 @@
 /* REACT COMPONENTS */
 import { useEffect, useRef } from "react";
+import { formatNumber } from "@/utils/amounts";
 
 /* LIBRARIES */
 import {
@@ -44,7 +45,7 @@ export const Bar: React.FC<BarData> = ({
       const { ctx } = chart;
       chart.data.datasets[0].data.forEach((value, idx) => {
         const lastValue = idx as number;
-        const label = value || 0;
+        const label = (value as number) || 0;
 
         if (!label) return;
 
@@ -55,7 +56,7 @@ export const Bar: React.FC<BarData> = ({
         ctx.font = "bold 12px Arial";
         ctx.fillStyle = "#333333";
         ctx.textAlign = "left";
-        ctx.fillText(`${label} ${scaleSymbol}`, x + 8, y);
+        ctx.fillText(`${formatNumber(label)} ${scaleSymbol}`, x + 8, y);
         ctx.restore();
       });
     },
