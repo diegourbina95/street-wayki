@@ -55,12 +55,13 @@ export const ProgressNes: React.FC<ProgressNesProps> = ({
         <div
           className="progress-nes__left"
           style={{ width: `${barPercentage}%` }}
-        >
+        ><div className="progress-nes__textL" >
           {`${currency || ""} ${
             quantity1 !== null && quantity1 !== undefined
               ? formatAmount(quantity1)
               : "N/A"
           }`}
+          </div>
         </div>
         <div className="progress-nes__icon">
           <img src="./img/fire.png" alt="fire" />
@@ -69,11 +70,13 @@ export const ProgressNes: React.FC<ProgressNesProps> = ({
           className="progress-nes__right"
           style={{ width: `${100 - barPercentage}%` }}
         >
+          <div className="progress-nes__textR" >
           {`${currency || ""} ${
             quantity2 !== null && quantity2 !== undefined
               ? formatAmount(quantity2)
               : "N/A"
           }`}
+          </div>
         </div>
       </div>
       <IconProgressBarBottom
