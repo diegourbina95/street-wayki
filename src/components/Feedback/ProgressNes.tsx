@@ -5,7 +5,7 @@ import {
   IconProgressBarTop,
   IconProgressBarBottom,
 } from "@/components/DataDisplay";
-import { formatAmount, formatNumber } from "@/utils/amounts";
+import { formatNumber } from "@/utils/amounts";
 
 /* LIBRARIES */
 
