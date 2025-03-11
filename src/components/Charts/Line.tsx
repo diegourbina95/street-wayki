@@ -39,15 +39,26 @@ export const Line: React.FC<LineData> = ({
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const chartRef = useRef<Chart | null>(null);
 
+  const lastValidIndex = (array: any[]): number => {
+    for (let i = array.length - 1; i >= 0; i--) {
+      if (array[i] !== null) {
+        return i;
+      }
+    }
+    return -1;
+  };
+
   const customTextPlugin: Plugin<"line"> = {
     id: "customTextPlugin",
     afterDatasetDraw(chart) {
       const { ctx } = chart;
       chart.data.datasets.forEach((dataset) => {
-        const lastIndex = dataset.data.length - 1;
-        const lastValue = dataset.data[lastIndex] as number;
+        const lastIndex = lastValidIndex(dataset.data);
+        const lastValue = dataset.data
+          .slice()
+          .reverse()
+          .find((n) => n) as number;
         const label = dataset.label || "";
-
         if (!label) return;
         const x = chart.scales.x.getPixelForValue(lastIndex);
         const y = chart.scales.y.getPixelForValue(lastValue);
