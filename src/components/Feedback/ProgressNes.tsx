@@ -5,7 +5,7 @@ import {
   IconProgressBarTop,
   IconProgressBarBottom,
 } from "@/components/DataDisplay";
-import { formatAmount } from "@/utils/amounts";
+import { formatAmount, formatNumber } from "@/utils/amounts";
 
 /* LIBRARIES */
 
@@ -16,12 +16,14 @@ interface ProgressNesProps {
   quantity1: number | null | undefined;
   quantity2: number | null | undefined;
   currency?: string;
+  decimals?: number;
 }
 
 export const ProgressNes: React.FC<ProgressNesProps> = ({
   quantity1,
   quantity2,
   currency,
+  decimals,
 }) => {
   const [barPercentage, setBarPercentage] = useState(0);
 
@@ -31,15 +33,13 @@ export const ProgressNes: React.FC<ProgressNesProps> = ({
       quantity1 !== undefined &&
       quantity2 !== null &&
       quantity2 !== undefined
-    ){
-      if(quantity1 === 0 &&
-        quantity2 === 0){
-          setBarPercentage(50);
-        }else{
-          setBarPercentage((quantity1 / (quantity1 + quantity2)) * 100);
-        }
+    ) {
+      if (quantity1 === 0 && quantity2 === 0) {
+        setBarPercentage(50);
+      } else {
+        setBarPercentage((quantity1 / (quantity1 + quantity2)) * 100);
+      }
     }
-      
   }, [quantity1, quantity2]);
   return (
     <div className="progress-nes">
@@ -55,12 +55,13 @@ export const ProgressNes: React.FC<ProgressNesProps> = ({
         <div
           className="progress-nes__left"
           style={{ width: `${barPercentage}%` }}
-        ><div className="progress-nes__textL" >
-          {`${currency || ""} ${
-            quantity1 !== null && quantity1 !== undefined
-              ? formatAmount(quantity1)
-              : "N/A"
-          }`}
+        >
+          <div className="progress-nes__textL">
+            {`${currency || ""} ${
+              quantity1 !== null && quantity1 !== undefined
+                ? formatNumber(quantity1, decimals !== undefined ? decimals : 2)
+                : "N/A"
+            }`}
           </div>
         </div>
         <div className="progress-nes__icon">
@@ -70,12 +71,12 @@ export const ProgressNes: React.FC<ProgressNesProps> = ({
           className="progress-nes__right"
           style={{ width: `${100 - barPercentage}%` }}
         >
-          <div className="progress-nes__textR" >
-          {`${currency || ""} ${
-            quantity2 !== null && quantity2 !== undefined
-              ? formatAmount(quantity2)
-              : "N/A"
-          }`}
+          <div className="progress-nes__textR">
+            {`${currency || ""} ${
+              quantity2 !== null && quantity2 !== undefined
+                ? formatNumber(quantity2, decimals !== undefined ? decimals : 2)
+                : "N/A"
+            }`}
           </div>
         </div>
       </div>
