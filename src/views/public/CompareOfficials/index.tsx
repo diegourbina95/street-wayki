@@ -144,8 +144,18 @@ const CompareOfficials = () => {
           <span>Patrimonio</span>
           <ProgressNes
             currency="S/"
-            quantity1={playerDetails1?.heritageForYear.at(-1)?.amount}
-            quantity2={playerDetails2?.heritageForYear.at(-1)?.amount}
+            quantity1={
+              playerDetails1?.heritageForYear
+                .slice()
+                .reverse()
+                .find((n) => n.amount > 0)?.amount
+            }
+            quantity2={
+              playerDetails2?.heritageForYear
+                .slice()
+                .reverse()
+                .find((n) => n.amount > 0)?.amount
+            }
           />
         </div>
         <div style={{ height: "250px", marginBottom: "40px" }}>
@@ -191,7 +201,7 @@ const CompareOfficials = () => {
       </div>
       {!playerDetails1?.criminalRecordNumber &&
       !playerDetails2?.criminalRecordNumber ? (
-        <span>Antecedentes</span>
+        <span className="comparation-bars__title-records">Antecedentes</span>
       ) : null}
 
       <div className="compare-officials-page__criminal-record-cards">

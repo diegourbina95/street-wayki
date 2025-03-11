@@ -53,17 +53,8 @@ export const HeroStreetWayki = () => {
           </div>
         </div>
         <div
-          className="hero__illustration"
-          style={{
-            transform:
-              scrollY < 490
-                ? `translateY(${scrollY * -0.3}px)`
-                : `translateY(${490 * -0.3}px)`,
-          }}
-        ></div>
-        <div
           className={`hero__overlay hero__overlay${
-            scrollY < 300 ? "--show" : "--hidden"
+            scrollY < 200 ? "--show" : "--hidden"
           }`}
         ></div>
       </div>

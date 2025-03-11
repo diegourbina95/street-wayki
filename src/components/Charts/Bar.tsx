@@ -90,6 +90,11 @@ export const Bar: React.FC<BarData> = ({
           type: "bar",
           data,
           options: {
+            layout: {
+              padding: {
+                right: 70,
+              },
+            },
             responsive: true,
             maintainAspectRatio: false,
             indexAxis: "y",

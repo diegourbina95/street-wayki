@@ -12,8 +12,13 @@ export const getTopAssetIncreases = (topNumber: number) =>
     .slice(0, topNumber);
 
 const calculateIncrease = (heritage: HeritageForYear[]) => {
+  const firstAmount = heritage.slice().find((n) => n.amount > 0)?.amount;
+  const lastAmount = heritage
+    .slice()
+    .reverse()
+    .find((n) => n.amount > 0)?.amount;
   if (heritage.length === 0) return 0;
-  return (heritage.at(-1)?.amount ?? 0) - (heritage[0]?.amount ?? 0);
+  return (lastAmount ?? 0) - (firstAmount ?? 0);
 };
 
 export const generateData = () => {

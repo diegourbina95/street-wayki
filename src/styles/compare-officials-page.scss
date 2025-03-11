@@ -27,6 +27,11 @@
     }
   }
 
+  .comparation-bars__title-records {
+    display: block;
+    padding: 0 35px;
+  }
+
   &__comparation-cards {
     display: flex;
     flex-direction: column;
@@ -87,6 +92,11 @@
 
     &__comparation-cards > div:last-child {
       margin-top: 0;
+    }
+
+    .comparation-bars__title-records {
+      display: block;
+      padding: 0;
     }
 
     &__criminal-record-cards {

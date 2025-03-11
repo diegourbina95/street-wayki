@@ -1,31 +1,20 @@
 .hero {
-  background-image: url("../assets/images/fondo_street_wayki.png");
-  background-size: cover;
-  background-position: center;
+  background-image: url("../assets/images/ilustracion_street_wayki.png"),
+    url("../assets/images/fondo_street_wayki.png");
+  background-size: contain, cover;
+  background-position: center top, center bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center;
   width: 100%;
-  max-height: 580px;
+  height: 650px;
   overflow: hidden;
   font-family: "Jersey 15", sans-serif;
-
-  &__illustration {
-    position: relative;
-    top: -200px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-image: url("../assets/images/ilustracion_street_wayki.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: translateY(0);
-    transition: transform 0.1s linear;
-  }
 
   &__header {
     position: relative;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente si tiene altura definida */
+    justify-content: center;
+    align-items: center;
     padding: 40px 0 10px;
 
     img {
@@ -74,12 +63,13 @@
     position: relative;
     display: flex;
     justify-content: center;
-    font-family: "Press Start 2P";
+    font-family: "Jersey 15", sans-serif;
 
     button {
-      font-size: 0.7rem;
+      font-size: 1.2rem;
       margin-right: 20px;
       width: 120px;
+      padding: 0;
     }
 
     button:last-child {
@@ -108,22 +98,9 @@
   }
 }
 
-@media (min-width: 425px) {
-  .hero {
-    &__illustration {
-      top: -200px;
-    }
-  }
-}
-
 @media (min-width: 768px) {
   .hero {
-    height: 110vh;
-
-    &__illustration {
-      background-size: cover;
-      top: -90px;
-    }
+    height: 800px;
 
     &__title {
       width: 400px;
@@ -138,12 +115,24 @@
       button {
         margin-right: 40px;
         width: 140px;
-        font-size: 0.9rem;
+        font-size: 1.6rem;
       }
 
       button:last-child {
         margin-right: 0px;
       }
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    height: 1100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    height: 1400px;
   }
 }
