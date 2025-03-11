@@ -1,6 +1,8 @@
 /* REACT COMPONENTS */
 import { useEffect, useRef } from "react";
 
+import { formatNumber } from "@/utils/amounts";
+
 /* LIBRARIES */
 import {
   Chart,
@@ -39,15 +41,26 @@ export const Line: React.FC<LineData> = ({
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const chartRef = useRef<Chart | null>(null);
 
+  const lastValidIndex = (array: any[]): number => {
+    for (let i = array.length - 1; i >= 0; i--) {
+      if (array[i] !== null) {
+        return i;
+      }
+    }
+    return -1;
+  };
+
   const customTextPlugin: Plugin<"line"> = {
     id: "customTextPlugin",
     afterDatasetDraw(chart) {
       const { ctx } = chart;
       chart.data.datasets.forEach((dataset) => {
-        const lastIndex = dataset.data.length - 1;
-        const lastValue = dataset.data[lastIndex] as number;
+        const lastIndex = lastValidIndex(dataset.data);
+        const lastValue = dataset.data
+          .slice()
+          .reverse()
+          .find((n) => n) as number;
         const label = dataset.label || "";
-
         if (!label) return;
         const x = chart.scales.x.getPixelForValue(lastIndex);
         const y = chart.scales.y.getPixelForValue(lastValue);
@@ -102,7 +115,7 @@ export const Line: React.FC<LineData> = ({
                 ticks: {
                   stepSize: datasets.length ? 0.1 : 1,
                   callback: function (value) {
-                    return `S/ ${Number(value).toFixed(1)} ${
+                    return `S/ ${formatNumber(value, 1)} ${
                       Number(value) === 1 ? "millón" : "millones"
                     }`;
                   },
@@ -116,9 +129,10 @@ export const Line: React.FC<LineData> = ({
               tooltip: {
                 callbacks: {
                   label: (tooltipItem: any) => {
-                    return `${tooltipItem.dataset.label}: S/ ${Number(
-                      tooltipItem.raw
-                    ).toFixed(2)} millones`;
+                    return `${tooltipItem.dataset.label}: S/ ${formatNumber(
+                      tooltipItem.raw,
+                      2
+                    )} millones`;
                   },
                 },
               },

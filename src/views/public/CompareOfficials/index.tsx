@@ -193,6 +193,7 @@ const CompareOfficials = () => {
           <div className="comparation-bars__item">
             <span>Antecedentes</span>
             <ProgressNes
+              decimals={0}
               quantity1={playerDetails1?.criminalRecordNumber}
               quantity2={playerDetails2?.criminalRecordNumber}
             />
