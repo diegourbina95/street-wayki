@@ -16,7 +16,7 @@ export const DefaultFooter = () => {
       <div className="footer__data-sources">
         <h3>Metodología y fuentes de datos:</h3>
         <p>
-          “Street waykis” es una aplicación que permite conocer y comparar los
+          “Street wayki” es una aplicación que permite conocer y comparar los
           ingresos de los políticos con más poder en el Perú. Esta herramienta
           fue creada por un equipo multidisciplinario, conformado por
           periodistas, desarrolladores y analistas de datos, que elaboraron una
@@ -55,9 +55,9 @@ export const DefaultFooter = () => {
           </ul>
         </div>
         <ButtonNes
-                  text={toggle ? "Cerrar x" : "Leer más +"}
-                  onClick={handleToggle}
-                />
+          text={toggle ? "Cerrar x" : "Leer más +"}
+          onClick={handleToggle}
+        />
       </div>
       <div className="divider"></div>
       <div className="footer__more-information">

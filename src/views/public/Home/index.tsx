@@ -76,7 +76,7 @@ const HomePage = () => {
           </div>
 
           <div>
-            <InformationSection text="Para conocer y comparar el patrimonio de la presidenta de la República, los 130 congresistas y 25 gobernadores regionales, OjoPúblico ha creado #StreetWaykis una aplicación que analiza la fortuna de los funcionarios con más poder en el Perú y detalla las denuncias, investigaciones y procesos judiciales que enfrentan." />
+            <InformationSection text="Para conocer y comparar el patrimonio de la presidenta de la República, los 130 congresistas y 25 gobernadores regionales, OjoPúblico ha creado #StreetWayki una aplicación que analiza la fortuna de los funcionarios con más poder en el Perú y detalla las denuncias, investigaciones y procesos judiciales que enfrentan." />
           </div>
 
           <div>
@@ -97,10 +97,10 @@ const HomePage = () => {
             <AssetIncreaseComparatorSection />
           </div>
           <div style={{ margin: "50px 0" }}>
-            <InformationSection text="#StreetWaykis revela que las bancadas parlamentarias más afortunadas son Podemos Perú, con congresistas que suman más de 49 millones de soles de patrimonio; Fuerza Popular, con más de 30 millones de soles; Alianza para el Progreso, con más de 27 millones de soles; Renovación Popular, con más de 8 millones de soles; y  Acción Popular, con más de 6 millones de soles. La fortuna de los miembros de estas bancadas supera los 120 millones de soles. Además, esta herramienta te permite identificar a los cinco congresistas que le cobran doble al Estado, por su labor parlamentaria y como militares retirados, y que han sido denunciados por promover la modificación de una ley que les otorgó este beneficio." />
+            <InformationSection text="#StreetWayki revela que las bancadas parlamentarias más afortunadas son Podemos Perú, con congresistas que suman más de 49 millones de soles de patrimonio; Fuerza Popular, con más de 30 millones de soles; Alianza para el Progreso, con más de 27 millones de soles; Renovación Popular, con más de 8 millones de soles; y  Acción Popular, con más de 6 millones de soles. La fortuna de los miembros de estas bancadas supera los 120 millones de soles. Además, esta herramienta te permite identificar a los cinco congresistas que le cobran doble al Estado, por su labor parlamentaria y como militares retirados, y que han sido denunciados por promover la modificación de una ley que les otorgó este beneficio." />
           </div>
           <div style={{ margin: "50px 0" }}>
-            <InformationSection text="#StreetWaykis también detalla el historial de los legisladores denunciados constitucionalmente ante el Congreso por la Fiscalía de la Nación por corrupción y otros delitos, entre los cuales destacan Jorge Flores y otros tres parlamentarios del caso Los Niños, acusados de integrar una red criminal liderada por el entonces presidente Pedro Castillo. También conoce a los siete congresistas “mocha sueldos”, denunciados por recortar la remuneración de sus trabajadores y a cuánto asciende su patrimonio." />
+            <InformationSection text="#StreetWayki también detalla el historial de los legisladores denunciados constitucionalmente ante el Congreso por la Fiscalía de la Nación por corrupción y otros delitos, entre los cuales destacan Jorge Flores y otros tres parlamentarios del caso Los Niños, acusados de integrar una red criminal liderada por el entonces presidente Pedro Castillo. También conoce a los siete congresistas “mocha sueldos”, denunciados por recortar la remuneración de sus trabajadores y a cuánto asciende su patrimonio." />
           </div>
         </div>
 
