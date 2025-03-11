@@ -74,12 +74,13 @@
     position: relative;
     display: flex;
     justify-content: center;
-    font-family: "Press Start 2P";
+    font-family: "Jersey 15", sans-serif;
 
     button {
-      font-size: 0.7rem;
+      font-size: 1.2rem;
       margin-right: 20px;
       width: 120px;
+      padding: 0;
     }
 
     button:last-child {
@@ -138,7 +139,7 @@
       button {
         margin-right: 40px;
         width: 140px;
-        font-size: 0.9rem;
+        font-size: 1.6rem;
       }
 
       button:last-child {
