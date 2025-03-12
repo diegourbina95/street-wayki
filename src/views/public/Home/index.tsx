@@ -1,18 +1,19 @@
 /* REACT COMPONENTS */
+import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
 
 import { HeroStreetWayki } from "@/components/Feedback";
 import { MoreOptions } from "@/components/Layout";
+import { ojoPublicoLinks } from "@/utils/constants";
 
 import { InformationSection } from "./components/InformationSection";
 import { WaykiSelectorSection } from "./components/WaykiSelectorSection";
 import { EquityIncreaseSection } from "./components/EquityIncreaseSection";
 import { IconSocialNetwork } from "@/components/DataDisplay";
+import { AssetIncreaseComparatorSection } from "./components/AssetIncreaseComparatorSection";
 
 /* STYLES */
 import "@/styles/home-page.scss";
-import { AssetIncreaseComparatorSection } from "./components/AssetIncreaseComparatorSection";
-import { useEffect } from "react";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -34,7 +35,7 @@ const HomePage = () => {
     navigate(`/comparar?player1=${payload[0].code}&player2=${payload[1].code}`);
   };
 
-  const url = "https://ojo-publico.com/especiales/street-wayki/";
+  const url = ojoPublicoLinks.PATH_BASE;
   const text = `#StreetWayki Compara la fortuna de los políticos con más poder en Perú ${url} vía @Ojo_publico`;
 
   return (
