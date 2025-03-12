@@ -45,7 +45,8 @@ export const EquityIncreaseSection: React.FC<EquityIncreaseSectionProps> = ({
   return (
     <div className="home-page__equity-increase">
       <div className="equity-increase__title">
-        Políticos con más incremento patrimonial
+        Políticos con más patrimonio adicional que han generado desde que
+        asumieron el cargo
         <br />
         <span style={{ display: "block", marginTop: "10px" }}>
           {initialYear} - {finalYear}

@@ -159,6 +159,9 @@ const CompareOfficials = () => {
           />
         </div>
         <div style={{ height: "250px", marginBottom: "40px" }}>
+          <div className="equity-increase-comparator__line-title">
+            Patrimonio en millones (soles)
+          </div>
           <Line
             labels={YEARS}
             datasets={[
@@ -188,23 +191,9 @@ const CompareOfficials = () => {
             isMobile={isMobile}
           />
         </div>
-        {playerDetails1?.criminalRecordNumber ||
-        playerDetails2?.criminalRecordNumber ? (
-          <div className="comparation-bars__item">
-            <span>Antecedentes</span>
-            <ProgressNes
-              decimals={0}
-              quantity1={playerDetails1?.criminalRecordNumber}
-              quantity2={playerDetails2?.criminalRecordNumber}
-            />
-          </div>
-        ) : null}
       </div>
-      {!playerDetails1?.criminalRecordNumber &&
-      !playerDetails2?.criminalRecordNumber ? (
-        <span className="comparation-bars__title-records">Antecedentes</span>
-      ) : null}
 
+      <span className="comparation-bars__title-records">Antecedentes</span>
       <div className="compare-officials-page__criminal-record-cards">
         <div>
           <InformationCard

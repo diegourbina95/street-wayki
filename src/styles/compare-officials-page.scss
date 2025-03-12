@@ -12,7 +12,7 @@
   &__comparation-bars {
     margin-top: 70px;
     margin-bottom: 80px;
-    padding: 0 35px;
+    padding: 0 20px;
 
     .comparation-bars__item {
       span {
@@ -45,15 +45,11 @@
   }
 
   &__criminal-record-cards {
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 80px;
-  }
-
-  &__criminal-record-cards > div:last-child {
-    margin-top: 50px;
   }
 
   &__comparation-reset {
@@ -100,7 +96,7 @@
     }
 
     &__criminal-record-cards {
-      margin-top: 50px;
+      margin-top: 20px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;

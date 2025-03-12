@@ -60,7 +60,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
         <div
           className="information-card__name"
           style={{
-            fontSize: isMobile ? ".9rem" : ".75rem",
+            fontSize: "1.3rem",
             padding: isMobile ? "10px 0" : "0 0 7px",
             borderBottom: details?.divisionName ? "1px solid #212121" : "none",
           }}
@@ -120,7 +120,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({
                 marginBottom: isMobile ? "10px" : "inherit",
               }}
             >
-              PARTIDO POLITICO ACTUAL:
+              PARTIDO POLÍTICO ACTUAL:
             </div>
             <div
               className="information-card__text"
