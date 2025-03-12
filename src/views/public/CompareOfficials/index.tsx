@@ -81,7 +81,12 @@ const CompareOfficials = () => {
     }
   }, []);
 
-  const handleReset = () => navigate("/");
+  const handleReset = () =>
+    navigate("/", {
+      state: {
+        section: "wayki-section",
+      },
+    });
 
   const filterOfficials = (officialCodes: string[]) => {
     const newPatrimonialData = generateData().map((item: any) => {
