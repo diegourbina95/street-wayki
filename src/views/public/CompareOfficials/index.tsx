@@ -159,6 +159,9 @@ const CompareOfficials = () => {
           />
         </div>
         <div style={{ height: "250px", marginBottom: "40px" }}>
+          <div className="equity-increase-comparator__line-title">
+            Patrimonio en millones (soles)
+          </div>
           <Line
             labels={YEARS}
             datasets={[

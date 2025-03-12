@@ -101,7 +101,7 @@ export const Line: React.FC<LineData> = ({
             maintainAspectRatio: false,
             layout: {
               padding: {
-                right: !isMobile ? 150 : 0,
+                right: !isMobile ? 150 : 90,
               },
             },
             scales: {
@@ -115,9 +115,13 @@ export const Line: React.FC<LineData> = ({
                 ticks: {
                   stepSize: datasets.length ? 0.1 : 1,
                   callback: function (value) {
-                    return `S/ ${formatNumber(value, 1)} ${
-                      Number(value) === 1 ? "millón" : "millones"
-                    }`;
+                    if (isMobile) {
+                      return `S/ ${formatNumber(value, 1)} M`;
+                    } else {
+                      return `S/ ${formatNumber(value, 1)} ${
+                        Number(value) === 1 ? "millón" : "millones"
+                      }`;
+                    }
                   },
                 },
               },
