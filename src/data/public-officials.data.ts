@@ -176,7 +176,7 @@ export const publicOfficialsData = [
     currentBenchCode: 3,
     partyLogo: "Bloque_Democrático_Popular.png",
     record:
-      'En 2023, la Fiscalía de Lavado de Activos le inició una investigación por la presunta “incompatibilidad de “capacidad económica para la compra de dos inmuebles".',
+      "No registra antecedentes de investigaciones oficiales. Si tiene alguna información nos puede escribir a denuncias@ojo-publico.com",
     heritageForYear: [
       {
         year: 2021,
@@ -5135,8 +5135,8 @@ export const publicOfficialsData = [
     photos: "dni_22423252.jpg",
     position: "Gobernador Regional",
     status: "Ejerciendo",
-    currentBench: "Movimiento Independiente Regional Mi Buen Vecino",
-    currentBenchCode: 23,
+    currentBench: "Movimiento Regional Ayni",
+    currentBenchCode: 22,
     partyLogo: "mi_buen_vecino.svg",
     record:
       "Tiene al menos cuatro investigaciones en su curso por hechos cometidos cuando era alcalde de Amarilis, en Huánuco.",
