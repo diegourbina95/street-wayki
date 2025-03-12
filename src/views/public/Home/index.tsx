@@ -1,5 +1,5 @@
 /* REACT COMPONENTS */
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 
 import { HeroStreetWayki } from "@/components/Feedback";
 import { MoreOptions } from "@/components/Layout";
@@ -12,9 +12,23 @@ import { IconSocialNetwork } from "@/components/DataDisplay";
 /* STYLES */
 import "@/styles/home-page.scss";
 import { AssetIncreaseComparatorSection } from "./components/AssetIncreaseComparatorSection";
+import { useEffect } from "react";
 
 const HomePage = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const goToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  useEffect(() => {
+    if (location.state?.section) goToSection(location.state?.section);
+    navigate(location.pathname, { replace: true, state: {} });
+  }, []);
 
   const handlePlay = (payload: any) => {
     navigate(`/comparar?player1=${payload[0].code}&player2=${payload[1].code}`);
