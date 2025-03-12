@@ -32,5 +32,6 @@ export const generateData = () => {
     personCode: official.dni,
     label: official.shortName,
     spanGaps: false,
+    pointRadius: 4,
   }));
 };

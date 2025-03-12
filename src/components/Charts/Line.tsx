@@ -31,6 +31,7 @@ interface Datasets {
   borderColor?: string;
   label?: string;
   spanGaps?: boolean;
+  pointRadius?: number;
 }
 
 export const Line: React.FC<LineData> = ({

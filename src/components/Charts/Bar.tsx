@@ -132,7 +132,11 @@ export const Bar: React.FC<BarData> = ({
               },
 
               tooltip: {
-                enabled: isMobile,
+                callbacks: {
+                  label: (tooltipItem: any) => {
+                    return ` S/ ${formatNumber(tooltipItem.raw, 2)} millones`;
+                  },
+                },
               },
             },
           },
