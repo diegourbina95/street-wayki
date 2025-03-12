@@ -2,5 +2,6 @@ export const ojoPublicoLinks = {
   LOGIN: "https://ojo-publico.com/user",
   PARTNERS:
     "https://ojo-publico.com/aliados?utm_source=especial_externo&utm_medium=cpc&utm_campaign=especial_externo&utm_id=especial_externo",
-  PATH_BASE: "https://ojo-publico.com/especiales/street-wayki/",
+  PATH_BASE:
+    "https://ojo-publico.com/especiales/street-wayki-patrimonio-politicos-peru/",
 };
