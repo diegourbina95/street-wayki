@@ -29,7 +29,7 @@
 
   .comparation-bars__title-records {
     display: block;
-    padding: 0 35px;
+    padding: 0 25px;
   }
 
   &__comparation-cards {
@@ -50,6 +50,10 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 80px;
+  }
+
+  &__criminal-record-cards > div:last-child {
+    margin-top: 30px;
   }
 
   &__comparation-reset {

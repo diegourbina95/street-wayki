@@ -28,7 +28,7 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
 
   useEffect(() => {
     setOfficials(officialList);
-  }, []);
+  }, [officialList]);
 
   const handleWayki = (payload: any) => {
     if (selectWayki) selectWayki(payload);
@@ -38,7 +38,7 @@ export const WaykiSelector: React.FC<WaykiSelectorProps> = ({
     <div className="wayki-selector">
       <div className="wayki-selector__filters">
         <div className="wayki-selector__title">
-        Compara la fortuna y el historial de tu político favorito
+          Compara la fortuna y el historial de tu político favorito
         </div>
         <div className="wayki-selector__select-container">
           <div className="wayki-selector__select">

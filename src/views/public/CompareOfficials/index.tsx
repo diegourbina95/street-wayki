@@ -180,6 +180,7 @@ const CompareOfficials = () => {
                 borderColor: "#61F908",
                 label: playerDetails1?.abbreviatedName,
                 spanGaps: false,
+                pointRadius: 4,
               },
               {
                 data: playerDetails2
@@ -191,6 +192,7 @@ const CompareOfficials = () => {
                 borderColor: "#FEAA00",
                 label: playerDetails2?.abbreviatedName,
                 spanGaps: false,
+                pointRadius: 4,
               },
             ]}
             isMobile={isMobile}
@@ -203,6 +205,7 @@ const CompareOfficials = () => {
         <div>
           <InformationCard
             color="#61F908"
+            size={300}
             details={{
               name: playerDetails1?.shortName,
               divisionName: true,
@@ -220,6 +223,7 @@ const CompareOfficials = () => {
         <div>
           <InformationCard
             color="#FEAA00"
+            size={300}
             details={{
               name: playerDetails2?.shortName,
               divisionName: true,
