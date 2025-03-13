@@ -39,9 +39,8 @@ export const BlackHeader = () => {
                   <i
                     className="fa-regular fa-bookmark"
                     style={{ marginRight: "5px" }}
-                  >
-                    <div id="bookmark"></div>
-                  </i>
+                  ></i>
+                  <div id="bookmark"></div>
                 </a>
               </li>
               <li>
