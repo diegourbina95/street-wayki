@@ -35,7 +35,7 @@ export const BlackHeader = () => {
           <div className="black-header__nav-desktop">
             <ul>
               <li>
-                <a href="#">
+                <a href="#" className="nav-link text-light add-bookmark">
                   <i
                     className="fa-regular fa-bookmark"
                     style={{ marginRight: "5px" }}
