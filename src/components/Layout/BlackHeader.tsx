@@ -34,20 +34,22 @@ export const BlackHeader = () => {
           </div>
           <div className="black-header__nav-desktop">
             <ul>
-              <li>
-                <a href="#" className="nav-link text-light add-bookmark">
+              <li className="nav-item">
+                <a className="nav-link text-light add-bookmark" href="#">
+                  <div id="bookmark"></div>
+                </a>
+                {/*  <a href="#" className="nav-link text-light add-bookmark">
                   <i
                     className="fa-regular fa-bookmark"
                     style={{ marginRight: "5px" }}
-                  >
-                    <div id="bookmark"></div>
-                  </i>
-                </a>
+                  ></i>
+                  <div id="bookmark"></div>
+                </a> */}
               </li>
-              <li>
+              <li className="nav-item">
                 <a href={ojoPublicoLinks.LOGIN}>Iniciar Sesión</a>
               </li>
-              <li className="black-header__ally-button">
+              <li className="nav-item black-header__ally-button">
                 <a href={ojoPublicoLinks.PARTNERS}>Hazte Aliado/a</a>
               </li>
             </ul>

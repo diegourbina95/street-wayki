@@ -133,7 +133,7 @@ export const DefaultFooter = () => {
                 className="allies-item__logo"
                 width="120px"
                 alt="Idea Internacional"
-                src="https://ojo-publico.com/especiales/bingo-electoral-elecciones-regionales-municipales-2022/img/Logo-aliados.4ea70a5e.png"
+                src="./img/Logo-Aliados-Nuevo_Negro.png"
               />
             </div>
           </div>
