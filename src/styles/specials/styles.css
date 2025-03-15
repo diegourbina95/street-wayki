@@ -405,3 +405,7 @@
   user-select: none;
   opacity: 0.25;
 }
+
+.d-lg-none {
+  display: none !important;
+}

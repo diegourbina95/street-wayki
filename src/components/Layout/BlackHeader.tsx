@@ -38,15 +38,8 @@ export const BlackHeader = () => {
                 <a className="nav-link text-light add-bookmark" href="#">
                   <div id="bookmark"></div>
                 </a>
-                {/*  <a href="#" className="nav-link text-light add-bookmark">
-                  <i
-                    className="fa-regular fa-bookmark"
-                    style={{ marginRight: "5px" }}
-                  ></i>
-                  <div id="bookmark"></div>
-                </a> */}
               </li>
-              <li className="nav-item">
+              <li className="nav-item ">
                 <a href={ojoPublicoLinks.LOGIN}>Iniciar Sesión</a>
               </li>
               <li className="nav-item black-header__ally-button">
